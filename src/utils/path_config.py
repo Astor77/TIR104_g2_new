@@ -1,0 +1,45 @@
+# 存放資料分層的路徑
+from pathlib import Path
+
+#raw_data資料夾路徑
+##tw資料夾路徑
+raw_tw = Path("/workspaces/TIR104_g2_new/A0_raw_data/tw/")
+raw_tw_numbers = raw_tw / "numbers_box"
+raw_tw_omdb_info = raw_tw / "omdb_info"
+raw_tw_details = raw_tw / "tmdb_details"
+raw_tw_details_en = raw_tw / "tmdb_details_en"
+raw_tw_keywords = raw_tw / "tmdb_keywords"
+raw_tw_tmdb_release_date = raw_tw / "tmdb_release_date"
+raw_tw_mapping = raw_tw / "tw_mapping_tmdb"
+raw_tw_2022_2025 = raw_tw / "tw_movie_2022-2025"
+raw_tw_sales = raw_tw / "tw_movie_sales"
+raw_tw_weekly = raw_tw / "tw_movie_weekly"
+raw_tw_year_sales = raw_tw / "tw_movie_year_sales"
+raw_tw_publisher = raw_tw / "tw_publisher"
+raw_tw_tw_release_date = raw_tw / "tw_release_dates"
+raw_tw_search = raw_tw / "tw_search"
+
+
+
+##temp_data 資料夾路徑
+temp = Path("/workspaces/TIR104_g2_new/A1_temp_data/")
+temp_tw = temp / "tw"
+temp_global = temp / "global"
+
+##final_data 資料夾路徑
+final = Path("/workspaces/TIR104_g2_new/A2_final_data/")
+final_tw = final / "tw"
+final_global = final / "global"
+
+
+#GCS_path
+##
+##
+##
+
+
+# log資料夾路徑 
+log = Path("/workspaces/TIR104_g2_new/project_logs/")
+# log檔案路徑
+## save_log
+save_file_log = log / "save_file.log"

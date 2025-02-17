@@ -1,0 +1,16 @@
+-i https://pypi.org/simple
+bs4
+jupyter
+pandas
+pendulum
+prefect
+prefect-github
+requests
+sqlalchemy
+pymysql
+selenium
+numpy
+google-cloud-bigquery
+google-cloud-storage
+
+
