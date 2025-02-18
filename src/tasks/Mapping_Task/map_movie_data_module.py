@@ -1,8 +1,8 @@
 # map_movie_data_task.py 這隻task 專門用來 mapping tw_annual 跟 tmdb_search api
 import pandas as pd
 
-import tasks.Storage_Task.read_file_task as rf
-import tasks.Mapping_Task.search_movie_api_task as ms
+import tasks.Storage_Task.read_file_module as rf
+import tasks.Mapping_Task.search_movie_api_module as ms
 import utils.path_config as p
 
 dir_path = p.raw_tw_2022_2025
