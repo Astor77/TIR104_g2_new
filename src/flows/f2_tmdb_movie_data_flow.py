@@ -1,9 +1,9 @@
 # 運用Fetching Task內的py模組處理資料抓取
 # 各個API端點抓取資料，並存成json或csv
 
-from tasks.Fetching_Task import fetch_api_data_task as fa
-from tasks.Storage_Task.read_file_task import read_file_to_df
-from tasks.Storage_Task.save_file_task import save_as_csv, save_as_json
+from tasks.Fetching_Task import fetch_api_data_module as fa
+from tasks.Storage_Task.read_file_module import read_file_to_df
+from tasks.Storage_Task.save_file_module import save_as_csv, save_as_json
 import utils.path_config as p
 
 # task1 e_read_mapping_result() -> 共同上游

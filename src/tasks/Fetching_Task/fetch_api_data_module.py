@@ -84,7 +84,6 @@ def tmdb_get_list_movie_detail(tmdb_id_list: list, language: str="zh-TW", API_KE
 # omdb_get_movie_info(台灣資料跟全球資料適用)
 
 
-# tmdb_discover_movie_top500(全球資料)
 
 
 if __name__ == "__main__":

@@ -38,8 +38,9 @@ final_global = final / "global"
 ##
 
 
-# log資料夾路徑 
-log = Path("/workspaces/TIR104_g2_new/project_logs/")
+# log資料夾路徑
+logs = Path("/workspaces/TIR104_g2_new/project_logs/")
+
 # log檔案路徑
 ## save_log
-save_file_log = log / "save_file.log"
+save_file_log = logs / "save_file.log"
