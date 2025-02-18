@@ -3,6 +3,7 @@ from pathlib import Path
 from datetime import datetime
 import utils.path_config as p
 
+
 # write_log()
 # 寫入訊息至 log file
 def write_save_log(operation: str, file_name: str, status: str, message: str, save_file_path: str | Path ,log_file_path: str | Path = p.save_file_log) -> None:
@@ -16,6 +17,7 @@ def write_save_log(operation: str, file_name: str, status: str, message: str, sa
         save_file_path (str/Path): 檔案儲存的完整路徑
         log_file_path (str/Path): 要寫入的 log 文件
     """
+
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_message = f"[{timestamp}] {status.upper()}: {operation} - File '{file_name}' - {message} - Save File Path'{save_file_path}'\n"
 
