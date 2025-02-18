@@ -1,8 +1,8 @@
-from tasks.Mapping_Task import search_movie_api_task as msearch, map_movie_data_task as mmap
-from tasks.Storage_Task.save_file_task import save_as_csv,save_as_json
+from tasks.Mapping_Task import map_movie_data_module as mmap, search_movie_api_module as msearch
+from tasks.Storage_Task.save_file_module import save_as_csv,save_as_json
 import utils.path_config as p
 
-# task X
+# task X 
 # 運用selenium_data_task.py（Selenium 抓年度票房資料）
 
 
