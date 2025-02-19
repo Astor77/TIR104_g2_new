@@ -73,7 +73,31 @@ def tmdb_get_list_movie_detail(tmdb_id_list: list, language: str="zh-TW", API_KE
 
 
 # tmdb_get_movie_release_date(台灣資料跟全球資料適用)
+def tmdb_get_movie_release_date(tmdb_id: int, language: str="zh-TW", API_KEY: str = RAIN_TMDB_KEY) -> dict:
+    """
+    針對 movie list 抓取每一部電影 detail，返回 dict
+    Args:
+        tmdb_id_list (list): one tmdb movie id
+        languages (str): 查詢的語言，預設為 zh-TW
+        API_KEY (str): API KEY 資訊，預設為 RAIN 的API
+        return: 含多筆movie_release_date 資料的 dict
+    """
+    headers = {"Authorization": f"Bearer {API_KEY}", "accept": "application/json"}
 
+    url = f"https://api.themoviedb.org/3/movie/{tmdb_id}/release_dates"
+
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        data = response.json()
+        return data
+    else:
+        print(
+            f"查詢失敗: {id}, 狀態碼: {response.status_code}, 錯誤訊息: {response.text}"
+        )
+        return None
+
+        
 
 # tmdb_get_movie_credit(台灣資料跟全球資料適用)
 
@@ -88,3 +112,5 @@ def tmdb_get_list_movie_detail(tmdb_id_list: list, language: str="zh-TW", API_KE
 
 if __name__ == "__main__":
     print(tmdb_get_one_movie_detail(550))
+    print(tmdb_get_movie_release_date(550))
+ 
