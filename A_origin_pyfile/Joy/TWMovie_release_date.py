@@ -14,7 +14,12 @@ chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("window-size=1080,720")
 chrome_options.add_argument("--ignore-certificate-errors")
 chrome_options.add_argument("--allow-insecure-localhost")
-chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--headless")
+chrome_options.add_experimental_option("prefs", {
+    # "download.default_directory": DOWNLOAD_DIR,  # 設定下載目錄
+    "download.prompt_for_download": False,       # 自動下載
+    "download.directory_upgrade": True,
+})
 
 driver = webdriver.Remote(
     command_executor="http://localhost:14444/wd/hub",
