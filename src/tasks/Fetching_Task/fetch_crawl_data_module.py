@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pandas as pd
 import requests
 import time
@@ -57,10 +56,4 @@ def crawl_movie_info(movie_id, url, api_token, headers):
 
 
 # get_numbers_movie_box(全球資料)
-=======
-# fetch_crawl_data_task.py -> 整合用爬蟲獲取的函式
-
-
-# get_numbers_movie_box(全球資料)
->>>>>>> main
 # 來源為the numbers
