@@ -97,7 +97,6 @@ def tmdb_get_movie_release_date(tmdb_id: int, language: str="zh-TW", API_KEY: st
         )
         return None
 
-        
 
 # tmdb_get_movie_credit(台灣資料跟全球資料適用)
 
