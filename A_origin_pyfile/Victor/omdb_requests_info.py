@@ -14,7 +14,7 @@ def fetch_imdb_id():
     movie_id = [movie_id for movie_id in movie_id_list if not (isinstance(movie_id, float) and math.isnan(movie_id))]
     #計算id個數
     movie_id_len = len(movie_id)
-    return movie_id, movie_id_len
+    return movie_id
 
 
 # 2 ==== 進行1000筆的爬蟲 ==== # 會回傳首次請求的1000筆
@@ -47,7 +47,7 @@ def crawl_movie_info(movie_id):
 
     except Exception as e:
         print(f"發生錯誤:{e}")
-    
+
     return results
 
 
@@ -57,7 +57,7 @@ def crawl_movie_info(movie_id):
 # 4 ==== 進行第2次1000筆的請求 ==== #
 def crawl_movie_info_second_time(movie_id, results=None):
 
-    api_token = "YOUR_API_TOKEN"
+    api_token = "API_TOKEN"
     max_requests = 1000
     count_requests = 0
 
@@ -75,7 +75,6 @@ def crawl_movie_info_second_time(movie_id, results=None):
     try:
         for movie in new_movie_ids:
             if count_requests >= max_requests:
-
                 break
 
             if movie in existing_id:
@@ -104,7 +103,6 @@ def crawl_movie_info_second_time(movie_id, results=None):
         print(f"發生錯誤:{e}")
     
     return results
-        
 
 
 # 5 ==== 將檔案寫入gcs ==== # >>要建bucket
