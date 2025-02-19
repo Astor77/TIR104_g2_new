@@ -12,24 +12,39 @@ df = read_file_to_df(p.raw_tw_mapping)
 tmdb_id_list = df["id"]
 
 
-# task2 e_raw_detail -> 平行處理
+# task2 e_raw_details -> 平行處理
 # 抓detail
 # 針對tmdb_id_list，抓取detail資訊並存入list
-movie_details_raw = fa.tmdb_get_list_movie_detail(tmdb_id_list)
+movie_details_raw = fa.tmdb_get_list_movies_data(tmdb_id_list, fa.DETAILS_API, fa.ASTOR_TMDB_KEY)
+file_name = "tmdb_detail_raw_20240219"
+csv = f"{file_name}.csv"
+json = f"{file_name}.json"
+save_as_json(movie_details_raw, csv, p.raw_tw_details)
+save_as_csv(movie_details_raw, json, p.raw_tw_details)
 
-# task3 e_raw_release_date -> 平行處理
-# 抓release_date
+# task3 e_raw_release_dates -> 平行處理
+# 抓release_dates
+movie_release_raw = fa.tmdb_get_list_movies_data(tmdb_id_list, fa.RELEASE_DATES_API, fa.ASTOR_TMDB_KEY)
+file_name = "tmdb_release_dates_raw"
+csv = f"{file_name}.csv"
+json = f"{file_name}.json"
+save_as_json(movie_release_raw, csv, p.raw_tw_tmdb_release_date)
+save_as_csv(movie_release_raw, json, p.raw_tw_tmdb_release_date)
 
+# task4 e_raw_credits -> 平行處理
+# 抓credits
+movie_credits_raw = fa.tmdb_get_list_movies_data(tmdb_id_list, fa.CREDITS_API, fa.ASTOR_TMDB_KEY)
+file_name = "tmdb_credits_raw"
+csv = f"{file_name}.csv"
+json = f"{file_name}.json"
+save_as_json(movie_credits_raw, csv, p.raw_tw_credits)
+save_as_csv(movie_credits_raw, json, p.raw_tw_credits)
 
-# task4 e_raw_credit -> 平行處理
-# 抓credit
-# 往下類推
-
-
-
-# taskn l_raw_data()
-# 將detail的list結果轉為json, csv存入路徑
-csv_file_name = "tmdb_detail_raw.csv"
-json_file_name = "tmdb_detail_raw.json"
-save_as_json(movie_details_raw, csv_file_name, p.raw_tw_details)
-save_as_csv(movie_details_raw, json_file_name, p.raw_tw_details)
+# task4 e_raw_keywords -> 平行處理
+# 抓keywords
+movie_keywords_raw = fa.tmdb_get_list_movies_data(tmdb_id_list, fa.KEYWORDS_API, fa.ASTOR_TMDB_KEY)
+file_name = "tmdb_keywords_raw"
+csv = f"{file_name}.csv"
+json = f"{file_name}.json"
+save_as_json(movie_keywords_raw, csv, p.raw_tw_keywords)
+save_as_csv(movie_keywords_raw, json, p.raw_tw_keywords)
