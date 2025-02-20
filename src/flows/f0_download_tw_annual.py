@@ -20,27 +20,20 @@ def e_get_tw_annual_sales(year_list, date) -> None:
 # task 2
 # 清洗原始json檔案
 @task
-def e_tw_clean_annual_sales(file_path) -> None:
+def e_tw_clean_annual_sales(file_path:str) -> json:
 
     cleaned_data = mselenium.clean_json_file(file_path)
-    return cleaned_data
-
-#task 3
-#取得json檔案 "DataItems" 後的[]
-@task
-def e_tw_extract_annual_sales(cleaned_data: json) -> json:
-
     extract_annual_sales = mselenium.extract_json(cleaned_data)
     return extract_annual_sales
 
-#task 4
+
+#task 3
 #儲存成json
 @task
-def save_tw_annual_sales(extract_annual_sales: json) -> None:
+def save_tw_annual_sales(extract_annual_sales: json, file_name_new: str) -> None:
 
-    file_name_new = "2022年票房資料.json"
     save_as_json(extract_annual_sales, file_name_new, p.raw_tw_year_sales)
-    print(f"清理後的 JSON 已儲存到: {file_name_new}")
+    print(f"清理後的 JSON 已儲存到: {p.raw_tw_year_sales}")
 
 #task 5
 #合併2022, 2023, 2024, 2025年的資料
@@ -60,17 +53,40 @@ def t_tw_concat_df_json_distinct_annual_sales(year_list) -> pd.DataFrame:
 
 @flow(name="f0_download_tw_annual")
 def download_tw_annual_sales_flow() -> None:
+    # 2022-2025年資料
     year_list = [2022, 2023, 2024, 2025]
-    # 2025年更新日期
+    # 下載日期
     date = "02-10"
     e_get_tw_annual_sales(year_list, date)
 
     dir_path = p.raw_tw_year_sales
     file_name = "2022年票房資料_raw.json"
     file_path = dir_path / file_name
-    cleaned_data = e_tw_clean_annual_sales(file_path)
-    extract_annual_sales = e_tw_extract_annual_sales(cleaned_data)
-    save_tw_annual_sales(extract_annual_sales)
+    extract_annual_sales = e_tw_clean_annual_sales(file_path)
+
+    file_name_new = "2022年票房資料.json"
+    save_tw_annual_sales(extract_annual_sales, file_name_new)
+
+    file_name = "2023年票房資料_raw.json"
+    file_path = dir_path / file_name
+    extract_annual_sales = e_tw_clean_annual_sales(file_path)
+
+    file_name_new = "2023年票房資料.json"
+    save_tw_annual_sales(extract_annual_sales, file_name_new)
+
+    file_name = "2024年票房資料_raw.json"
+    file_path = dir_path / file_name
+    extract_annual_sales = e_tw_clean_annual_sales(file_path)
+
+    file_name_new = "2024年票房資料.json"
+    save_tw_annual_sales(extract_annual_sales, file_name_new)
+
+    file_name = "2025年票房資料_raw.json"
+    file_path = dir_path / file_name
+    extract_annual_sales = e_tw_clean_annual_sales(file_path)
+
+    file_name_new = "2025年票房資料.json"
+    save_tw_annual_sales(extract_annual_sales, file_name_new)
 
     combined_df = t_tw_concat_df_json_annual_sales(year_list)
     save_as_csv(combined_df, "TWMovie2022-2025_raw.csv", p.raw_tw_2022_2025)
