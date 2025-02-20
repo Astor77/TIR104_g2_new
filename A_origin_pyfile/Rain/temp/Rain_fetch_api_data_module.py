@@ -76,34 +76,52 @@ def tmdb_get_list_movie_detail(tmdb_id_list: list, language: str="zh-TW", API_KE
         print(f"tmdb_id: {tmdb_id}, error: {err}")
 
 
-# tmdb_get_movie_release_date(台灣資料跟全球資料適用)
-def tmdb_get_movie_release_date(tmdb_id_list: list, language: str="zh-TW", API_KEY: str = RAIN_TMDB_KEY_TMDB_KEY) -> list:
-    """
-    針對 movie_release_date 抓取每一部電影 release_date，返回 list
-    Args:
-        tmdb_id_list (list): one tmdb movie id
-        languages (str): 查詢的語言，預設為 zh-TW
-        API_KEY (str): API KEY 資訊，預設為 RAIN 的API
-        return: 含多筆 movie detail 資料的 list
-    """
-    try:
-        release_date = []
-        for result in data.get("results", []):
-            country = result.get("iso_3166_1")
-            for release in result.get("release_dates", []):
-                release_dates.append({
-                    "tmdb_id": id,
-                    "iso_639_1": "iso_639_1"
-                    "note" : "note"
-                    "release_date": release.get("release_date"),
-                    "type": release.get("type")
-                })
-             time.sleep(0.5)
-        return release_dates
-    except Exception as err:
-    print(f"tmdb_id: {tmdb_id}, error: {err}")
+#tmdb_get_movie_release_date(台灣資料跟全球資料適用)
 
-print(tmdb_get_one_ movie_release_date(550))
+# 設置 API 請求的標頭
+HEADERS = {
+    "Authorization": f"Bearer {RAIN_TMDB_KEY}",
+    "Accept": "application/json"
+}
+
+
+def get_release_dates(movie_id):
+    """
+    根據電影 ID 取得該電影的上映日期資訊。
+    :param movie_id: int - 電影的 TMDB ID
+    :return: list - 包含上映資訊的列表，若請求失敗則返回 None
+    """
+    url = f"{TMDB_MAIN_URL}{movie_id}/release_dates"
+    try:
+        response = requests.get(url, headers=HEADERS)
+        response.raise_for_status()  # 自動拋出 HTTP 錯誤
+        return response.json().get("results", [])
+    except requests.exceptions.RequestException as e:
+        print(f"[錯誤] 無法取得電影 ID {movie_id} 的上映日期: {e}")
+        return None
+
+
+def tmdb_get_one_movie_data(movie_id):
+    """
+    解析電影的上映日期資訊，過濾掉 'certification' 和 'descriptors' 欄位。
+    :param movie_id: int - 電影的 TMDB ID
+    :return: list - 經過過濾處理的上映日期列表
+    """
+    results = get_release_dates(movie_id)
+    if results is None:
+        return []
+
+    for country_data in results:
+        for release in country_data.get("release_dates", []):
+            release.pop("certification", None)
+            release.pop("descriptors", None)
+
+    return results
+
+print(tmdb_get_one_movie_data(550))
+# print(tmdb_get_one_movie_data(550, RELEASE_DATES_API, RAIN_TMDB_KEY))
+
+
 
 # tmdb_get_movie_credit(台灣資料跟全球資料適用)
 
