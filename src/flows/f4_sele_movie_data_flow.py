@@ -20,20 +20,28 @@ def e_tw_read_csv2() -> pd.DataFrame:
 # get_tw_one_movie_sale(台灣資料)
 # 單片查詢票房json檔案
 @task
-def get_tw_one_movie_sale(MovieIds: list) -> None:
+def e_get_tw_one_movie_sale(MovieIds: list) -> None:
     mselenium.download_rename(MovieIds)
+
+# task 3
+# 增加id欄位
+@task
+def e_tw_one_movie_sale_add_id(MovieIds: list) -> None:
     mselenium.add_id_column(MovieIds)
 
 
-
-
-# task X
-# get_tw_one_movie_release_date(台灣資料)
+# task 4
 # 台灣上映日期
 # 抓取全國單片查詢上顯示的release date
 @task
-def get_tw_one_movie_release_date(MovieIds: list):
+def e_get_tw_one_movie_release_date(MovieIds: list) -> list:
     release_date = mselenium.get_release_date(MovieIds)
+    return release_date
+
+# task 5
+#儲存成csv
+@task
+def save_tw_one_movie_release_date(release_date) -> None:
     save_as_csv(release_date, "release_date.csv", p.raw_tw_tmdb_release_date)
     print(f"台灣上映日期已儲存到: {p.raw_tw_tmdb_release_date}")
 
@@ -41,10 +49,12 @@ def get_tw_one_movie_release_date(MovieIds: list):
 def sele_movie_data_flow() -> None:
     dfTWMovie = e_tw_read_csv2()
     MovieIds = dfTWMovie["MovieId"].loc[0:1]
-    get_tw_one_movie_sale(MovieIds)
-    get_tw_one_movie_release_date(MovieIds)
+    e_get_tw_one_movie_sale(MovieIds)
+    e_tw_one_movie_sale_add_id(MovieIds)
+    release_date_list = e_get_tw_one_movie_release_date(MovieIds)
+    save_tw_one_movie_release_date(release_date_list)
 
 if __name__ == "__main__":
-    sele_movie_data_flow.run()
+    sele_movie_data_flow()
 
 
