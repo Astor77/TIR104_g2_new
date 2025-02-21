@@ -26,100 +26,99 @@ VICTOR_OMDB_KEY = os.getenv("VICTOR_OMDB_KEY", "").strip().replace("\"", "")
 # print(repr(os.getenv("ASTOR_TMDB_KEY")))
 ############
 
-# tmdb_get_one_movie_detail()
-# 抓取單部電影 detail，結果存回一個dict
-def tmdb_get_one_movie_detail(tmdb_id: int, language: str="zh-TW", API_KEY: str = ASTOR_TMDB_KEY) -> dict:
-    """
-    抓取單一 tmdb_id 的 detail，返回 json
-    Args:
-        tmdb_id (int): one tmdb movie id
-        languages (str): 查詢的語言，預設為 zh-TW
-        API_KEY (str): API KEY 資訊，預設為 ASTOR 的API
-        return: 單筆 movie detail json 資料
-    """
-    try:
-        url = f"{TMDB_MAIN_URL}{tmdb_id}?language={language}"
+# # tmdb_get_one_movie_detail()
+# # 抓取單部電影 detail，結果存回一個dict
+# def tmdb_get_one_movie_detail(tmdb_id: int, language: str="zh-TW", API_KEY: str = ASTOR_TMDB_KEY) -> dict:
+#     """
+#     抓取單一 tmdb_id 的 detail，返回 json
+#     Args:
+#         tmdb_id (int): one tmdb movie id
+#         languages (str): 查詢的語言，預設為 zh-TW
+#         API_KEY (str): API KEY 資訊，預設為 ASTOR 的API
+#         return: 單筆 movie detail json 資料
+#     """
+#     try:
+#         url = f"{TMDB_MAIN_URL}{tmdb_id}?language={language}"
 
-        headers = {
-            "accept": "application/json",
-            "Authorization": f"Bearer {API_KEY}"
-        }
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            movie_detail = response.json()
-            return movie_detail
-        else:
-            print(f"requests fail: {response.status_code}, tmdb_id: {tmdb_id}")
-    except Exception as err:
-        print(f"error: {err}, tmdb_id: {tmdb_id}")
+#         headers = {
+#             "accept": "application/json",
+#             "Authorization": f"Bearer {API_KEY}"
+#         }
+#         response = requests.get(url, headers=headers)
+#         if response.status_code == 200:
+#             movie_detail = response.json()
+#             return movie_detail
+#         else:
+#             print(f"requests fail: {response.status_code}, tmdb_id: {tmdb_id}")
+#     except Exception as err:
+#         print(f"error: {err}, tmdb_id: {tmdb_id}")
 
 
-# tmdb_get_list_movie_detail()
-# 針對 movie list 抓取每一部電影 detail，結果存回一個list
-def tmdb_get_list_movie_detail(tmdb_id_list: list, language: str="zh-TW", API_KEY: str = ASTOR_TMDB_KEY) -> list:
-    """
-    針對 movie_detail 抓取每一部電影 detail，返回 list
-    Args:
-        tmdb_id_list (list): one tmdb movie id
-        languages (str): 查詢的語言，預設為 zh-TW
-        API_KEY (str): API KEY 資訊，預設為 ASTOR 的API
-        return: 含多筆 movie detail 資料的 list
-    """
-    try:
-        movie_details = []
-        for tmdb_id in tmdb_id_list:
-            tmdb_id = int(tmdb_id)
-            movie_details.append(tmdb_get_one_movie_detail(tmdb_id, language, API_KEY))
-            time.sleep(0.5)
-        return movie_details
-    except Exception as err:
-        print(f"tmdb_id: {tmdb_id}, error: {err}")
+# # tmdb_get_list_movie_detail()
+# # 針對 movie list 抓取每一部電影 detail，結果存回一個list
+# def tmdb_get_list_movie_detail(tmdb_id_list: list, language: str="zh-TW", API_KEY: str = ASTOR_TMDB_KEY) -> list:
+#     """
+#     針對 movie_detail 抓取每一部電影 detail，返回 list
+#     Args:
+#         tmdb_id_list (list): one tmdb movie id
+#         languages (str): 查詢的語言，預設為 zh-TW
+#         API_KEY (str): API KEY 資訊，預設為 ASTOR 的API
+#         return: 含多筆 movie detail 資料的 list
+#     """
+#     try:
+#         movie_details = []
+#         for tmdb_id in tmdb_id_list:
+#             tmdb_id = int(tmdb_id)
+#             movie_details.append(tmdb_get_one_movie_detail(tmdb_id, language, API_KEY))
+#             time.sleep(0.5)
+#         return movie_details
+#     except Exception as err:
+#         print(f"tmdb_id: {tmdb_id}, error: {err}")
 
 
 #tmdb_get_movie_release_date(台灣資料跟全球資料適用)
+def tmdb_get_movie_release_date(tmdb_id: int, language: str="zh-TW", API_KEY: str = ASTOR_TMDB_KEY) -> list:
 
-# 設置 API 請求的標頭
-HEADERS = {
-    "Authorization": f"Bearer {RAIN_TMDB_KEY}",
-    "Accept": "application/json"
-}
-
-
-def get_release_dates(movie_id):
     """
-    根據電影 ID 取得該電影的上映日期資訊。
-    :param movie_id: int - 電影的 TMDB ID
-    :return: list - 包含上映資訊的列表，若請求失敗則返回 None
+    從 JSON 數據中提取 `tmdb_id`, `country`, `note`, `type`
+    :param data: 來自 TMDB API 的 JSON 資料
+    :return: list - 只包含 `tmdb_id`, `country`, `note`, `type`
     """
-    url = f"{TMDB_MAIN_URL}{movie_id}/release_dates"
-    try:
-        response = requests.get(url, headers=HEADERS)
-        response.raise_for_status()  # 自動拋出 HTTP 錯誤
-        return response.json().get("results", [])
-    except requests.exceptions.RequestException as e:
-        print(f"[錯誤] 無法取得電影 ID {movie_id} 的上映日期: {e}")
-        return None
+    tmdb_get_movie_release_date = []  # 修正變數名稱
+
+#     for movie in data.get("results", []):
+#         tmdb_id = movie.get("id")  # 取得 TMDB ID
+#         for country_data in movie.get("release_dates", []):
+#             country = country_data.get("iso_3166_1")  # 取得國家代碼
+#             for release in country_data.get("release_dates", []):
+#                 tmdb_get_release_dates.append({  # 修正變數名稱
+#                     "tmdb_id": tmdb_id,
+#                     "country": "iso_3166_1",
+#                     "note": release.get("note"),
+#                     "type": release.get("type")
+#                 })
+#     return tmdb_get_release_dates  # 確保回傳正確的變數名稱
+
+# print(tmdb_get_movie_release_date(550))
 
 
-def tmdb_get_one_movie_data(movie_id):
-    """
-    解析電影的上映日期資訊，過濾掉 'certification' 和 'descriptors' 欄位。
-    :param movie_id: int - 電影的 TMDB ID
-    :return: list - 經過過濾處理的上映日期列表
-    """
-    results = get_release_dates(movie_id)
-    if results is None:
-        return []
-
-    for country_data in results:
-        for release in country_data.get("release_dates", []):
-            release.pop("certification", None)
-            release.pop("descriptors", None)
-
-    return results
-
-print(tmdb_get_one_movie_data(550))
-# print(tmdb_get_one_movie_data(550, RELEASE_DATES_API, RAIN_TMDB_KEY))
+for movie in data:
+    movie_id = movie.get("id")
+    for result in movie.get("results"):
+        movie_iso = result.get("iso_3166_1")
+        for release in country_data.get("release_dates", []):  # 遍歷上映日期
+            release_dates.append({
+                    "tmdb_id": tmdb_id,
+                    "country": country,
+                    "release_date": release.get("release_date", []),
+                    "note": release.get("note"),
+                    "type": release.get("type")
+                time.sleep(0.5)
+        except Exception as err:
+#         print(f"tmdb_id: {tmdb_id}, error: {err}")
+            
+print(tmdb_get_movie_release_date(550))
+# tools.display_dataframe_to_user(name="TMDB Release Data", dataframe=df)
 
 
 
