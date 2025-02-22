@@ -27,9 +27,13 @@ pip install --upgrade bigframes pandas
 
 #抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 import bigframes.pandas as bpd
+from google.cloud import storage
+from google.cloud import bigquery
 
 #-----------------------------你的project name
 bpd.options.bigquery.project = "my-project-7393-451114"
+
+#抓取
 def test_query():
     #------------- 可以去BigQuery複製sql語法from後面那段
     first_query = "my-project-7393-451114.001test.001-test" 
@@ -53,8 +57,6 @@ def test_query():
 #test_query()
 
 #-------------------------將DataFrame��存於Google Cloud Storage
-
-from google.cloud import storage
 """創建buket"""
 def create_bucket(bucket_name):
     
@@ -69,8 +71,6 @@ def create_bucket(bucket_name):
 #create_bucket('002_test')
 
 #-------------------------上傳檔案
-from google.cloud import storage
-
 def upload_to_gcs(bucket_name, source_file_name, destination_blob_name):
     """將本地文件上傳到指定的 GCS 存儲桶"""
     #可以想像是一個google api讓我們取的連結可以操作gcs
@@ -89,8 +89,6 @@ def upload_to_gcs(bucket_name, source_file_name, destination_blob_name):
 
 
 #---設定exteranl table將gcs資料連動至bigquery
-from google.cloud import bigquery
-
 def create_external_table_from_gcs(dataset_id, table_id, bucket_name, source_file_name):
     """將 GCS 中的資料設為 BigQuery 的外部表格"""
     #建立與bigquery的連線 
@@ -123,8 +121,6 @@ def create_external_table_from_gcs(dataset_id, table_id, bucket_name, source_fil
 
 
 #------- 創建一個dataset
-from google.cloud import bigquery
-
 def create_dataset(dataset_id):
     client = bigquery.Client()
 

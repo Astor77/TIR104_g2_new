@@ -5,7 +5,7 @@ import time
 
 API_TOKEN = "de467a5d"
 
-#抓取detail的id抓取detail的id
+
 def fetch_imdb_id():  
     #路徑會可能來自gcs
     movie_id_csv = pd.read_csv(r"tmdb_detail_raw.csv")
@@ -17,7 +17,7 @@ def fetch_imdb_id():
     return movie_id
 
 
-#omdb爬蟲函式
+
 def crawl_omdb_movies_data(movie_id, API_TOKEN):
 
     max_request = 1000
@@ -64,7 +64,7 @@ def crawl_omdb_movies_data(movie_id, API_TOKEN):
 
     return results, existing_id
 
-#二次抓取，設定好條件call crawl_omdb_movies_data_second()
+#二次抓取
 def crawl_omdb_movies_data_second(movie_id, exsiting_id):
 
     second_results = []
@@ -80,3 +80,4 @@ def crawl_omdb_movies_data_second(movie_id, exsiting_id):
     #叫函式呼叫第二次
     second_requests_data, second_existing_id = crawl_omdb_movies_data(second_results, API_TOKEN)
     print({second_requests_data}, {second_existing_id})
+    
