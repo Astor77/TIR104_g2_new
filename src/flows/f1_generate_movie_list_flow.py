@@ -1,13 +1,9 @@
-from tasks.Mapping_Task import map_movie_data_module as mmap, search_movie_api_module as msearch
+import json
+import pandas as pd
+from prefect import task, flow
+from tasks.Mapping_Task import map_movie_data_module as mmap, search_movie_api_module as msearch, selenium_data_module as mselenium
 from tasks.Storage_Task.save_file_module import save_as_csv,save_as_json
 import utils.path_config as p
-
-# task X 
-# 運用selenium_data_task.py（Selenium 抓年度票房資料）
-
-
-
-
 
 # task X e_tmdb_query_result()
 # 運用search_movie_api_task.py（用 API 進行搜尋
