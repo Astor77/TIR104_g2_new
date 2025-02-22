@@ -86,6 +86,23 @@ def tmdb_get_list_movies_data(tmdb_id_list: list, api_name: str, api_key: str ,l
         print(f"tmdb_id: {tmdb_id}, error: {err}")
 
 
+# 取得tmdb genres的清單
+def tmdb_get_genres_list(api_key, language: str="zh"):
+    try:
+        url = f"https://api.themoviedb.org/3/genre/movie/list?language={language}"
+        headers = {
+            "accept": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            movie_genres = response.json()
+            return movie_genres
+        else:
+            print(f"requests fail: {response.status_code}")
+    except Exception as err:
+        print(f"error: {err}")
+
 if __name__ == "__main__":
     print(tmdb_get_one_movie_data(550, DETAILS_API, ASTOR_TMDB_KEY))
     print("---------------------------------------------------------")
