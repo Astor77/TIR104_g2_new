@@ -1,42 +1,25 @@
 import pandas as pd
-import module_save_file as ms
+import tasks.Storage_Task.read_file_module as rfm
+import tasks.Storage_Task.save_file_module as sfm
+import utils.path_config as p
 
-#讀取兩個csv檔並存成兩個dataframe
-try:
-    dfTWMovie_sales = pd.read_csv("/workspaces/TIR104_g2/A0_raw_data/tw/TWMovie_weekly_data.csv")
+#task 1
+#讀取TWMovie_weekly_data.csv
+dir_path = p.raw_tw_weekly
+file_name = "TWMovie_weekly_data.csv"
+file_path = dir_path / file_name
+dfTWMovie_sales = rfm.read_file_to_df(file_path)
 
-    # print(dfTWMovie_sales.head())
-except Exception as e:
-    print(f"Error reading file: {e}")
+#task 2
+#讀取TWMovie2022-2025.csv
+dir_path = p.raw_tw_2022_2025
+file_name = "TWMovie2022-2025.csv"
+file_path = dir_path / file_name
+dfTWMovie = rfm.read_file_to_df(file_path)
 
+dfTWMovie_m = dfTWMovie[['MovieId', 'Year']]
 
-try:
-    file_path = "/workspaces/TIR104_g2/A0_raw_data/tw/TWMovie2022-2025.csv"
-    dfTWMovie = pd.read_csv(file_path)
-    dfTWMovie_m = dfTWMovie[['MovieId', 'Year']]
-    # print(dfTWMovie_m.head())
-except Exception as e:
-    print(f"Error reading file: {e}")
-
-
-
-try:
-    file_path = "/workspaces/TIR104_g2/A0_raw_data/tw/TWMovie_weekly_data2.csv"
-    dfTWMovie_weekly_raw = pd.read_csv(file_path, index_col= 0)
-    print(dfTWMovie_weekly_raw.head())
-except Exception as e:
-    print(f"Error reading file: {e}")
-
-# print(dfTWMovie_weekly_raw.dtypes)
-
-try:
-    file_path = "/workspaces/TIR104_g2/A1_temp_data/tw/TWMovie_weekly_data3.csv"
-    dfTWMovie_weekly_raw3 = pd.read_csv(file_path)
-    print(dfTWMovie_weekly_raw3.head())
-except Exception as e:
-    print(f"Error reading file: {e}")
-
-
+#task 3
 #left join 兩張表
 #多出 Year 欄位
 def merge_dataframe(df1: object, df2: object) -> pd.DataFrame:
@@ -55,7 +38,7 @@ def merge_dataframe(df1: object, df2: object) -> pd.DataFrame:
 
     return df_merge
 
-
+#task 4
 #分割欄位Date為兩欄Start Date, End Date
 def split_date_column(df: object) -> pd.DataFrame:
 
@@ -66,6 +49,26 @@ def split_date_column(df: object) -> pd.DataFrame:
 
     return df
 
+new_df = merge_dataframe(dfTWMovie_m, dfTWMovie_sales)
+dfTWMovie_weekly = split_date_column(new_df)
+
+#task 5
+#存成TWMovie_weekly_data2.csv
+sfm.save_as_csv(dfTWMovie_weekly, "TWMovie_weekly_data2.csv", "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/")
+
+#task 6
+#讀取TWMovie_weekly_data2.csv
+
+dir_path = p.raw_tw_weekly
+file_name = "TWMovie_weekly_data2.csv"
+file_path = dir_path / file_name
+
+dfTWMovie_weekly_raw = rfm.read_file_to_df(file_path)
+
+print(dfTWMovie_weekly_raw.dtypes)
+
+
+#task 7
 #更改資料型態為日期格式
 def column_to_datetime(df : object) -> pd.DataFrame:
     df['start_date'] = pd.to_datetime(df['start_date'], format = '%Y-%m-%d')
@@ -73,26 +76,39 @@ def column_to_datetime(df : object) -> pd.DataFrame:
     print(df.dtypes)
     return df
 
+#task 8
 #遮罩出start_date在2022-01-01之後且'Amount'欄位非空值的資料
 def filter_start_day_notna(df: object) -> pd.DataFrame:
     mask = (df['start_date'] >= pd.Timestamp('2022-01-01')) & (df['Amount'].notna())
     return df[mask]
 
-#輸出為最後dataframe
+dfTWMovie_weekly_raw2 = filter_start_day_notna(column_to_datetime(dfTWMovie_weekly_raw))
+
+#task 9
+#輸出為最後ER model dataframe，並更改欄位名稱與資料型態
 def dfTWMovie_weekly_df(df: object) -> pd.DataFrame:
     df = df[['MovieId', "start_date", "end_date", "Amount", "Tickets", "TheaterCount"]]
     df.rename(columns = {"MovieId": "tw_id", "start_date": "week_start_date", "end_date": "week_end_date", "Amount": "current_week_amount", "Tickets": "current_week_tickets", "TheaterCount": "current_week_theater_count"}, inplace = True)
+    convert_dict = {'tw_id': str}
+    df = df.astype(convert_dict)
     return df
+
+
+dfTWMovie_weekly_dataframe = dfTWMovie_weekly_df(dfTWMovie_weekly_raw2)
+print(dfTWMovie_weekly_dataframe.dtypes)
+#task 10
+#存成TWMovie_weekly_df.csv
+sfm.save_as_csv(dfTWMovie_weekly_dataframe, "TWMovie_weekly_df2.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
 
 if __name__ == "__main__":
 #     new_df = merge_dataframe(dfTWMovie_m, dfTWMovie_sales)
 #     dfTWMovie_weekly = split_date_column(new_df)
 #     # 存成csv
 #     ms.save_as_csv(dfTWMovie_weekly, "TWMovie_weekly_data2.csv", "TW")
-    dfTWMovie_weekly_raw2 = column_to_datetime(dfTWMovie_weekly_raw)
+    # dfTWMovie_weekly_raw2 = filter_start_day_notna(column_to_datetime(dfTWMovie_weekly_raw))
     #存成csv
-    ms.save_as_csv(filter_start_day_notna(dfTWMovie_weekly_raw2), "TWMovie_weekly_data3.csv", "/workspaces/TIR104_g2/A1_temp_data/tw/")
-    # dfTWMovie_weekly_dataframe = dfTWMovie_weekly_df(dfTWMovie_weekly_raw3)
+    # ms.save_as_csv(filter_start_day_notna(dfTWMovie_weekly_raw2), "TWMovie_weekly_data3.csv", "/workspaces/TIR104_g2/A1_temp_data/tw/")
+    # dfTWMovie_weekly_dataframe = dfTWMovie_weekly_df(dfTWMovie_weekly_raw2)
     # #存成csv
     # ms.save_as_csv(dfTWMovie_weekly_dataframe, "TWMovie_weekly_df.csv", "/workspaces/TIR104_g2/A1_temp_data")
-
+    pass
