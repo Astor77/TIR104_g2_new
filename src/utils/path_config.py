@@ -19,7 +19,7 @@ raw_tw_year_sales = raw_tw / "tw_movie_year_sales"
 raw_tw_publisher = raw_tw / "tw_publisher"
 raw_tw_tw_release_date = raw_tw / "tw_release_dates"
 raw_tw_search = raw_tw / "tw_search"
-
+raw_tw_genres_list = raw_tw / "tmdb_genres_list"
 
 
 ##temp_data 資料夾路徑
