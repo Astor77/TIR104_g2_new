@@ -1,5 +1,6 @@
 # selenium_data_module.py ->整合用selenium獲取資料的函式
 import json
+import glob
 import time
 import os
 import pandas as pd
@@ -9,8 +10,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import utils.path_config as p
-
-
 
 
 
@@ -286,6 +285,29 @@ def concat_df_json_distinct(year_list: list) -> pd.DataFrame:
     else:
         print("沒有找到任何 JSON 檔案。")
         return pd.DataFrame()
+
+
+#合併所有單片查詢json檔案
+def concat_tw_one_jsonfile(folder_path: str) -> pd.DataFrame:
+
+    # 找到所有 JSON 檔案
+    json_files = glob(os.path.join(folder_path, "*.json"))
+
+    # 建立一個空的 list 來儲存 DataFrame
+    df_list_TW = []
+
+    # 讀取每個 JSON 檔案並轉成 DataFrame
+    for file in json_files:
+        try:
+            df_TW = pd.read_json(file)  # 直接讀 JSON 檔
+            df_list_TW.append(df_TW)
+        except ValueError as e:
+            print(f"讀取 {file} 時發生錯誤: {e}")
+            continue
+
+    # 合併所有 DataFrame
+    merged_tw_one_df = pd.concat(df_list_TW, ignore_index=True)
+    return merged_tw_one_df
 
 
 

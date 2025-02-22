@@ -1,5 +1,4 @@
 import pandas as pd
-import module_save_file as ms
 import tasks.Storage_Task.read_file_module as rfm
 import tasks.Storage_Task.save_file_module as sfm
 import utils.path_config as p
@@ -18,7 +17,7 @@ file_name = "TWMovie2022-2025.csv"
 file_path = dir_path / file_name
 dfTWMovie = rfm.read_file_to_df(file_path)
 
-
+dfTWMovie_m = dfTWMovie[['MovieId', 'Year']]
 
 #task 3
 #left join 兩張表
@@ -50,9 +49,12 @@ def split_date_column(df: object) -> pd.DataFrame:
 
     return df
 
+new_df = merge_dataframe(dfTWMovie_m, dfTWMovie_sales)
+dfTWMovie_weekly = split_date_column(new_df)
+
 #task 5
 #存成TWMovie_weekly_data2.csv
-sfm.save_as_csv(dfTWMovie, "TWMovie_weekly_data2.csv", "/workspaces/TIR104_g2/A0_raw_data/tw/")
+sfm.save_as_csv(dfTWMovie_weekly, "TWMovie_weekly_data2.csv", "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/")
 
 #task 6
 #讀取TWMovie_weekly_data2.csv
@@ -63,7 +65,7 @@ file_path = dir_path / file_name
 
 dfTWMovie_weekly_raw = rfm.read_file_to_df(file_path)
 
-# print(dfTWMovie_weekly_raw.dtypes)
+print(dfTWMovie_weekly_raw.dtypes)
 
 
 #task 7
@@ -83,18 +85,20 @@ def filter_start_day_notna(df: object) -> pd.DataFrame:
 dfTWMovie_weekly_raw2 = filter_start_day_notna(column_to_datetime(dfTWMovie_weekly_raw))
 
 #task 9
-#輸出為最後ER model dataframe
+#輸出為最後ER model dataframe，並更改欄位名稱與資料型態
 def dfTWMovie_weekly_df(df: object) -> pd.DataFrame:
     df = df[['MovieId', "start_date", "end_date", "Amount", "Tickets", "TheaterCount"]]
     df.rename(columns = {"MovieId": "tw_id", "start_date": "week_start_date", "end_date": "week_end_date", "Amount": "current_week_amount", "Tickets": "current_week_tickets", "TheaterCount": "current_week_theater_count"}, inplace = True)
+    convert_dict = {'tw_id': str}
+    df = df.astype(convert_dict)
     return df
 
 
 dfTWMovie_weekly_dataframe = dfTWMovie_weekly_df(dfTWMovie_weekly_raw2)
-
+print(dfTWMovie_weekly_dataframe.dtypes)
 #task 10
 #存成TWMovie_weekly_df.csv
-sfm.save_as_csv(dfTWMovie_weekly_dataframe, "TWMovie_weekly_df.csv", "/workspaces/TIR104_g2/A1_temp_data")
+sfm.save_as_csv(dfTWMovie_weekly_dataframe, "TWMovie_weekly_df2.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
 
 if __name__ == "__main__":
 #     new_df = merge_dataframe(dfTWMovie_m, dfTWMovie_sales)

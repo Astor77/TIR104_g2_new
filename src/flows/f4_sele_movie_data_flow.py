@@ -6,9 +6,9 @@ from tasks.Storage_Task.save_file_module import save_as_csv,save_as_json
 import utils.path_config as p
 
 # task 1
-#讀取
+#讀取全國年度合併資料
 @task
-def e_tw_read_csv2() -> pd.DataFrame:
+def e_tw_read_csv() -> pd.DataFrame:
     dir_path = p.raw_tw_2022_2025
     file_name = "TWMovie2022-2025.csv"
     file_path = dir_path / file_name
@@ -29,8 +29,21 @@ def e_get_tw_one_movie_sale(MovieIds: list) -> None:
 def e_tw_one_movie_sale_add_id(MovieIds: list) -> None:
     mselenium.add_id_column(MovieIds)
 
+#task 4
+#合併所有單片查詢json檔案
+@task
+def t_concat_tw_one_movie_json(folder_path: str) -> pd.DataFrame:
+    merged_tw_one = mselenium.concat_tw_one_jsonfile(folder_path)
+    return merged_tw_one
 
-# task 4
+#task 5
+#儲存成csv
+@task
+def save_tw_one_movie_sale(merged_tw_one: object) -> None:
+    save_as_csv(merged_tw_one, "TWMovie_weekly_data.csv", p.raw_tw_weekly)
+    print(f"單片查詢已儲存到: {p.raw_tw_weekly}")
+
+# task 6
 # 台灣上映日期
 # 抓取全國單片查詢上顯示的release date
 @task
@@ -38,7 +51,7 @@ def e_get_tw_one_movie_release_date(MovieIds: list) -> list:
     release_date = mselenium.get_release_date(MovieIds)
     return release_date
 
-# task 5
+# task 7
 #儲存成csv
 @task
 def save_tw_one_movie_release_date(release_date) -> None:
@@ -47,10 +60,12 @@ def save_tw_one_movie_release_date(release_date) -> None:
 
 @flow(name="f4_sele_movie_data_flow")
 def sele_movie_data_flow() -> None:
-    dfTWMovie = e_tw_read_csv2()
+    dfTWMovie = e_tw_read_csv()
     MovieIds = dfTWMovie["MovieId"].loc[0:1]
     e_get_tw_one_movie_sale(MovieIds)
     e_tw_one_movie_sale_add_id(MovieIds)
+    merged_tw_one = t_concat_tw_one_movie_json(p.raw_tw_sales)
+    save_tw_one_movie_sale(merged_tw_one)
     release_date_list = e_get_tw_one_movie_release_date(MovieIds)
     save_tw_one_movie_release_date(release_date_list)
 
