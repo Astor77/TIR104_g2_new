@@ -1,6 +1,10 @@
+
+
 import pandas as pd
 import json
 from datetime import datetime
+import utils.path_config as p
+import opencc
 
 def omdb_raw_to_tmp(filename, columns):
     
@@ -248,3 +252,208 @@ print(dfTWMovie_weekly_dataframe.dtypes)
 sfm.save_as_csv(dfTWMovie_weekly_dataframe, "TWMovie_weekly_df2.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
 
 
+# detail temp
+def get_movie_details_temp(file_path: str | Path) -> pd.DataFrame:
+    details_raw = read_file_to_df(file_path)
+    details_raw["origin_country_first"] = details_raw["origin_country"].apply(lambda x: x[0] if x else None)
+
+    cols = ["id", "imdb_id"]  # 要轉換的欄位
+    details_raw.loc[:, cols] = details_raw.loc[:, cols].astype(str)
+    details_raw_temp = details_raw.loc[:, ["id", "imdb_id", "origin_country_first", "runtime", "budget", "revenue"]]
+    return details_raw_temp
+
+dir_path = p.raw_tw_details
+file_name = "tmdb_detail_raw_20250219.json"
+file_path = dir_path / file_name
+details_raw_temp = get_movie_details_temp(file_path)
+print(details_raw_temp.dtypes)
+
+file_name = "tmdb_detail_temp_20250219.csv"
+save_as_csv(details_raw_temp, file_name, p.temp_tw)
+
+
+# movie_genre_temp_df-> 本身就是從detail延伸出來的
+def get_movie_genres_temp(detail_raw: json) -> pd.DataFrame:
+    movie_genre = []
+    for movie in detail_raw:
+        tmdb_id = movie.get("id")
+        for genre in movie.get("genres"):
+            genre["tmdb_id"] = tmdb_id
+            movie_genre.append(genre)
+    movie_genre_df = pd.DataFrame(movie_genre)
+
+    movie_genre_df = movie_genre_df.loc[:, ["tmdb_id","id"]].astype(str)
+    return movie_genre_df
+
+# movie_genres_temp要先打開deatil_raw的json檔案
+# 才能呼叫函式處理
+dir_path = p.raw_tw_details
+file_name = "tmdb_detail_raw_20250219.json"
+file_path = dir_path / file_name
+with open(file_path, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+# movie_genres_temp
+movie_genres_temp = get_movie_genres_temp(data)
+file_name = "tmdb_movie_genres_temp_20250219.csv"
+save_as_csv(movie_genres_temp, file_name, p.temp_tw)
+
+
+
+# 將原始genres_list資料轉換成temp
+def get_tmdb_genres_list_temp(genres_list_raw: json):
+    genres_df = pd.DataFrame(genres_list_raw["genres"])
+    converter = opencc.OpenCC('s2t')
+    genres_df["name"] = list(map(converter.convert, genres_df["name"]))
+    genres_df_temp = genres_df.sort_values(by="id", ascending=True).reset_index(drop=True)
+    #rename可以放在final_data
+    #genres_df_final = genres_df_final.rename(columns={"id": "genres_id", "name": "genres_name"})
+    genres_df_temp["id"] = genres_df_temp["id"].apply(str)
+    return genres_df_temp
+
+# 先打開系列清單json檔案拿資料
+dir_path = p.raw_tw_genres_list
+file_name = "tmdb_genres_list_raw_20250219.json"
+file_path = dir_path / file_name
+with open(file_path, "r", encoding="utf-8") as f:
+    genres_list_raw = json.load(f)
+
+# genres_list_temp存檔
+genres_list_temp = get_tmdb_genres_list_temp(genres_list_raw)
+file_name = "tmdd_genres_list_temp_20250219"
+save_as_csv(genres_list_temp, file_name, p.temp_tw)
+
+
+# keywords
+def get_movie_keywords_temp(keywords_raw: json) -> pd.DataFrame:
+    movie_keywords = []
+    for movie in keywords_raw:
+        movie_id = movie["id"]
+        for keyword in movie.get("keywords"):
+            keyword["tmdb_id"] = movie_id
+            movie_keywords.append(keyword)
+    keyword_df_temp = pd.DataFrame(movie_keywords)
+
+    keyword_df_temp = keyword_df_temp.loc[:, ["tmdb_id","name"]].astype(str)
+    return keyword_df_temp
+
+# 先打開keyword清單json檔案拿資料
+dir_path = p.raw_tw_keywords
+file_name = "tmdb_keywords_raw_20250219.json"
+file_path = dir_path / file_name
+with open(file_path, "r", encoding="utf-8") as f:
+    keywords_raw = json.load(f)
+
+# keywords_temp存檔
+keyword_df_temp = get_movie_keywords_temp(keywords_raw)
+file_name = "tmdd_keywords_temp_20250219"
+save_as_csv(keyword_df_temp, file_name, p.temp_tw)
+
+
+
+# credits_temp
+dir_path = p.raw_tw_credits
+file_name = "tmdb_credits_raw_20250219.json"
+file_path = dir_path / file_name
+with open(file_path, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+def get_credits_temp_df(credits_raw: json) -> pd.DataFrame:
+    credits_temp = []
+    for movie in credits_raw:
+        movie_id = movie.get("id")
+        for cast in movie.get("cast")[:5]:
+            cast["movie_id"] = movie_id
+            credits_temp.append(cast)
+    credits_temp_df = pd.DataFrame(credits_temp)
+
+    #credits_temp_df = credits_temp_df.loc[:, ["movie_id", "id"]].astype(str)
+    return credits_temp_df
+
+
+credits_temp_df = get_credits_temp_df(data)
+credits_temp_df = credits_temp_df.loc[:, ["movie_id", "id"]].astype(str)
+save_as_csv(credits_temp_df, "tmdb_credits_top5_temp_20250219.csv", p.temp_tw)
+
+
+def get_directors_temp_df(directors_raw: json) -> pd.DataFrame:
+    directors_temp = []
+    for movie in directors_raw:
+        movie_id = movie.get("id")
+        for crew in movie.get("crew"):
+            if crew.get("job") == "Director":
+                crew["movie_id"] = movie_id
+                directors_temp.append(crew)
+    directors_temp_df = pd.DataFrame(directors_temp)
+
+    #director_temp_df = director_temp_df.loc[:, ["movie_id", "id"]].astype(str)
+    return directors_temp_df
+
+
+directors_temp_df = get_directors_temp_df(data)
+directors_temp_df = directors_temp_df.loc[:, ["movie_id", "id"]].astype(str)
+save_as_csv(directors_temp_df, "tmdb_directors_temp_20250219.csv", p.temp_tw)
+
+
+# 合併兩張表，drop_duplicate，成爲person表
+def get_person_temp_df():
+    credits_temp_df = get_credits_temp_df(data)
+    director_temp_df = get_directors_temp_df(data)
+
+    person_temp_df = pd.concat([credits_temp_df, director_temp_df])
+    person_temp_df = person_temp_df.loc[:, ["id", "gender", "name", "original_name", "known_for_department"]].astype(str)
+    person_temp_df = person_temp_df.drop_duplicates(subset="id")
+    return person_temp_df
+save_as_csv(person_temp_df, "tmdb_person_temp_20250219.csv", p.temp_tw)
+
+
+# f7 details with mapping tw_id
+
+def get_detail_merge_mapping():
+    dir_path = p.raw_tw_details
+    file_name = "tmdb_detail_raw_20250219.json"
+    file_path = dir_path / file_name
+    details_raw_temp = get_movie_details_temp(file_path)
+
+    dir_path = p.raw_tw_mapping
+    file_name = "v2_mapping_close_true.csv"
+    file_path = dir_path / file_name
+    tw_mapping = read_file_to_df(file_path)
+    tw_mapping = tw_mapping.astype(object).astype(str)
+    tw_mapping["id"] = tw_mapping["id"].str.replace(".0", "", regex=False)
+    save_as_csv(tw_mapping , "v2_mapping_close_true.csv", dir_path)
+
+    df = tw_mapping.merge(
+        details_raw_temp,
+        left_on = "id",
+        right_on = "id",
+        how="left"
+    )
+
+    file_name = "tmdb_detail_temp_20250219.csv"
+    save_as_csv(df, file_name, p.temp_tw)
+
+
+def get_detail_merge_mapping():
+    dir_path = p.raw_tw_details
+    file_name = "tmdb_detail_raw_20250219.json"
+    file_path = dir_path / file_name
+    details_raw_temp = get_movie_details_temp(file_path)
+
+    dir_path = p.raw_tw_mapping
+    file_name = "v2_mapping_close_true.csv"
+    file_path = dir_path / file_name
+    tw_mapping = read_file_to_df(file_path)
+    tw_mapping = tw_mapping.astype(object).astype(str)
+    tw_mapping["id"] = tw_mapping["id"].str.replace(".0", "", regex=False)
+    save_as_csv(tw_mapping , "v2_mapping_close_true.csv", dir_path)
+
+    df = tw_mapping.merge(
+        details_raw_temp,
+        left_on = "id",
+        right_on = "id",
+        how="left"
+    )
+
+    file_name = "tmdb_detail_temp_20250219.csv"
+    save_as_csv(df, file_name, p.temp_tw)

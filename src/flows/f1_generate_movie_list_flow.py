@@ -29,6 +29,8 @@ save_as_json(total_search_results, file_name, p.raw_tw_search)
 
 # mapping的["Year", "MovieId", "Name", "id"]結果存為單一值欄位的csv
 df_mapping_select = mmap.drop_not_necessary(df_mapping_result)
+df_mapping_select.astype(object).astype(str)
+df_mapping_select["id"] = df_mapping_select["id"].str.replace(".0", "", regex=False)
 file_name = "v2_mapping_close_true.csv"
 save_as_csv(df_mapping_select, file_name, p.raw_tw_mapping)
 
