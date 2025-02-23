@@ -43,5 +43,5 @@ def data_merge_json(f1, f2, key, output_file):
 #data_merge_csv()
 #資料整理
 #merge資料後去除不需要的欄位
-def cd_column():
-    df = df.drop(["column"], axis=1)
+def cd_column(cloumn_list: list) -> pd.DataFrame:
+    df = df.drop(cloumn_list, axis=1)
