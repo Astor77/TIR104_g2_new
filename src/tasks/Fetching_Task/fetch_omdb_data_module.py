@@ -4,11 +4,17 @@ import pandas as pd
 import requests
 import time
 import json
+from prefect import task
 
-API_TOKEN = "de467a5d"
+#API_TOKEN = "de467a5d"
+API_TOKEN = "5271bd7c"
+
 timestamp = datetime.now().strftime("%Y-%m-%d")
+#第二次存檔function用
+filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_2025-02-23.json"
 
 #將details的id抓取出來
+@task
 def fetch_imdb_id():  
     #路徑會可能來自gcs
     details_data = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_details/tmdb_detail_raw_20250219.json"
@@ -32,6 +38,7 @@ def fetch_imdb_id():
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
+@task
 def crawl_omdb_movies_data(movie_id, API_TOKEN):
     max_request = 1000
     count_requests = 0
@@ -68,6 +75,7 @@ def crawl_omdb_movies_data(movie_id, API_TOKEN):
 
 #-------------------------------------------------------------#
 #存raw_data的function存
+@task
 def save_data(results):
     file = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_{timestamp}.json"
     with open(file, "w", encoding="utf-8") as f:
@@ -75,6 +83,7 @@ def save_data(results):
 
 #-------------------------------------------------------------#
 #存id的function
+@task
 def id_list_save(id_list):
     first_requests = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_{timestamp}.csv"
     df = pd.DataFrame({"imdb_id": id_list})
@@ -84,23 +93,39 @@ def id_list_save(id_list):
 
 
 
-#第二次打API打API
+#第二次打API
+@task
 def crawl_omdb_movies_data_second():
     #讀全部id
     df_1 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/tmdb_imdb_ids.csv")
     #讀已求取過id  
     df_2 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_2025-02-23.csv")
-
+    #print(df_1, df_2)
     #取出df2不再df1內的id
+    second_requests_id = df_1[~df_1["imdb_id"].isin(df_2["imdb_id"])]
+    requests_id = second_requests_id["imdb_id"].tolist()
+    print(requests_id)
+
+    #呼叫function爬蟲
+    result, _ = crawl_omdb_movies_data(requests_id, API_TOKEN)
+    #呼叫存檔函式
+    save_data_second(result, filepath)
 
 
-    
+#------------------------------------------------------------------------
+#二次存檔
+@task
+def save_data_second(result, path):
 
-    
-    #叫函式呼叫第二次
-    second_requests_data, second_existing_id = crawl_omdb_movies_data(second_results, API_TOKEN)
-    print({second_requests_data}, {second_existing_id})
-
+    file = path
+    # 先讀檔
+    with open(file, "r") as f:
+        existing_data = json.load(f)
+    # 加入新的資料
+    existing_data.extend(result)
+    # 再存檔
+    with open(file, "w") as f:
+        json.dump(existing_data, f, indent=4)
 
 #---------------------------------------------------------------------
 #呼叫流程
@@ -109,5 +134,7 @@ def crawl_omdb_movies_data_second():
 #save_data(results)
 #id_list_save(id_list)
 
+
 crawl_omdb_movies_data_second()
+
 

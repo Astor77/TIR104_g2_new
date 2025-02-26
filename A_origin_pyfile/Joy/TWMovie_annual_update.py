@@ -42,23 +42,37 @@ def compare_release_date(df: object) -> pd.DataFrame:
     # print(df.dtypes)
     return df
 
+#task 5
+#清洗production_country 欄位
+def clean_region(df:object)-> pd.DataFrame:
+    df['Region2'] = df['Region'].str.split('/', n=1).str[0]
+    df['Region2'] = df['Region2'].str.split('##', n=1).str[0]
+    df['Region2'] = df['Region2'].str.split('、', n=1).str[0]
+    df['Region2'].replace("法", "法國", inplace= True)
+
+    df['Region2'].replace("大陸", "中國", inplace= True)
+    df['Region2'].replace("中國大陸", "中國", inplace= True)
+    df['Region2'].replace('台灣', "中華民國", inplace= True)
+
+    return df
+
 #task6 Transform
 #整理為movie_detail dataframe 更名欄位名稱，並轉換資料型態
 def to_TWMovie_dataframe(df: object) -> pd.DataFrame:
 
-    df = df[['MovieId', 'Name', "tw_first_release_date"]]
-    df.rename(columns= {"MovieId": "tw_id", "Name": "tw_title"}, inplace= True)
+    df = df[['MovieId', 'Name', 'Region2', "tw_first_release_date"]]
+    df.rename(columns= {"MovieId": "tw_id", "Name": "tw_title", "Region2": "production_country"}, inplace= True)
 
     convert_dict = {'tw_id': str, 'tw_title': str}
     df = df.astype(convert_dict)
 
     return df
 
-dfTWMovie_fin = to_TWMovie_dataframe(compare_release_date(dfTWMovie_new))
+dfTWMovie_fin = to_TWMovie_dataframe(clean_region(compare_release_date(dfTWMovie_new)))
 # print(dfTWMovie_fin.dtypes)
 #task7
 #存成TWMovie_df2.csv
-# sfm.save_as_csv(dfTWMovie_fin, "TWMovie_df3.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
+sfm.save_as_csv(dfTWMovie_fin, "TWMovie_df.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
 
 #task8 Transform
 # 整理為movie_tw_year_amount dataframe 更名欄位名稱並轉換型別
@@ -77,14 +91,12 @@ def to_TWMovie_annual_dataframe(df: object) -> pd.DataFrame:
     return df
 
 dfTWMovie_annual = to_TWMovie_annual_dataframe(dfTWMovie)
-print(dfTWMovie_annual.dtypes)
+# print(dfTWMovie_annual.dtypes)
 
 #task9
 #存成TWMovie_annual_df.csv
-sfm.save_as_csv(dfTWMovie_annual, "TWMovie_annual_df3.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
+# sfm.save_as_csv(dfTWMovie_annual, "TWMovie_annual_df3.csv", "/workspaces/TIR104_g2_new/A1_temp_data/tw/")
 
 
 
 
-# ms.save_as_csv(to_TWMovie_dataframe(compare_release_date(dfTWMovie_new)), "TWMovie_df2.csv", "/workspaces/TIR104_g2/A1_temp_data/tw/")
-# ms.save_as_csv(to_TWMovie_annual_dataframe(dfTWMovie_distinct), "TWMovie_annual_df.csv", "/workspaces/TIR104_g2/A1_temp_data/tw/")
