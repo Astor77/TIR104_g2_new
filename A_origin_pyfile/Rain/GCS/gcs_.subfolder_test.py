@@ -1,5 +1,5 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\project_2\tir10402611-a43374c6285d.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"
 from google.cloud import storage
 
 def upload_folder_to_gcs(bucket_name, local_folder):
