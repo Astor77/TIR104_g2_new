@@ -22,12 +22,48 @@ raw_tw_search = raw_tw / "tw_search"
 raw_tw_genres_list = raw_tw / "tmdb_genres_list"
 
 
-##temp_data 資料夾路徑
+## file檔案名稱:統一
+mapping_csv = "tw_tmdb_mapping.csv"
+details_json = "tmdb_details.json"
+omdb_info_json = "omdb_info.json"
+credits_json = "tmdb_credits.json"
+keywords_json = "tmdb_keywords.json"
+release_date_json = "tmdb_release_dates.json"
+credits_json = "tmdb_credits.json"
+search_json = "tmdb_search_results.json"
+genres_list_json = "tmdb_genres_list.json"
+
+tw_annual_dup_csv = "TWMovie2022-2025_raw.csv"
+tw_annual_not_dup_csv = "TWMovie2022-2025.csv"
+tw_release_date_csv = "tw_release_dates.csv"
+tw_weekly_csv = "TWMovie_weekly_data.csv"
+tw_weekly2_csv = "TWMovie_weekly_data2.csv"
+
+
+
+#temp_data 資料夾路徑
 temp = Path("/workspaces/TIR104_g2_new/A1_temp_data/")
 temp_tw = temp / "tw"
 temp_global = temp / "global"
 
-##final_data 資料夾路徑
+## file檔案名稱:統一
+details_csv = "tmdb_details.csv"
+release_date_csv = "tmdb_release_dates.csv"
+cast_top5_csv = "tmdb_cast_top5.csv"
+director_csv = "tmdb_directors.csv"
+person_csv = "tmdb_person.csv"
+keywords_csv = "tmdb_keywords.csv"
+genres_csv = "tmdb_movie_genres.csv"
+genres_list_csv = "tmdb_genres_list.csv"
+omdb_info_csv = "omdb_info.csv"
+
+tw_annual_csv = "TWMovie_annual_df3.csv"
+tw_details_csv = "TWMovie_details.csv"
+tw_weekly_csv = "TWMovie_weekly_df2.csv"
+
+
+
+#final_data 資料夾路徑
 final = Path("/workspaces/TIR104_g2_new/A2_final_data/")
 final_tw = final / "tw"
 final_global = final / "global"
