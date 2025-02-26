@@ -196,7 +196,7 @@ San Marino,SM,聖馬利諾
 Sao Tome and Principe,ST,聖多美普林西比
 Saudi Arabia,SA,沙烏地阿拉伯
 Senegal,SN,塞內加爾
-Serbia,RS,塞爾維亞
+Serbia,RS,"<span class=""cite-bracket"""
 Seychelles,SC,塞席爾
 Sierra Leone,SL,獅子山
 Singapore,SG,新加坡
@@ -216,7 +216,7 @@ Svalbard and Jan Mayen,SJ,斯瓦爾巴和揚馬延
 Sweden,SE,瑞典
 Switzerland,CH,瑞士
 Syrian Arab Republic,SY,敘利亞
-Taiwan,TW,台灣
+Taiwan,TW,"<span class=""cite-bracket"""
 Tajikistan,TJ,塔吉克
 "Tanzania, United Republic of",TZ,坦尚尼亞
 Thailand,TH,泰國
