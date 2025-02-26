@@ -35,12 +35,12 @@ def clean_tw_tmdb_map_column(tw ,tmdb):
 
 
 
-def merge_two_df(df1: pd.DataFrame, df2: pd.DataFrame, join: str="left", df1_col: str="Name_map", df2_col: str="title_map"):
+def merge_two_df(df1: pd.DataFrame, df2: pd.DataFrame, how: str="left", df1_col: str="Name_map", df2_col: str="title_map"):
     df_mapping = df1.merge(
         # 因為比對結果，會有重複電影名稱，僅保留第一筆
         df2.drop_duplicates(subset=[df2_col]),
 
-        how="left",
+        how=how,
         #df_tw_annual
         left_on=df1_col,
         #df_search_results

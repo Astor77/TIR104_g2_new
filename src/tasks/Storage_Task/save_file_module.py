@@ -8,7 +8,7 @@ from utils.write_log_task import write_save_log
 
 # save_as_csv()
 # 儲存 DataFrame 為 CSV 檔案
-def save_as_csv(dataframe: pd.DataFrame, file_name: str, dir_path: str | Path) -> None:
+def save_as_csv(dataframe: pd.DataFrame, dir_path: str | Path, file_name: str) -> None:
     """
     將 DataFrame 儲存為 CSV 檔案
     Args:
@@ -21,6 +21,17 @@ def save_as_csv(dataframe: pd.DataFrame, file_name: str, dir_path: str | Path) -
         csv_file_path = dir_path / file_name
         # 確保目錄存在
         csv_file_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # 轉換數據型態，確保 BigQuery 兼容
+        for col in dataframe.columns:
+            if pd.api.types.is_integer_dtype(dataframe[col]):
+                dataframe[col] = dataframe[col].astype("Int64")  # 保持 NaN
+            elif pd.api.types.is_float_dtype(dataframe[col]):
+                dataframe[col] = dataframe[col].astype("float64")  # 保持 NaN
+            elif pd.api.types.is_object_dtype(dataframe[col]):
+                dataframe[col] = dataframe[col].astype("string")  # 確保是 string
+            elif pd.api.types.is_datetime64_any_dtype(dataframe[col]):
+                dataframe[col] = dataframe[col].dt.strftime('%Y-%m-%d %H:%M:%S')  # 轉成 BigQuery 日期格式
         dataframe.to_csv(csv_file_path, encoding="utf-8-sig", index=False)
 
         write_save_log("save_as_csv", file_name, "success", "檔案儲存成功", csv_file_path)
