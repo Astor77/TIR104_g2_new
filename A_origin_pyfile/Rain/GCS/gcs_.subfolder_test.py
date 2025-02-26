@@ -1,5 +1,5 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\Projects\project-tir10402-0013120778be.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"
 from google.cloud import storage
 
 def upload_folder_to_gcs(bucket_name, local_folder):
@@ -35,10 +35,11 @@ def upload_folder_to_gcs(bucket_name, local_folder):
 
 if __name__ == "__main__":
     # 設定 GCS 儲存桶名稱
-    GCS_BUCKET_NAME = "tir-104-02"
+    GCS_BUCKET_NAME = "tir104-bucket-02"
 
     # 設定要上傳的本機目錄（專案目錄）
-    LOCAL_PROJECT_FOLDER = "C:\Projects\TIR104_g2\P_Rain"
+    LOCAL_PROJECT_FOLDER = "C:\project_2\TIR104_g2_new\A_origin_pyfile\Rain\GCS"
 
     # 執行上傳
     upload_folder_to_gcs(GCS_BUCKET_NAME, LOCAL_PROJECT_FOLDER)
+
