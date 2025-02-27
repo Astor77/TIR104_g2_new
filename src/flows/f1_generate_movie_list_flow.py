@@ -11,6 +11,10 @@ import utils.path_config as p
 query_list = mmap.get_tw_movie_clean_name_list()
 total_search_results = msearch.tmdb_list_search_results(query_list)
 
+# task X l_save_raw_data()
+# 把剛剛搜尋的結果存成json
+file_name = "tw_search_results.json"
+save_as_json(total_search_results, p.raw_tw_search, file_name)
 
 
 
@@ -22,22 +26,16 @@ mmap.clean_tw_tmdb_map_column(tw, tmdb)
 df_mapping_result = mmap.merge_two_df(df1=tw, df2=tmdb, join="left", df1_col="Name_map", df2_col="title_map")
 
 
-# task X l_save_raw_data()
-# 把剛剛搜尋的結果存成json
-file_name = "tw_search_results_raw.json"
-save_as_json(total_search_results, file_name, p.raw_tw_search)
 
 # mapping的["Year", "MovieId", "Name", "id"]結果存為單一值欄位的csv
 df_mapping_select = mmap.drop_not_necessary(df_mapping_result)
-file_name = "v2_mapping_close_true.csv"
-save_as_csv(df_mapping_select, file_name, p.raw_tw_mapping)
-
-
+df_mapping_select = df_mapping_select.astype(object).astype("string")
+df_mapping_select["id"] = df_mapping_select["id"].replace(".0", "", regex=False)
+file_name = "tw_tmdb_mapping.csv"
+save_as_csv(df_mapping_select, p.raw_tw_mapping, file_name)
 
 
 # task X l_raw_data_upload_gcs
-# 運用gcs_task.py
-# 把 selenium 年度、單片查詢、search的json結果放上GCS -> raw_data
 # 將mapping的csv放上GCS -> temp_data
 
 
