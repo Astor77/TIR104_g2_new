@@ -12,7 +12,7 @@ dfTWMovie = pd.read_csv(file_path, engine = "python")
 # print(dfTWMovie)
 
 #測試用
-MovieIds = dfTWMovie["tw_id"].loc[0:1]
+MovieIds = dfTWMovie["tw_id"].loc[2:9]
 print(MovieIds)
 
 
@@ -50,7 +50,7 @@ def download_rename(MovieIds: list) -> None:
 
         # 連結到目標網站
         driver.get(url)
-        time.sleep(3)
+        time.sleep(4)
         # By種類參看 https://selenium-python.readthedocs.io/locating-elements.html
         # 搜尋json按鈕，然後模擬點擊該按鈕
         driver.find_element(By.XPATH, "/html/body/main/section[4]/div[1]/div/button[2]").click()
@@ -69,7 +69,7 @@ def download_rename(MovieIds: list) -> None:
                     file_downloaded = True
                     break
         
-        time.sleep(2)
+        time.sleep(1)
     # 關閉driver
     driver.quit()
 
