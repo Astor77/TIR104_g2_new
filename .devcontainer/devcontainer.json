@@ -47,10 +47,7 @@
     "TIR104-g2-new",
     "--env-file",
     "./.env",
-//  "-v",
-//  "C:/Users/Shangwei Yang/Downloads/sele:/workspaces/TIR104_g2/A0_raw_data/tw/test_sele",
-//  "-v",
-//  "宿主機資料夾2路徑:目前container的某個資料夾2路徑",
-
+    "-v",
+    "C:/Users/Tibame/selenium:/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
   ]
 }

@@ -7,7 +7,7 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-file_path = "/workspaces/TIR104_g2/A1_temp_data/tw/TWMovie_df2.csv"
+file_path = "/workspaces/TIR104_g2_new/A1_temp_data/tw/TWMovie_details.csv"
 dfTWMovie = pd.read_csv(file_path, engine = "python")
 # print(dfTWMovie)
 
@@ -22,7 +22,7 @@ def download_rename(MovieIds: list) -> None:
 
     #下載路徑
     # DOWNLOAD_DIR = "/workspaces/TIR104_g2/P_Joy/test"
-    DOWNLOAD_DIR = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele"
+    DOWNLOAD_DIR = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
