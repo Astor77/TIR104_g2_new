@@ -5,7 +5,6 @@ import time
 from datetime import datetime, timedelta, timezone
 from glob import glob
 
-import module_save_file as ms
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -36,7 +35,7 @@ def download_rename(MovieIds: list) -> None:
 
     #下載路徑
     # DOWNLOAD_DIR = "/workspaces/TIR104_g2/P_Joy/test"
-    DOWNLOAD_DIR = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele"
+    DOWNLOAD_DIR = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
@@ -92,8 +91,8 @@ def download_rename(MovieIds: list) -> None:
 def add_id_column(MovieIds: list) -> None:
     for MovieId in MovieIds:
         try:
-            input_path = f"/workspaces/TIR104_g2/A0_raw_data/tw/test_sele/{MovieId}.json"
-            output_path = f"/workspaces/TIR104_g2/A0_raw_data/tw/test_sele/weekly/{MovieId}.json"
+            input_path = f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/{MovieId}.json"
+            output_path = f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_sales/{MovieId}.json"
             
             with open(input_path, "r", encoding="utf-8-sig") as j:
                 TWMovie_in = json.load(j)
@@ -138,7 +137,7 @@ def Concat_jsonfile(folder_path: str) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    file_path = "/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025.csv"
+    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025.csv"
     dfTWMovie = read_csv(file_path)
     #測試用
     MovieIds = dfTWMovie["MovieId"].loc[0:1]
