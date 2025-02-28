@@ -104,7 +104,7 @@ def concat_df_json(year_list: list) -> pd.DataFrame:
     all_dfs = []  # 用來儲存每個年份的 DataFrame
     #2022-2025年資料
     for year in year_list:
-        json_path = Path(f"/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
+        json_path = Path(f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
         if json_path.exists():
             try:
 
@@ -133,7 +133,7 @@ def concat_df_json_distinct(year_list: list) -> pd.DataFrame:
     all_dfs = []  # 用來儲存每個年份的 DataFrame
     #2022-2025年資料
     for year in year_list:
-        json_path = Path(f"/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
+        json_path = Path(f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
         if json_path.exists():
             try:
 
