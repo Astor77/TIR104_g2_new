@@ -48,6 +48,73 @@ def upload_to_bq_release_date():
     gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
 
 # task4
-
+def upload_to_bq_cast_top5_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "cast_top5_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
 
 # task5
+def upload_to_bq_director_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "director_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task6
+def upload_to_bq_person_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "person_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task7
+def upload_to_bq_keywords_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "keywords_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task8
+def upload_to_bq_genres_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "genres_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task9
+def upload_to_bq_genres_list_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "genres_list_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task10
+def upload_to_bq_tw_annual_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "tw_annual_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task11
+def upload_to_bq_tw_details_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "tw_details_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
+
+# task12
+def upload_to_bq_tw_weekly_csv():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "tw_weekly_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
