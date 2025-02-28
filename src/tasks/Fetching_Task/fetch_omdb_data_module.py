@@ -14,7 +14,6 @@ timestamp = datetime.now().strftime("%Y-%m-%d")
 filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_2025-02-23.json"
 
 #將details的id抓取出來
-@task
 def fetch_imdb_id():  
     #路徑會可能來自gcs
     details_data = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_details/tmdb_detail_raw_20250219.json"
@@ -38,7 +37,6 @@ def fetch_imdb_id():
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
-@task
 def crawl_omdb_movies_data(movie_id, API_TOKEN):
     max_request = 1000
     count_requests = 0
@@ -75,26 +73,25 @@ def crawl_omdb_movies_data(movie_id, API_TOKEN):
 
 #-------------------------------------------------------------#
 #存raw_data的function存
-@task
 def save_data(results):
     file = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_{timestamp}.json"
     with open(file, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
+    print("成功儲存第一天的rawdata")
 
 #-------------------------------------------------------------#
 #存id的function
-@task
 def id_list_save(id_list):
     first_requests = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_{timestamp}.csv"
     df = pd.DataFrame({"imdb_id": id_list})
     df.to_csv(first_requests, index=False, encoding="utf-8-sig")
+    print("儲存第一天求取的id")
 
 #-------------------------------------------------------------#
 
 
 
 #第二次打API
-@task
 def crawl_omdb_movies_data_second():
     #讀全部id
     df_1 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/tmdb_imdb_ids.csv")
@@ -114,7 +111,6 @@ def crawl_omdb_movies_data_second():
 
 #------------------------------------------------------------------------
 #二次存檔
-@task
 def save_data_second(result, path):
 
     file = path
