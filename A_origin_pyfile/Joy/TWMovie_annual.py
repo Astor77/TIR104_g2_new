@@ -6,6 +6,7 @@ from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from tasks.Storage_Task.save_file_module import save_as_csv
 
 
 #Task 1 Extract
@@ -161,29 +162,28 @@ def concat_df_json_distinct(year_list: list) -> pd.DataFrame:
 if __name__ == '__main__':
 
     # 2022-2025年資料
-    year_list = [2022, 2023]
+    year_list = [2022, 2023, 2024, 2025]
     # 2025年更新日期
-    date = "02-27"
+    date = "02-28"
     #下載全國2022-2025的年票房資料json檔案
     # download_annual_rename(year_list, date)
 
     # 使用範例
-    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022年票房資料_raw.json"
-    output_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/2022年票房資料.json" 
-    cleaned_data = clean_json_file(file_path)
-    if cleaned_data:
-        save_json_file(extract_json(cleaned_data), output_path)
-        print(f"清理後的 JSON 已儲存到: {output_path}")
+    # file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2025年票房資料_raw.json"
+    # output_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/2025 年票房資料.json" 
+    # cleaned_data = clean_json_file(file_path)
+    # if cleaned_data:
+    #     save_json_file(extract_json(cleaned_data), output_path)
+    #     print(f"清理後的 JSON 已儲存到: {output_path}")
     
 
     #合併2022, 2023, 2024, 2025年的資料
-    # combined_df = concat_df_json(year_list)
-    # print(combined_df.head())
-    # #存成csv檔
-    # ms.save_as_csv(combined_df, "TWMovie2022-2025_raw.csv", "/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_2022-2025/")
-   
-    # combined_df2 = concat_df_json_distinct(year_list)
-    # ms.save_as_csv(combined_df2, "TWMovie2022-2025.csv", "/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_2022-2025/")
+    combined_df = concat_df_json(year_list)
+    print(combined_df.head())
+    #存成csv檔
+    save_as_csv(combined_df, "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/", "TWMovie2022-2025_raw.csv")
+    combined_df2 = concat_df_json_distinct(year_list)
+    save_as_csv(combined_df2, "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/", "TWMovie2022-2025.csv")
 
 
 

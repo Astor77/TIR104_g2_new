@@ -182,40 +182,25 @@ def check_gcp_project():
 
 #-------------------------------------------------------------
 
-def upload_tmp_to_bq():
+def upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH):
     # 設定 GCP 資訊
-    PROJECT_ID = "your-gcp-project-id"  # GCP 專案 ID
-    DATASET_ID = "your_dataset_id"  # BigQuery 資料集名稱
-    TABLE_ID = "your_table_id"  # BigQuery 表格名稱
-    CSV_FILE_PATH = "your_file.csv"  # CSV 檔案路徑
-
-    # 建立 BigQuery 客戶端
-    client = bigquery.Client(project=PROJECT_ID)
+    #PROJECT_ID = "your-gcp-project-id"  # GCP 專案 ID
+    #DATASET_ID = "your_dataset_id"  # BigQuery 資料集名稱
+    #TABLE_ID = "your_table_id"  # BigQuery 表格名稱
+    #CSV_FILE_PATH = "your_file.csv"  # CSV 檔案路徑
 
     # 讀取 CSV 檔案
     df = pd.read_csv(CSV_FILE_PATH)
 
     # 設定 BigQuery 資料表的完整 ID
     table_ref = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
-
-    # 指定 Schema（明確定義每個欄位的型態）
-    schema = [
-        bigquery.SchemaField("id", "INTEGER"),  # id 為整數
-        bigquery.SchemaField("name", "STRING"),  # name 為字串
-        bigquery.SchemaField("price", "FLOAT"),  # price 為浮點數
-        bigquery.SchemaField("created_at", "TIMESTAMP"),  # 日期時間
-    ]
-
     # 設定上傳配置
     job_config = bigquery.LoadJobConfig(
-        schema=schema,  # 指定 Schema
-        write_disposition="WRITE_APPEND",  # "WRITE_TRUNCATE" 覆蓋 | "WRITE_APPEND" 追加
+        write_disposition="WRITE_TRUNCATE",  # "WRITE_TRUNCATE" 覆蓋 | "WRITE_APPEND" 追加
         source_format=bigquery.SourceFormat.CSV,
         skip_leading_rows=1,  # 跳過 CSV 標題列
     )
-
     # 上傳 DataFrame 到 BigQuery
-    job = client.load_table_from_dataframe(df, table_ref, job_config=job_config)
+    job = bigquery_client.load_table_from_dataframe(df, table_ref, job_config=job_config)
     job.result()  # 等待上傳完成
-
     print(f"成功上傳 {len(df)} 筆資料到 BigQuery：{table_ref}")

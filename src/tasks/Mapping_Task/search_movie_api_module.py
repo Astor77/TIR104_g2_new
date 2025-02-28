@@ -40,8 +40,8 @@ def tmdb_search_results(query: str, language: str="zh-TW", API_KEY: str = ASTOR_
             if search["results"]:
                 search_results = search["results"]
                 return search_results
-            else:
-                print(f"關鍵字：{query}，查無相關結果")
+            # else:
+            #     print(f"關鍵字：{query}，查無相關結果")
         else:
             print(f"requests fail: {response.status_code}, query: {query}")
     except Exception as err:
