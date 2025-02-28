@@ -12,5 +12,12 @@ selenium
 numpy
 google-cloud-bigquery
 google-cloud-storage
+opencc-python-reimplemented
+bigframes
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+prefect-gcp
 
 
