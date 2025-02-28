@@ -3,8 +3,8 @@ from prefect import task, flow
 from tasks.Fetching_Task import fetch_omdb_data_module as odm
 
 
-#API_TOKEN = "de467a5d"
-API_TOKEN = "5271bd7c"
+API_TOKEN = "de467a5d"
+#API_TOKEN = "5271bd7c"
 #時間戳記
 timestamp = datetime.now().strftime("%Y-%m-%d")
 #第二次存檔function用

@@ -1,6 +1,6 @@
 # selenium_data_module.py ->整合用selenium獲取資料的函式
 import json
-import glob
+from glob import glob
 import time
 import os
 import pandas as pd
