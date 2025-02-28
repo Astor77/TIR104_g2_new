@@ -7,7 +7,7 @@ from tasks.Storage_Task import gcs_module as gm
 
 gcp_credentials_block = GcpCredentials.load("tir104-02")
 bigquery_client = gm.get_credentials_bigquery(gcp_credentials_block)
-#print(type(bigquery_client))  
+#print(type(bigquery_client))
 
 def create_dataset(dataset_id, client):
     dataset_ref = bigquery.DatasetReference(client.project, dataset_id)
