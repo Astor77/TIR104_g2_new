@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 import time
 import json
-from prefect import task
+from utils import path_config as pc
 
 #API_TOKEN = "de467a5d"
 API_TOKEN = "5271bd7c"
@@ -16,7 +16,7 @@ filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_20
 #將details的id抓取出來
 def fetch_imdb_id():  
     #路徑會可能來自gcs
-    details_data = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_details/tmdb_detail_raw_20250219.json"
+    details_data = pc.raw_tw_details/pc.details_json
     with open(details_data, "r", encoding="utf-8") as f:
         movie_id_json= json.load(f)
     #movie_id_csv = pd.read_json(r"tmdb_detail_raw_20250219.json")
@@ -74,7 +74,7 @@ def crawl_omdb_movies_data(movie_id, API_TOKEN):
 #-------------------------------------------------------------#
 #存raw_data的function存
 def save_data(results):
-    file = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_{timestamp}.json"
+    file = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/{pc.omdb_info_json}"
     with open(file, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
     print("成功儲存第一天的rawdata")
@@ -82,7 +82,7 @@ def save_data(results):
 #-------------------------------------------------------------#
 #存id的function
 def id_list_save(id_list):
-    first_requests = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_{timestamp}.csv"
+    first_requests = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_id.csv"
     df = pd.DataFrame({"imdb_id": id_list})
     df.to_csv(first_requests, index=False, encoding="utf-8-sig")
     print("儲存第一天求取的id")
@@ -125,12 +125,12 @@ def save_data_second(result, path):
 
 #---------------------------------------------------------------------
 #呼叫流程
-#imdb_ids = fetch_imdb_id()
-#results, id_list = crawl_omdb_movies_data(imdb_ids, API_TOKEN)
-#save_data(results)
-#id_list_save(id_list)
+imdb_ids = fetch_imdb_id()
+results, id_list = crawl_omdb_movies_data(imdb_ids, API_TOKEN)
+save_data(results)
+id_list_save(id_list)
 
 
-crawl_omdb_movies_data_second()
+#crawl_omdb_movies_data_second()
 
 

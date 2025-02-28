@@ -61,6 +61,99 @@ def upload_tmdb_details():
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 # task4
-
+def upload_tmdb_details_en():
+    bucket_name = "tmdb_details_en"
+    source_file_name = pc.raw_tw_details_en
+    destination_blob_name = f"raw_data/{timestamp}/{pc.details_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 # task5
+def upload_tmdb_keywords():
+    bucket_name = "tmdb_keywords"
+    source_file_name = pc.raw_tw_keywords
+    destination_blob_name = f"raw_data/{timestamp}/{pc.keywords_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task6
+def upload_tmdb_release_date():
+    bucket_name = "tmdb_release_date"
+    source_file_name = pc.raw_tw_tmdb_release_date
+    destination_blob_name = f"raw_data/{timestamp}/{pc.release_date_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# taks7
+def upload_tmdb_release_date():
+    bucket_name = "tmdb_release_date"
+    source_file_name = pc.raw_tw_tmdb_release_date
+    destination_blob_name = f"raw_data/{timestamp}/{pc.release_date_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task8
+def upload_tw_mapping_tmdb():
+    bucket_name = "tw_mapping_tmdb"
+    source_file_name = pc.raw_tw_mapping
+    destination_blob_name = f"raw_data/{timestamp}/{pc.mapping_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task9    #要確認使用哪一個檔名(我先用copy path)
+def upload_tw_movie_2022_2025_dup():
+    bucket_name = "tw_movie_2022_2025"
+    source_file_name = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025_raw.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task9-1   #要確認使用哪一個檔名(我先用copy path)
+def upload_tw_movie_2022_2025_not_dup():
+    bucket_name = "tw_movie_2022_2025"
+    source_file_name = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025_raw2.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_not_dup_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task10   #這式2000多個json不用上傳
+def upload_tw_movie_sales():
+    bucket_name = "tw_movie_sales"
+    source_file_name = pc.raw_tw_sales
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task11
+def upload_tw_movie_weekly():
+    bucket_name = "tw_movie_weekly"
+    source_file_name = pc.raw_tw_weekly
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task11-1
+def upload_tw_movie_weekly2():
+    bucket_name = "tw_movie_weekly"
+    source_file_name = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/TWMovie_weekly_data2.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task12  #這個不需要執行
+def upload_tw_movie_year_sales():
+    bucket_name = "tw_movie_year_sales"
+    source_file_name = pc.raw_tw_year_sales
+    destination_blob_name = f"raw_data/{timestamp}/{pc.}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task13
+def upload_tw_release_dates():
+    bucket_name = "tw_release_dates"
+    source_file_name = pc.raw_tw_tw_release_date
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_release_date_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task14
+def upload_tw_search():
+    bucket_name = "tw-search"
+    source_file_name = pc.raw_tw_search
+    destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task15   沒有selenium的路徑跟資料夾名
+def upload_tw_selenium_download():
+    bucket_name = "tw_selenium_download"
+    source_file_name = pc.raw_tw_search
+    destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
