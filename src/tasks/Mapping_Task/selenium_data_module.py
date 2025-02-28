@@ -21,7 +21,7 @@ import utils.path_config as p
 def download_annual_rename(year_list: list, date: str) -> None:
 
     #下載路徑
-    DOWNLOAD_DIR = p.raw_tw_year_sales
+    DOWNLOAD_DIR = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
@@ -106,7 +106,7 @@ def extract_json(data: json) -> json:
 def download_rename(MovieIds: list) -> None:
 
     #下載路徑
-    DOWNLOAD_DIR = p.raw_tw_sales
+    DOWNLOAD_DIR = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
@@ -162,7 +162,7 @@ def download_rename(MovieIds: list) -> None:
 def add_id_column(MovieIds: list) -> None:
     for MovieId in MovieIds:
         try:
-            input_path = p.raw_tw_sales + f"{MovieId}.json"
+            input_path = f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/{MovieId}.json"
             output_path = p.raw_tw_sales + f"{MovieId}.json"
             
             with open(input_path, "r", encoding="utf-8-sig") as j:
@@ -234,7 +234,7 @@ def concat_df_json(year_list: list) -> pd.DataFrame:
     all_dfs = []  # 用來儲存每個年份的 DataFrame
     #2022-2025年資料
     for year in year_list:
-        json_path = Path(f"/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
+        json_path = Path(f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
         if json_path.exists():
             try:
 
@@ -263,7 +263,7 @@ def concat_df_json_distinct(year_list: list) -> pd.DataFrame:
     all_dfs = []  # 用來儲存每個年份的 DataFrame
     #2022-2025年資料
     for year in year_list:
-        json_path = Path(f"/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
+        json_path = Path(f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/{year} 年票房資料.json")
         if json_path.exists():
             try:
 
@@ -322,8 +322,7 @@ if __name__ == '__main__':
     download_annual_rename(year_list, date)
 
     # 清洗原始json檔案
-    dir_path = p.raw_tw_year_sales
-    file_name = "2022年票房資料_raw.json"
-    file_path = dir_path / file_name
+
+    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022 年票房資料_raw.json"
 
     extract_cleaned_data = extract_json(clean_json_file(file_path))

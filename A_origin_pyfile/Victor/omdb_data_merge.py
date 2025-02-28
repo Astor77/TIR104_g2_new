@@ -1,38 +1,45 @@
 import pandas as pd
 import json
+from datetime import datetime
 
-#merge資料後存檔
-def data_merge_csv(f1,f2, key, outout_file):
-    #開啟第一個檔案轉換成dataframe
-    df1 = pd.read_csv(f1, encoding="utf-8")
-    #開啟第二個檔案轉換成dataframe
-    df2 = pd.read_csv(f2, encoding="utf-8")
-    #將兩個df merge
-    merge_data = pd.merge(df1, df2, on=key, how="outer")
-    merge_data.to_csv(outout_file, index=False, encoding="utf-8")
-    merge_data.to_json(outout_file.replace(".csv", ".json"), orient="records", force_ascii=False)
-    print(merge_data)
+def omdb_raw_to_tmp(filename, columns, save_path):
+    #先讀檔案
+    with open(filename, "r", encoding="utf-8") as file:
+        omdb_data = json.load(file)
 
+    if not isinstance(omdb_data, list):
+        raise ValueError("JSON 格式錯誤。")
+    
+    combined_data = []
+    #攤開json格式重新加入一個list內才能轉df
+    for item in omdb_data:
+        if isinstance(item, dict):
+            combined_data.append(item)
+        elif isinstance(item, list):
+            combined_data.extend(item)
+    
+    #轉成df
+    omdb_raw_data = pd.DataFrame(combined_data)
+    #取出需要轉成tmp的欄位
+    omdb_tmp_data = (omdb_raw_data[columns])
+    #建立時間
+    current_time = datetime.now().strftime("%Y-%m-%d")
+    omdb_tmp_data["data_created_time"] = current_time
+    omdb_tmp_data["data_updateded_time"] = current_time
+    #儲存檔名
+    file_info = f"{save_path}/omdb_info_temp_{current_time}.csv"
+    #存成csv
+    omdb_tmp_data.to_csv(file_info, index=False)
+    print("已成功儲存檔案")
 
-def data_merge_json(f1, f2, key, output_file):
-    # 開啟第一個 JSON 檔案轉換成 DataFrame
-    df1 = pd.read_json(f1, encoding="utf-8")
-    # 開啟第二個 JSON 檔案轉換成 DataFrame
-    df2 = pd.read_json(f2, encoding="utf-8")
-    # 將兩個 DataFrame 合併
-    merge_data = pd.merge(df1, df2, on=key, how="outer")
-    # 儲存成 CSV
-    merge_data.to_csv(output_file, index=False, encoding="utf-8")
-    # 儲存成 JSON
-    merge_data.to_json(output_file.replace(".csv", ".json"), orient="records", force_ascii=False)
-    # 印出合併後的 DataFrame
-    print(merge_data)
+#需要導入的檔案
+filename = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_2025-02-23.json"
+#需要留著的欄位
+columns = ["imdbID", "imdbRating"]
+#指定儲存路徑
+save_path = r"/workspaces/TIR104_g2_new/A1_temp_data/tw"
+omdb_raw_to_tmp(filename, columns, save_path)
 
-#data_merge_csv()
-#資料整理
-#merge資料後去除不需要的欄位
-def cd_column():
-    df = df.drop(["column"], axis=1)
 
 
 
