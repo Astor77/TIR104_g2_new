@@ -102,7 +102,10 @@ def sele_movie_data_flow() -> None:
         dfTWMovie = e_tw_read_csv()
         MovieIds = dfTWMovie["MovieId"].loc[0:1].tolist()
         # ✅ 等下載完成
-        e_get_tw_one_movie_sale.submit(MovieIds).result()
+        downloaded_movie_ids_future = e_get_tw_one_movie_sale.submit(MovieIds)
+        print("等待下載完成...")
+        downloaded_movie_ids = downloaded_movie_ids_future.result()
+        print("下載完成:", downloaded_movie_ids)
         # ✅ 並行抓上映日期
         release_date_list = e_get_tw_one_movie_release_date.submit(MovieIds).result()
         # ✅ 儲存上映日期
