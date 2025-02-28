@@ -28,6 +28,7 @@ def e_get_tw_one_movie_sale(MovieIds: list) -> None:
     try:
         mselenium.download_rename(MovieIds)
         logger.info(f"成功下載單片票房資料: {MovieIds}")
+        return MovieIds
     except Exception as e:
         logger.error(f"下載單片票房資料失敗: {e}")
         raise
@@ -63,8 +64,8 @@ def t_concat_tw_one_movie_json(folder_path: str) -> pd.DataFrame:
 def save_tw_one_movie_sale(merged_tw_one: object) -> None:
     logger = get_run_logger()
     try:
-        save_as_csv(merged_tw_one, p.raw_tw_weekly, "TWMovie_weekly_data.csv")
-        logger.info(f"單片查詢已儲存到: {p.raw_tw_weekly}/TWMovie_weekly_data.csv")
+        save_as_csv(merged_tw_one, p.raw_tw_weekly, p.tw_weekly_csv)
+        logger.info(f"單片查詢已儲存到: {p.raw_tw_weekly}/{p.tw_weekly_csv}")
     except Exception as e:
         logger.error(f"儲存單片票房 CSV 失敗: {e}")
         raise
@@ -88,8 +89,8 @@ def e_get_tw_one_movie_release_date(MovieIds: list) -> list:
 def save_tw_one_movie_release_date(release_date) -> None:
     logger = get_run_logger()
     try:
-        save_as_csv(release_date, p.raw_tw_tmdb_release_date, "release_date.csv")
-        logger.info(f"台灣上映日期已儲存到: {p.raw_tw_tmdb_release_date}/release_date.csv")
+        save_as_csv(release_date, p.raw_tw_tmdb_release_date, p.release_date_csv)
+        logger.info(f"台灣上映日期已儲存到: {p.raw_tw_tmdb_release_date}/{p.release_date_csv}")
     except Exception as e:
         logger.error(f"儲存上映日期 CSV 失敗: {e}")
         raise
@@ -100,16 +101,20 @@ def sele_movie_data_flow() -> None:
     try:
         dfTWMovie = e_tw_read_csv()
         MovieIds = dfTWMovie["MovieId"].loc[0:1].tolist()
-        e_get_tw_one_movie_sale(MovieIds)
-        e_tw_one_movie_sale_add_id(MovieIds)
-
-        merged_tw_one = t_concat_tw_one_movie_json(p.raw_tw_sales)
-        save_tw_one_movie_sale(merged_tw_one)
-
-        release_date_list = e_get_tw_one_movie_release_date(MovieIds)
+        # ✅ 等下載完成
+        e_get_tw_one_movie_sale.submit(MovieIds).result()
+        # ✅ 並行抓上映日期
+        release_date_list = e_get_tw_one_movie_release_date.submit(MovieIds).result()
+        # ✅ 儲存上映日期
         save_tw_one_movie_release_date(release_date_list)
 
+        # ✅ 等 ID 加入完成
+        e_tw_one_movie_sale_add_id.submit(MovieIds).result()
+        # ✅ 等 ID 加入後再合併
+        merged_tw_one = t_concat_tw_one_movie_json(p.raw_tw_sales)
+        save_tw_one_movie_sale(merged_tw_one)  # ✅ 儲存合併結果
         logger.info("所有任務成功執行，單片票房數據處理完成")
+
     except Exception as e:
         logger.error(f"Flow 執行失敗: {e}")
         raise
