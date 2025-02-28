@@ -163,7 +163,7 @@ def add_id_column(MovieIds: list) -> None:
     for MovieId in MovieIds:
         try:
             input_path = f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/{MovieId}.json"
-            output_path = p.raw_tw_sales + f"{MovieId}.json"
+            output_path = p.raw_tw_sales / f"{MovieId}.json"
             
             with open(input_path, "r", encoding="utf-8-sig") as j:
                 TWMovie_in = json.load(j)

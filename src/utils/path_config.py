@@ -36,8 +36,8 @@ genres_list_json = "tmdb_genres_list.json"
 tw_annual_dup_csv = "TWMovie2022-2025_raw.csv"
 tw_annual_not_dup_csv = "TWMovie2022-2025.csv"
 tw_release_date_csv = "tw_release_dates.csv"
-tw_weekly_csv = "TWMovie_weekly_data.csv"
-tw_weekly2_csv = "TWMovie_weekly_data2.csv"
+tw_weekly_data_csv = "TWMovie_weekly_data.csv"
+tw_weekly_data2_csv = "TWMovie_weekly_data2.csv"
 
 
 
@@ -59,7 +59,7 @@ omdb_info_csv = "omdb_info.csv"
 
 tw_annual_csv = "TWMovie_annual_df3.csv"
 tw_details_csv = "TWMovie_details.csv"
-tw_weekly_csv = "TWMovie_weekly_df2.csv"
+tw_weekly_df2_csv = "TWMovie_weekly_df2.csv"
 
 
 
