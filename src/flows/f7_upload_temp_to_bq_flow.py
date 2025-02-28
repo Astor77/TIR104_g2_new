@@ -11,13 +11,13 @@ bigquery_client = gm.get_credentials_bigquery(gcp_credentials_block)
 
 def create_dataset(dataset_id, client):
     dataset_ref = bigquery.DatasetReference(client.project, dataset_id)
-    dataset = bigquery.Dataset(dataset_ref)  
+    dataset = bigquery.Dataset(dataset_ref)
     
     # 創建資料集
     dataset = client.create_dataset(dataset, exists_ok=True)  # 避免重複
     print(f"資料集 {dataset_id} 已成功創建於專案 {client.project}。")
 
-create_dataset("final_data", bigquery_client)
+#create_dataset("final_data", bigquery_client)
 
 # task1
 
