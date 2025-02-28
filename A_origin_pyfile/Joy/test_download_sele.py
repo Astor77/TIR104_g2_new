@@ -7,12 +7,12 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-file_path = "/workspaces/TIR104_g2/A1_temp_data/tw/TWMovie_df2.csv"
+file_path = "/workspaces/TIR104_g2_new/A1_temp_data/tw/TWMovie_details.csv"
 dfTWMovie = pd.read_csv(file_path, engine = "python")
 # print(dfTWMovie)
 
 #測試用
-MovieIds = dfTWMovie["tw_id"].loc[0:1]
+MovieIds = dfTWMovie["tw_id"].loc[2:9]
 print(MovieIds)
 
 
@@ -22,7 +22,7 @@ def download_rename(MovieIds: list) -> None:
 
     #下載路徑
     # DOWNLOAD_DIR = "/workspaces/TIR104_g2/P_Joy/test"
-    DOWNLOAD_DIR = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele"
+    DOWNLOAD_DIR = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
@@ -50,7 +50,7 @@ def download_rename(MovieIds: list) -> None:
 
         # 連結到目標網站
         driver.get(url)
-        time.sleep(3)
+        time.sleep(4)
         # By種類參看 https://selenium-python.readthedocs.io/locating-elements.html
         # 搜尋json按鈕，然後模擬點擊該按鈕
         driver.find_element(By.XPATH, "/html/body/main/section[4]/div[1]/div/button[2]").click()
@@ -69,7 +69,7 @@ def download_rename(MovieIds: list) -> None:
                     file_downloaded = True
                     break
         
-        time.sleep(2)
+        time.sleep(1)
     # 關閉driver
     driver.quit()
 
