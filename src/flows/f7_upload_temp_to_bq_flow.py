@@ -17,7 +17,8 @@ def create_dataset(dataset_id, client):
     dataset = client.create_dataset(dataset, exists_ok=True)  # 避免重複
     print(f"資料集 {dataset_id} 已成功創建於專案 {client.project}。")
 
-create_dataset("final_data", bigquery_client)
+# 創建 dataset，並指定 Data location 為 asia-east1
+create_dataset("final_data", bigquery_client, location="asia-east1")
 
 # task1
 
