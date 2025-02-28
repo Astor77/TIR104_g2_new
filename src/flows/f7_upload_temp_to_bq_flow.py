@@ -4,30 +4,48 @@ from prefect_gcp import GcpCredentials
 from google.cloud import bigquery
 import pandas as pd
 from tasks.Storage_Task import gcs_module as gm
+from utils import path_config as pc
 
 gcp_credentials_block = GcpCredentials.load("tir104-02")
 bigquery_client = gm.get_credentials_bigquery(gcp_credentials_block)
 #print(type(bigquery_client))
 
-def create_dataset(dataset_id, client):
+def create_dataset(dataset_id, client, location):
     dataset_ref = bigquery.DatasetReference(client.project, dataset_id)
     dataset = bigquery.Dataset(dataset_ref)  
+
+    dataset.location = location
     
     # 創建資料集
     dataset = client.create_dataset(dataset, exists_ok=True)  # 避免重複
     print(f"資料集 {dataset_id} 已成功創建於專案 {client.project}。")
 
 # 創建 dataset，並指定 Data location 為 asia-east1
-create_dataset("final_data", bigquery_client, location="asia-east1")
+#create_dataset("final_data", bigquery_client, location="asia-east1")
 
 # task1
-
+def upload_to_bq_omdb():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = pc.omdb_info_csv  # BigQuery 表格名稱
+    CSV_FILE_PATH = "/workspaces/TIR104_g2_new/A1_temp_data/tw/omdb_info_temp_2025-02-26.csv" 
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
 
 # task2
-
+def upload_to_bq_details():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "details_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = "" 
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
 
 # task3
-
+def upload_to_bq_release_date():
+    PROJECT_ID = "tir104g02"  # GCP 專案 ID
+    DATASET_ID = "temp_data"  # BigQuery 資料集名稱
+    TABLE_ID = "release_date_csv"  # BigQuery 表格名稱
+    CSV_FILE_PATH = ""
+    gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
 
 # task4
 
