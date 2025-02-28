@@ -13,7 +13,6 @@ import utils.path_config as p
 @task
 def e_get_tw_annual_sales(year_list, date) -> None:
     # 2022-2025年資料
-    year_list = [2022, 2023]
 
     mselenium.download_annual_rename(year_list, date)
 
@@ -56,36 +55,36 @@ def download_tw_annual_sales_flow() -> None:
     # 2022-2025年資料
     year_list = [2022, 2023, 2024, 2025]
     # 下載日期
-    date = "02-10"
+    date = "02-27"
     e_get_tw_annual_sales(year_list, date)
 
-    dir_path = p.raw_tw_year_sales
-    file_name = "2022年票房資料_raw.json"
+    dir_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
+    file_name = "2022 年票房資料_raw.json"
     file_path = dir_path / file_name
     extract_annual_sales = e_tw_clean_annual_sales(file_path)
 
-    file_name_new = "2022年票房資料.json"
+    file_name_new = "2022 年票房資料.json"
     save_tw_annual_sales(extract_annual_sales, file_name_new)
 
-    file_name = "2023年票房資料_raw.json"
+    file_name = "2023 年票房資料_raw.json"
     file_path = dir_path / file_name
     extract_annual_sales = e_tw_clean_annual_sales(file_path)
 
-    file_name_new = "2023年票房資料.json"
+    file_name_new = "2023 年票房資料.json"
     save_tw_annual_sales(extract_annual_sales, file_name_new)
 
-    file_name = "2024年票房資料_raw.json"
+    file_name = "2024 年票房資料_raw.json"
     file_path = dir_path / file_name
     extract_annual_sales = e_tw_clean_annual_sales(file_path)
 
-    file_name_new = "2024年票房資料.json"
+    file_name_new = "2024 年票房資料.json"
     save_tw_annual_sales(extract_annual_sales, file_name_new)
 
-    file_name = "2025年票房資料_raw.json"
+    file_name = "2025 年票房資料_raw.json"
     file_path = dir_path / file_name
     extract_annual_sales = e_tw_clean_annual_sales(file_path)
 
-    file_name_new = "2025年票房資料.json"
+    file_name_new = "2025 年票房資料.json"
     save_tw_annual_sales(extract_annual_sales, file_name_new)
 
     combined_df = t_tw_concat_df_json_annual_sales(year_list)
