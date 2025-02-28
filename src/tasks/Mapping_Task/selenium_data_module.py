@@ -323,6 +323,6 @@ if __name__ == '__main__':
 
     # 清洗原始json檔案
 
-    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022 年票房資料_raw.json"
+    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022年票房資料_raw.json"
 
     extract_cleaned_data = extract_json(clean_json_file(file_path))
