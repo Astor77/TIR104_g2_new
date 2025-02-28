@@ -2,7 +2,6 @@ import json
 import time
 import os
 import pandas as pd
-import module_save_file as ms
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -18,7 +17,7 @@ def download_annual_rename(year_list: list, date: str) -> None:
 
     #下載路徑
     # DOWNLOAD_DIR = "/workspaces/TIR104_g2/P_Joy/test"
-    DOWNLOAD_DIR = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele"
+    DOWNLOAD_DIR = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--no-sandbox")
@@ -46,7 +45,7 @@ def download_annual_rename(year_list: list, date: str) -> None:
 
         # 連結到目標網站
         driver.get(url)
-        time.sleep(3)
+        time.sleep(4)
         # By種類參看 https://selenium-python.readthedocs.io/locating-elements.html
         # 搜尋json按鈕，然後模擬點擊該按鈕
         driver.find_element(By.XPATH, "/html/body/main/section[5]/div[1]/button[3]").click()
@@ -64,7 +63,7 @@ def download_annual_rename(year_list: list, date: str) -> None:
                     file_downloaded = True
                     break
         
-        time.sleep(2)
+        time.sleep(1)
     # 關閉driver
     driver.quit()
 
@@ -79,7 +78,7 @@ def clean_json_file(file_path):
     except json.JSONDecodeError:
         # 若 JSON 解析失敗，嘗試刪除最後一筆資料
         try:
-            fixed_data = data.rsplit("}", 1)[0] + "}]}"  # 移除最後一個｛並補 "]"
+            fixed_data = data.rsplit("}", 1)[0] + "}]}"  # 移除最後一個｛並補 "}]}"
             return json.loads(fixed_data)  # 再次嘗試解析
         except json.JSONDecodeError:
             print("JSON 格式錯誤，無法修復")
@@ -164,13 +163,13 @@ if __name__ == '__main__':
     # 2022-2025年資料
     year_list = [2022, 2023]
     # 2025年更新日期
-    date = "02-10"
+    date = "02-27"
     #下載全國2022-2025的年票房資料json檔案
     # download_annual_rename(year_list, date)
 
     # 使用範例
-    file_path = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele/2022年票房資料_raw.json"
-    output_path = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele/2022年票房資料.json" 
+    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022年票房資料_raw.json"
+    output_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_year_sales/2022年票房資料.json" 
     cleaned_data = clean_json_file(file_path)
     if cleaned_data:
         save_json_file(extract_json(cleaned_data), output_path)
