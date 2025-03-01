@@ -9,7 +9,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-
+from tasks.Storage_Task.save_file_module import save_as_csv
 
 # Task 1: Load
 # 讀取全國不重複csv檔案
@@ -146,9 +146,9 @@ if __name__ == "__main__":
     #下載全國單片查詢每一隻電影json檔
     # download_rename(MovieIds)
     #讀取json檔案，並新增MovieId欄位
-    add_id_column(MovieIds)
+    # add_id_column(MovieIds)
     # #合併所有json檔案
-    # folder_path = "/workspaces/TIR104_g2/A0_raw_data/tw/test_sele/"  # 資料夾路徑
-    # merged_df = Concat_jsonfile(folder_path)
+    folder_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_sales"  # 資料夾路徑
+    merged_df = Concat_jsonfile(folder_path)
     # # 存成 CSV 或 JSON
-    # ms.save_as_csv(merged_df, "TWMovie_weekly_data.csv", "/workspaces/TIR104_g2/A0_raw_data/tw/tw_movie_weekly/")
+    save_as_csv(merged_df, "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_sales", "TWMovie_weekly_data_test.csv")
