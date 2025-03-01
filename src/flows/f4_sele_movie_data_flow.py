@@ -64,8 +64,8 @@ def t_concat_tw_one_movie_json(folder_path: str) -> pd.DataFrame:
 def save_tw_one_movie_sale(merged_tw_one: object) -> None:
     logger = get_run_logger()
     try:
-        save_as_csv(merged_tw_one, p.raw_tw_weekly, p.tw_weekly_csv)
-        logger.info(f"單片查詢已儲存到: {p.raw_tw_weekly}/{p.tw_weekly_csv}")
+        save_as_csv(merged_tw_one, p.raw_tw_weekly, p.tw_weekly_data_csv)
+        logger.info(f"單片查詢已儲存到: {p.raw_tw_weekly}/{p.tw_weekly_data_csv}")
     except Exception as e:
         logger.error(f"儲存單片票房 CSV 失敗: {e}")
         raise
@@ -89,8 +89,9 @@ def e_get_tw_one_movie_release_date(MovieIds: list) -> list:
 def save_tw_one_movie_release_date(release_date) -> None:
     logger = get_run_logger()
     try:
-        save_as_csv(release_date, p.raw_tw_tmdb_release_date, p.release_date_csv)
-        logger.info(f"台灣上映日期已儲存到: {p.raw_tw_tmdb_release_date}/{p.release_date_csv}")
+        tw_release_date_df = pd.DataFrame(release_date, columns=["tw_release_date"])
+        save_as_csv(tw_release_date_df, p.raw_tw_tw_release_date, p.tw_release_date_csv)
+        logger.info(f"台灣上映日期已儲存到: {p.raw_tw_tw_release_date}/{p.tw_release_date_csv}")
     except Exception as e:
         logger.error(f"儲存上映日期 CSV 失敗: {e}")
         raise
@@ -100,7 +101,7 @@ def sele_movie_data_flow() -> None:
     logger = get_run_logger()
     try:
         dfTWMovie = e_tw_read_csv()
-        MovieIds = dfTWMovie["MovieId"].loc[0:1].tolist()
+        MovieIds = dfTWMovie["MovieId"].loc[0:5].tolist()
         # ✅ 等下載完成
         downloaded_movie_ids_future = e_get_tw_one_movie_sale.submit(MovieIds)
         print("等待下載完成...")
