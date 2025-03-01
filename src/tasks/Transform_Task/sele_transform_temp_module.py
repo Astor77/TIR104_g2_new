@@ -24,7 +24,7 @@ def tw_clean_region(df: pd.DataFrame)-> pd.Series:
         "中國大陸": "中國",
         "台灣": "中華民國"
     }
-    tw_clean_region_series = df["Region"].replace(replace_dict)
+    tw_clean_region_series = tw_clean_region_series.replace(replace_dict)
     return tw_clean_region_series
 
 # sele_tw_annual founction2
@@ -57,7 +57,7 @@ def tw_check_release_date() -> pd.DataFrame:
     # 比對不相等，或是年度資料的日期缺失時，以單片查詢的release_dates欄位資料為主
     # 將比對結果存入tw_first_release_date欄位
     tw_release_df[new_column] = np.where(
-        (tw_release_df[annual] != tw_release_df[search]) & pd.notna(tw_release_df[annual]),
+        (tw_release_df[annual] != tw_release_df[search]) & pd.notna(tw_release_df[search]),
         tw_release_df[search],
         tw_release_df[annual]
         )
