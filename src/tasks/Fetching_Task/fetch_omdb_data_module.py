@@ -23,6 +23,9 @@ def fetch_imdb_id():
     movie_id_list = [movie.get("imdb_id") for movie in movie_id_json if "imdb_id" in movie]   
     #去除nan值
     movie_id = [movie_id for movie_id in movie_id_list if not (isinstance(movie_id, float) and math.isnan(movie_id))]
+    #去除重複值
+    movie_id_dp = list(set(movie_id))
+    print(len(movie_id_dp))
     print(f"已成功取得電影id")
     #print(movie_id)
     #儲存成csv供兩天查詢
@@ -33,7 +36,7 @@ def fetch_imdb_id():
 
     print(f"已成功儲存 IMDb ID 至 {save_path}")
 
-    return movie_id
+    return movie_id_dp
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
@@ -131,6 +134,6 @@ def save_data_second(result, path):
 #id_list_save(id_list)
 
 
-crawl_omdb_movies_data_second()
+#crawl_omdb_movies_data_second()
 
 
