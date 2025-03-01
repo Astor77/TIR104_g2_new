@@ -6,12 +6,12 @@ import time
 import json
 from utils import path_config as pc
 
-#API_TOKEN = "de467a5d"
-API_TOKEN = "5271bd7c"
+API_TOKEN = "de467a5d"
+#API_TOKEN = "5271bd7c"
 
 timestamp = datetime.now().strftime("%Y-%m-%d")
 #第二次存檔function用
-filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_2025-02-23.json"
+filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
 
 #將details的id抓取出來
 def fetch_imdb_id():  
@@ -23,6 +23,9 @@ def fetch_imdb_id():
     movie_id_list = [movie.get("imdb_id") for movie in movie_id_json if "imdb_id" in movie]   
     #去除nan值
     movie_id = [movie_id for movie_id in movie_id_list if not (isinstance(movie_id, float) and math.isnan(movie_id))]
+    #去除重複值
+    movie_id_dp = list(set(movie_id))
+    print(len(movie_id_dp))
     print(f"已成功取得電影id")
     #print(movie_id)
     #儲存成csv供兩天查詢
@@ -33,7 +36,7 @@ def fetch_imdb_id():
 
     print(f"已成功儲存 IMDb ID 至 {save_path}")
 
-    return movie_id
+    return movie_id_dp
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
@@ -96,7 +99,7 @@ def crawl_omdb_movies_data_second():
     #讀全部id
     df_1 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/tmdb_imdb_ids.csv")
     #讀已求取過id  
-    df_2 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_2025-02-23.csv")
+    df_2 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_id.csv")
     #print(df_1, df_2)
     #取出df2不再df1內的id
     second_requests_id = df_1[~df_1["imdb_id"].isin(df_2["imdb_id"])]
@@ -125,10 +128,10 @@ def save_data_second(result, path):
 
 #---------------------------------------------------------------------
 #呼叫流程
-imdb_ids = fetch_imdb_id()
-results, id_list = crawl_omdb_movies_data(imdb_ids, API_TOKEN)
-save_data(results)
-id_list_save(id_list)
+#imdb_ids = fetch_imdb_id()
+#results, id_list = crawl_omdb_movies_data(imdb_ids, API_TOKEN)
+#save_data(results)
+#id_list_save(id_list)
 
 
 #crawl_omdb_movies_data_second()
