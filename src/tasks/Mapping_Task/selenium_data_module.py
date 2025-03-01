@@ -128,6 +128,10 @@ def download_rename(MovieIds: list) -> None:
     # driver = Chrome()
 
     for MovieId in MovieIds:
+        # file_path = os.path.join(DOWNLOAD_DIR, f"{MovieId}.json")
+    
+        # if os.path.exists(file_path):
+        #     continue  # 跳過這次迴圈，處理下一個 MovieId
 
         url = f"https://boxofficetw.tfai.org.tw/search/{MovieId}"
 
