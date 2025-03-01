@@ -51,7 +51,7 @@ def tw_check_release_date() -> pd.DataFrame:
     tw_release_df = pd.concat([df1, df2], axis= 1)
     # 年度跟單片查詢的上映日期欄位名稱
     annual = "ReleaseDate"
-    search = "release_dates"
+    search = "tw_release_date"
     # 新建一個欄位tw_first_release_date
     new_column = "tw_first_release_date"
     # 比對不相等，或是年度資料的日期缺失時，以單片查詢的release_dates欄位資料為主
@@ -65,7 +65,7 @@ def tw_check_release_date() -> pd.DataFrame:
 
 # sele_tw_release_date founction2
 # 將比對日期結果的dataframe轉換型態
-def tw_release_date_trans() -> pd.DataFrame:
+def tw_movie_details_trans() -> pd.DataFrame:
     # 取得tw movie日期比對結果
     tw_release_df = tw_check_release_date()
     # 新增 production_country 欄位，來源為清理過的 Region 欄位
@@ -81,7 +81,7 @@ def tw_release_date_trans() -> pd.DataFrame:
 # sele_tw_weekly_data_raw function1
 def tw_annual_weekly_merge_df() -> pd.DataFrame:
     # 讀取tw年度資料，篩選 MovieId, Year欄位
-    # 這邊統計周票房想用的是重複還是不重複？ -> 不重複
+    # 這邊統計周票房用不重複的年度資料
     tw_annual_not_dup = rm.read_file_to_df(p.raw_tw_2022_2025, p.tw_annual_not_dup_csv)
     tw_annual = tw_annual_not_dup[["MovieId", "Year"]]
     # 讀取tw週資料
