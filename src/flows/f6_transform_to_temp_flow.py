@@ -113,7 +113,7 @@ def t_tw_annual_temp_df():
 # 最終 sele_tw_release_date_temp_task
 @task
 def t_sele_tw_details_temp_df() -> pd.DataFrame:
-    tw_details_trans_df = sele.tw_release_date_trans()
+    tw_details_trans_df = sele.tw_movie_details_trans()
     tw_details_columns = ["MovieId", "Name", "production_country" ,"tw_first_release_date"]
     tw_details_temp_df = om.get_spec_cloumn_df(tw_details_trans_df, tw_details_columns)
     return tw_details_temp_df
@@ -123,7 +123,7 @@ def t_sele_tw_details_temp_df() -> pd.DataFrame:
 # 最終 sele_tw_weekly_data_raw_task
 # 這邊後面要先存一次檔到raw
 @task
-def t_sele_tw_weekly_amount_raw() -> pd.DataFrame:
+def t_sele_tw_weekly_raw_data2() -> pd.DataFrame:
     merge_df = sele.tw_annual_weekly_merge_df()
     tw_weekly_data2_df = sele.tw_split_date_column(merge_df)
     return tw_weekly_data2_df
@@ -132,7 +132,7 @@ def t_sele_tw_weekly_amount_raw() -> pd.DataFrame:
 # sele_tw_weekly_data_temp
 # 最終 sele_tw_weekly_data_temp_task
 @task
-def t_sele_tw_weekly_amount_temp_df() -> pd.DataFrame:
+def t_sele_tw_weekly_temp_df2_df() -> pd.DataFrame:
     tw_weekly_trans_df = sele.sele_tw_weekly_amount_trans()
     tw_weekly_columns = ["MovieId", "start_date", "end_date", "Amount", "Tickets", "TheaterCount"]
     tw_weekly_df2 = om.get_spec_cloumn_df(tw_weekly_trans_df, tw_weekly_columns)
@@ -162,14 +162,14 @@ def f6_transform_to_temp_flow():
     l_save_data(release_temp_df, p.temp_tw, p.release_date_csv)
     genres_temp_df = t_tmdb_genres_temp_df.submit()
     l_save_data(genres_temp_df, p.temp_tw, p.genres_csv)
-    genres_list_temp_df = t_tmdb_keywords_temp_df.submit()
+    genres_list_temp_df = t_tmdb_genres_list_temp_df.submit()
     l_save_data(genres_list_temp_df, p.temp_tw, p.genres_list_csv)
     keywords_temp_df = t_tmdb_keywords_temp_df.submit()
     l_save_data(keywords_temp_df, p.temp_tw, p.keywords_csv)
     casts_top5_temp_df = t_tmdb_casts_top5_temp_df.submit()
-    l_save_data(casts_top5_temp_df, p.temp_tw, p.cast_top5_csv)
+    l_save_data(casts_top5_temp_df, p.temp_tw, p.casts_top5_csv)
     directors_temp_df = t_tmdb_directors_temp_df.submit()
-    l_save_data(directors_temp_df, p.temp_tw, p.director_csv)
+    l_save_data(directors_temp_df, p.temp_tw, p.directors_csv)
     person_temp_df = t_tmdb_person_temp_df.submit()
     l_save_data(person_temp_df, p.temp_tw, p.person_csv)
 
@@ -177,11 +177,13 @@ def f6_transform_to_temp_flow():
     l_save_data(tw_annual_temp_df, p.temp_tw, p.tw_annual_csv)
     tw_details_temp_df = t_sele_tw_details_temp_df.submit()
     l_save_data(tw_details_temp_df, p.temp_tw, p.tw_details_csv)
-    tw_weekly_data2_df = t_sele_tw_weekly_amount_raw.submit()
+    tw_weekly_data2_df = t_sele_tw_weekly_raw_data2.submit()
     l_save_data(tw_weekly_data2_df, p.raw_tw_weekly, p.tw_weekly_data2_csv)
-    tw_weekly_df2 = t_sele_tw_weekly_amount_temp_df()
+    tw_weekly_df2 = t_sele_tw_weekly_temp_df2_df()
     l_save_data(tw_weekly_df2, p.temp_tw, p.tw_weekly_df2_csv)
 
+if __name__ == "__main__":
+    f6_transform_to_temp_flow()
 
 
 

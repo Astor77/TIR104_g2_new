@@ -5,6 +5,9 @@ from tasks.Storage_Task.read_file_module import read_file_to_df
 from tasks.Storage_Task.save_file_module import save_as_csv
 import utils.path_config as p
 
+import importlib  # Python 內建的重新載入模組工具
+importlib.reload(mselenium)  # 強制重新載入
+
 # task 1
 # 讀取全國年度合併資料
 @task
@@ -101,14 +104,16 @@ def sele_movie_data_flow() -> None:
     logger = get_run_logger()
     try:
         dfTWMovie = e_tw_read_csv()
-        MovieIds = dfTWMovie["MovieId"].loc[0:5].tolist()
+        MovieIds = dfTWMovie["MovieId"].tolist()
         # ✅ 等下載完成
         downloaded_movie_ids_future = e_get_tw_one_movie_sale.submit(MovieIds)
         print("等待下載完成...")
         downloaded_movie_ids = downloaded_movie_ids_future.result()
-        print("下載完成:", downloaded_movie_ids)
+        print("下載完成")
         # ✅ 並行抓上映日期
+        print("等待抓取日期完成...")
         release_date_list = e_get_tw_one_movie_release_date.submit(MovieIds).result()
+        print("抓取日期完成")
         # ✅ 儲存上映日期
         save_tw_one_movie_release_date(release_date_list)
 
