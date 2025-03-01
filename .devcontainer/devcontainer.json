@@ -47,7 +47,7 @@
     "TIR104-g2-new",
     "--env-file",
     "./.env",
-//    "-v",
-//    "C:/Users/Tibame/selenium:/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
+    // "-v",
+    // "/Users/astorli/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download:/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download"
   ]
 }

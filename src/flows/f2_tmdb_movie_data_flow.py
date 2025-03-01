@@ -76,13 +76,13 @@ def f2_tmdb_movie_data_flow():
     ]
 
     for api in apis:
-        raw_data_future = e_tmdb_raw_data.submit(tmdb_id_list, api["name"], api["api_key"])
-        save_future = l_save_raw_data.submit(raw_data_future, api["save_path"], api["file_name"])
+        raw_data = e_tmdb_raw_data.submit(tmdb_id_list, api["name"], api["api_key"])
+        save_future = l_save_raw_data.submit(raw_data, api["save_path"], api["file_name"])
         futures.append(save_future)
 
     # genres_list 也放進 future 確保等待它完成
-    genres_list_future = e_tmdb_genres_list.submit(fa.ASTOR_TMDB_KEY)
-    save_genres_future = l_save_raw_data.submit(genres_list_future, p.raw_tw_genres_list, p.genres_list_json)
+    genres_list = e_tmdb_genres_list.submit(fa.ASTOR_TMDB_KEY)
+    save_genres_future = l_save_raw_data.submit(genres_list, p.raw_tw_genres_list, p.genres_list_json)
     futures.append(save_genres_future)
 
     # **如果是本機運行，確保所有 Task 都完成**

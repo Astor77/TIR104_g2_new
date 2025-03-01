@@ -85,7 +85,7 @@ def tw_annual_weekly_merge_df() -> pd.DataFrame:
     tw_annual_not_dup = rm.read_file_to_df(p.raw_tw_2022_2025, p.tw_annual_not_dup_csv)
     tw_annual = tw_annual_not_dup[["MovieId", "Year"]]
     # 讀取tw週資料
-    tw_weekly_data = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly_csv)
+    tw_weekly_data = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly_data_csv)
     # 將篩選的年度資料跟周資料merge
     tw_annual_weekly_merge_df = om.data_merge_left_df(tw_annual, tw_weekly_data, "MovieId", "MovieId")
     return tw_annual_weekly_merge_df
@@ -108,7 +108,7 @@ def tw_filter_start_date_notna(df: pd.DataFrame) -> pd.DataFrame:
 # 處理 tw_weekly_data2內的日期轉型、篩選
 def sele_tw_weekly_amount_trans() -> pd.DataFrame:
     # 讀取tw_weekly_data2檔案
-    tw_weekly_df = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly2_csv)
+    tw_weekly_df = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly_data2_csv)
     # 將開始與結束日期轉換datetime型態
     columns = ["start_date", "end_date"]
     tw_weekly_trans_df = om.column_to_datetime(tw_weekly_df, columns)
