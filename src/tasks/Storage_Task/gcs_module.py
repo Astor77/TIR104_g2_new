@@ -197,7 +197,7 @@ def upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE
     job_config = bigquery.LoadJobConfig(
         write_disposition="WRITE_TRUNCATE",  # "WRITE_TRUNCATE" 覆蓋 | "WRITE_APPEND" 追加
         source_format=bigquery.SourceFormat.CSV,
-        skip_leading_rows=1,  # 跳過 CSV 標題列
+        skip_leading_rows=0,  # 跳過 CSV 標題列
     )
     # 上傳 DataFrame 到 BigQuery
     job = bigquery_client.load_table_from_dataframe(df, table_ref, job_config=job_config)
