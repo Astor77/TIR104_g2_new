@@ -1,4 +1,3 @@
-from datetime import datetime
 import math
 import pandas as pd
 import requests
@@ -6,15 +5,11 @@ import time
 import json
 from utils import path_config as pc
 
-#API_TOKEN = "de467a5d"
-API_TOKEN = "5271bd7c"
 
-timestamp = datetime.now().strftime("%Y-%m-%d")
-#第二次存檔function用
-filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
+
 
 #將details的id抓取出來
-def fetch_imdb_id():  
+def fetch_imdb_id():
     #路徑會可能來自gcs
     details_data = pc.raw_tw_details/pc.details_json
     with open(details_data, "r", encoding="utf-8") as f:
