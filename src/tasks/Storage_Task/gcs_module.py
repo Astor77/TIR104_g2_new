@@ -38,24 +38,23 @@ from google.oauth2 import service_account
 #抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 #-----------------------------你的project name
 bpd.options.bigquery.project = "my-project-7393-451114"
-def test_query():
+def test_query(creds, project_id, dataset_name, table_name):
     #------------- 可以去BigQuery複製sql語法from後面那段
-    first_query = "my-project-7393-451114.001test.001-test" 
+    first_query = f"{project_id}, {dataset_name}, {table_name}" 
 
     try:
         # 嘗試讀取 BigQuery 資料
-        movie_query = bpd.read_gbq(first_query)
-        
+        movie_query = bpd.read_gbq(first_query, credentials= creds)
         # 檢查是否成功
         if movie_query is not None:
-            print("Data loaded successfully!")
+            print(f"✅{table_name}成功下載")
             print(movie_query.head(5))  # 前 5 筆
             print(type(movie_query))
         else:
-            print("Failed to load data.")
+            print(f"❌{table_name}載入失敗")
             
     except Exception as e:
-        print(f"Error occurred: {e}")
+        print(f"❌ Error occurred: {e}")
 
 # 呼叫測試函式
 #test_query()
@@ -198,7 +197,7 @@ def upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE
     job_config = bigquery.LoadJobConfig(
         write_disposition="WRITE_TRUNCATE",  # "WRITE_TRUNCATE" 覆蓋 | "WRITE_APPEND" 追加
         source_format=bigquery.SourceFormat.CSV,
-        skip_leading_rows=1,  # 跳過 CSV 標題列
+        skip_leading_rows=0,  # 跳過 CSV 標題列
     )
     # 上傳 DataFrame 到 BigQuery
     job = bigquery_client.load_table_from_dataframe(df, table_ref, job_config=job_config)

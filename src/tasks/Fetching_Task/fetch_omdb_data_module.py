@@ -6,8 +6,8 @@ import time
 import json
 from utils import path_config as pc
 
-API_TOKEN = "de467a5d"
-#API_TOKEN = "5271bd7c"
+#API_TOKEN = "de467a5d"
+API_TOKEN = "5271bd7c"
 
 timestamp = datetime.now().strftime("%Y-%m-%d")
 #第二次存檔function用
@@ -134,6 +134,6 @@ def save_data_second(result, path):
 #id_list_save(id_list)
 
 
-#crawl_omdb_movies_data_second()
+crawl_omdb_movies_data_second()
 
 

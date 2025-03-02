@@ -38,9 +38,10 @@ def e_tmdb_query_result(tw_annual_df) -> json:
 def e_mapping_tw_tmdb_result(tw_annual_df, tmdb_search_results) -> pd.DataFrame:
     # 將search結果轉換成dataframe
     tmdb_search_df = pd.DataFrame(tmdb_search_results)
+
     # 針對兩張df欲比較的欄位取出去除空白、轉換一致大小寫
-    tw_annual_df["Name_map"] = tw_annual_df["Name_search"].str.replace(" ", "").str.upper()
-    tmdb_search_df["title_map"] = tmdb_search_df["title"].str.replace(" ", "").str.upper()
+    tw_annual_df["Name_map"] = tw_annual_df["Name_search"].apply(map.normalize_text)
+    tmdb_search_df["title_map"] = tmdb_search_df["title"].apply(map.normalize_text)
     mapping_result_df = map.merge_two_df(
         df1=tw_annual_df,
         df2=tmdb_search_df,
