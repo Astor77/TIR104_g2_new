@@ -38,21 +38,24 @@ from google.oauth2 import service_account
 #抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 #-----------------------------你的project name
 bpd.options.bigquery.project = "my-project-7393-451114"
-def test_query(creds, project_id, dataset_name, table_name):
+def download_dataset(creds, project_id, dataset_name, table_name):
+
+    # 設定 bigframes 使用 GCP 認證
+    bpd.options.bigquery.credentials = creds
+    bpd.options.bigquery.project = project_id
     #------------- 可以去BigQuery複製sql語法from後面那段
-    first_query = f"{project_id}, {dataset_name}, {table_name}" 
+    first_query = f"{project_id}.{dataset_name}.{table_name}" 
 
     try:
         # 嘗試讀取 BigQuery 資料
-        movie_query = bpd.read_gbq(first_query, credentials= creds)
+        movie_query = bpd.read_gbq(first_query)
         # 檢查是否成功
         if movie_query is not None:
             print(f"✅{table_name}成功下載")
-            print(movie_query.head(5))  # 前 5 筆
+            print(movie_query)  # 前 5 筆
             print(type(movie_query))
         else:
             print(f"❌{table_name}載入失敗")
-            
     except Exception as e:
         print(f"❌ Error occurred: {e}")
 
@@ -78,7 +81,12 @@ def get_credentials_bigquery(gcp_credentials_block):
         bigquery_client = bigquery.Client(credentials=credentials, project=gcp_credentials_block.project)
         return bigquery_client
 
-
+#解析prefect下載final_data用的的gcp credentials-------(big_query)
+def get_credentials_download(gcp_credentials_block):
+        #解析字典
+        service_account_info = gcp_credentials_block.service_account_info.get_secret_value()
+        creds = service_account.Credentials.from_service_account_info(service_account_info)
+        return creds
 
 
 
