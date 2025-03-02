@@ -37,7 +37,7 @@ from google.oauth2 import service_account
 #-------------------------將DataFrame從bigquery上抓下來
 #抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 #-----------------------------你的project name
-bpd.options.bigquery.project = "my-project-7393-451114"
+#bpd.options.bigquery.project = "my-project-7393-451114"
 def download_dataset(creds, project_id, dataset_name, table_name):
 
     # 設定 bigframes 使用 GCP 認證
