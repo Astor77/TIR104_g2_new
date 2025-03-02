@@ -6,6 +6,9 @@ import pandas as pd
 from tasks.Storage_Task import gcs_module as gm
 from utils import path_config as pc
 
+import importlib  # Python 內建的重新載入模組工具
+importlib.reload(gm)  # 強制重新載入
+
 gcp_credentials_block = GcpCredentials.load("tir104-02")
 bigquery_client = gm.get_credentials_bigquery(gcp_credentials_block)
 #print(type(bigquery_client))
@@ -30,7 +33,7 @@ def upload_to_bq_omdb():
     TABLE_ID = "omdb_info_csv"  # BigQuery 表格名稱
     CSV_FILE_PATH = r"/workspaces/TIR104_g2_new/A1_temp_data/tw/omdb_info.csv" 
     gm.upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH)
-#upload_to_bq_omdb()
+upload_to_bq_omdb()
 
 # task2
 def upload_to_bq_tmdb_details():
