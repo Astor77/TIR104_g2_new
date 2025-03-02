@@ -1,7 +1,8 @@
 # 這隻module 專門用來處理 mapping tw_annual 跟 tmdb_search api
 import pandas as pd
-
+import unicodedata
 import tasks.Storage_Task.read_file_module as rm
+import tasks.Transform_Task.other_module as om
 import tasks.Mapping_Task.search_movie_api_module as search
 import utils.path_config as p
 
@@ -19,15 +20,14 @@ def clean_tw_movie_name(tw_annual_df) -> pd.DataFrame:
     return tw_annual_df
 
 
-def clean_tw_tmdb_map_column(tw_annual_df, tmdb_search_df):
+def normalize_text(text):
     """
-    清理跟tmdb搜尋結果，兩張表要比對的欄位
+    將全形字轉換為半形，並移除空白與轉大寫
     """
-    # 將搜尋的關鍵字去除中間空白，並且轉換成大寫
-    tw_annual_df["Name_map"] = tw_annual_df["Name_search"].str.replace(" ", "").str.upper()
-    # 將搜尋的結果去除中間空白，並且轉換成大寫
-    tmdb_search_df["title_map"] = tmdb_search_df["title"].str.replace(" ", "").str.upper()
-
+    if isinstance(text, str):
+        text = unicodedata.normalize("NFKC", text)  # 轉換全形為半形
+        text = text.replace(" ", "").upper()  # 移除空白並轉大寫
+    return text
 
 
 def merge_two_df(df1: pd.DataFrame, df2: pd.DataFrame, how: str="left", df1_col: str="Name_map", df2_col: str="title_map"):
@@ -47,18 +47,19 @@ def merge_two_df(df1: pd.DataFrame, df2: pd.DataFrame, how: str="left", df1_col:
 
 if __name__ == "__main__":
     #僅測試search 10筆
-    tw = rm.read_file_to_df(p.raw_tw_2022_2025, p.tw_annual_not_dup_csv)
-    query_list = get_tw_movie_clean_name_list()
+    tw_annual_df = rm.read_file_to_df(p.raw_tw_2022_2025, p.tw_annual_not_dup_csv)
+    query_list = clean_tw_movie_name(tw_annual_df)
     total_search_results = search.tmdb_list_search_results(query_list[:10])
     tmdb = pd.DataFrame(total_search_results)
 
 
-    clean_tw_tmdb_map_column(tw, tmdb)
-    df_mapping_result = merge_two_df(df1=tw, df2=tmdb, join="left", df1_col="Name_map", df2_col="title_map")
-    df_mapping_select = drop_not_necessary(df_mapping_result)
+    clean_tw_tmdb_map_column(tw_annual_df, tmdb)
+    mapping_result_df = merge_two_df(df1=tw_annual_df, df2=tmdb, join="left", df1_col="Name_map", df2_col="title_map")
+    columns = ["Year", "MovieId", "Name", "id"]
+    mapping_df = om.get_spec_cloumn_df(mapping_result_df, columns)
     # 這邊就不寫save_file了
 
-    nan_count = df_mapping_result["id"].isna().sum()
-    success_count = df_mapping_result["id"].notna().sum()
+    nan_count = mapping_result_df,["id"].isna().sum()
+    success_count = mapping_result_df,["id"].notna().sum()
     print(f"比對判定失敗: {nan_count} 筆資料")
     print(f"比對判定成功: {success_count} 筆資料")
