@@ -17,5 +17,5 @@ if __name__ == "__main__":
         # work pool 名字
         work_pool_name="dev-tir104-g2-new",
         job_variables=dict(pull_policy="Never"),
-        cron="0 22 * * 1"  # ✅ 每週一 22:00 執行
+        cron="30 21 * * 1"  # ✅ 每週一 21:30 執行
     )
