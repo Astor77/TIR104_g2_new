@@ -60,14 +60,14 @@ def monitor_scheduled_query(scheduled_query_name):
     check_scheduled_query_status(scheduled_query_name)
 
 @flow  # ✅ Prefect 2.0 使用 `@flow`
-def monitor_scheduled_queries():
+def f8_monitor_scheduled_queries():
     """動態監控所有 Scheduled Queries"""
     for query_name in SCHEDULED_QUERIES:
         monitor_scheduled_query(query_name)
 
 # ✅ 直接執行 Flow
 if __name__ == "__main__":
-    monitor_scheduled_queries()
+    f8_monitor_scheduled_queries()
 
 
 # task1

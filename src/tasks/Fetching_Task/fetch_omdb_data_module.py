@@ -1,11 +1,15 @@
 import math
+import os
 import pandas as pd
 import requests
 import time
 import json
 from utils import path_config as pc
 
-
+API_TOKEN = os.getenv("VICTOR_OMDB_KEY_1")
+API_TOKEN2 = os.getenv("VICTOR_OMDB_KEY_2")
+#第二次存檔function用
+filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
 
 
 #將details的id抓取出來
@@ -93,7 +97,7 @@ def id_list_save(id_list):
 def crawl_omdb_movies_data_second():
     #讀全部id
     df_1 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/tmdb_imdb_ids.csv")
-    #讀已求取過id  
+    #讀已求取過id
     df_2 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_id.csv")
     #print(df_1, df_2)
     #取出df2不再df1內的id
@@ -102,7 +106,7 @@ def crawl_omdb_movies_data_second():
     print(requests_id)
 
     #呼叫function爬蟲
-    result, _ = crawl_omdb_movies_data(requests_id, API_TOKEN)
+    result, _ = crawl_omdb_movies_data(requests_id, API_TOKEN2)
     #呼叫存檔函式
     save_data_second(result, filepath)
 
