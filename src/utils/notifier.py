@@ -28,19 +28,19 @@ def send_line_notification(task_name: str, error_msg: str):
         print(f"❌ LINE 通知失敗: {response.status_code}, {response.json()}")
 
 
-# Prefect 任務（失敗）
-@task(retries=0)
-def failing_task():
-    raise ValueError("這是一個模擬錯誤！")
+# # Prefect 任務（失敗）
+# @task(retries=0)
+# def failing_task():
+#     raise ValueError("這是一個模擬錯誤！")
 
-# Prefect Flow（失敗時觸發 LINE 通知）
-@flow(name="Error Notification Flow")
-def error_notification_flow():
-    try:
-        failing_task()  # 這裡的 failing_task 會拋出錯誤
-    except Exception as e:
-        send_line_notification(failing_task.name, str(e))
+# # Prefect Flow（失敗時觸發 LINE 通知）
+# @flow(name="Error Notification Flow")
+# def error_notification_flow():
+#     try:
+#         failing_task()  # 這裡的 failing_task 會拋出錯誤
+#     except Exception as e:
+#         send_line_notification(failing_task.name, str(e))
 
-# 執行 Flow 測試
-if __name__ == "__main__":
-    error_notification_flow()
+# # 執行 Flow 測試
+# if __name__ == "__main__":
+#     error_notification_flow()

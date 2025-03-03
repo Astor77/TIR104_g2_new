@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "MovieId": "21945",
         "Rank": 1,
@@ -1213,11 +1213,11 @@
         "Tickets": 3166,
         "TicketRate": 0,
         "MarketShare": 0.00014142270617038523,
-        "TotalDayCount": 58,
+        "TotalDayCount": 59,
         "TotalAmount": 889361.0,
         "TotalTickets": 3166,
         "FirstWeekAmount": 340487.0,
-        "TotalWeekendAmount": 444824.0
+        "TotalWeekendAmount": 448329.0
     },
     {
         "MovieId": "21031",
@@ -5273,11 +5273,11 @@
         "Tickets": 1652,
         "TicketRate": 0,
         "MarketShare": 7.379352829863438e-05,
-        "TotalDayCount": 100,
+        "TotalDayCount": 102,
         "TotalAmount": 7607265.0,
         "TotalTickets": 20258,
         "FirstWeekAmount": 3883848.0,
-        "TotalWeekendAmount": 6774596.0
+        "TotalWeekendAmount": 6775682.0
     },
     {
         "MovieId": "18958",
@@ -9013,11 +9013,11 @@
         "Tickets": 456,
         "TicketRate": 0,
         "MarketShare": 2.0369157932310697e-05,
-        "TotalDayCount": 27,
+        "TotalDayCount": 28,
         "TotalAmount": 110909.0,
         "TotalTickets": 456,
         "FirstWeekAmount": 72214.0,
-        "TotalWeekendAmount": 56449.0
+        "TotalWeekendAmount": 56689.0
     },
     {
         "MovieId": "20169",
