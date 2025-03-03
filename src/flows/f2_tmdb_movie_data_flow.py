@@ -4,13 +4,14 @@ import json
 import importlib  # Python 內建的重新載入模組工具
 
 from prefect.runtime import deployment
-from prefect import get_run_logger, task, flow
+from prefect import task, flow, get_run_logger
 from prefect.task_runners import ConcurrentTaskRunner
 
-import tasks.Fetching_Task.fetch_api_data_module as fa
+import tasks.Fetching_Task.fetch_tmdb_data_module as fa
 import tasks.Storage_Task.read_file_module as rm
 import tasks.Storage_Task.save_file_module as sm
 import utils.path_config as p
+import utils.notifier as no
 
 importlib.reload(fa)  # 強制重新載入
 importlib.reload(rm)  # 強制重新載入
@@ -30,6 +31,8 @@ def e_get_tmdb_id_list() -> list:
 
     except Exception as err:
         logger.error(f"❌ e_get_tmdb_id_list() 執行失敗: {err}")
+        no.send_line_notification(f"e_get_tmdb_id_list", str(err))
+
 
 
 # e_tmdb_raw_data -> 並行處理4隻api
@@ -48,6 +51,7 @@ def e_tmdb_raw_data(tmdb_id_list, api_name, api_key) -> json:
 
     except Exception as err:
         logger.error(f"❌ e_tmdb_raw_data() 執行失敗: {err}")
+        no.send_line_notification(f"e_tmdb_raw_data:{api_name}", str(err))
 
 # e_tmdb_genres_list，因api結構不同，獨立取得
 @task
@@ -65,6 +69,8 @@ def e_tmdb_genres_list(api_key) -> json:
 
     except Exception as err:
         logger.error(f"❌ e_tmdb_genres_list() 執行失敗: {err}")
+        no.send_line_notification(f"e_tmdb_raw_data:gernes_list", str(err))
+
 
 
 # l_save_raw_dat，將原始資料存為json檔案
@@ -76,6 +82,8 @@ def l_save_raw_data(data, dir_path, file_name) -> None:
         sm.save_as_json(data, dir_path, file_name)
     except Exception as err:
         logger.error(f"🚨 l_save_raw_data() 執行失敗: {err}")
+        no.send_line_notification(f"l_save_raw_data:{file_name}", str(err))
+
 
 
 
