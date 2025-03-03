@@ -5,10 +5,9 @@ from tasks.Fetching_Task import fetch_omdb_data_module as odm
 
 API_TOKEN = "de467a5d"
 #API_TOKEN = "5271bd7c"
-#時間戳記
-timestamp = datetime.now().strftime("%Y-%m-%d")
+
 #第二次存檔function用
-filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_2025-02-23.json"
+filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
 
 
 @task
@@ -30,7 +29,7 @@ def save(results, id_list):
 def get_api_second():
     odm.crawl_omdb_movies_data_second()
 
-
+@flow
 def main_flow():
     movie_id = get_id()
     results, id_list = get_api(movie_id)

@@ -35,13 +35,13 @@ def save_as_csv(dataframe: pd.DataFrame, dir_path: str | Path, file_name: str) -
         dataframe.to_csv(csv_file_path, encoding="utf-8-sig", index=False)
 
         write_save_log("save_as_csv", file_name, "success", "檔案儲存成功", csv_file_path)
-        print(f"{file_name} 儲存成功, 存放路徑: {csv_file_path}")
+        print(f"✅ {file_name} 儲存成功, 存放路徑: {csv_file_path}")
         save_result = f"{file_name} 儲存成功"
         return save_result
 
     except Exception as err:
         write_save_log("save_as_csv", file_name, "fail", f"{err}", csv_file_path)
-        print(f"{file_name} 儲存失敗。error: {err}")
+        print(f"❌ {file_name} 儲存失敗。error: {err}")
         save_result = f"{file_name} 儲存失敗, error: {err}"
         return save_result
 
@@ -67,12 +67,12 @@ def save_as_json(data: list | dict, dir_path: str | Path, file_name: str) -> Non
             json.dump(data, f, ensure_ascii=False, indent=4)
 
             write_save_log("save_as_json", file_name, "success", "檔案儲存成功", json_file_path)
-            print(f"{file_name} 儲存成功, 存放路徑: {json_file_path}")
+            print(f"✅ {file_name} 儲存成功, 存放路徑: {json_file_path}")
             save_result = f"{file_name} 儲存成功"
             return save_result
 
     except Exception as err:
         write_save_log("save_as_json", file_name, "fail", f"{err}", json_file_path)
-        print(f"{file_name} 儲存失敗。error: {err}")
+        print(f"❌ {file_name} 儲存失敗。error: {err}")
         save_result = f"{file_name} 儲存失敗, error: {err}"
         return save_result
