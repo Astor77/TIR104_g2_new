@@ -38,7 +38,7 @@ from google.oauth2 import service_account
 #抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 #-----------------------------你的project name
 #bpd.options.bigquery.project = "my-project-7393-451114"
-def download_dataset(creds, project_id, dataset_name, table_name):
+def download_dataset(creds, project_id, dataset_name, table_name, file_path):
 
     # 設定 bigframes 使用 GCP 認證
     bpd.options.bigquery.credentials = creds
@@ -52,8 +52,8 @@ def download_dataset(creds, project_id, dataset_name, table_name):
         # 檢查是否成功
         if movie_query is not None:
             print(f"✅{table_name}成功下載")
-            print(movie_query)  # 前 5 筆
-            print(type(movie_query))
+            movie_query.to.csv(file_path, index=False)
+            print(f"{table_name}已成功儲存，路徑:{file_path}")
         else:
             print(f"❌{table_name}載入失敗")
     except Exception as e:
