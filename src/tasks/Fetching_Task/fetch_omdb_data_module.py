@@ -133,6 +133,4 @@ def save_data_second(result, path):
 #id_list_save(id_list)
 
 
-crawl_omdb_movies_data_second()
-
 
