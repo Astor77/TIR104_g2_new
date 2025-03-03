@@ -5,6 +5,7 @@ from prefect import task, flow, get_run_logger
 from tasks.Mapping_Task import selenium_data_module as mselenium
 from tasks.Storage_Task.save_file_module import save_as_csv, save_as_json
 import utils.path_config as p
+import utils.notifier as no
 
 # 這個 flow 是下載台灣年度資料
 
@@ -17,6 +18,7 @@ def e_get_tw_annual_sales(year_list, date) -> None:
         logger.info(f"✅ 成功下載 {year_list} 年度票房資料")
     except Exception as e:
         logger.error(f"❌ 下載年度票房資料失敗: {e}")
+        no.send_line_notification(f"e_get_tw_annual_sales", str(e))
         raise
 
 @task
@@ -29,6 +31,7 @@ def e_tw_clean_annual_sales(file_path: str) -> json:
         return extract_annual_sales
     except Exception as e:
         logger.error(f"❌ 清理 JSON 失敗: {e}")
+        no.send_line_notification(f"e_tw_clean_annual_sales", str(e))
         raise
 
 @task
@@ -39,6 +42,7 @@ def save_tw_annual_sales(extract_annual_sales: json, file_name_new: str) -> None
         logger.info(f"✅ 清理後的 JSON 已儲存到: {p.raw_tw_year_sales}/{file_name_new}")
     except Exception as e:
         logger.error(f"❌ 儲存 JSON 失敗: {e}")
+        no.send_line_notification(f"save_tw_annual_sales", str(e))
         raise
 
 @task
@@ -50,6 +54,7 @@ def t_tw_concat_df_json_annual_sales(year_list) -> pd.DataFrame:
         return combined_df
     except Exception as e:
         logger.error(f"❌ 合併 JSON 失敗: {e}")
+        no.send_line_notification(f"t_tw_concat_df_json_annual_sales", str(e))
         raise
 
 @task
@@ -61,6 +66,7 @@ def t_tw_concat_df_json_distinct_annual_sales(year_list) -> pd.DataFrame:
         return combined_df2
     except Exception as e:
         logger.error(f"❌ 合併並去重 JSON 失敗: {e}")
+        no.send_line_notification(f"t_tw_concat_df_json_distinct_annual_sales", str(e))
         raise
 
 @flow(name="f0_download_tw_annual")

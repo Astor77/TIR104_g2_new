@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-from prefect import get_run_logger, task, flow
+from prefect import task, flow, get_run_logger
 from prefect.task_runners import ConcurrentTaskRunner
 import importlib  # Python 內建的重新載入模組工具
 
@@ -10,6 +10,7 @@ import tasks.Storage_Task.read_file_module as rm
 import tasks.Storage_Task.save_file_module as sm
 import tasks.Transform_Task.other_module as om
 import utils.path_config as p
+import utils.notifier as no
 
 importlib.reload(rm)  # 強制重新載入
 importlib.reload(sm)  # 強制重新載入
@@ -28,6 +29,8 @@ def e_tw_annual_df() -> pd.DataFrame:
 
     except Exception as err:
         logger.error(f"❌ e_tw_annual_df() 執行失敗: {err}")
+        no.send_line_notification(f"e_tw_annual_df", str(err))
+
 
 @task
 def e_tmdb_query_result(tw_annual_df) -> json:
@@ -45,6 +48,7 @@ def e_tmdb_query_result(tw_annual_df) -> json:
 
     except Exception as err:
         logger.error(f"❌ e_tmdb_query_result() 執行失敗: {err}")
+        no.send_line_notification(f"e_tmdb_query_result", str(err))
 
 @task
 def e_mapping_tw_tmdb_result(tw_annual_df, tmdb_search_results) -> pd.DataFrame:
@@ -74,6 +78,7 @@ def e_mapping_tw_tmdb_result(tw_annual_df, tmdb_search_results) -> pd.DataFrame:
 
     except Exception as err:
         logger.error(f"❌ e_mapping_tw_tmdb_result() 執行失敗: {err}")
+        no.send_line_notification(f"e_mapping_tw_tmdb_result", str(err))
 
 @task
 def t_mapping_df(mapping_result_df) -> pd.DataFrame:
@@ -91,6 +96,8 @@ def t_mapping_df(mapping_result_df) -> pd.DataFrame:
 
     except Exception as err:
         logger.error(f"❌ t_mapping_df() 執行失敗: {err}")
+        no.send_line_notification(f"t_mapping_df", str(err))
+
 
 
 @task
@@ -107,6 +114,8 @@ def l_save_raw_data(data, dir_path, file_name) -> None:
 
     except Exception as err:
         logger.error(f"❌ l_save_raw_data() 執行失敗，錯誤：\n{err}")
+        no.send_line_notification(f"l_save_raw_data:{file_name}", str(err))
+
 
 
 @flow(task_runner=ConcurrentTaskRunner())
