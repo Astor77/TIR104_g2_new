@@ -20,7 +20,8 @@ raw_tw_publisher = raw_tw / "tw_publisher"
 raw_tw_tw_release_date = raw_tw / "tw_release_dates"
 raw_tw_search = raw_tw / "tw_search"
 raw_tw_genres_list = raw_tw / "tmdb_genres_list"
-
+#tw_selenium
+raw_tw_selenium = raw_tw / "tw_selenium_download"
 
 ## file檔案名稱:統一
 mapping_csv = "tw_tmdb_mapping.csv"
@@ -36,8 +37,8 @@ genres_list_json = "tmdb_genres_list.json"
 tw_annual_dup_csv = "TWMovie2022-2025_raw.csv"
 tw_annual_not_dup_csv = "TWMovie2022-2025.csv"
 tw_release_date_csv = "tw_release_dates.csv"
-tw_weekly_csv = "TWMovie_weekly_data.csv"
-tw_weekly2_csv = "TWMovie_weekly_data2.csv"
+tw_weekly_data_csv = "TWMovie_weekly_data.csv"
+tw_weekly_data2_csv = "TWMovie_weekly_data2.csv"
 
 
 
@@ -49,8 +50,8 @@ temp_global = temp / "global"
 ## file檔案名稱:統一
 details_csv = "tmdb_details.csv"
 release_date_csv = "tmdb_release_dates.csv"
-cast_top5_csv = "tmdb_cast_top5.csv"
-director_csv = "tmdb_directors.csv"
+casts_top5_csv = "tmdb_casts_top5.csv"
+directors_csv = "tmdb_directors.csv"
 person_csv = "tmdb_person.csv"
 keywords_csv = "tmdb_keywords.csv"
 genres_csv = "tmdb_movie_genres.csv"
@@ -59,7 +60,7 @@ omdb_info_csv = "omdb_info.csv"
 
 tw_annual_csv = "TWMovie_annual_df3.csv"
 tw_details_csv = "TWMovie_details.csv"
-tw_weekly_csv = "TWMovie_weekly_df2.csv"
+tw_weekly_df2_csv = "TWMovie_weekly_df2.csv"
 
 
 
@@ -67,6 +68,7 @@ tw_weekly_csv = "TWMovie_weekly_df2.csv"
 final = Path("/workspaces/TIR104_g2_new/A2_final_data/")
 final_tw = final / "tw"
 final_global = final / "global"
+
 
 
 #GCS_path

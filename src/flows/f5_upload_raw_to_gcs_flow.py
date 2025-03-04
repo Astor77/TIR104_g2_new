@@ -1,16 +1,190 @@
 # 運用gcs_task.py
 # 上傳所有raw資料的task
-
-# task1
-
-
-# task2
-
-
-# task3
-
-
-# task4
+from datetime import datetime
+from google.cloud import storage
+from prefect_gcp import GcpCredentials
+from prefect import task, flow
+from tasks.Storage_Task import gcs_module as gm
+from utils import path_config as pc
+from google.oauth2 import service_account
 
 
-# task5
+# 載入 Prefect 設定的 GCP Credential
+gcp_credentials_block = GcpCredentials.load("tir104-02")
+#print(gcp_credentials_block)
+location="asia-east1"
+#設定資料上傳時間
+timestamp = datetime.now().strftime("%Y-%m-%d") 
+#將憑證建立連接
+storage_client = gm.get_credentials_gcs(gcp_credentials_block)
+
+#創建bucket
+bucket_list = [ "omdb_info",
+                "tmdb_credits", 
+                "tmdb_details", 
+                "tmdb_details_en",
+                "tmdb_genres", 
+                "tmdb_keywords", 
+                "tmdb_release_date", 
+                "tw_mapping_tmdb",
+                "tw_movie_2022_2025",
+                "tw_movie_sales",
+                "tw_movie_weekly",
+                "tw_movie_year_sales",
+                "tw_release_dates",
+                "tw-search",
+                "tw_selenium_download"
+                ]
+
+#storage_client = gm.get_credentials(gcp_credentials_block)
+#for i in bucket_list:
+#    gm.create_bucket(i, storage_client, location)
+
+@task
+def upload_omdb():
+    bucket_name = "omdb_info"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
+    destination_blob_name = f"raw_data/{timestamp}/raw_tw_omdb_info"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tmdb_credits():
+    bucket_name = "tmdb_credits"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_credits/tmdb_credits.json"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.credits_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tmdb_details():
+    bucket_name = "tmdb_details"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_details/tmdb_details.json"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.details_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tmdb_details_en():
+    bucket_name = "tmdb_details_en"
+    source_file_name = pc.raw_tw_details_en
+    destination_blob_name = f"raw_data/{timestamp}/{pc.details_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tmdb_keywords():
+    bucket_name = "tmdb_keywords"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_keywords/tmdb_keywords.json"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.keywords_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tmdb_release_date():
+    bucket_name = "tmdb_release_date"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_release_date/tmdb_release_dates.json"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.release_date_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tw_mapping_tmdb():
+    bucket_name = "tw_mapping_tmdb"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_mapping_tmdb/tw_tmdb_mapping.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.mapping_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task    #要確認使用哪一個檔名(我先用copy path)
+def upload_tw_movie_2022_2025_dup():
+    bucket_name = "tw_movie_2022_2025"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025_raw.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task   #要確認使用哪一個檔名(我先用copy path)
+def upload_tw_movie_2022_2025_not_dup():
+    bucket_name = "tw_movie_2022_2025"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025_raw2.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_not_dup_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task10   #這式2000多個json不用上傳
+def upload_tw_movie_sales():
+    bucket_name = "tw_movie_sales"
+    source_file_name = pc.raw_tw_sales
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tw_movie_weekly():
+    bucket_name = "tw_movie_weekly"
+    source_file_name = pc.raw_tw_weekly
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tw_movie_weekly2():
+    bucket_name = "tw_movie_weekly"
+    source_file_name = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/TWMovie_weekly_data2.csv"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+# task12  #這個不需要執行
+def upload_tw_movie_year_sales():
+    bucket_name = "tw_movie_year_sales"
+    source_file_name = pc.raw_tw_year_sales
+    destination_blob_name = f"raw_data/{timestamp}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tw_release_dates():
+    bucket_name = "tw_release_dates"
+    source_file_name = pc.raw_tw_tw_release_date
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_release_date_csv}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task
+def upload_tw_search():
+    bucket_name = "tw-search"
+    source_file_name = pc.raw_tw_search
+    destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@task   #這是一個一個json不上傳
+def upload_tw_selenium_download():
+    bucket_name = "tw_selenium_download"
+    source_file_name = pc.raw_tw_search
+    destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
+    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+
+@flow
+def f5_upload_gcs_main_flow():
+    t1 = upload_omdb().submit()
+    t2 = upload_tmdb_credits().submit()
+    t3 = upload_tmdb_details().submit()
+    t4 = upload_tmdb_details_en().submit()
+    t5 = upload_tmdb_keywords().submit()
+    t6 = upload_tmdb_release_date().submit()
+    t7 = upload_tw_mapping_tmdb().submit()
+    t8 = upload_tw_movie_2022_2025_dup().submit()
+    t9 = upload_tw_movie_2022_2025_not_dup().submit()
+    #upload_tw_movie_sales()--------
+    t10 = upload_tw_movie_weekly().submit()
+    t11 = upload_tw_movie_weekly2().submit()
+    #upload_tw_movie_year_sales()-------
+    t12 = upload_tw_release_dates().submit()
+    t13 = upload_tw_search().submit()
+    #upload_tw_selenium_download().submit()
+
+    t1.result()
+    t2.result()
+    t3.result()
+    t4.result()
+    t5.result()
+    t6.result()
+    t7.result()
+    t8.result()
+    t9.result()
+    t10.result()
+    t11.result()
+    t12.result()
+    t13.result()
+    
+
+if __name__ == "__main__":
+    f5_upload_gcs_main_flow()

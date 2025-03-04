@@ -24,7 +24,7 @@ def tw_clean_region(df: pd.DataFrame)-> pd.Series:
         "中國大陸": "中國",
         "台灣": "中華民國"
     }
-    tw_clean_region_series = df["Region"].replace(replace_dict)
+    tw_clean_region_series = tw_clean_region_series.replace(replace_dict)
     return tw_clean_region_series
 
 # sele_tw_annual founction2
@@ -51,13 +51,13 @@ def tw_check_release_date() -> pd.DataFrame:
     tw_release_df = pd.concat([df1, df2], axis= 1)
     # 年度跟單片查詢的上映日期欄位名稱
     annual = "ReleaseDate"
-    search = "release_dates"
+    search = "tw_release_date"
     # 新建一個欄位tw_first_release_date
     new_column = "tw_first_release_date"
     # 比對不相等，或是年度資料的日期缺失時，以單片查詢的release_dates欄位資料為主
     # 將比對結果存入tw_first_release_date欄位
     tw_release_df[new_column] = np.where(
-        (tw_release_df[annual] != tw_release_df[search]) & pd.notna(tw_release_df[annual]),
+        (tw_release_df[annual] != tw_release_df[search]) & pd.notna(tw_release_df[search]),
         tw_release_df[search],
         tw_release_df[annual]
         )
@@ -65,7 +65,7 @@ def tw_check_release_date() -> pd.DataFrame:
 
 # sele_tw_release_date founction2
 # 將比對日期結果的dataframe轉換型態
-def tw_release_date_trans() -> pd.DataFrame:
+def tw_movie_details_trans() -> pd.DataFrame:
     # 取得tw movie日期比對結果
     tw_release_df = tw_check_release_date()
     # 新增 production_country 欄位，來源為清理過的 Region 欄位
@@ -81,11 +81,11 @@ def tw_release_date_trans() -> pd.DataFrame:
 # sele_tw_weekly_data_raw function1
 def tw_annual_weekly_merge_df() -> pd.DataFrame:
     # 讀取tw年度資料，篩選 MovieId, Year欄位
-    # 這邊統計周票房想用的是重複還是不重複？ -> 不重複
+    # 這邊統計周票房用不重複的年度資料
     tw_annual_not_dup = rm.read_file_to_df(p.raw_tw_2022_2025, p.tw_annual_not_dup_csv)
     tw_annual = tw_annual_not_dup[["MovieId", "Year"]]
     # 讀取tw週資料
-    tw_weekly_data = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly_csv)
+    tw_weekly_data = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly_data_csv)
     # 將篩選的年度資料跟周資料merge
     tw_annual_weekly_merge_df = om.data_merge_left_df(tw_annual, tw_weekly_data, "MovieId", "MovieId")
     return tw_annual_weekly_merge_df
@@ -108,7 +108,7 @@ def tw_filter_start_date_notna(df: pd.DataFrame) -> pd.DataFrame:
 # 處理 tw_weekly_data2內的日期轉型、篩選
 def sele_tw_weekly_amount_trans() -> pd.DataFrame:
     # 讀取tw_weekly_data2檔案
-    tw_weekly_df = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly2_csv)
+    tw_weekly_df = rm.read_file_to_df(p.raw_tw_weekly, p.tw_weekly_data2_csv)
     # 將開始與結束日期轉換datetime型態
     columns = ["start_date", "end_date"]
     tw_weekly_trans_df = om.column_to_datetime(tw_weekly_df, columns)

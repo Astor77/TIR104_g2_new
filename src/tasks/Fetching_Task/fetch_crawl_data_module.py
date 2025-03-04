@@ -10,10 +10,10 @@ headers = {
         }
 
 
-def fetch_imdb_id():  
+def fetch_imdb_id():
     #路徑會可能來自gcs
     movie_id_csv = pd.read_csv("路徑")
-    movie_id_list = movie_id_csv["movie_id"].tolist()   
+    movie_id_list = movie_id_csv["movie_id"].tolist()
     #去除nan值
     movie_id = [movie_id for movie_id in movie_id_list if not (isinstance(movie_id, float) and math.isnan(movie_id))]
     #計算id個數

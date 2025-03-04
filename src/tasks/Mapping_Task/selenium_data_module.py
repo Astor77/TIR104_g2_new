@@ -1,6 +1,6 @@
 # selenium_data_module.py ->整合用selenium獲取資料的函式
 import json
-import glob
+from glob import glob
 import time
 import os
 import pandas as pd
@@ -128,6 +128,10 @@ def download_rename(MovieIds: list) -> None:
     # driver = Chrome()
 
     for MovieId in MovieIds:
+        # file_path = os.path.join(DOWNLOAD_DIR, f"{MovieId}.json")
+    
+        # if os.path.exists(file_path):
+        #     continue  # 跳過這次迴圈，處理下一個 MovieId
 
         url = f"https://boxofficetw.tfai.org.tw/search/{MovieId}"
 
@@ -163,7 +167,7 @@ def add_id_column(MovieIds: list) -> None:
     for MovieId in MovieIds:
         try:
             input_path = f"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/{MovieId}.json"
-            output_path = p.raw_tw_sales + f"{MovieId}.json"
+            output_path = p.raw_tw_sales / f"{MovieId}.json"
             
             with open(input_path, "r", encoding="utf-8-sig") as j:
                 TWMovie_in = json.load(j)
@@ -323,6 +327,6 @@ if __name__ == '__main__':
 
     # 清洗原始json檔案
 
-    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022 年票房資料_raw.json"
+    file_path = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_selenium_download/2022年票房資料_raw.json"
 
     extract_cleaned_data = extract_json(clean_json_file(file_path))

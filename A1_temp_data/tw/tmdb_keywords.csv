@@ -617,6 +617,7 @@
 185,cautionary
 185,critical
 185,tense
+185,intense
 185,audacious
 185,mean spirited
 497828,dark comedy
@@ -794,15 +795,9 @@
 76025,internet porn
 76025,self-loathing
 76025,brother sister relationship
-591538,witch
-591538,husband wife relationship
-591538,scotland
-591538,ambition
-591538,treason
-591538,based on play or musical
-591538,black and white
-591538,rise to power
-591538,non-traditional casting
+225728,scotland
+225728,medieval
+225728,11th century
 14553,adultery
 14553,virgin
 14553,friendship
@@ -833,6 +828,22 @@
 42035,relativity
 42035,what if
 42035,joe dimaggio
+361743,fighter pilot
+361743,u.s. navy
+361743,sequel
+361743,nuclear weapons
+361743,military
+361743,nostalgic
+361743,aircraft carrier
+361743,naval aviation
+361743,war
+361743,grand
+361743,tense
+361743,sentimental
+361743,admiring
+361743,audacious
+361743,earnest
+361743,exuberant
 634649,new york city
 634649,hero
 634649,showdown
@@ -872,6 +883,16 @@
 76600,adopted son
 76600,stronger villain
 76600,war
+507086,paleontology
+507086,giant monster
+507086,sequel
+507086,survival
+507086,dinosaur
+507086,scientist
+507086,child kidnapping
+507086,jurassic
+507086,animal sanctuary
+507086,science goes awry
 524434,superhero
 524434,supernatural
 524434,based on comic
@@ -884,6 +905,7 @@
 524434,sign languages
 524434,ancient
 524434,god-like
+524434,clinical
 505642,hero
 505642,loss of loved one
 505642,superhero
@@ -1015,6 +1037,14 @@
 436270,superhero team
 436270,duringcreditsstinger
 436270,dc extended universe (dceu)
+438148,1970s
+438148,villain
+438148,sequel
+438148,spin off
+438148,duringcreditsstinger
+438148,supervillain
+438148,illumination
+438148,gentleminions
 414906,police
 414906,psychopath
 414906,secret identity
@@ -1036,6 +1066,8 @@
 414906,vengeance
 414906,mayoral election
 414906,tense
+414906,batman
+414906,dc acción real
 338953,prison
 338953,witch
 338953,"berlin, germany"
@@ -1053,7 +1085,6 @@
 338953,good versus evil
 338953,amused
 338953,powerful
-338953,wizarding world
 718930,mission
 718930,japan
 718930,assassin
@@ -1249,22 +1280,6 @@
 438695,illumination
 438695,suspenseful
 752623,duringcreditsstinger
-616037,hero
-616037,ex-girlfriend
-616037,superhero
-616037,greek mythology
-616037,based on comic
-616037,sequel
-616037,shadow
-616037,norse mythology
-616037,aftercreditsstinger
-616037,duringcreditsstinger
-616037,marvel cinematic universe (mcu)
-616037,heroes
-616037,norse god
-616037,god of thunder
-616037,colorless
-616037,child abduction
 763285,ambulance
 763285,car crash
 763285,remake
@@ -1430,6 +1445,27 @@
 19995,loving
 19995,admiring
 19995,compassionate
+762504,california
+762504,horse
+762504,exploitation
+762504,video surveillance
+762504,death of father
+762504,alien
+762504,ufo
+762504,social commentary
+762504,psychological thriller
+762504,alien invasion
+762504,child star
+762504,chimpanzee
+762504,aftercreditsstinger
+762504,horse farm
+762504,african american man
+762504,racial issues
+762504,brother sister relationship
+762504,awestruck
+762504,baffled
+762504,hopeful
+762504,melodramatic
 539681,superhero
 539681,villain
 539681,based on comic
@@ -1464,29 +1500,6 @@
 508943,water
 508943,italian riviera
 508943,pesto
-597208,infidelity
-597208,based on novel or book
-597208,love triangle
-597208,tarot cards
-597208,mentor
-597208,hustler
-597208,lie
-597208,supernatural
-597208,carnival
-597208,con artist
-597208,murder
-597208,fugitive
-597208,alcoholic
-597208,grifter
-597208,séance
-597208,carny
-597208,neo-noir
-597208,freak show
-597208,1940s
-597208,spiritism
-597208,mentalist
-597208,violence
-597208,gloomy
 542178,art collector
 542178,journalist
 542178,small town
@@ -1629,7 +1642,7 @@
 671,wizard
 671,based on young adult novel
 671,owl
-671,wizarding world
+671,joyous
 482373,home
 482373,invasion
 482373,sin
@@ -1809,6 +1822,7 @@
 601635,india
 601635,foreign language adaptation
 601635,based on movie
+601635,bollywood
 585245,based on novel or book
 585245,dog
 585245,giant dog
@@ -2013,7 +2027,6 @@
 511809,romantic
 511809,bold
 511809,tragic
-760741,wild animal
 744,dying and death
 744,secret love
 744,lovesickness
@@ -2036,6 +2049,11 @@
 744,commanding
 744,exuberant
 744,melodramatic
+615904,marriage
+615904,celebrity
+615904,based on comic
+615904,wedding
+615904,duringcreditsstinger
 830788,suicide
 830788,countryside
 830788,vampire
@@ -2246,7 +2264,6 @@
 9746,buddhist monk
 9746,mountain
 9746,tibet
-9746,dalai lama
 9746,lhasa
 9746,buddha
 842942,canada
@@ -2498,6 +2515,8 @@
 907,stepparents
 907,russian revolution (1917)
 907,1910s
+907,condescending
+907,melodramatic
 689700,new york city
 689700,garbageman 
 689700,gangster
@@ -2801,7 +2820,6 @@
 531428,fire
 531428,beach
 531428,arranged marriage
-531428,orpheus
 531428,classical music
 531428,painting
 531428,painter
@@ -2828,7 +2846,6 @@
 531428,woman falls in love
 531428,vivaldi
 531428,women
-531428,assertive
 746333,superhero
 617762,inventor
 617762,19th century
@@ -3243,6 +3260,7 @@
 496331,superhero
 496331,mythology
 496331,astraverse
+496331,bollywood
 786064,cooking
 786064,womanhood
 786064,couple
@@ -3321,11 +3339,13 @@
 519141,lgbt
 519141,gay romance
 519141,gay theme
+819876,human evolution
 819876,detective
 819876,dystopia
 819876,murder
 819876,performance art
 819876,transhumanism
+819876,evolution
 819876,surgery
 819876,shipyard
 819876,body horror
@@ -3351,6 +3371,7 @@
 635302,supernatural
 635302,psychology
 635302,gore
+635302,sequel
 635302,coming of age
 635302,survival
 635302,tragedy
@@ -3426,7 +3447,6 @@
 8392,anime
 8392,wonder
 8392,admiring
-8392,studio ghibli
 916192,high school
 916192,adolescence
 916192,legend
@@ -3486,7 +3506,6 @@
 10515,anime
 10515,adventure
 10515,amused
-10515,studio ghibli
 566466,camping
 566466,slice of life
 566466,hobby
@@ -3596,6 +3615,7 @@
 695932,young lovers
 966709,based on manga
 966709,anime
+1081641,samurai sword
 1081641,anime
 1081640,anime
 874476,japan
@@ -3791,10 +3811,6 @@
 1015361,魔神英雄传电影版
 1015361,edited from ona
 804593,tang
-354759,career
-354759,japan
-354759,relationship
-354759,divorce
 735409,based on novel or book
 987573,island
 987573,cult
@@ -3855,6 +3871,9 @@
 54186,middle school
 54186,murder mystery
 54186,grieving mother
+950282,occult horror
+950282,mysterious death
+950282,south korea
 810674,romance
 810674,slice of life
 810674,school
@@ -4486,6 +4505,7 @@
 693349,17th century
 693349,caravaggio
 693349,paintings
+1004682,pope
 743173,remarriage
 743173,romantic dramedy
 1091360,philosophy
@@ -4726,7 +4746,6 @@
 965150,reminiscing
 965150,gay theme
 965150,bittersweet
-965150,admiring
 965150,adoring
 965150,queer loneliness
 11948,based on novel or book
@@ -4795,6 +4814,10 @@
 11012,extramarital affair
 11012,voyeur
 11012,father son relationship
+1130659,dance
+1130659,hip-hop
+1130659,brothers
+1130659,break dance
 261832,live performance
 261832,live play
 953233,friendship
@@ -4814,15 +4837,6 @@
 953233,brother sister relationship
 953233,hate to love
 953233,spiritedness
-591538,witch
-591538,husband wife relationship
-591538,scotland
-591538,ambition
-591538,treason
-591538,based on play or musical
-591538,black and white
-591538,rise to power
-591538,non-traditional casting
 4348,based on novel or book
 4348,england
 4348,bachelor
@@ -4968,18 +4982,25 @@
 71,ya
 71,generational divide
 71,celebratory
+971699,high school
 971699,double life
 971699,homophobia
 971699,assault
 971699,bullying
+971699,conservatism
 971699,teacher
 971699,lesbian relationship
+971699,morality
+971699,gender roles
 971699,lgbt
 971699,"newcastle, england"
 971699,woman director
 971699,1980s
 971699,lesbian
+971699,thatcherism
 971699,secret
+971699,closeted
+971699,margaret thatcher
 28468,infidelity
 28468,jealousy
 28468,husband wife relationship
@@ -5139,6 +5160,7 @@
 667538,brother brother relationship
 447365,hero
 447365,superhero
+447365,melancholy
 447365,mad scientist
 447365,based on comic
 447365,sequel
@@ -5148,9 +5170,20 @@
 447365,aftercreditsstinger
 447365,duringcreditsstinger
 447365,marvel cinematic universe (mcu)
+447365,hopeless
 447365,cosmic
 447365,outer space
 447365,chosen family
+447365,lighthearted
+447365,hilarious
+447365,cheerful
+447365,disheartening
+447365,empathetic
+447365,enthusiastic
+447365,euphoric
+447365,hopeful
+447365,straightforward
+447365,sympathetic
 298618,hero
 298618,secret identity
 298618,superhero
@@ -5173,6 +5206,26 @@
 572802,underwater world
 572802,vengeance
 572802,brother brother relationship
+640146,hero
+640146,superhero
+640146,ant
+640146,based on comic
+640146,sequel
+640146,alternate dimension
+640146,family
+640146,aftercreditsstinger
+640146,duringcreditsstinger
+640146,marvel cinematic universe (mcu)
+615656,based on novel or book
+615656,deep sea
+615656,sequel
+615656,underwater
+615656,shark
+615656,kaiju
+615656,civil action
+615656,mariana trench
+615656,environmental crisis
+615656,shark cage
 569094,new york city
 569094,hero
 569094,sacrifice
@@ -5203,13 +5256,11 @@
 569094,superhero teamup
 569094,female superhero
 569094,slow burn romance
-569094,grand
 569094,interdimensional travel
 569094,sentimental
 569094,audacious
 569094,bold
 569094,defiant
-569094,exhilarated
 569094,exuberant
 976573,fire
 976573,earth
@@ -5369,12 +5420,12 @@
 739405,"cannes, france"
 670292,artificial intelligence (a.i.)
 670292,asia
-670292,distant future
 670292,robot
 670292,space station
 670292,child
 670292,ex special forces
 670292,missing wife
+670292,near future
 670292,war against machines
 565770,armor
 565770,superhero
@@ -5539,6 +5590,18 @@
 713704,tense
 713704,intense
 713704,harsh
+807172,faith
+807172,exorcism
+807172,possession
+807172,sequel
+807172,disappearance
+807172,death of mother
+807172,exorcist
+807172,reboot
+807172,demonic possession
+807172,religious horror
+807172,father daughter relationship
+807172,awestruck
 507089,night shift
 507089,child murder
 507089,restaurant
@@ -6010,8 +6073,12 @@
 758009,destination wedding
 758009,island resort
 758009,sea pirates
+536437,detective
+536437,heist
 536437,hypnotism
 536437,missing daughter
+536437,illusionist
+536437,secret government project
 674324,friendship
 674324,island
 674324,donkey
@@ -6093,6 +6160,11 @@
 804095,empathetic
 804095,powerful
 804095,sympathetic
+977013,photographer
+977013,cruise ship
+977013,family tragedy
+977013,cruise liner
+977013,queen mary
 798286,suicide
 798286,nightmare
 798286,therapist
@@ -6289,6 +6361,7 @@
 814757,race relations
 814757,movie theater
 13689,gymnastics
+13689,espiritualidad
 1018,amnesia
 1018,loss of sense of reality
 1018,schizophrenia
@@ -6312,7 +6385,6 @@
 1018,doppelgänger
 1018,criterion
 1018,neo-noir
-1018,inspirational
 176,sadism
 176,shotgun
 176,detective
@@ -6689,9 +6761,32 @@
 194,childhood memory
 194,whimsical
 194,cheerful
-11845,hotel room
-11845,bartender
-11845,new french extremism
+901563,friendship
+901563,suicide
+901563,forgiveness
+901563,male friendship
+901563,bullying
+901563,ice hockey
+901563,coming of age
+901563,grief
+901563,best friend
+901563,teenage boy
+901563,bike
+901563,guilt
+901563,childhood
+901563,lgbt
+901563,childhood friends
+901563,peer pressure
+901563,masculinity
+901563,intimacy
+901563,death of best friend
+901563,field trip
+901563,boyhood
+901563,vulnerability
+901563,oboe
+901563,boys' love (bl)
+901563,lgbt child
+901563,powerful
 811596,based on true story
 811596,dramatic
 811596,compassionate
@@ -6955,62 +7050,6 @@
 5544,nouvelle vague
 85927,woman director
 85927,somber
-926889,immigrant
-926889,"paris, france"
-926889,coming of age
-926889,single mother
-926889,mother son relationship
-926889,brother brother relationship
-147,"paris, france"
-147,delinquent
-147,coming of age
-147,fingerprint
-147,semi autobiographical
-147,skipping school
-147,mugshot
-147,strict teacher
-147,"montmartre, paris"
-1600,music teacher
-1600,"kraków, poland"
-1600,puppeteer
-1600,heart disease
-1600,fake identity
-1600,puppet
-1600,poland
-1600,chorus
-1600,doppelgänger
-1600,parallel lives
-1600,soprano
-1600,"warsaw, poland"
-1600,choral music
-1600,marionettes
-110,infidelity
-110,judge
-110,isolation
-110,shadowing
-110,english channel
-110,"geneva, switzerland"
-110,weather forecast
-110,retiree
-110,dog
-110,surveillance
-110,prediction
-110,unlikely friendship
-110,the color red
-110,love destiny
-110,fashion model
-110,empathetic
-109,france
-109,hairdresser
-109,sexual frustration
-109,businessman
-109,funeral
-109,love
-109,poland
-109,psychological
-109,french
-109,arthouse
-109,comedy-drama
 997659,brother
 997659,family
 997659,mental illness
@@ -7155,7 +7194,6 @@
 508883,animation
 508883,courage
 508883,absurd
-508883,studio ghibli
 1059572,superhero
 1059572,kindergarten
 1059572,based on manga
@@ -7177,6 +7215,7 @@
 887870,saxophone
 887870,based on manga
 887870,anime
+952083,anime
 149,army
 149,street gang
 149,saving the world
@@ -7204,13 +7243,13 @@
 1056803,based on light novel
 283566,technology
 283566,dystopia
+283566,post-apocalyptic future
 283566,mecha
+283566,giant robot
 283566,battle
 283566,anime
 283566,father son conflict
-283566,humanity under attack
 283566,based on tv series
-283566,post apocalypse
 283566,bold
 572154,high school
 572154,based on novel or book
@@ -7274,7 +7313,6 @@
 16859,anime
 16859,adventure
 16859,amused
-16859,studio ghibli
 1064669,based on manga
 915403,superhero
 915403,giant monster
@@ -7552,9 +7590,6 @@
 37585,surrealism
 37585,anthropomorphism
 37585,another dimension
-11845,hotel room
-11845,bartender
-11845,new french extremism
 1156189,concert film
 1156189,piano
 1156189,instrumental music
@@ -7566,9 +7601,6 @@
 38405,summer
 38405,goblin
 160642,anime
-11845,hotel room
-11845,bartender
-11845,new french extremism
 804032,high school
 804032,coming of age
 804032,lgbt
@@ -7607,7 +7639,6 @@
 4935,based on young adult novel
 4935,fantasy
 4935,adventure
-4935,studio ghibli
 994741,lesbian sex
 994741,softcore
 994741,pink film
@@ -7660,6 +7691,7 @@
 969441,gay theme
 969441,psychological
 969441,boys' love (bl)
+110283,hotel
 110283,yakuza
 110283,extortion
 110283,extortionist
@@ -7691,7 +7723,6 @@
 128,industrialization
 128,fantasy
 128,adventure
-128,studio ghibli
 12429,princess
 12429,fish
 12429,cliff
@@ -7700,7 +7731,6 @@
 12429,lighthearted
 12429,adventure
 12429,whimsical
-12429,studio ghibli
 83183,politics
 83183,geisha
 83183,banking
@@ -7813,7 +7843,6 @@
 682152,lgbt
 682152,gay theme
 682152,mayoral election
-665733,powerful
 838209,ritual
 838209,coffin
 838209,exorcism
@@ -8288,13 +8317,6 @@
 1187970,big family
 1187970,sequel
 1187970,based on short
-18329,relationship problems
-18329,male homosexuality
-18329,argentina
-18329,lgbt
-18329,falling out of love
-18329,toxic relationship
-18329,gay theme
 1178574,biography
 1178574,based on true story
 1178574,murder
@@ -8338,6 +8360,11 @@
 804616,lost at sea
 804616,bikini babes
 804616,wedding at sea
+804616,лесбийский персонаж
+804616,лесбиянка бывшая девушка
+567811,cat
+567811,talking animal
+567811,animal
 655,van
 655,regret
 655,sibling relationship
@@ -8353,9 +8380,6 @@
 655,neo-western
 655,new german cinema
 655,fugue state
-567811,cat
-567811,talking animal
-567811,animal
 785429,orangutan
 785429,deforestation
 785429,scathing
@@ -8420,10 +8444,12 @@
 879689,immigrant
 269509,based on novel or book
 269509,halloween
+269509,haunted house
 269509,family
 269509,ghost
 269509,halloween costume
 269509,eccentric family
+269509,haunted
 269509,animation
 269509,cinema
 1274237,concert
@@ -8463,6 +8489,8 @@
 1075175,consent
 1075175,sex
 1075175,partying
+1075175,лесбиянка
+1075175,подруга-лесбиянка
 171372,mask
 171372,friendship
 171372,musician
@@ -8514,7 +8542,6 @@
 475557,mother son relationship
 475557,origin story
 475557,falling into madness
-475557,sinister
 475557,frightened
 475557,pretentious
 533535,hero
@@ -8527,6 +8554,16 @@
 533535,marvel cinematic universe (mcu)
 533535,mutants
 533535,superhero teamup
+823464,giant monster
+823464,sequel
+823464,dinosaur
+823464,monkey
+823464,kaiju
+823464,fantasy world
+823464,giant ape
+823464,langue française
+823464,godzilla
+823464,king kong
 693134,epic
 693134,based on novel or book
 693134,fight
@@ -8559,7 +8596,6 @@
 693134,religious allegory
 693134,giant creature
 693134,power
-693134,grand
 693134,violence
 693134,suspenseful
 693134,intense
@@ -8588,6 +8624,7 @@
 912649,sequel
 912649,aftercreditsstinger
 912649,woman director
+912649,modest
 945961,alien life-form
 945961,sequel
 945961,alien
@@ -8605,7 +8642,6 @@
 1241982,musical
 1241982,sequel
 1241982,duringcreditsstinger
-1241982,absurd
 653346,empire
 653346,kingdom
 653346,gorilla
@@ -8688,9 +8724,12 @@
 866398,cliché
 866398,vibrant
 786892,post-apocalyptic future
+786892,warlord
 786892,prequel
+786892,wasteland
 786892,spin off
 786892,struggle for survival
+786892,tyrant
 786892,tyranny
 786892,masculinity
 786892,grim
@@ -8818,12 +8857,8 @@
 762509,chance meeting
 762509,live action remake
 762509,found family
-762509,loving
 762509,lost
-762509,inspirational
-762509,bold
-762509,disgusted
-762509,hopeful
+762509,ambivalent
 157336,rescue
 157336,future
 157336,spacecraft
@@ -8848,12 +8883,11 @@
 157336,space station
 157336,space adventure
 157336,time paradox
-157336,time-manipulation
 157336,father daughter relationship
 157336,2060s
 157336,cornfield
 157336,time manipulation
-157336,admiring
+157336,pretentious
 1011985,martial arts
 1011985,kung fu
 1011985,china
@@ -8865,6 +8899,16 @@
 1011985,female villain
 1011985,disheartening
 1011985,pretentious
+848538,cat
+848538,spy
+848538,secret agent
+848538,writer's block
+848538,author
+848538,novelist
+848538,aftercreditsstinger
+848538,secrets
+848538,absurd
+848538,cliché
 746036,stuntman
 746036,missing person
 746036,duringcreditsstinger
@@ -8883,6 +8927,7 @@
 698687,buddy movie
 698687,brothers-in-arms relationship
 698687,origin story
+698687,inspirational
 698687,friends to enemies
 698687,alien robot
 698687,suspenseful
@@ -8962,7 +9007,6 @@
 940551,overprotective father
 940551,illumination
 940551,bird
-940551,casual
 748783,friendship
 748783,cat
 748783,villain
@@ -9064,6 +9108,7 @@
 1226578,criminal plot
 1226578,psychological horror
 1226578,horrific crime
+1226578,horrified
 1226578,film in chapters
 969492,air force
 969492,battle
@@ -9100,6 +9145,7 @@
 1100782,absurd
 1100782,tour
 1100782,horrified
+1100782,гей-помощник
 639720,friendship
 639720,imaginary friend
 639720,aftercreditsstinger
@@ -9122,7 +9168,6 @@
 939243,amused
 939243,cliché
 939243,complicated
-939243,joyful
 939243,sceptical
 939243,sonic cinematic universe
 939243,sonic adventure 2
@@ -9256,8 +9301,10 @@
 957452,murder
 957452,back from the dead
 957452,death
+957452,blunt
 957452,true love
 957452,awakening
+957452,mysterious
 957452,dark romance
 957452,re-imagining
 957452,gloomy
@@ -9418,6 +9465,7 @@
 937287,sports drama
 937287,power dynamics
 937287,tense
+937287,ambiguous
 937287,disgusted
 840705,rape
 840705,forgiveness
@@ -9520,6 +9568,8 @@
 560016,action thriller
 560016,suspenseful
 560016,night club
+560016,трансгендер
+560016,лгбт
 840430,vietnam war
 840430,winter
 840430,boarding school
@@ -9738,6 +9788,7 @@
 916738,video art
 916738,video artist
 1019939,slapstick comedy
+1019939,black and white
 1019939,hunting
 1019939,1800s
 1019939,fur trapper
@@ -9826,22 +9877,6 @@
 470,sadness
 470,car crash
 470,multiple storylines
-398818,based on novel or book
-398818,upper class
-398818,italy
-398818,swimming pool
-398818,coming of age
-398818,love
-398818,breaking the fourth wall
-398818,summer
-398818,teenage boy
-398818,masturbation
-398818,first love
-398818,lgbt
-398818,jewish family
-398818,1980s
-398818,peach
-398818,gay theme
 1443,suicide
 1443,based on novel or book
 1443,michigan
@@ -9862,6 +9897,7 @@
 1443,sisters
 1443,disheartening
 1443,foreboding
+1051896,monster
 1051896,survival
 1051896,fear
 1051896,family
@@ -9926,12 +9962,14 @@
 4593,dinner
 4593,terrorism
 4593,drink
+4593,oneiric
 4593,dream within a dream
 4593,small talk
 4593,anarchic comedy
 4593,absurd
 4593,unexpected situation
 3427,bank robber
+5558,sniper
 5558,"paris, france"
 5558,society
 5558,monk
@@ -10077,14 +10115,6 @@
 423,based on memoir or autobiography
 423,pianist
 423,poland
-108,france
-108,"paris, france"
-108,composer
-108,pain
-108,to compose
-108,loss of loved one
-108,psychological drama
-108,french
 626,dreams
 626,midnight movie
 626,donkey
@@ -10099,16 +10129,6 @@
 626,severed hand
 626,piano
 626,short film
-85033,down syndrome
-85033,"montreal, canada"
-85033,divorced
-85033,couple
-85033,nonlinear timeline
-85033,divorced man
-85033,divorced father
-85033,multiple story line
-85033,divorced parents
-85033,divorced mother
 676727,inventor
 676727,leonardo da vinci
 676727,stop motion
@@ -10127,13 +10147,6 @@
 42726,monte carlo rally
 42726,1960s
 42726,inner thoughts
-429191,waitress
-429191,loss
-429191,chile
-429191,singer
-429191,death of lover
-429191,south america
-429191,transgender
 1024541,based on novel or book
 1024541,professor
 1024541,biography
@@ -10198,6 +10211,14 @@
 8088,"madrid, spain"
 8088,obsession
 8088,love
+1160018,train
+1160018,one man army
+1160018,relationship
+1160018,train robbery
+1160018,aggressive
+1160018,action hero
+1160018,high octane
+1160018,bollywood
 927547,nurse
 927547,roommates
 927547,meditative
@@ -10534,6 +10555,11 @@
 1216623,anime
 1216623,idol group
 1216623,idol
+1287324,honeymoon
+1287324,romcom
+1287324,based on manga
+1287324,anime
+1287324,newlyweds
 1201210,based on novel or book
 1201210,exorcism
 1201210,onmyōji
@@ -10695,6 +10721,8 @@
 1094482,amnesia
 1094482,security guard
 1276633,public security
+1145026,nursing home
+1145026,disability
 81,future
 81,airplane
 81,saving the world
@@ -10708,7 +10736,6 @@
 81,anime
 81,inspirational
 81,adventure
-81,studio ghibli
 1210309,concert
 1210309,live film
 921,daughter
@@ -10764,7 +10791,6 @@
 11621,playful
 11621,witty
 11621,adventure
-11621,studio ghibli
 1333100,dystopia
 1333100,giant monster
 1333100,compilation
@@ -10778,6 +10804,9 @@
 1333100,powerful
 1333100,straightforward
 1333100,tragic
+1211716,slice of life
+1211716,based on manga
+1211716,spin off
 1211716,shoujo-ai
 1211716,anime
 1211716,yuri
@@ -10811,9 +10840,6 @@
 1078280,homosexual
 1078280,boys' love (bl)
 1078280,picture book writer
-1275240,conflict
-1275240,young woman
-1275240,twenties
 478376,based on true story
 478376,cerebral palsy
 110852,based on tv series
@@ -10822,12 +10848,9 @@
 117129,japanese family
 117129,brothers
 117129,shōwa era (1926-89)
-966238,new york city
-966238,immigration
-966238,restaurant
-966238,times square
-966238,abortion
-966238,kitchen
+54201,love triangle
+54201,restaurant
+54201,french cuisine
 253235,grandparent grandchild relationship
 253235,neighbor
 253235,wealthy
@@ -10928,10 +10951,6 @@
 1006664,sleep deprivation
 1006664,army training
 45996,mining town
-78450,photographer
-78450,taiwan
-78450,multiple storylines
-78450,taipei
 1203439,taiwan
 949709,灾难
 878607,hotel
@@ -10951,10 +10970,224 @@
 1109237,curious
 1109237,comforting
 1109237,complicated
+665733,powerful
+1224993,nun
+1224993,ritual
+1224993,supernatural
+1224993,exorcism
+1224993,church
+1224993,catholic
+1224993,occult
+1224993,dreary
+1224993,suspense
+1224993,spirit possession
+1224993,apathetic
+610251,espionage
+610251,spy
+610251,independence movement
+610251,biography
+610251,based on true story
+610251,korean resistance
+610251,1900s
+610251,korean history
+610251,japanese occupation of korea
+610251,20th century
+610251,period piece
+610251,"harbin, china"
+610251,based on real person
+645985,based on true story
+645985,firefighter
 714650,sports
 714650,volleyball
 714650,volleyball coach
 714650,sport
+842033,bizarre
+45043,age difference
+45043,erotic movie
+390,upper class
+390,city portrait
+390,movie business
+390,life planning
+390,"lisbon, portugal"
+390,camera
+390,car journey
+390,amusement park
+10376,ship
+10376,ocean
+10376,musical
+10376,pianistin
+10376,child prodigy
+10376,fondling
+646541,exorcism
+646541,devil
+522241,central intelligence agency (cia)
+522241,undercover
+522241,cold war
+522241,based on true story
+522241,mi6
+522241,british spy
+522241,russian spy
+799766,depression
+799766,yacht
+799766,drug addiction
+799766,musical
+799766,biography
+799766,family abandonment
+799766,drugs
+799766,monkey
+799766,teenage boy
+799766,pop music
+799766,price of fame
+799766,girl group
+799766,boy band
+799766,1980s
+799766,1990s
+799766,arrested development
+799766,self-harm
+799766,father son relationship
+799766,mother son relationship
+799766,2000s
+799766,grandmother grandson relationship
+799766,based on real person
+799766,based on real events
+822119,hero
+822119,superhero
+822119,revenge
+822119,aftercreditsstinger
+822119,marvel cinematic universe (mcu)
+822119,sidekick
+822119,assassination attempt
+822119,political thriller
+822119,treaty
+822119,international relations
+822119,https://justwatch.pro/movie/822119/captain-america-brave-new-world
+1084199,artificial intelligence (a.i.)
+1084199,cabin
+1084199,robot
+1084199,boyfriend girlfriend relationship
+1084199,robot girl
+1084199,weekend getaway
+1084199,human android relationship
+1084199,toxic relationship
+1084199,incel
+1084199,toxic masculinity
+1084199,abusive relationship
+1084199,malfunctioning android
+1084199,white privilege
+1084199,sentient machine
+1084199,sinister
+1084199,sci-fi horror
+1084199,human vs machines
+1084199,cybernetics
+1084199,android horror
+604685,diamond
+604685,ex-cop
+604685,heist
+604685,vengeance
+604685,crime
+604685,vibrant
+516729,sequel
+516729,bear
+516729,based on children's book
+516729,aunt nephew relationship
+516729,united kingdom
+516729,aftercreditsstinger
+516729,duringcreditsstinger
+516729,live action and animation
+516729,children's adventure
+516729,perú
+516729,anthropomorphic animal
+516729,family comedy
+674,witch
+674,dying and death
+674,based on novel or book
+674,magic
+674,boarding school
+674,world cup
+674,maze
+674,mermaid
+674,school of witchcraft
+674,black magic
+674,chosen one
+674,sequel
+674,vision
+674,school
+674,tournament
+674,dragon
+674,ghost
+674,wizard
+674,teenage hero
+674,mysterious
+674,christmas
+674,based on young adult novel
+710295,monster
+710295,moon
+710295,transformation
+710295,full moon
+710295,infection
+710295,car crash
+710295,woods
+710295,"oregon, usa"
+710295,remake
+710295,wolfman
+710295,werewolf
+710295,childhood home
+710295,creature feature
+710295,monster movie
+710295,lycanthrope
+710295,body horror
+710295,dramatic
+710295,horror
+710295,cliché
+710295,https://justwatch.pro/movie/710295/wolf-man
+661539,based on novel or book
+661539,musician
+661539,biography
+661539,1960s
+661539,disdainful
+1097549,infidelity
+1097549,new york city
+1097549,husband wife relationship
+1097549,sexual frustration
+1097549,sexuality
+1097549,eroticism
+1097549,seduction
+1097549,workplace
+1097549,female protagonist
+1097549,married woman
+1097549,ceo
+1097549,intern
+1097549,woman director
+1097549,submission
+1097549,taboo sex
+1097549,masculinity
+1097549,female sexuality
+1097549,innuendo
+1097549,erotic thriller
+1097549,workplace romance
+1097549,unfaithful wife
+1097549,sex
+1097549,young man seduces old lady
+1097549,age-gap relationship
+1097549,kink
+1097549,power dynamics
+1097549,employee boss relationship
+560144,mind control
+560144,spacecraft
+560144,martial arts
+560144,self sacrifice
+560144,space travel
+560144,promise
+560144,alien
+560144,revenge
+560144,betrayal
+560144,female protagonist
+560144,creature
+560144,battle
+560144,resistance fighter
+560144,virus
+560144,brother sister relationship
+560144,good versus evil
 1182047,new york city
 1182047,rape
 1182047,corruption
@@ -10985,12 +11218,304 @@
 1182047,hiv/aids epidemic
 1182047,absurd
 1182047,malfeasance
+1043905,fictionalized history
+673,witch
+673,school friend
+673,friendship
+673,flying
+673,magic
+673,bus
+673,traitor
+673,child hero
+673,school of witchcraft
+673,black magic
+673,time travel
+673,school
+673,best friend
+673,werewolf
+673,muggle
+673,ghost
+673,wizard
+673,aftercreditsstinger
+673,magical creature
+673,night bus
+673,teenage life
+673,christmas
+673,school class
+673,based on young adult novel
+673,magic spell
+12445,witch
+12445,dying and death
+12445,saving the world
+12445,self sacrifice
+12445,magic
+12445,school of witchcraft
+12445,sorcerer
+12445,school
+12445,battle
+12445,ghost
+12445,wizard
+12445,teenage hero
+12445,mysterious
+12445,christmas
+12445,based on young adult novel
+12445,good versus evil
+1272149,based on novel or book
+1272149,female friendship
+1272149,romcom
+1272149,sequel
+12444,witch
+12444,friendship
+12444,"london, england"
+12444,corruption
+12444,escape
+12444,teleportation
+12444,isolation
+12444,magic
+12444,bravery
+12444,radio
+12444,road trip
+12444,shelter
+12444,tension
+12444,attack
+12444,werewolf
+12444,ghost
+12444,road movie
+12444,wizard
+12444,mysterious
+12444,christmas
+12444,based on young adult novel
+672,witch
+672,flying car
+672,elves
+672,magic
+672,sword
+672,diary
+672,child hero
+672,school of witchcraft
+672,giant spider
+672,black magic
+672,giant snake
+672,ghost
+672,child driving car
+672,wizard
+672,aftercreditsstinger
+672,christmas
+672,based on young adult novel
+675,witch
+675,dying and death
+675,court
+675,magic
+675,prophecy
+675,loss of loved one
+675,professor
+675,supernatural
+675,child hero
+675,school of witchcraft
+675,black magic
+675,sorcery
+675,occult
+675,ghost
+675,wizard
+675,christmas
+675,scholar
+675,mystical land
+675,ministry
+675,based on young adult novel
+767,witch
+767,dying and death
+767,"london, england"
+767,magic
+767,school of witchcraft
+767,sequel
+767,apparition
+767,curse
+767,teenage crush
+767,school
+767,werewolf
+767,teenage love
+767,luck
+767,ghost
+767,wizard
+767,secret past
+767,mysterious
+767,christmas
+767,based on young adult novel
+804435,police
+804435,hostage
+804435,retired cop
+1226406,sibling relationship
+1226406,hitman
+1226406,action comedy
+1226406,hidden past
+760875,monster movie
+760875,abandoned mine
+1140535,husband wife relationship
+1140535,new jersey
+1140535,haunted house
+1140535,grief
+1140535,interracial marriage
+1140535,psychological thriller
+1140535,entity
+1140535,death
+1140535,real estate agent
+1140535,ghost
+1140535,voyeurism
+1140535,family dynamics
+1140535,death of best friend
+1140535,first person view
+1140535,mother son relationship
+1140535,father daughter relationship
+1140535,mother daughter relationship
+1140535,brother sister relationship
+1140535,supernatural horror
+1140535,experimental cinema
+1140535,psychological horror
+1140535,drugging someone
+1140535,horror
+1140535,duchové
+1140535,paranormální jevy
+1140535,zlo
+549509,new york city
+549509,immigrant
+549509,prostitute
+549509,husband wife relationship
+549509,"philadelphia, pennsylvania"
+549509,"venice, italy"
+549509,library
+549509,capitalism
+549509,"pennsylvania, usa"
+549509,drug addiction
+549509,world war ii
+549509,architect
+549509,american dream
+549509,exploitation
+549509,train accident
+549509,mute
+549509,holocaust (shoah) survivor
+549509,architecture
+549509,orphan
+549509,niece
+549509,single father
+549509,handjob
+549509,death of mother
+549509,statue of liberty
+549509,post world war ii
+549509,cousin cousin relationship
+549509,heroin addict
+549509,renovation
+549509,sexual assault
+549509,woman in wheelchair
+549509,ellis island
+549509,carrara
+549509,1940s
+549509,1980s
+549509,1950s
+549509,male domination
+549509,brutalist
+549509,train station
+549509,jewish
+549509,jews
+549509,hungarian
+611489,college
+611489,scandal
+611489,murder
+611489,sorority
+611489,slasher
+611489,fraternity
+611489,sorority girl
+611489,sexual assault
+774021,exorcism
+774021,simulated reality 
+774021,demonic possession
+774021,mother daughter estrangement
+774021,paralyzed
 1333099,animation
+823219,ocean
+823219,cat
+823219,boat
+823219,dystopia
+823219,dog
+823219,golden retriever
+823219,flood
+823219,lemur
+823219,wonder
+823219,bird
+823219,3d animation
+823219,fantasy
+823219,capybara
+823219,adventure
+1108371,video game
+1108371,based on video game
+1108371,edited from video game
+1108371,video game criticism
+1108371,video game addiction
+454527,suicide
+454527,based on novel or book
+454527,nun
+454527,italy
+454527,based on true story
+454527,trial
+454527,lesbian relationship
+454527,torture
+454527,mother superior
+454527,lgbt
+454527,convent (nunnery)
+454527,plague
+454527,nunsploitation
+454527,17th century
+454527,flagellation
+454527,peep hole
+454527,lesbian nun
+454527,visions
+454527,provocative
 812037,coming of age
 812037,remake
 812037,older woman younger man relationship
 812037,unfaithful wife
 812037,stepmother stepson relationship
+1072269,funeral
+1072269,basement
+1072269,disappearance
+1072269,haute couture
+1072269,succession
+1072269,successor
+1000862,france
+1000862,homophobia
+1000862,classroom
+1000862,based on true story
+1000862,teacher
+1000862,sexual harassment
+1000862,false accusations
+1000862,school teacher
+1000862,teachers and students
+1000862,homophobic attack
+1000862,male teacher
+1000862,workplace harassment
+10995,lolita
+10995,virgin
+10995,vietnam
+10995,based on novel or book
+10995,age difference
+10995,arranged marriage
+10995,lover
+10995,saigon
+10995,indochina
+10995,loss of virginity
+10995,love
+10995,sexual attraction
+10995,older man younger woman relationship
+10995,lust
+10995,desire
+10995,french girl
+10995,sexual awakening
+10995,southeast asia
+10995,chinese man
+10995,illicit affair
+10995,1920s
+10995,sex with a minor
+10995,erotic romance
+10995,ho chi minh
 971968,biography
 971968,based on true story
 971968,actress
@@ -11004,15 +11529,49 @@
 1164355,haunted hospital
 1164355,terror
 1164355,based on twitter thread
-1235424,anthropomorphism
-1235424,guinea pig
-1235424,anime
-1235424,3d animation
-1235424,kids
-1136558,horror
-1216443,based on novel or book
-1216443,child of deaf adult
-1216443,"miyagi, japan"
+1269108,sadistic
+1269108,black magic
+1269108,market
+1269108,jinn
+1269108,witchcraft
+1269108,ghost
+1269108,package
+1269108,haunted
+1269108,java
+1269108,terror
+1269108,semarang
+1269108,ominous
+1269108,based on twitter thread
+581577,nazi
+581577,concentration camp
+581577,world war ii
+581577,concentration camp prisoner
+581577,german officer
+581577,exhaustion
+581577,fictional language
+581577,jewish
+940721,monster
+940721,loss of loved one
+940721,giant monster
+940721,kamikaze
+940721,duty
+940721,atomic bomb test
+940721,radioactivity
+940721,naval combat
+940721,reboot
+940721,kaiju
+940721,macabre
+940721,duringcreditsstinger
+940721,post war japan
+940721,1940s
+940721,naval battle
+940721,naval battleship
+940721,found family
+940721,godzilla
+940721,war orphan
+940721,survivor guilt
+940721,tokusatsu
+940721,哥斯拉-1.0
 1303162,biology
 1303162,remake
 1303162,jail
@@ -11023,5 +11582,99 @@
 1303162,live action remake
 1303162,based on tv series
 1279788,anime
+1235431,supernatural
+1235431,reincarnation
+1235431,remake
+1235431,based on manga
+1235431,showbiz
+1235431,seinen
+1235431,celebrity worship
+1235431,based on anime
+1235431,live action remake
+1235431,idol group
+1235431,based on tv series
+1235431,music
+1235431,idol
+265712,gadget
+265712,time travel
+265712,school
+265712,based on manga
+265712,anime
+265712,based on anime
+1306434,surgeon
+1306434,doctor
+1306434,medical
+1306434,based on tv series
+1235424,anthropomorphism
+1235424,guinea pig
+1235424,anime
+1235424,3d animation
+1235424,kids
+791570,suicide
+791570,curse
+791570,occult
+791570,japanese folklore
+791570,aokigahara
+791570,absurd
+791570,baffled
+791570,disapproving
+1136558,horror
+1275240,conflict
+1275240,young woman
+1275240,twenties
+20342,high school
+20342,time travel
+20342,school
+20342,misunderstanding
+20342,pianist
+20342,teacher student relationship
+20342,music history
+20342,first love
+20342,boyfriend girlfriend relationship
+20342,asthmatic
+20342,music academy
+20342,music school
+20342,music
+1216443,based on novel or book
+1216443,child of deaf adult
+1216443,"miyagi, japan"
+25657,japan
+25657,based on novel or book
+25657,restaurant
+25657,restaurant owner
+25657,slice of life
+25657,food
+25657,entrepreneurship
+25657,finland
+25657,entrepreneur
+25657,woman director
+25657,living abroad
+25657,holiday abroad
+25657,japanese cuisine
+25657,social acceptance
+25657,women entrepreneur
+25656,beach
+25656,breakfast
+25656,barbecue (bbq)
+25656,woman director
+25656,seaside village
+25656,japanese cuisine
+25656,relaxation
+25656,togetherness
+1185957,hong kong protests
 117646,gay theme
 117646,boys' love (bl)
+18860,martial arts
+18860,wuxia
+18860,woman director
+667717,female protagonist
+667717,curious
+667717,reflective
+667717,3d animation
+667717,grand
+667717,understated
+667717,幻境
+667717,深海
+667717,拯救
+667717,感动
+256106,nanjing

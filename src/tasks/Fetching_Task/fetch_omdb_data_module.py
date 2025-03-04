@@ -1,29 +1,30 @@
-from datetime import datetime
 import math
+import os
 import pandas as pd
 import requests
 import time
 import json
-from prefect import task
+from utils import path_config as pc
 
-#API_TOKEN = "de467a5d"
-API_TOKEN = "5271bd7c"
-
-timestamp = datetime.now().strftime("%Y-%m-%d")
+API_TOKEN = os.getenv("VICTOR_OMDB_KEY_1")
+API_TOKEN2 = os.getenv("VICTOR_OMDB_KEY_2")
 #第二次存檔function用
-filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_2025-02-23.json"
+filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
+
 
 #將details的id抓取出來
-@task
-def fetch_imdb_id():  
+def fetch_imdb_id():
     #路徑會可能來自gcs
-    details_data = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tmdb_details/tmdb_detail_raw_20250219.json"
+    details_data = pc.raw_tw_details/pc.details_json
     with open(details_data, "r", encoding="utf-8") as f:
         movie_id_json= json.load(f)
     #movie_id_csv = pd.read_json(r"tmdb_detail_raw_20250219.json")
     movie_id_list = [movie.get("imdb_id") for movie in movie_id_json if "imdb_id" in movie]   
     #去除nan值
     movie_id = [movie_id for movie_id in movie_id_list if not (isinstance(movie_id, float) and math.isnan(movie_id))]
+    #去除重複值
+    movie_id_dp = list(set(movie_id))
+    print(len(movie_id_dp))
     print(f"已成功取得電影id")
     #print(movie_id)
     #儲存成csv供兩天查詢
@@ -34,11 +35,10 @@ def fetch_imdb_id():
 
     print(f"已成功儲存 IMDb ID 至 {save_path}")
 
-    return movie_id
+    return movie_id_dp
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
-@task
 def crawl_omdb_movies_data(movie_id, API_TOKEN):
     max_request = 1000
     count_requests = 0
@@ -75,31 +75,30 @@ def crawl_omdb_movies_data(movie_id, API_TOKEN):
 
 #-------------------------------------------------------------#
 #存raw_data的function存
-@task
 def save_data(results):
-    file = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_raw_data_{timestamp}.json"
+    file = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/{pc.omdb_info_json}"
     with open(file, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
+    print("成功儲存第一天的rawdata")
 
 #-------------------------------------------------------------#
 #存id的function
-@task
 def id_list_save(id_list):
-    first_requests = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_{timestamp}.csv"
+    first_requests = fr"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_id.csv"
     df = pd.DataFrame({"imdb_id": id_list})
     df.to_csv(first_requests, index=False, encoding="utf-8-sig")
+    print("儲存第一天求取的id")
 
 #-------------------------------------------------------------#
 
 
 
 #第二次打API
-@task
 def crawl_omdb_movies_data_second():
     #讀全部id
     df_1 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/tmdb_imdb_ids.csv")
-    #讀已求取過id  
-    df_2 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_2025-02-23.csv")
+    #讀已求取過id
+    df_2 = pd.read_csv(r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/first_requests_id.csv")
     #print(df_1, df_2)
     #取出df2不再df1內的id
     second_requests_id = df_1[~df_1["imdb_id"].isin(df_2["imdb_id"])]
@@ -107,14 +106,13 @@ def crawl_omdb_movies_data_second():
     print(requests_id)
 
     #呼叫function爬蟲
-    result, _ = crawl_omdb_movies_data(requests_id, API_TOKEN)
+    result, _ = crawl_omdb_movies_data(requests_id, API_TOKEN2)
     #呼叫存檔函式
     save_data_second(result, filepath)
 
 
 #------------------------------------------------------------------------
 #二次存檔
-@task
 def save_data_second(result, path):
 
     file = path
@@ -134,7 +132,5 @@ def save_data_second(result, path):
 #save_data(results)
 #id_list_save(id_list)
 
-
-crawl_omdb_movies_data_second()
 
 

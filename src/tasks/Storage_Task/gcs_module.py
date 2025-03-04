@@ -23,47 +23,82 @@ win >> set GOOGLE_CLOUD_PROJECT= "your-project-id"
 如果仍無法讀取可確認GOOGLE CLOUD認證 & INSTALL下面這段
 pip install --upgrade bigframes pandas
 """
-#-------------------------將DataFrame從bigquery上抓下來
 
-#抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 import bigframes.pandas as bpd
+import pandas as pd
+from google.cloud import bigquery
+from google.cloud import storage
+from google.auth import credentials
+from google.auth.transport.requests import Request
+from google.api_core.exceptions import Conflict
+from google.oauth2 import service_account
 
+
+#-------------------------將DataFrame從bigquery上抓下來
+#抓取csv&json語法差異不大，其餘的調整去找chatgpt or 上面的官方文件
 #-----------------------------你的project name
-bpd.options.bigquery.project = "my-project-7393-451114"
-def test_query():
+#bpd.options.bigquery.project = "my-project-7393-451114"
+def download_dataset(creds, project_id, dataset_name, table_name, file_path):
+
+    # 設定 bigframes 使用 GCP 認證
+    bpd.options.bigquery.credentials = creds
+    bpd.options.bigquery.project = project_id
     #------------- 可以去BigQuery複製sql語法from後面那段
-    first_query = "my-project-7393-451114.001test.001-test" 
+    first_query = f"{project_id}.{dataset_name}.{table_name}" 
 
     try:
         # 嘗試讀取 BigQuery 資料
         movie_query = bpd.read_gbq(first_query)
-        
         # 檢查是否成功
         if movie_query is not None:
-            print("Data loaded successfully!")
-            print(movie_query.head(5))  # 前 5 筆
-            print(type(movie_query))
+            print(f"✅{table_name}成功下載")
+            movie_query.to.csv(file_path, index=False)
+            print(f"{table_name}已成功儲存，路徑:{file_path}")
         else:
-            print("Failed to load data.")
-            
+            print(f"❌{table_name}載入失敗")
     except Exception as e:
-        print(f"Error occurred: {e}")
+        print(f"❌ Error occurred: {e}")
 
 # 呼叫測試函式
 #test_query()
 
 #-------------------------將DataFrame��存於Google Cloud Storage
 
-from google.cloud import storage
-"""創建buket"""
-def create_bucket(bucket_name):
-    
-    storage_client = storage.Client()
+#解析prefect導入的gcp credentials-------(cloud_storage)
+def get_credentials_gcs(gcp_credentials_block):
+        #解析字典
+        service_account_info = gcp_credentials_block.service_account_info.get_secret_value()
+        credentials = service_account.Credentials.from_service_account_info(service_account_info)
+        storage_client = storage.Client(credentials=credentials, project=gcp_credentials_block.project)
+        return storage_client
 
-    # 創建新的存儲桶
-    bucket = storage_client.create_bucket(bucket_name)
 
-    print(f"存儲桶 {bucket.name} 已成功創建。")
+#解析prefect導入的gcp credentials-------(big_query)
+def get_credentials_bigquery(gcp_credentials_block):
+        #解析字典
+        service_account_info = gcp_credentials_block.service_account_info.get_secret_value()
+        credentials = service_account.Credentials.from_service_account_info(service_account_info)
+        bigquery_client = bigquery.Client(credentials=credentials, project=gcp_credentials_block.project)
+        return bigquery_client
+
+#解析prefect下載final_data用的的gcp credentials-------(big_query)
+def get_credentials_download(gcp_credentials_block):
+        #解析字典
+        service_account_info = gcp_credentials_block.service_account_info.get_secret_value()
+        creds = service_account.Credentials.from_service_account_info(service_account_info)
+        return creds
+
+
+
+# 創建新的存儲桶
+def create_bucket(bucket_name, storage_client, location):
+    try:
+        bucket = storage_client.create_bucket(bucket_name, location= location)
+        print(f"bucket {bucket.name} 已成功創建。")
+    except Conflict:
+        print(f"bucket {bucket.name} 已存在。")
+    except Exception as e:
+        print(f"創建bucket{bucket_name}發生錯誤{e}")
 
 
 #create_bucket('002_test')
@@ -71,10 +106,9 @@ def create_bucket(bucket_name):
 #-------------------------上傳檔案
 from google.cloud import storage
 
-def upload_to_gcs(bucket_name, source_file_name, destination_blob_name):
+def upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name):
     """將本地文件上傳到指定的 GCS 存儲桶"""
     #可以想像是一個google api讓我們取的連結可以操作gcs
-    storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
     #blob 代表 GCS 中的一個檔案物件。在這裡，destination_blob_name 是檔案在 GCS 中的儲存路徑和名稱。這個物件就像是你要上傳的檔案在 GCS 上的代號或位置。
     #destination_blob_name 是檔案在 GCS 儲存桶中的 "目標檔案名"，這個名稱可以包含資料夾結構（例如 folder/in/bucket/file.csv）。
@@ -151,3 +185,29 @@ def check_gcp_project():
     print(f"當前 GCP Project ID：{project_id}")
 
 #check_gcp_project()
+
+
+#-------------------------------------------------------------
+
+def upload_tmp_to_bq(bigquery_client, PROJECT_ID, DATASET_ID, TABLE_ID, CSV_FILE_PATH):
+    # 設定 GCP 資訊
+    #PROJECT_ID = "your-gcp-project-id"  # GCP 專案 ID
+    #DATASET_ID = "your_dataset_id"  # BigQuery 資料集名稱
+    #TABLE_ID = "your_table_id"  # BigQuery 表格名稱
+    #CSV_FILE_PATH = "your_file.csv"  # CSV 檔案路徑
+
+    # 讀取 CSV 檔案
+    df = pd.read_csv(CSV_FILE_PATH)
+
+    # 設定 BigQuery 資料表的完整 ID
+    table_ref = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
+    # 設定上傳配置
+    job_config = bigquery.LoadJobConfig(
+        write_disposition="WRITE_TRUNCATE",  # "WRITE_TRUNCATE" 覆蓋 | "WRITE_APPEND" 追加
+        source_format=bigquery.SourceFormat.CSV,
+        skip_leading_rows=0,  # 跳過 CSV 標題列
+    )
+    # 上傳 DataFrame 到 BigQuery
+    job = bigquery_client.load_table_from_dataframe(df, table_ref, job_config=job_config)
+    job.result()  # 等待上傳完成
+    print(f"成功上傳 {len(df)} 筆資料到 BigQuery：{table_ref}")
