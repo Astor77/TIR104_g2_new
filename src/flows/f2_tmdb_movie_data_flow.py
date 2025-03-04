@@ -24,7 +24,7 @@ def e_get_tmdb_id_list() -> list:
     try:
         logger.info(f"正在讀取 mapping csv: ...")
         df = rm.read_file_to_df(p.raw_tw_mapping, p.mapping_csv)
-        tmdb_id_list = df["id"].drop_duplicates()
+        tmdb_id_list = df["id"].dropna().drop_duplicates()
 
         logger.info(f"✅ 返回 id 欄位")
         return tmdb_id_list
