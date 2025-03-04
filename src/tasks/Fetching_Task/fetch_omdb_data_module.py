@@ -5,6 +5,8 @@ import requests
 import time
 import json
 from utils import path_config as pc
+from dotenv import load_dotenv
+load_dotenv()
 
 API_TOKEN = os.getenv("VICTOR_OMDB_KEY_1")
 API_TOKEN2 = os.getenv("VICTOR_OMDB_KEY_2")
