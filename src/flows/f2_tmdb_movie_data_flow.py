@@ -113,13 +113,9 @@ def f2_tmdb_movie_data_flow():
         save_genres_future = l_save_raw_data.submit(genres_list, p.raw_tw_genres_list, p.genres_list_json)
         futures.append(save_genres_future)
 
-        # **如果是本機運行，確保所有 Task 都完成**
-        if deployment.name is None:
-            print("此次在本機環境執行")
-            for future in futures:
-                future.result()
-        else:
-            print("此次在雲端或其他環境執行")
+        # 確保所有任務完成後才結束 Flow
+        for future in futures:
+            future.wait()
 
         logger.info(f"✅ f2_tmdb_movie_data_flow() 執行完畢")
 
