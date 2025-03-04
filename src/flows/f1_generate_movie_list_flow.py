@@ -69,8 +69,8 @@ def e_mapping_tw_tmdb_result(tw_annual_df, tmdb_search_results) -> pd.DataFrame:
         mapping_result_df = om.data_merge_left_df(
             df1=tw_annual_df,
             df2=tmdb_search_df,
-            df1_col="Name_map",
-            df2_col="title_map"
+            id1="Name_map",
+            id2="title_map"
             )
 
         logger.info(f"✅ 比對成功，返回比對結果")
