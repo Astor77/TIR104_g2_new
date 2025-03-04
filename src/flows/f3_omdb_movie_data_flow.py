@@ -8,13 +8,14 @@ def get_id():
 
 @task
 def get_api(movie_id_dp):
-    odm.crawl_omdb_movies_data(movie_id_dp)
+    results, id_list = odm.crawl_omdb_movies_data(movie_id_dp)
+    return results, id_list
 
 
 @task
-def save():
-    odm.save_data()
-    odm.id_list_save()
+def save(results, id_list):
+    odm.save_data(results)
+    odm.id_list_save(id_list)
 
 @task
 def get_api_second():
@@ -23,8 +24,8 @@ def get_api_second():
 @flow
 def f3_omdb_movie_data_flow():
     movie_id_dp = get_id()
-    task2 = get_api(movie_id_dp)
-    task3 = save(wait_for=[task2])
+    results, id_list = get_api(movie_id_dp)
+    task3 = save(results, id_list)
     get_api_second(wait_for=[task3])
 
 
