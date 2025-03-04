@@ -39,7 +39,7 @@ def fetch_imdb_id():
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
-def crawl_omdb_movies_data(movie_id, API_TOKEN):
+def crawl_omdb_movies_data(movie_id, API_TOKEN=API_TOKEN):
     max_request = 1000
     count_requests = 0
     #儲存已求取的id的id
