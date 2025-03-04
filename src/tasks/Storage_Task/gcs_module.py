@@ -107,7 +107,7 @@ def create_bucket(bucket_name, storage_client, location):
 from google.cloud import storage
 
 def upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name):
-    """將本地文件上傳到指定的 GCS 存儲桶"""
+        
     #可以想像是一個google api讓我們取的連結可以操作gcs
     bucket = storage_client.bucket(bucket_name)
     #blob 代表 GCS 中的一個檔案物件。在這裡，destination_blob_name 是檔案在 GCS 中的儲存路徑和名稱。這個物件就像是你要上傳的檔案在 GCS 上的代號或位置。
