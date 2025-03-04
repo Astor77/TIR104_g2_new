@@ -52,7 +52,7 @@ def download_dataset(creds, project_id, dataset_name, table_name, file_path):
         # 檢查是否成功
         if movie_query is not None:
             print(f"✅{table_name}成功下載")
-            movie_query.to.csv(file_path, index=False)
+            movie_query.to_csv(file_path, index=False)
             print(f"{table_name}已成功儲存，路徑:{file_path}")
         else:
             print(f"❌{table_name}載入失敗")
