@@ -88,8 +88,12 @@ def t_mapping_df(mapping_result_df) -> pd.DataFrame:
 
         columns = ["Year", "MovieId", "Name", "id"]
         mapping_df = om.get_spec_cloumn_df(mapping_result_df, columns)
-        mapping_df["id"] = mapping_df["id"].astype(str).str.replace(".0", "", regex=False)
-
+        mapping_df["id"] = (
+            mapping_df["id"]
+            .astype(str)
+            .str.replace(".0", "", regex=False)  # 移除 .0
+            .replace("nan", pd.NA)  # 把 "nan" 轉回 Pandas 的 NA
+        )
         logger.info(f"✅ 轉換成功，返回轉換結果")
         return mapping_df
 
