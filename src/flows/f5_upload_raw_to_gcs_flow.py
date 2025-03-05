@@ -113,14 +113,14 @@ def upload_tw_movie_2022_2025_not_dup():
 @task
 def upload_tw_movie_weekly():
     bucket_name = "tw_movie_weekly"
-    source_file_name = pc.raw_tw_weekly
+    source_file_name = pc.raw_tw_weekly / pc.tw_weekly_data_csv
     destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_data_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @task
 def upload_tw_movie_weekly2():
     bucket_name = "tw_movie_weekly"
-    source_file_name = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/TWMovie_weekly_data2.csv"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/TWMovie_weekly_data2.csv"
     destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_data2_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
@@ -134,23 +134,23 @@ def upload_tw_movie_weekly2():
 @task
 def upload_tw_release_dates():
     bucket_name = "tw_release_dates"
-    source_file_name = pc.raw_tw_tw_release_date
+    source_file_name = pc.raw_tw_tw_release_date / pc.tw_release_date_csv
     destination_blob_name = f"raw_data/{timestamp}/{pc.tw_release_date_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @task
 def upload_tw_search():
     bucket_name = "tw-search"
-    source_file_name = pc.raw_tw_search
+    source_file_name = pc.raw_tw_search / pc.search_json
     destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
-@task   #這是一個一個json不上傳
-def upload_tw_selenium_download():
-    bucket_name = "tw_selenium_download"
-    source_file_name = pc.raw_tw_search
-    destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
-    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+# @task   #這是一個一個json不上傳
+# def upload_tw_selenium_download():
+#     bucket_name = "tw_selenium_download"
+#     source_file_name = pc.raw_tw_search
+#     destination_blob_name = f"raw_data/{timestamp}/{pc.search_json}"
+#     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @flow
 def f5_upload_gcs_main_flow():
