@@ -48,7 +48,7 @@ def download_final_movie_actor_list():
 def download_final_movie_detail():
     project_id = "tir104g02"
     dataset_name = "final_data"
-    table_name = "movie_detil"
+    table_name = "movie_detail"
     file_path = r"/workspaces/TIR104_g2_new/A2_final_data/tw/movie_detail.csv"
     gm.download_dataset(creds, project_id, dataset_name, table_name, file_path)
 
