@@ -88,9 +88,11 @@ def t_mapping_df(mapping_result_df) -> pd.DataFrame:
 
         columns = ["Year", "MovieId", "Name", "id"]
         mapping_df = om.get_spec_cloumn_df(mapping_result_df, columns)
-        mapping_df = mapping_df.astype(object).astype("string")
-        mapping_df["id"] = mapping_df["id"].replace(".0", "", regex=False)
-
+        mapping_df["id"] = (
+            mapping_df["id"]
+            .astype("string")  # NaN -> <NA>
+            .str.replace(".0", "", regex=False)
+            )
         logger.info(f"✅ 轉換成功，返回轉換結果")
         return mapping_df
 
