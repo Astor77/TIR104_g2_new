@@ -99,7 +99,7 @@ def upload_tw_movie_2022_2025_dup():
 @task   #要確認使用哪一個檔名(我先用copy path)
 def upload_tw_movie_2022_2025_not_dup():
     bucket_name = "tw_movie_2022_2025"
-    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025_raw2.csv"
+    source_file_name = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_2022-2025/TWMovie2022-2025.csv"
     destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_not_dup_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
