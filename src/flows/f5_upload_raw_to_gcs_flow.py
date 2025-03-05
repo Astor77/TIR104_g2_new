@@ -154,21 +154,21 @@ def upload_tw_selenium_download():
 
 @flow
 def f5_upload_gcs_main_flow():
-    upload_omdb().submit()
-    upload_tmdb_credits().submit()
-    upload_tmdb_details().submit()
-    upload_tmdb_details_en().submit()
-    upload_tmdb_keywords().submit()
-    upload_tmdb_release_date().submit()
-    upload_tw_mapping_tmdb().submit()
-    upload_tw_movie_2022_2025_dup().submit()
-    upload_tw_movie_2022_2025_not_dup().submit()
+    upload_omdb()
+    upload_tmdb_credits()
+    upload_tmdb_details()
+    upload_tmdb_details_en()
+    upload_tmdb_keywords()
+    upload_tmdb_release_date()
+    upload_tw_mapping_tmdb()
+    upload_tw_movie_2022_2025_dup()
+    upload_tw_movie_2022_2025_not_dup()
     #upload_tw_movie_sales()--------
-    upload_tw_movie_weekly().submit()
-    upload_tw_movie_weekly2().submit()
+    upload_tw_movie_weekly()
+    upload_tw_movie_weekly2()
     #upload_tw_movie_year_sales()-------
-    upload_tw_release_dates().submit()
-    upload_tw_search().submit()
+    upload_tw_release_dates()
+    upload_tw_search()
     #upload_tw_selenium_download().submit()
 
     # t1.result()
