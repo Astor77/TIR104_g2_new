@@ -20,12 +20,12 @@ storage_client = gm.get_credentials_gcs(gcp_credentials_block)
 
 #創建bucket
 bucket_list = [ "omdb_info",
-                "tmdb_credits", 
-                "tmdb_details", 
+                "tmdb_credits",
+                "tmdb_details",
                 "tmdb_details_en",
-                "tmdb_genres", 
-                "tmdb_keywords", 
-                "tmdb_release_date", 
+                "tmdb_genres",
+                "tmdb_keywords",
+                "tmdb_release_date",
                 "tw_mapping_tmdb",
                 "tw_movie_2022_2025",
                 "tw_movie_sales",
@@ -103,33 +103,33 @@ def upload_tw_movie_2022_2025_not_dup():
     destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_not_dup_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
-# task10   #這式2000多個json不用上傳
-def upload_tw_movie_sales():
-    bucket_name = "tw_movie_sales"
-    source_file_name = pc.raw_tw_sales
-    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_csv}"
-    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+# # task10   #這式2000多個json不用上傳
+# def upload_tw_movie_sales():
+#     bucket_name = "tw_movie_sales"
+#     source_file_name = pc.raw_tw_sales
+#     destination_blob_name = f"raw_data/{timestamp}/{pc.tw_annual_csv}"
+#     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @task
 def upload_tw_movie_weekly():
     bucket_name = "tw_movie_weekly"
     source_file_name = pc.raw_tw_weekly
-    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_csv}"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_data_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @task
 def upload_tw_movie_weekly2():
     bucket_name = "tw_movie_weekly"
     source_file_name = "/workspaces/TIR104_g2_new/A0_raw_data/tw/tw_movie_weekly/TWMovie_weekly_data2.csv"
-    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_csv}"
+    destination_blob_name = f"raw_data/{timestamp}/{pc.tw_weekly_data2_csv}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
-# task12  #這個不需要執行
-def upload_tw_movie_year_sales():
-    bucket_name = "tw_movie_year_sales"
-    source_file_name = pc.raw_tw_year_sales
-    destination_blob_name = f"raw_data/{timestamp}"
-    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+# # task12  #這個不需要執行
+# def upload_tw_movie_year_sales():
+#     bucket_name = "tw_movie_year_sales"
+#     source_file_name = pc.raw_tw_year_sales
+#     destination_blob_name = f"raw_data/{timestamp}"
+#     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @task
 def upload_tw_release_dates():
@@ -154,36 +154,36 @@ def upload_tw_selenium_download():
 
 @flow
 def f5_upload_gcs_main_flow():
-    t1 = upload_omdb().submit()
-    t2 = upload_tmdb_credits().submit()
-    t3 = upload_tmdb_details().submit()
-    t4 = upload_tmdb_details_en().submit()
-    t5 = upload_tmdb_keywords().submit()
-    t6 = upload_tmdb_release_date().submit()
-    t7 = upload_tw_mapping_tmdb().submit()
-    t8 = upload_tw_movie_2022_2025_dup().submit()
-    t9 = upload_tw_movie_2022_2025_not_dup().submit()
+    upload_omdb().submit()
+    upload_tmdb_credits().submit()
+    upload_tmdb_details().submit()
+    upload_tmdb_details_en().submit()
+    upload_tmdb_keywords().submit()
+    upload_tmdb_release_date().submit()
+    upload_tw_mapping_tmdb().submit()
+    upload_tw_movie_2022_2025_dup().submit()
+    upload_tw_movie_2022_2025_not_dup().submit()
     #upload_tw_movie_sales()--------
-    t10 = upload_tw_movie_weekly().submit()
-    t11 = upload_tw_movie_weekly2().submit()
+    upload_tw_movie_weekly().submit()
+    upload_tw_movie_weekly2().submit()
     #upload_tw_movie_year_sales()-------
-    t12 = upload_tw_release_dates().submit()
-    t13 = upload_tw_search().submit()
+    upload_tw_release_dates().submit()
+    upload_tw_search().submit()
     #upload_tw_selenium_download().submit()
 
-    t1.result()
-    t2.result()
-    t3.result()
-    t4.result()
-    t5.result()
-    t6.result()
-    t7.result()
-    t8.result()
-    t9.result()
-    t10.result()
-    t11.result()
-    t12.result()
-    t13.result()
+    # t1.result()
+    # t2.result()
+    # t3.result()
+    # t4.result()
+    # t5.result()
+    # t6.result()
+    # t7.result()
+    # t8.result()
+    # t9.result()
+    # t10.result()
+    # t11.result()
+    # t12.result()
+    # t13.result()
     
 
 if __name__ == "__main__":
