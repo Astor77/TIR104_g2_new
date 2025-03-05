@@ -93,6 +93,7 @@ def t_mapping_df(mapping_result_df) -> pd.DataFrame:
             .astype("string")  # NaN -> <NA>
             .str.replace(".0", "", regex=False)
             )
+        mapping_df = mapping_df.dropna(subset=["id"])
         logger.info(f"✅ 轉換成功，返回轉換結果")
         return mapping_df
 

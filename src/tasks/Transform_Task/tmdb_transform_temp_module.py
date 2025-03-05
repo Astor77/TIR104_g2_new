@@ -16,6 +16,9 @@ def tmdb_details_merge_mapping():
     details_df = rm.read_file_to_df(p.raw_tw_details, p.details_json)
     # 讀取tw_mapping_csv
     tw_tmdb_mapping_df = rm.read_file_to_df(p.raw_tw_mapping, p.mapping_csv)
+    # NaN -> <NA>
+    tw_tmdb_mapping_df["id"] = tw_tmdb_mapping_df["id"].astype("string").str.replace(".0", "", regex=False)
+    tw_tmdb_mapping_df = tw_tmdb_mapping_df.dropna(subset=["id"])
     # 把details_df的id欄位轉為string
     details_df["id"] = details_df["id"].astype("string")
     # merge 兩張表，產出帶有 tw_id 的 details
