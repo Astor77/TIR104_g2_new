@@ -61,12 +61,12 @@ def upload_tmdb_details():
     destination_blob_name = f"raw_data/{timestamp}/{pc.details_json}"
     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
-@task
-def upload_tmdb_details_en():
-    bucket_name = "tmdb_details_en"
-    source_file_name = pc.raw_tw_details_en
-    destination_blob_name = f"raw_data/{timestamp}/{pc.details_json}"
-    gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
+# @task
+# def upload_tmdb_details_en():
+#     bucket_name = "tmdb_details_en"
+#     source_file_name = pc.raw_tw_details_en
+#     destination_blob_name = f"raw_data/{timestamp}/{pc.details_json}"
+#     gm.upload_to_gcs(storage_client, bucket_name, source_file_name, destination_blob_name)
 
 @task
 def upload_tmdb_keywords():
@@ -157,7 +157,7 @@ def f5_upload_gcs_main_flow():
     upload_omdb()
     upload_tmdb_credits()
     upload_tmdb_details()
-    upload_tmdb_details_en()
+    # upload_tmdb_details_en()
     upload_tmdb_keywords()
     upload_tmdb_release_date()
     upload_tw_mapping_tmdb()
