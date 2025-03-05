@@ -20,7 +20,8 @@ raw_tw_publisher = raw_tw / "tw_publisher"
 raw_tw_tw_release_date = raw_tw / "tw_release_dates"
 raw_tw_search = raw_tw / "tw_search"
 raw_tw_genres_list = raw_tw / "tmdb_genres_list"
-
+#tw_selenium
+raw_tw_selenium = raw_tw / "tw_selenium_download"
 
 ## file檔案名稱:統一
 mapping_csv = "tw_tmdb_mapping.csv"
@@ -67,6 +68,7 @@ tw_weekly_df2_csv = "TWMovie_weekly_df2.csv"
 final = Path("/workspaces/TIR104_g2_new/A2_final_data/")
 final_tw = final / "tw"
 final_global = final / "global"
+
 
 
 #GCS_path

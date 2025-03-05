@@ -30,31 +30,18 @@ def normalize_text(text):
     return text
 
 
-def merge_two_df(df1: pd.DataFrame, df2: pd.DataFrame, how: str="left", df1_col: str="Name_map", df2_col: str="title_map"):
-    df_mapping = df1.merge(
-        # 因為比對結果，會有重複電影名稱，僅保留第一筆
-        df2.drop_duplicates(subset=[df2_col]),
-
-        how=how,
-        #df_tw_annual
-        left_on=df1_col,
-        #df_search_results
-        right_on=df2_col
-    )
-    df_mapping_result = df_mapping[df_mapping["id"].notna()]
-    return df_mapping_result
-
-
 if __name__ == "__main__":
     #僅測試search 10筆
     tw_annual_df = rm.read_file_to_df(p.raw_tw_2022_2025, p.tw_annual_not_dup_csv)
     query_list = clean_tw_movie_name(tw_annual_df)
     total_search_results = search.tmdb_list_search_results(query_list[:10])
-    tmdb = pd.DataFrame(total_search_results)
+    tmdb_search_df = pd.DataFrame(total_search_results)
 
 
-    clean_tw_tmdb_map_column(tw_annual_df, tmdb)
-    mapping_result_df = merge_two_df(df1=tw_annual_df, df2=tmdb, join="left", df1_col="Name_map", df2_col="title_map")
+    tw_annual_df["Name_map"] = tw_annual_df["Name_search"].apply(normalize_text)
+    tmdb_search_df["title_map"] = tmdb_search_df["title"].apply(normalize_text)
+
+    mapping_result_df = merge_two_df(df1=tw_annual_df, df2=tmdb_search_df, join="left", df1_col="Name_map", df2_col="title_map")
     columns = ["Year", "MovieId", "Name", "id"]
     mapping_df = om.get_spec_cloumn_df(mapping_result_df, columns)
     # 這邊就不寫save_file了

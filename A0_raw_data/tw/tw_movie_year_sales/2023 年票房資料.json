@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "MovieId": "22707",
         "Rank": 1,
@@ -273,11 +273,11 @@
         "Tickets": 23957,
         "TicketRate": 0,
         "MarketShare": 0.0008191911136588091,
-        "TotalDayCount": 77,
+        "TotalDayCount": 78,
         "TotalAmount": 5957840.0,
         "TotalTickets": 23957,
         "FirstWeekAmount": 3639145.0,
-        "TotalWeekendAmount": 4198377.0
+        "TotalWeekendAmount": 4198917.0
     },
     {
         "MovieId": "25311",
@@ -353,7 +353,7 @@
         "Tickets": 13579,
         "TicketRate": 0,
         "MarketShare": 0.00046432341830667315,
-        "TotalDayCount": 46,
+        "TotalDayCount": 47,
         "TotalAmount": 3327444.0,
         "TotalTickets": 13579,
         "FirstWeekAmount": 2388378.0,
@@ -753,7 +753,7 @@
         "Tickets": 6999,
         "TicketRate": 0,
         "MarketShare": 0.0002393253998621699,
-        "TotalDayCount": 49,
+        "TotalDayCount": 50,
         "TotalAmount": 1748526.0,
         "TotalTickets": 6999,
         "FirstWeekAmount": 1397845.0,
@@ -1773,11 +1773,11 @@
         "Tickets": 113,
         "TicketRate": 0,
         "MarketShare": 3.86394773316548e-06,
-        "TotalDayCount": 58,
+        "TotalDayCount": 59,
         "TotalAmount": 917471.0,
         "TotalTickets": 3279,
         "FirstWeekAmount": 340487.0,
-        "TotalWeekendAmount": 444824.0
+        "TotalWeekendAmount": 448329.0
     },
     {
         "MovieId": "18110",
@@ -1933,11 +1933,11 @@
         "Tickets": 347,
         "TicketRate": 0,
         "MarketShare": 1.1865397021313467e-05,
-        "TotalDayCount": 165,
+        "TotalDayCount": 166,
         "TotalAmount": 78320.0,
         "TotalTickets": 347,
         "FirstWeekAmount": 2583961.0,
-        "TotalWeekendAmount": 5970212.0
+        "TotalWeekendAmount": 5975167.0
     },
     {
         "MovieId": "25284",
@@ -5113,11 +5113,11 @@
         "Tickets": 107,
         "TicketRate": 0,
         "MarketShare": 3.6587823668027117e-06,
-        "TotalDayCount": 24,
+        "TotalDayCount": 25,
         "TotalAmount": 24655.0,
         "TotalTickets": 107,
         "FirstWeekAmount": 114163.0,
-        "TotalWeekendAmount": 106044.0
+        "TotalWeekendAmount": 116384.0
     },
     {
         "MovieId": "26361",
@@ -5973,11 +5973,11 @@
         "Tickets": 101214,
         "TicketRate": 0,
         "MarketShare": 0.0034609345651735483,
-        "TotalDayCount": 67,
+        "TotalDayCount": 68,
         "TotalAmount": 25657399.0,
         "TotalTickets": 101214,
         "FirstWeekAmount": 11538710.0,
-        "TotalWeekendAmount": 13887284.0
+        "TotalWeekendAmount": 13888154.0
     },
     {
         "MovieId": "22373",
@@ -8033,11 +8033,11 @@
         "Tickets": 933,
         "TicketRate": 0,
         "MarketShare": 3.190321446941056e-05,
-        "TotalDayCount": 44,
+        "TotalDayCount": 48,
         "TotalAmount": 230224.0,
         "TotalTickets": 933,
         "FirstWeekAmount": 167944.0,
-        "TotalWeekendAmount": 536938.0
+        "TotalWeekendAmount": 544532.0
     },
     {
         "MovieId": "25321",
@@ -10093,11 +10093,11 @@
         "Tickets": 3,
         "TicketRate": 0,
         "MarketShare": 1.0258268318138444e-07,
-        "TotalDayCount": 27,
+        "TotalDayCount": 28,
         "TotalAmount": 111499.0,
         "TotalTickets": 459,
         "FirstWeekAmount": 72214.0,
-        "TotalWeekendAmount": 56449.0
+        "TotalWeekendAmount": 56689.0
     },
     {
         "MovieId": "25323",
@@ -12193,11 +12193,11 @@
         "Tickets": 31,
         "TicketRate": 0,
         "MarketShare": 1.0600210595409725e-06,
-        "TotalDayCount": 141,
+        "TotalDayCount": 145,
         "TotalAmount": 9009775.0,
         "TotalTickets": 38028,
         "FirstWeekAmount": 4514479.0,
-        "TotalWeekendAmount": 7742189.0
+        "TotalWeekendAmount": 7930921.0
     },
     {
         "MovieId": "22878",
@@ -12673,11 +12673,11 @@
         "Tickets": 8875,
         "TicketRate": 0,
         "MarketShare": 0.0003034737710782623,
-        "TotalDayCount": 52,
+        "TotalDayCount": 53,
         "TotalAmount": 2207010.0,
         "TotalTickets": 8875,
         "FirstWeekAmount": 1143916.0,
-        "TotalWeekendAmount": 1964541.0
+        "TotalWeekendAmount": 1990041.0
     },
     {
         "MovieId": "26242",
@@ -17013,7 +17013,7 @@
         "Tickets": 5799,
         "TicketRate": 0,
         "MarketShare": 0.00019829232658961614,
-        "TotalDayCount": 62,
+        "TotalDayCount": 63,
         "TotalAmount": 1309263.0,
         "TotalTickets": 5799,
         "FirstWeekAmount": 481096.0,
