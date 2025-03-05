@@ -10,6 +10,7 @@ load_dotenv()
 
 API_TOKEN = os.getenv("VICTOR_OMDB_KEY_1")
 API_TOKEN2 = os.getenv("VICTOR_OMDB_KEY_2")
+API_TOKEN3 = os.getenv("TIR104_OMDB_KEY")
 #第二次存檔function用
 filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
 
