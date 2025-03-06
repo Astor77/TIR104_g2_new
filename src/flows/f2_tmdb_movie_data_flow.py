@@ -4,13 +4,14 @@ import json
 import importlib  # Python 內建的重新載入模組工具
 
 from prefect.runtime import deployment
-from prefect import get_run_logger, task, flow
+from prefect import task, flow, get_run_logger
 from prefect.task_runners import ConcurrentTaskRunner
 
-import tasks.Fetching_Task.fetch_api_data_module as fa
+import tasks.Fetching_Task.fetch_tmdb_data_module as fa
 import tasks.Storage_Task.read_file_module as rm
 import tasks.Storage_Task.save_file_module as sm
 import utils.path_config as p
+import utils.notifier as no
 
 importlib.reload(fa)  # 強制重新載入
 importlib.reload(rm)  # 強制重新載入
@@ -23,13 +24,15 @@ def e_get_tmdb_id_list() -> list:
     try:
         logger.info(f"正在讀取 mapping csv: ...")
         df = rm.read_file_to_df(p.raw_tw_mapping, p.mapping_csv)
-        tmdb_id_list = df["id"].drop_duplicates()
+        tmdb_id_list = df["id"].dropna().drop_duplicates()
 
         logger.info(f"✅ 返回 id 欄位")
         return tmdb_id_list
 
     except Exception as err:
         logger.error(f"❌ e_get_tmdb_id_list() 執行失敗: {err}")
+        no.send_line_notification(f"e_get_tmdb_id_list", str(err))
+
 
 
 # e_tmdb_raw_data -> 並行處理4隻api
@@ -48,6 +51,7 @@ def e_tmdb_raw_data(tmdb_id_list, api_name, api_key) -> json:
 
     except Exception as err:
         logger.error(f"❌ e_tmdb_raw_data() 執行失敗: {err}")
+        no.send_line_notification(f"e_tmdb_raw_data:{api_name}", str(err))
 
 # e_tmdb_genres_list，因api結構不同，獨立取得
 @task
@@ -65,6 +69,8 @@ def e_tmdb_genres_list(api_key) -> json:
 
     except Exception as err:
         logger.error(f"❌ e_tmdb_genres_list() 執行失敗: {err}")
+        no.send_line_notification(f"e_tmdb_raw_data:gernes_list", str(err))
+
 
 
 # l_save_raw_dat，將原始資料存為json檔案
@@ -76,6 +82,8 @@ def l_save_raw_data(data, dir_path, file_name) -> None:
         sm.save_as_json(data, dir_path, file_name)
     except Exception as err:
         logger.error(f"🚨 l_save_raw_data() 執行失敗: {err}")
+        no.send_line_notification(f"l_save_raw_data:{file_name}", str(err))
+
 
 
 
@@ -105,13 +113,9 @@ def f2_tmdb_movie_data_flow():
         save_genres_future = l_save_raw_data.submit(genres_list, p.raw_tw_genres_list, p.genres_list_json)
         futures.append(save_genres_future)
 
-        # **如果是本機運行，確保所有 Task 都完成**
-        if deployment.name is None:
-            print("此次在本機環境執行")
-            for future in futures:
-                future.result()
-        else:
-            print("此次在雲端或其他環境執行")
+        # 確保所有任務完成後才結束 Flow
+        for future in futures:
+            future.wait()
 
         logger.info(f"✅ f2_tmdb_movie_data_flow() 執行完畢")
 
