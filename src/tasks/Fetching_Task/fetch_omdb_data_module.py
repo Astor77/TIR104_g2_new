@@ -5,9 +5,12 @@ import requests
 import time
 import json
 from utils import path_config as pc
+from dotenv import load_dotenv
+load_dotenv()
 
 API_TOKEN = os.getenv("VICTOR_OMDB_KEY_1")
 API_TOKEN2 = os.getenv("VICTOR_OMDB_KEY_2")
+API_TOKEN3 = os.getenv("TIR104_OMDB_KEY")
 #第二次存檔function用
 filepath = r"/workspaces/TIR104_g2_new/A0_raw_data/tw/omdb_info/omdb_info.json"
 
@@ -39,7 +42,7 @@ def fetch_imdb_id():
 
 #-------------------------------------------------------------#
 #第一次打API(純爬不存)
-def crawl_omdb_movies_data(movie_id, API_TOKEN):
+def crawl_omdb_movies_data(movie_id, API_TOKEN=API_TOKEN):
     max_request = 1000
     count_requests = 0
     #儲存已求取的id的id
