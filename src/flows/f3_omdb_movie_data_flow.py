@@ -24,7 +24,7 @@ def get_api_second():
 @flow
 def f3_omdb_movie_data_flow():
     movie_id_dp = get_id()
-    results, id_list = get_api(movie_id_dp, odm.API_TOKEN)
+    results, id_list = get_api(movie_id_dp, odm.API_TOKEN3)
     task3 = save(results, id_list)
     get_api_second(wait_for=[task3])
 

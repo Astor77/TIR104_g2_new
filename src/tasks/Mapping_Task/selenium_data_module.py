@@ -52,7 +52,7 @@ def download_annual_rename(year_list: list, date: str) -> None:
         time.sleep(3)
         # By種類參看 https://selenium-python.readthedocs.io/locating-elements.html
         # 搜尋json按鈕，然後模擬點擊該按鈕
-        driver.find_element(By.XPATH, "/html/body/main/section[5]/div[1]/button[3]").click()
+        driver.find_element(By.XPATH, "/html/body/main/section[5]/div[1]/button[2]").click()
         file_downloaded = False
         while not file_downloaded:
             time.sleep(2)  # 每2秒檢查一次

@@ -33,11 +33,11 @@
         "Tickets": 430468,
         "TicketRate": 0,
         "MarketShare": 0.018771478697213993,
-        "TotalDayCount": 135,
+        "TotalDayCount": 137,
         "TotalAmount": 112241985.0,
         "TotalTickets": 430468,
         "FirstWeekAmount": 28843828.0,
-        "TotalWeekendAmount": 72762611.0
+        "TotalWeekendAmount": 72763365.0
     },
     {
         "MovieId": "19169",
@@ -293,7 +293,7 @@
         "Tickets": 3150,
         "TicketRate": 0,
         "MarketShare": 0.00013736249360283244,
-        "TotalDayCount": 78,
+        "TotalDayCount": 79,
         "TotalAmount": 6736462.0,
         "TotalTickets": 27107,
         "FirstWeekAmount": 3639145.0,
@@ -673,7 +673,7 @@
         "Tickets": 5,
         "TicketRate": 0,
         "MarketShare": 2.1803570413148007e-07,
-        "TotalDayCount": 47,
+        "TotalDayCount": 48,
         "TotalAmount": 2422482.0,
         "TotalTickets": 9881,
         "FirstWeekAmount": 1740633.0,
@@ -1633,7 +1633,7 @@
         "Tickets": 41101,
         "TicketRate": 0,
         "MarketShare": 0.0017922970951015924,
-        "TotalDayCount": 174,
+        "TotalDayCount": 176,
         "TotalAmount": 10222503.0,
         "TotalTickets": 41448,
         "FirstWeekAmount": 2583961.0,
@@ -3233,11 +3233,11 @@
         "Tickets": 4055,
         "TicketRate": 0,
         "MarketShare": 0.00017682695605063034,
-        "TotalDayCount": 27,
+        "TotalDayCount": 28,
         "TotalAmount": 995634.0,
         "TotalTickets": 4055,
         "FirstWeekAmount": 779971.0,
-        "TotalWeekendAmount": 601790.0
+        "TotalWeekendAmount": 602230.0
     },
     {
         "MovieId": "29610",
@@ -3713,11 +3713,11 @@
         "Tickets": 39468,
         "TicketRate": 0,
         "MarketShare": 0.001721086634132251,
-        "TotalDayCount": 77,
+        "TotalDayCount": 90,
         "TotalAmount": 9800171.0,
         "TotalTickets": 39468,
         "FirstWeekAmount": 4866653.0,
-        "TotalWeekendAmount": 16054464.0
+        "TotalWeekendAmount": 16086534.0
     },
     {
         "MovieId": "27822",
@@ -4264,7 +4264,7 @@
         "Rank": 214,
         "Region": "香港",
         "Name": "春光乍洩  4K數位修復版",
-        "ReleaseDate": "2024-01-13",
+        "ReleaseDate": "2022-02-25",
         "Publisher": "春光映畫 (BLOCK 2 PICTURES INC.)##株瑞祐映畫社製作##PRENOM H. Co.  Ltd.",
         "DayCount": 3,
         "TheaterCount": 2,
@@ -4273,10 +4273,10 @@
         "Tickets": 335,
         "TicketRate": 0,
         "MarketShare": 1.4608392176809165e-05,
-        "TotalDayCount": 3,
+        "TotalDayCount": 5,
         "TotalAmount": 82595.0,
         "TotalTickets": 335,
-        "FirstWeekAmount": 82595.0,
+        "FirstWeekAmount": 103075.0,
         "TotalWeekendAmount": 58730.0
     },
     {
@@ -4493,11 +4493,11 @@
         "Tickets": 9557,
         "TicketRate": 0,
         "MarketShare": 0.000416753444876911,
-        "TotalDayCount": 79,
+        "TotalDayCount": 84,
         "TotalAmount": 2317601.0,
         "TotalTickets": 9557,
         "FirstWeekAmount": 864187.0,
-        "TotalWeekendAmount": 1327797.0
+        "TotalWeekendAmount": 1340027.0
     },
     {
         "MovieId": "28213",
@@ -5033,11 +5033,11 @@
         "Tickets": 417,
         "TicketRate": 0,
         "MarketShare": 1.818417772456544e-05,
-        "TotalDayCount": 36,
+        "TotalDayCount": 40,
         "TotalAmount": 119206.0,
         "TotalTickets": 524,
         "FirstWeekAmount": 114163.0,
-        "TotalWeekendAmount": 126384.0
+        "TotalWeekendAmount": 130384.0
     },
     {
         "MovieId": "26932",
@@ -5513,11 +5513,11 @@
         "Tickets": 387625,
         "TicketRate": 0,
         "MarketShare": 0.016903217962792993,
-        "TotalDayCount": 121,
+        "TotalDayCount": 132,
         "TotalAmount": 103382452.0,
         "TotalTickets": 387625,
         "FirstWeekAmount": 39108968.0,
-        "TotalWeekendAmount": 91639198.0
+        "TotalWeekendAmount": 91680809.0
     },
     {
         "MovieId": "26269",
@@ -5933,11 +5933,11 @@
         "Tickets": 172459,
         "TicketRate": 0,
         "MarketShare": 0.007520443899762184,
-        "TotalDayCount": 99,
+        "TotalDayCount": 112,
         "TotalAmount": 48611184.0,
         "TotalTickets": 172459,
         "FirstWeekAmount": 30266077.0,
-        "TotalWeekendAmount": 53390432.0
+        "TotalWeekendAmount": 53865862.0
     },
     {
         "MovieId": "17104",
@@ -6013,11 +6013,11 @@
         "Tickets": 169851,
         "TicketRate": 0,
         "MarketShare": 0.007406716476487204,
-        "TotalDayCount": 76,
+        "TotalDayCount": 89,
         "TotalAmount": 45014156.0,
         "TotalTickets": 169851,
         "FirstWeekAmount": 9064278.0,
-        "TotalWeekendAmount": 25982546.0
+        "TotalWeekendAmount": 25992746.0
     },
     {
         "MovieId": "26678",
@@ -6193,11 +6193,11 @@
         "Tickets": 85536,
         "TicketRate": 0,
         "MarketShare": 0.003729980397718056,
-        "TotalDayCount": 138,
+        "TotalDayCount": 151,
         "TotalAmount": 22984537.0,
         "TotalTickets": 85536,
         "FirstWeekAmount": 4121333.0,
-        "TotalWeekendAmount": 15228423.0
+        "TotalWeekendAmount": 15270578.0
     },
     {
         "MovieId": "27343",
@@ -6493,11 +6493,11 @@
         "Tickets": 39548,
         "TicketRate": 0,
         "MarketShare": 0.0017245752053983547,
-        "TotalDayCount": 91,
+        "TotalDayCount": 104,
         "TotalAmount": 10441992.0,
         "TotalTickets": 39548,
         "FirstWeekAmount": 14426989.0,
-        "TotalWeekendAmount": 19684779.0
+        "TotalWeekendAmount": 19711929.0
     },
     {
         "MovieId": "25429",
@@ -6564,7 +6564,7 @@
         "Rank": 329,
         "Region": "美國",
         "Name": "非紳士特攻隊",
-        "ReleaseDate": "2024-04-16",
+        "ReleaseDate": "2024-04-19",
         "Publisher": "GEM Entertainment Kft.",
         "DayCount": 48,
         "TheaterCount": 85,
@@ -6573,11 +6573,11 @@
         "Tickets": 37924,
         "TicketRate": 0,
         "MarketShare": 0.00165375720869645,
-        "TotalDayCount": 48,
+        "TotalDayCount": 61,
         "TotalAmount": 9555672.0,
         "TotalTickets": 37924,
         "FirstWeekAmount": 6240965.0,
-        "TotalWeekendAmount": 6221722.0
+        "TotalWeekendAmount": 6234997.0
     },
     {
         "MovieId": "25061",
@@ -6633,11 +6633,11 @@
         "Tickets": 30281,
         "TicketRate": 0,
         "MarketShare": 0.0013204678313610695,
-        "TotalDayCount": 71,
+        "TotalDayCount": 84,
         "TotalAmount": 7280331.0,
         "TotalTickets": 30281,
         "FirstWeekAmount": 2840598.0,
-        "TotalWeekendAmount": 5088039.0
+        "TotalWeekendAmount": 5104164.0
     },
     {
         "MovieId": "26241",
@@ -7073,7 +7073,7 @@
         "Tickets": 14804,
         "TicketRate": 0,
         "MarketShare": 0.0006455601127924862,
-        "TotalDayCount": 47,
+        "TotalDayCount": 48,
         "TotalAmount": 3703245.0,
         "TotalTickets": 14804,
         "FirstWeekAmount": 2538447.0,
@@ -7193,7 +7193,7 @@
         "Tickets": 248,
         "TicketRate": 0,
         "MarketShare": 1.081457092492141e-05,
-        "TotalDayCount": 46,
+        "TotalDayCount": 47,
         "TotalAmount": 2743366.0,
         "TotalTickets": 11223,
         "FirstWeekAmount": 1691948.0,
@@ -7353,11 +7353,11 @@
         "Tickets": 7324,
         "TicketRate": 0,
         "MarketShare": 0.000319378699411792,
-        "TotalDayCount": 105,
+        "TotalDayCount": 118,
         "TotalAmount": 1804849.0,
         "TotalTickets": 7324,
         "FirstWeekAmount": 944318.0,
-        "TotalWeekendAmount": 1901476.0
+        "TotalWeekendAmount": 1951165.0
     },
     {
         "MovieId": "27114",
@@ -7493,11 +7493,11 @@
         "Tickets": 6174,
         "TicketRate": 0,
         "MarketShare": 0.00026923048746155156,
-        "TotalDayCount": 28,
+        "TotalDayCount": 41,
         "TotalAmount": 1467353.0,
         "TotalTickets": 6174,
         "FirstWeekAmount": 1201890.0,
-        "TotalWeekendAmount": 1015564.0
+        "TotalWeekendAmount": 1030114.0
     },
     {
         "MovieId": "28654",
@@ -7693,11 +7693,11 @@
         "Tickets": 3590,
         "TicketRate": 0,
         "MarketShare": 0.0001565496355664027,
-        "TotalDayCount": 49,
+        "TotalDayCount": 62,
         "TotalAmount": 847025.0,
         "TotalTickets": 3590,
         "FirstWeekAmount": 639276.0,
-        "TotalWeekendAmount": 512016.0
+        "TotalWeekendAmount": 521466.0
     },
     {
         "MovieId": "28551",
@@ -10953,11 +10953,11 @@
         "Tickets": 6306,
         "TicketRate": 0,
         "MarketShare": 0.00027498663005062264,
-        "TotalDayCount": 131,
+        "TotalDayCount": 134,
         "TotalAmount": 1445616.0,
         "TotalTickets": 6306,
         "FirstWeekAmount": 191870.0,
-        "TotalWeekendAmount": 1406266.0
+        "TotalWeekendAmount": 1444206.0
     },
     {
         "MovieId": "20201",
@@ -11253,11 +11253,11 @@
         "Tickets": 277214,
         "TicketRate": 0,
         "MarketShare": 0.012088509937020823,
-        "TotalDayCount": 140,
+        "TotalDayCount": 149,
         "TotalAmount": 69916042.0,
         "TotalTickets": 277214,
         "FirstWeekAmount": 26862309.0,
-        "TotalWeekendAmount": 46045771.0
+        "TotalWeekendAmount": 46549801.0
     },
     {
         "MovieId": "28046",
@@ -11513,11 +11513,11 @@
         "Tickets": 37153,
         "TicketRate": 0,
         "MarketShare": 0.0016201361031193758,
-        "TotalDayCount": 215,
+        "TotalDayCount": 216,
         "TotalAmount": 19859027.0,
         "TotalTickets": 77187,
         "FirstWeekAmount": 3246961.0,
-        "TotalWeekendAmount": 12129471.0
+        "TotalWeekendAmount": 12151285.0
     },
     {
         "MovieId": "28478",
@@ -11644,7 +11644,7 @@
         "Rank": 583,
         "Region": "日本",
         "Name": "GIVEN被贈與的未來劇場版：柊mix",
-        "ReleaseDate": "2024-03-23",
+        "ReleaseDate": "2024-04-03",
         "Publisher": "SPO Entertainment Inc.",
         "DayCount": 67,
         "TheaterCount": 24,
@@ -11653,11 +11653,11 @@
         "Tickets": 36122,
         "TicketRate": 0,
         "MarketShare": 0.0015751771409274647,
-        "TotalDayCount": 67,
+        "TotalDayCount": 69,
         "TotalAmount": 9673074.0,
         "TotalTickets": 36122,
         "FirstWeekAmount": 2646069.0,
-        "TotalWeekendAmount": 5804275.0
+        "TotalWeekendAmount": 6276345.0
     },
     {
         "MovieId": "26383",
@@ -11793,11 +11793,11 @@
         "Tickets": 30352,
         "TicketRate": 0,
         "MarketShare": 0.0013235639383597365,
-        "TotalDayCount": 70,
+        "TotalDayCount": 71,
         "TotalAmount": 7733353.0,
         "TotalTickets": 30352,
         "FirstWeekAmount": 5033778.0,
-        "TotalWeekendAmount": 6745200.0
+        "TotalWeekendAmount": 6752020.0
     },
     {
         "MovieId": "26553",
@@ -11893,11 +11893,11 @@
         "Tickets": 6427,
         "TicketRate": 0,
         "MarketShare": 0.0002802630940906045,
-        "TotalDayCount": 152,
+        "TotalDayCount": 153,
         "TotalAmount": 6470046.0,
         "TotalTickets": 23274,
         "FirstWeekAmount": 825806.0,
-        "TotalWeekendAmount": 5164420.0
+        "TotalWeekendAmount": 5186620.0
     },
     {
         "MovieId": "17129",
@@ -11993,11 +11993,11 @@
         "Tickets": 5305,
         "TicketRate": 0,
         "MarketShare": 0.00023133588208350034,
-        "TotalDayCount": 145,
+        "TotalDayCount": 146,
         "TotalAmount": 5189601.0,
         "TotalTickets": 18948,
         "FirstWeekAmount": 951463.0,
-        "TotalWeekendAmount": 4253121.0
+        "TotalWeekendAmount": 4275321.0
     },
     {
         "MovieId": "17498",
@@ -13393,11 +13393,11 @@
         "Tickets": 2529,
         "TicketRate": 0,
         "MarketShare": 0.00011028245914970262,
-        "TotalDayCount": 60,
+        "TotalDayCount": 65,
         "TotalAmount": 562589.0,
         "TotalTickets": 2529,
         "FirstWeekAmount": 235759.0,
-        "TotalWeekendAmount": 301977.0
+        "TotalWeekendAmount": 308122.0
     },
     {
         "MovieId": "26949",
@@ -14164,7 +14164,7 @@
         "Rank": 709,
         "Region": "日本",
         "Name": "風之谷",
-        "ReleaseDate": "2024-10-19",
+        "ReleaseDate": "2025-03-06",
         "Publisher": "Studio Ghibli Inc.",
         "DayCount": 8,
         "TheaterCount": 8,
@@ -14173,11 +14173,11 @@
         "Tickets": 864,
         "TicketRate": 0,
         "MarketShare": 3.7676569673919755e-05,
-        "TotalDayCount": 31,
+        "TotalDayCount": 44,
         "TotalAmount": 225109.0,
         "TotalTickets": 864,
         "FirstWeekAmount": 177610.0,
-        "TotalWeekendAmount": 18978626.0
+        "TotalWeekendAmount": 22828975.0
     },
     {
         "MovieId": "26648",
@@ -14493,7 +14493,7 @@
         "Tickets": 648,
         "TicketRate": 0,
         "MarketShare": 2.8257427255439816e-05,
-        "TotalDayCount": 38,
+        "TotalDayCount": 39,
         "TotalAmount": 164465.0,
         "TotalTickets": 648,
         "FirstWeekAmount": 98838.0,
@@ -14593,11 +14593,11 @@
         "Tickets": 391,
         "TicketRate": 0,
         "MarketShare": 1.7050392063081742e-05,
-        "TotalDayCount": 85,
+        "TotalDayCount": 98,
         "TotalAmount": 132940.0,
         "TotalTickets": 391,
         "FirstWeekAmount": 29781549.0,
-        "TotalWeekendAmount": 86572527.0
+        "TotalWeekendAmount": 89128117.0
     },
     {
         "MovieId": "28410",
@@ -15973,11 +15973,11 @@
         "Tickets": 42229,
         "TicketRate": 0,
         "MarketShare": 0.0018414859499536543,
-        "TotalDayCount": 126,
+        "TotalDayCount": 134,
         "TotalAmount": 9877786.0,
         "TotalTickets": 42229,
         "FirstWeekAmount": 573720.0,
-        "TotalWeekendAmount": 13581396.0
+        "TotalWeekendAmount": 13970366.0
     },
     {
         "MovieId": "26546",
@@ -16373,11 +16373,11 @@
         "Tickets": 8312,
         "TicketRate": 0,
         "MarketShare": 0.00036246255454817244,
-        "TotalDayCount": 95,
+        "TotalDayCount": 101,
         "TotalAmount": 2089591.0,
         "TotalTickets": 8312,
         "FirstWeekAmount": 963315.0,
-        "TotalWeekendAmount": 3842224.0
+        "TotalWeekendAmount": 4255478.0
     },
     {
         "MovieId": "27175",
@@ -16393,11 +16393,11 @@
         "Tickets": 9342,
         "TicketRate": 0,
         "MarketShare": 0.00040737790959925735,
-        "TotalDayCount": 59,
+        "TotalDayCount": 60,
         "TotalAmount": 2039163.0,
         "TotalTickets": 9342,
         "FirstWeekAmount": 356940.0,
-        "TotalWeekendAmount": 913797.0
+        "TotalWeekendAmount": 948797.0
     },
     {
         "MovieId": "25818",
@@ -16733,11 +16733,11 @@
         "Tickets": 3634,
         "TicketRate": 0,
         "MarketShare": 0.0001584683497627597,
-        "TotalDayCount": 31,
+        "TotalDayCount": 32,
         "TotalAmount": 804921.0,
         "TotalTickets": 3634,
         "FirstWeekAmount": 415800.0,
-        "TotalWeekendAmount": 378852.0
+        "TotalWeekendAmount": 381352.0
     },
     {
         "MovieId": "23377",
@@ -16833,11 +16833,11 @@
         "Tickets": 2230,
         "TicketRate": 0,
         "MarketShare": 9.724392404264011e-05,
-        "TotalDayCount": 43,
+        "TotalDayCount": 44,
         "TotalAmount": 534010.0,
         "TotalTickets": 2230,
         "FirstWeekAmount": 284310.0,
-        "TotalWeekendAmount": 802944.0
+        "TotalWeekendAmount": 852194.0
     },
     {
         "MovieId": "28311",
@@ -17153,11 +17153,11 @@
         "Tickets": 99,
         "TicketRate": 0,
         "MarketShare": 4.317106941803305e-06,
-        "TotalDayCount": 5,
+        "TotalDayCount": 9,
         "TotalAmount": 49250.0,
         "TotalTickets": 99,
-        "FirstWeekAmount": 175000.0,
-        "TotalWeekendAmount": 108500.0
+        "FirstWeekAmount": 180550.0,
+        "TotalWeekendAmount": 117800.0
     },
     {
         "MovieId": "28241",
@@ -17253,11 +17253,11 @@
         "Tickets": 140,
         "TicketRate": 0,
         "MarketShare": 6.104999715681442e-06,
-        "TotalDayCount": 53,
+        "TotalDayCount": 66,
         "TotalAmount": 30800.0,
         "TotalTickets": 140,
         "FirstWeekAmount": 319400.0,
-        "TotalWeekendAmount": 7194717.0
+        "TotalWeekendAmount": 7356047.0
     },
     {
         "MovieId": "21943",
@@ -17364,7 +17364,7 @@
         "Rank": 869,
         "Region": "中華民國",
         "Name": "刺心切骨",
-        "ReleaseDate": "2024-12-29",
+        "ReleaseDate": "2025-03-07",
         "Publisher": "Potocol Pte. Ltd.##前景娛樂有限公司##Harine Films##ELYSIÜM CINÉ##文化內容策進院##元桌影藝有限公司##台北市電影委員會##阿榮影業股份有限公司##FIXAFILM",
         "DayCount": 1,
         "TheaterCount": 1,
@@ -17373,10 +17373,10 @@
         "Tickets": 62,
         "TicketRate": 0,
         "MarketShare": 2.7036427312303527e-06,
-        "TotalDayCount": 1,
+        "TotalDayCount": 2,
         "TotalAmount": 13640.0,
         "TotalTickets": 62,
-        "FirstWeekAmount": 13640.0,
+        "FirstWeekAmount": 48640.0,
         "TotalWeekendAmount": 13640.0
     },
     {
@@ -17473,7 +17473,7 @@
         "Tickets": 11811,
         "TicketRate": 0,
         "MarketShare": 0.0005150439402993822,
-        "TotalDayCount": 37,
+        "TotalDayCount": 38,
         "TotalAmount": 2806279.0,
         "TotalTickets": 11811,
         "FirstWeekAmount": 2190334.0,
@@ -17493,7 +17493,7 @@
         "Tickets": 9317,
         "TicketRate": 0,
         "MarketShare": 0.00040628773107859997,
-        "TotalDayCount": 77,
+        "TotalDayCount": 78,
         "TotalAmount": 2346004.0,
         "TotalTickets": 9317,
         "FirstWeekAmount": 1592975.0,
@@ -17773,11 +17773,11 @@
         "Tickets": 1837,
         "TicketRate": 0,
         "MarketShare": 8.010631769790578e-05,
-        "TotalDayCount": 84,
+        "TotalDayCount": 85,
         "TotalAmount": 404524.0,
         "TotalTickets": 1837,
         "FirstWeekAmount": 153495.0,
-        "TotalWeekendAmount": 206416.0
+        "TotalWeekendAmount": 207511.0
     },
     {
         "MovieId": "26314",
