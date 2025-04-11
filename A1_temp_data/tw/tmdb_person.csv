@@ -23,7 +23,7 @@
 1134684,1,Park Eun-bin,박은빈,Acting
 1882314,1,Seo Eun-soo,서은수,Acting
 1299287,2,Jin Goo,진구,Acting
-1520280,2,Seong Yu-bin,성유빈,Acting
+1520280,2,Sung Yu-been,성유빈,Acting
 83014,2,Gang Dong-won,강동원,Acting
 21688,1,Bae Doona,배두나,Acting
 1252318,1,IU,IU,Acting
@@ -100,7 +100,7 @@
 573792,2,Kim Min-jae,김민재,Acting
 2278760,1,Kim Bo-min,Kim Bo-min,Acting
 1179570,1,Cho Soo-hyang,조수향,Acting
-4842678,0,Park Hyuk Kwon,Park Hyuk Kwon,Acting
+587676,2,Park Hyuk-kwon,박혁권,Acting
 63438,2,Jang Hyuk,장혁,Acting
 3439595,1,Lee Seo-young,Lee Seo-young,Acting
 1624033,2,Bruce Khan,브루스 칸,Acting
@@ -193,7 +193,7 @@
 2621979,1,Han Chae-kyung,Han Chae-kyung,Acting
 123820,2,Kim Sang-ho,김상호,Acting
 1425274,1,Moon Sook,문숙,Acting
-2042978,1,Lee Joo-young,이주영,Acting
+2042978,1,Lee Zoo-young,이주영,Acting
 1887586,1,Cho Yun-hee,조윤희,Acting
 554945,2,Kwon Hae-hyo,권해효,Acting
 1374555,1,Kim Sae-byuk,김새벽,Acting
@@ -253,7 +253,7 @@
 221018,2,Dan Stevens,Dan Stevens,Acting
 7152,1,Sandra Hüller,Sandra Hüller,Acting
 5853,2,Hans Löw,Hans Löw,Acting
-225233,0,Wolfgang Hübsch,Wolfgang Hübsch,Acting
+225233,2,Wolfgang Hübsch,Wolfgang Hübsch,Acting
 3872,2,Daniel Brühl,Daniel Brühl,Acting
 15486,2,Peter Kurth,Peter Kurth,Acting
 1328488,1,Aenne Schwarz,Aenne Schwarz,Acting
@@ -292,6 +292,11 @@
 1081,2,Herbert Knaup,Herbert Knaup,Acting
 1082,1,Nina Petri,Nina Petri,Acting
 1083,2,Armin Rohde,Armin Rohde,Acting
+1047948,2,Edoardo Leo,Edoardo Leo,Acting
+588636,1,Marta Nieto,Marta Nieto,Acting
+8776,1,Claudia Gerini,Claudia Gerini,Acting
+1024806,2,Stefano Fresi,Stefano Fresi,Acting
+72786,2,Gigio Morra,Gigio Morra,Acting
 67323,1,Margherita Buy,Margherita Buy,Acting
 59270,2,Riccardo Scamarcio,Riccardo Scamarcio,Acting
 128748,1,Alba Rohrwacher,Alba Rohrwacher,Acting
@@ -304,7 +309,7 @@
 1482131,1,Linda Caridi,Linda Caridi,Acting
 65354,1,Yang Kuei-mei,楊貴媚,Acting
 71171,2,Lee Kang-sheng,Lee Kang-sheng,Acting
-150345,2,Miao Tian,Miao Tian,Acting
+150345,2,Miao Tian,苗天,Acting
 150475,0,Hui-Chin Lin,Hui-Chin Lin,Production
 150474,1,Lin Kun-huei,Lin Kun-huei,Acting
 24495,2,Michel Constantin,Michel Constantin,Acting
@@ -381,9 +386,13 @@
 2973356,1,Ani Karseladze,Ani Karseladze,Acting
 1762877,2,Giorgi Bochorishvili,Giorgi Bochorishvili,Acting
 2992501,0,Sofio Chanishvili,Sofio Chanishvili,Acting
+544276,2,Martin Stránský,Martin Stránský,Acting
+2515644,0,Tomáš Koňařík,Tomáš Koňařík,Acting
+2515645,2,Antonín Nový,Antonín Nový,Acting
+2165336,2,Mear One,Mear One,Acting
+90513,2,Yoshitaka Amano,天野喜孝,Visual Effects
 2143522,1,Pavlína Balner,Pavlína Skružná,Acting
 1247355,2,Matouš Ruml,Matouš Ruml,Acting
-544276,2,Martin Stránský,Martin Stránský,Acting
 83878,1,Barbora Hrzánová,Barbora Hrzánová,Acting
 97192,1,Martha Issová,Martha Issová,Acting
 96381,2,Ivan Trojan,Ivan Trojan,Acting
@@ -441,11 +450,6 @@
 2100736,2,Nat Kitcharit,ณัฏฐ์ กิจจริต,Acting
 1259493,1,Esther Supreeleela,Esther Supreeleela,Acting
 3627553,2,Achira Theriault,Achira Theriault,Acting
-3063,1,Tilda Swinton,Tilda Swinton,Acting
-2126734,1,Agnes Brekke,Agnes Brekke,Acting
-1603,2,Daniel Giménez Cacho,Daniel Giménez Cacho,Acting
-2893050,2,Jerónimo Barón,Jerónimo Barón,Acting
-1919397,2,Juan Pablo Urrego,Juan Pablo Urrego,Acting
 557875,0,Thanapat Saisaymar,Thanapat Saisaymar,Acting
 120258,1,Jenjira Pongpas,Jenjira Pongpas,Acting
 69758,2,Sakda Kaewbuadee,Sakda Kaewbuadee,Acting
@@ -485,52 +489,51 @@
 1082723,1,Cheung Ching-Ching,Cheung Ching-Ching,Acting
 1856885,2,Chiang Pin,江彬,Acting
 1889778,2,Ming Tien,Ming Tien,Acting
-1625530,2,Miao Tian,Miao Tian,Acting
 1173739,2,Tsao Chien,Tsao Chien,Acting
-91378,1,Veronica Ngo,Veronica Ngo,Acting
-2242757,0,Phan Thanh Nhien,Phan Thanh Nhien,Acting
-1923448,0,Phạm Anh Khoa,Phạm Anh Khoa,Acting
-2301771,0,Thanh Hoa,Thanh Hoa,Acting
 1905899,1,Alexis Lane,Alexis Lane,Acting
 2290461,2,Shaka Cook,Shaka Cook,Acting
 1485594,2,Dean Kyrwood,Dean Kyrwood,Acting
 2035227,1,Dalara Williams,Dalara Williams,Acting
 2436617,0,Karen Garnsey,Karen Garnsey,Acting
-940339,2,Sean Lau Ching-Wan,劉青雲,Acting
+91378,1,Veronica Ngo,Veronica Ngo,Acting
+2242757,0,Phan Thanh Nhien,Phan Thanh Nhien,Acting
+1923448,0,Phạm Anh Khoa,Phạm Anh Khoa,Acting
+2301771,0,Thanh Hoa,Thanh Hoa,Acting
+940339,2,Sean Lau,劉青雲,Acting
 89409,2,Raymond Lam Fung,林峯,Acting
 64434,1,Charlene Choi Cheuk-Yin,蔡卓妍,Acting
 1183237,2,Tan Kai,谭凯,Acting
 110845,1,Carman Lee Yeuk-Tung,李若彤,Acting
-21908,2,Aaron Kwok Fu-Shing,郭富城,Acting
+21908,2,Aaron Kwok,郭富城,Acting
 148886,2,Alex Man Chi-Leung,萬梓良,Acting
 56863,1,Miriam Yeung Chin-Wah,楊千嬅,Acting
 118350,2,Cheung Tat-Ming,張達明,Acting
-1035980,1,Pau Hei-Ching,鮑起靜,Acting
+1035980,1,Nina Pau Hei-Ching,鮑起靜,Acting
 1337,2,Tony Leung,梁朝偉,Acting
-69637,2,Leslie Cheung Kwok-Wing,張國榮,Acting
+69637,2,Leslie Cheung,張國榮,Acting
 1622,2,Chang Chen,張震,Acting
 133825,2,Gregory Dayton,Gregory Dayton,Acting
 43661,2,Takeshi Kaneshiro,金城武,Acting
-56830,1,Brigitte Lin Ching-Hsia,林青霞,Acting
+56830,1,Brigitte Lin,林青霞,Acting
 12671,1,Faye Wong,Faye Wong,Acting
-119875,1,Valerie Chow Kar-Ling,周嘉玲,Acting
-66761,2,Leon Lai Ming,黎明,Acting
-66762,1,Charlie Yeung Choi-Nei,杨采妮,Acting
-57831,1,Karen Mok Man-Wai,莫文蔚,Acting
-56816,1,Michelle Reis,李嘉欣,Acting
+119875,1,Valerie Chow,周嘉玲,Acting
 56542,1,Addison Timlin,Addison Timlin,Acting
 225692,2,Jeremy Irvine,Jeremy Irvine,Acting
 18066,1,Juliet Aubrey,Juliet Aubrey,Acting
 127281,2,Harrison Gilbertson,Harrison Gilbertson,Acting
 1345418,1,Lola Kirke,Lola Kirke,Acting
-25246,2,Andy Lau Tak-Wah,劉德華,Acting
-1338,1,Maggie Cheung Man-Yuk,張曼玉,Acting
-12672,1,Carina Lau Kar-Ling,劉嘉玲,Acting
-25245,2,Jacky Cheung Hok-yau,張學友,Acting
-44917,1,Anita Mui Yim-Fong,梅艷芳,Acting
+66761,2,Leon Lai,黎明,Acting
+66762,1,Charlie Yeung,杨采妮,Acting
+57831,1,Karen Mok,莫文蔚,Acting
+56816,1,Michelle Reis,李嘉欣,Acting
+25246,2,Andy Lau,劉德華,Acting
+1338,1,Maggie Cheung,張曼玉,Acting
+12672,1,Carina Lau,劉嘉玲,Acting
+25245,2,Jacky Cheung,張學友,Acting
+44917,1,Anita Mui,梅艷芳,Acting
 69638,1,Emily Chu Bo-Yee,朱寶意,Acting
 227780,1,Irene Wan,溫碧霞,Acting
-110847,2,Dayo Wong Chi-Wah,黃子華,Acting
+110847,2,Dayo Wong,黃子華,Acting
 1202564,2,Louis Cheung,張繼聰,Acting
 2557400,2,Peter Chan Charm-Man,Peter Chan Charm-man,Acting
 78252,1,Stephy Tang Lai-Yan,鄧麗欣,Acting
@@ -548,8 +551,8 @@
 3514228,0,Pang Pui Lam,Pang Pui Lam,Acting
 4042687,0,Yu Tsz-wing,Yu Tsz-wing,Acting
 1140044,2,Kevin Cheng Ka-Wing,鄭嘉穎,Acting
-144860,2,Julian Cheung Chi-Lam,張智霖,Acting
-230777,1,Jessica Hester Hsuan,Jessica Hester Hsuan,Acting
+144860,2,Julian Cheung,張智霖,Acting
+230777,1,Jessica Hester Hsuan,宣萱,Acting
 21912,2,Michael Tse Tin-Wah,謝天華,Acting
 122818,2,Lawrence Ng Kai-Wah,吳啟華,Acting
 56861,2,Tony Leung Ka-Fai,梁家輝,Acting
@@ -558,12 +561,12 @@
 1619,2,Chow Yun-Fat,周潤發,Acting
 25249,2,Waise Lee Chi-Hung,李子雄,Acting
 584527,2,Jimmy Wang Yu,王羽,Acting
-26756,2,Yasuaki Kurata,Yasuaki Kurata,Acting
+26756,2,Yasuaki Kurata,倉田保昭,Acting
 937835,2,Lung Fei,Lung Fei,Acting
 612216,2,Eddy Ko Hung,高雄,Acting
 1174639,2,Ko Hsiao Pao,Ko Hsiao Pao,Acting
-3140188,2,Edan Lui Cheuk-on,吕爵安,Acting
-78257,2,Ronald Cheng Chung-Kei,鄭中基,Acting
+3140188,2,Edan Lui,吕爵安,Acting
+78257,2,Ronald Cheng,鄭中基,Acting
 65938,1,Gigi Leung Wing-Kei,梁詠琪,Acting
 88495,1,Sandra Ng Kwan-Yue,吳君如,Acting
 1813253,1,Angela Yuen,Angela Yuen,Acting
@@ -576,7 +579,7 @@
 130598,2,Louis Fan Siu-Wong,Louis Fan Siu-Wong,Acting
 1582038,0,Lee Yue-tin,Lee Yue-tin,Acting
 1134506,0,Lee Man-Tai,Lee Man-Tai,Acting
-70590,1,Teresa Mo Shun-Kwan,毛舜筠,Acting
+70590,1,Teresa Mo,毛舜筠,Acting
 3185076,2,Keung To,Keung To,Acting
 3438780,2,Jeremy Lau Ying-Ting,柳應廷,Acting
 1266156,2,Sham Ka-Ki,岑珈其,Acting
@@ -585,7 +588,7 @@
 62410,2,Sammo Hung Kam-Bo,洪金寶,Acting
 63584,2,Francis Ng Chun-Yu,吳鎮宇,Acting
 130605,1,Sire Ma,Sire Ma,Acting
-1561554,2,Leung Kin-Ping,Leung Kin-Ping,Acting
+1561554,2,Leung Kin-Ping,梁健平,Acting
 64496,2,Richie Jen,任賢齊,Acting
 20519,2,Simon Yam,任達華,Acting
 21914,2,Alex Fong Chung-Sun,方中信,Acting
@@ -595,7 +598,7 @@
 1140989,1,Gigi Wong,Gigi Wong,Acting
 1575171,1,Wu Fu-Sheng,Wu Fu-Sheng,Acting
 26739,1,Sylvia Chang,張艾嘉,Acting
-77304,1,Zhao Wei,Zhao Wei,Acting
+77304,1,Zhao Wei,趙薇,Acting
 2363304,0,Alex Lam,Alex Lam,Acting
 2372932,0,Kelly Yao,Kelly Yao,Acting
 1036634,1,Teresa Cheung,Teresa Cheung,Acting
@@ -616,7 +619,7 @@
 268708,1,Teresa Mak Ka-Kei,麥家琪,Acting
 84205,1,Kara Wai Ying-Hung,惠英紅,Acting
 932680,1,Karena Ng Chin-Yu,吳千語,Acting
-1187932,2,Hugo Ng Doi-Yung,吳岱融,Acting
+1187932,2,Hugo Ng,吳岱融,Acting
 3196478,2,Angus Yeung Tin-Yue,楊天宇,Acting
 3243219,1,Janis Chan,Janis Chan,Acting
 26724,2,Eric Tsang Chi-Wai,曾志偉,Acting
@@ -647,6 +650,11 @@
 11390,2,Peter O'Toole,Peter O'Toole,Acting
 11394,2,Ruocheng Ying,Ruocheng Ying,Acting
 11395,2,Victor Wong,Victor Wong,Acting
+1498158,1,Jessie Buckley,Jessie Buckley,Acting
+139549,2,Rory Kinnear,Rory Kinnear,Acting
+1611824,2,Paapa Essiedu,Paapa Essiedu,Acting
+1782144,1,Gayle Rankin,Gayle Rankin,Acting
+1977143,0,Sarah Twomey,Sarah Twomey,Acting
 56890,2,Malcolm McDowell,Malcolm McDowell,Acting
 2264,2,Patrick Magee,Patrick Magee,Acting
 2272,2,Carl Duering,Carl Duering,Acting
@@ -721,6 +729,11 @@
 18473,2,James Badge Dale,James Badge Dale,Acting
 87243,1,Nicole Beharie,Nicole Beharie,Acting
 1141384,1,Lucy Walters,Lucy Walters,Acting
+26513,1,Debra Winger,Debra Winger,Acting
+6949,2,John Malkovich,John Malkovich,Acting
+55152,2,Campbell Scott,Campbell Scott,Acting
+10504,1,Jill Bennett,Jill Bennett,Acting
+9191,2,Timothy Spall,Timothy Spall,Acting
 1060565,1,Marina Abramović,Marina Abramović,Acting
 8293,1,Marion Cotillard,Marion Cotillard,Acting
 14887,2,Paddy Considine,Paddy Considine,Acting
@@ -741,7 +754,7 @@
 12763,2,Joseph Fiennes,Joseph Fiennes,Acting
 1061561,2,Mark Cousins,Mark Cousins,Directing
 3056,2,Jeremy Thomas,Jeremy Thomas,Production
-26513,1,Debra Winger,Debra Winger,Acting
+3063,1,Tilda Swinton,Tilda Swinton,Acting
 135792,2,Michael Emil,Michael Emil,Acting
 9207,1,Theresa Russell,Theresa Russell,Acting
 3150,2,Tony Curtis,Tony Curtis,Acting
@@ -1040,11 +1053,11 @@
 1998733,2,Jaboukie Young-White,Jaboukie Young-White,Acting
 17773,1,Gabrielle Union,Gabrielle Union,Acting
 140,1,Lucy Liu,Lucy Liu,Acting
-9206,1,Neve Campbell,Neve Campbell,Acting
 15234,2,David Arquette,David Arquette,Acting
+9206,1,Neve Campbell,Neve Campbell,Acting
 14405,1,Courteney Cox,Courteney Cox,Acting
 26457,2,Matthew Lillard,Matthew Lillard,Acting
-22108,2,Skeet Ulrich,Skeet Ulrich,Acting
+16850,1,Rose McGowan,Rose McGowan,Acting
 1373659,1,Melissa Barrera,Melissa Barrera,Acting
 974169,1,Jenna Ortega,Jenna Ortega,Acting
 1508653,1,Jasmin Savoy Brown,Jasmin Savoy Brown,Acting
@@ -1101,7 +1114,6 @@
 56650,2,Ray Fearon,Ray Fearon,Acting
 1196041,2,Rohan Campbell,Rohan Campbell,Acting
 37917,1,Kristen Stewart,Kristen Stewart,Acting
-9191,2,Timothy Spall,Timothy Spall,Acting
 3262411,2,Jack Nielen,Jack Nielen,Acting
 3262412,2,Freddie Spry,Freddie Spry,Acting
 1287084,2,Jack Farthing,Jack Farthing,Acting
@@ -1129,16 +1141,16 @@
 36592,1,Saoirse Ronan,Saoirse Ronan,Acting
 47720,1,Ruth Wilson,Ruth Wilson,Acting
 34551,2,Reece Shearsmith,Reece Shearsmith,Acting
-2769,1,Natalie Wood,Natalie Wood,Acting
-6679,2,Richard Beymer,Richard Beymer,Acting
-6725,2,Russ Tamblyn,Russ Tamblyn,Acting
-13299,1,Rita Moreno,Rita Moreno,Acting
-24880,2,George Chakiris,George Chakiris,Acting
 1159982,2,Ansel Elgort,Ansel Elgort,Acting
 2217977,1,Rachel Zegler,Rachel Zegler,Acting
 1437491,1,Ariana DeBose,Ariana DeBose,Acting
 2225865,2,David Alvarez,David Alvarez,Acting
 1423520,2,Mike Faist,Mike Faist,Acting
+2769,1,Natalie Wood,Natalie Wood,Acting
+6679,2,Richard Beymer,Richard Beymer,Acting
+6725,2,Russ Tamblyn,Russ Tamblyn,Acting
+13299,1,Rita Moreno,Rita Moreno,Acting
+24880,2,George Chakiris,George Chakiris,Acting
 11084,1,Kelly McGillis,Kelly McGillis,Acting
 5576,2,Val Kilmer,Val Kilmer,Acting
 11085,2,Anthony Edwards,Anthony Edwards,Acting
@@ -1293,7 +1305,6 @@
 1443625,1,Jackie Cruz,Jackie Cruz,Acting
 140652,2,Tomasz Kot,Tomasz Kot,Acting
 1977981,1,Athena Strates,Athena Strates,Acting
-588636,1,Marta Nieto,Marta Nieto,Acting
 2413,2,Dominique Pinon,Dominique Pinon,Acting
 2799693,1,Felizia Trube,Felizia Trube,Acting
 2227,1,Nicole Kidman,Nicole Kidman,Acting
@@ -1357,7 +1368,6 @@
 37089,2,Cameron Monaghan,Cameron Monaghan,Acting
 2453169,1,Lilly Krug,Lilly Krug,Acting
 1411561,1,Sasha Luss,Sasha Luss,Acting
-6949,2,John Malkovich,John Malkovich,Acting
 11149,1,Dominique Swain,Dominique Swain,Acting
 29369,1,Melanie Griffith,Melanie Griffith,Acting
 8924,2,Frank Langella,Frank Langella,Acting
@@ -1389,8 +1399,8 @@
 203637,2,Benjamin Arthur,Benjamin Arthur,Acting
 7220,2,Mark Famiglietti,Mark Famiglietti,Acting
 1613304,2,Shawn Mendes,Shawn Mendes,Acting
-3810,2,Javier Bardem,Javier Bardem,Acting
 2115854,2,Winslow Fegley,Winslow Fegley,Acting
+3810,2,Javier Bardem,Javier Bardem,Acting
 206444,1,Constance Wu,Constance Wu,Acting
 59233,2,Scoot McNairy,Scoot McNairy,Acting
 9137,1,Renée Zellweger,Renée Zellweger,Acting
@@ -1481,13 +1491,13 @@
 8471,1,Larisa Tarkovskaya,Лариса Тарковская,Acting
 55513,1,Alla Demidova,Алла Демидова,Acting
 8475,2,Anatoliy Solonitsyn,Анатолий Солоницын,Acting
+28079,1,Alisa Freyndlikh,Алиса Фрейндлих,Acting
 28078,2,Aleksandr Kaydanovskiy,Александр Кайдановский,Acting
 1190992,2,Nikolay Grinko,Микола Гринько,Acting
-28079,1,Alisa Freyndlikh,Алиса Фрейндлих,Acting
 28080,1,Natalya Abramova,Наталья Абрамова,Acting
 100585,2,Philip Ng Wan-Lung,伍允龍,Acting
 83633,2,Vanness Wu,吳建豪,Acting
-63585,2,Andy On Chi-Kit,安志傑,Acting
+63585,2,Andy On,安志傑,Acting
 1175570,1,Joyce Feng,Joyce Feng,Acting
 1759495,1,Aka Zhao,Aka Zhao,Acting
 20374,1,Teresa Palmer,Teresa Palmer,Acting
@@ -1523,8 +1533,8 @@
 1568909,1,Paulina Gałązka,Paulina Gałązka,Acting
 544002,2,Giulio Berruti,Giulio Berruti,Acting
 83264,1,Katarzyna Figura,Katarzyna Figura,Acting
-107633,2,Jan Englert,Jan Englert,Acting
-1888550,1,Beata Ścibakówna,Beata Ścibakówna,Acting
+1564284,1,Katarzyna Sawczuk,Katarzyna Sawczuk,Acting
+1366022,2,Józef Pawłowski,Józef Pawłowski,Acting
 1138605,2,Piotr Głowacki,Piotr Głowacki,Acting
 1613059,2,Jan Szydłowski,Jan Szydłowski,Acting
 1575923,2,Grzegorz Małecki,Grzegorz Małecki,Acting
@@ -1701,7 +1711,7 @@
 552538,2,Yuya Endo,遠藤雄弥,Acting
 13256,2,Kanji Tsuda,津田寛治,Acting
 130289,2,Yuya Matsuura,松浦祐也,Acting
-1738775,2,Chiba Tetsuya,千葉哲也,Acting
+1738775,2,Tetsuya Chiba,千葉哲也,Acting
 1528803,2,Shinsuke Kato,カトウシンスケ,Acting
 6553,1,Isabelle Adjani,Isabelle Adjani,Acting
 6012,2,Daniel Auteuil,Daniel Auteuil,Acting
@@ -1847,9 +1857,9 @@
 10331,1,Aliki Georgouli,Αλίκη Γεωργούλη,Acting
 147800,2,Dimitris Imellos,Δημήτρης Ήμελλος,Acting
 1106956,1,Tamila Koulieva,Ταμίλα Κουλίεβα,Acting
-1095435,2,Stathis Stamoulakatos,Στάθης Σταμουλακάτος,Acting
 1561875,2,Thanasis Papageorgiou,Θανάσης Παπαγεωργίου,Acting
-1488724,0,Giorgos Biniaris,Γιώργος Μπινιάρης,Acting
+1095435,2,Stathis Stamoulakatos,Στάθης Σταμουλακάτος,Acting
+2858453,1,Daphne Michopoulou,Δάφνη Μιχοπούλου,Acting
 2560224,1,Milena Smit,Milena Smit,Acting
 1313220,2,Israel Elejalde,Israel Elejalde,Acting
 37946,1,Aitana Sánchez-Gijón,Aitana Sánchez-Gijón,Acting
@@ -1922,7 +1932,6 @@
 1499191,1,Andrea Ladányi,Andrea Ladányi,Acting
 145587,2,Gijs Naber,Gijs Naber,Acting
 16269,2,Louis Garrel,Louis Garrel,Acting
-39905,2,Josef Hader,Josef Hader,Acting
 15915,2,Sergio Rubini,Sergio Rubini,Acting
 1113248,2,Auðunn Blöndal,Auðunn Blöndal,Acting
 1332207,0,Egill Einarsson,Egill Einarsson,Acting
@@ -1957,7 +1966,7 @@
 1923820,0,Noghre Asadi,Noghre Asadi,Acting
 1923821,0,Roushan Karam Elmi,Roushan Karam Elmi,Acting
 54607,2,Bahman Ghobadi,Bahman Ghobadi,Directing
-1901974,1,Maryam Moghaddam,Maryam Moghaddam,Acting
+1152099,1,Maryam Moghaddam,مریم مقدم,Acting
 2258883,2,Alireza Sanifar,Alireza Sanifar,Acting
 1572924,2,Pouria Rahimi Sam,پوریا رحیمی سام,Acting
 3252055,0,Avin Poor Raoufi,Avin Poor Raoufi,Acting
@@ -2150,6 +2159,10 @@
 1252731,2,Mitsuhiro Ichiki,市来光弘,Acting
 1828041,2,Kento Hama,濱健人,Acting
 1562140,2,Kengo Takanashi,高梨謙吾,Acting
+1498126,1,Riho Iida,飯田里穂,Acting
+114299,2,Ryohei Kimura,木村良平,Acting
+1498127,1,Suzuko Mimori,三森すずこ,Acting
+2241364,1,Moeka Koizumi,小泉萌香,Acting
 1039305,1,Kasumi Arimura,有村架純,Acting
 1671407,1,Kaya Kiyohara,清原果耶,Acting
 2236358,2,Kanata Hosoda,細田佳央太,Acting
@@ -2163,7 +2176,7 @@
 1388751,2,Soma Saito,斉藤壮馬,Acting
 1324472,2,Kengo Kawanishi,河西健吾,Acting
 1647556,2,Yuya Hirose,広瀬裕也,Acting
-2203003,0,Yoji Minagawa,Yoji Minagawa,Acting
+2203003,0,Yoji Minagawa,皆川暢二,Acting
 1641492,2,Hidenobu Abera,アベラヒデノブ,Acting
 142673,1,Eri Tokunaga,徳永えり,Acting
 2043861,1,Harumi Shuhama,しゅはまはるみ,Acting
@@ -2223,6 +2236,10 @@
 1154449,2,Atsushi Abe,阿部敦,Acting
 1906684,2,Hikaru Tashiro,Hikaru Tashiro,Acting
 115700,2,Takumi Saitoh,斎藤工,Acting
+1251240,1,Haruna Kawaguchi,川口春奈,Acting
+1320678,2,Jun Shison,志尊淳,Acting
+224412,2,Yuta Furukawa,古川雄大,Acting
+1615061,1,Tina Tamashiro,玉城ティナ,Acting
 545825,1,Shinobu Ôtake,大竹しのぶ,Acting
 3015905,1,Cocomi,Cocomi,Acting
 135200,2,Ikuji Nakamura,中村育二,Acting
@@ -2245,7 +2262,6 @@
 1255096,1,Rina Kawaei,川栄 李奈,Acting
 225730,2,Ryunosuke Kamiki,神木隆之介,Acting
 1256882,2,Hokuto Matsumura,松村北斗,Acting
-1615061,1,Tina Tamashiro,玉城ティナ,Acting
 3340013,1,DAOKO,DAOKO,Acting
 3119799,0,Murakami Maito Raul,Murakami Maito Raul,Acting
 2054290,1,Mayu Hotta,堀田真由,Acting
@@ -2363,6 +2379,11 @@
 227629,2,Takeo Chii,地井武男,Acting
 120690,2,Kengo Kora,高良健吾,Acting
 90570,1,Atsuko Takahata,高畑淳子,Acting
+228234,1,Junko Minagawa,皆川純子,Acting
+216330,2,Takashi Matsuyama,松山鷹志,Acting
+144655,2,Tomokazu Sugita,杉田智和,Acting
+215121,1,Mikako Takahashi,高橋美佳子,Acting
+89878,2,Ryotaro Okiayu,置鮎龍太郎,Acting
 1762674,2,Daichi Kaneko,Daichi Kaneko,Acting
 119244,1,Jun Fubuki,風吹ジュン,Acting
 1253807,1,Miki Imai,今井美樹,Acting
@@ -2408,7 +2429,6 @@
 559411,2,Yukito Nishii,西井幸人,Acting
 559412,2,Kaoru Fujiwara,藤原薫,Acting
 1377080,0,Xu Cai-gen,Xu Cai-gen,Acting
-1251240,1,Haruna Kawaguchi,川口春奈,Acting
 592147,1,Yoko Maki,真木よう子,Acting
 553939,2,Naoto Ogata,緒形直人,Acting
 2014560,2,Fuju Kamio,神尾楓珠,Acting
@@ -2446,6 +2466,10 @@
 1179321,2,Rokkaku Seiji,六角精児,Acting
 2349205,1,Yuki Katayama,片山友希,Acting
 128481,2,Ryo Iwamatsu,岩松了,Acting
+1246,1,Emily Mortimer,Emily Mortimer,Acting
+110014,1,Christina Hendricks,Christina Hendricks,Acting
+72607,1,Mieko Harada,原田美枝子,Acting
+231062,2,Jan Milligan,Jan Milligan,Acting
 2504721,1,Rio Aoki,Rio Aoki,Acting
 3661194,0,mei yamagishi,mei yamagishi,Acting
 3101663,0,Ryoma Ichihara,Ryoma Ichihara,Acting
@@ -2455,15 +2479,20 @@
 95504,1,Setsuko Hara,原節子,Acting
 131013,1,Haruko Sugimura,杉村春子,Acting
 68411,2,Sō Yamamura,山村聰,Acting
+3652328,1,Miho Machiyama,Miho Machiyama,Acting
+2687226,2,Shion Suzuki,Shion Suzuki,Acting
+3652330,0,Katsuya Ito,Katsuya Ito,Acting
+1766727,1,Asuka Oda,小田飛鳥,Acting
+1078683,2,Yohta Kawase,川瀬陽太,Acting
 3652266,1,Marina Arisato,Marina Arisato,Acting
 3652269,1,Riona Furuse,Riona Furuse,Acting
 3089421,2,Endo Fumiya,Endo Fumiya,Acting
 3079321,1,Hitomi Wada,Hitomi Wada,Acting
 92487,2,Tsuyoshi Abe,阿部力,Acting
+96958,2,Tony Yang,楊祐寧,Acting
 550949,1,Tien Hsin,天心,Acting
 1123730,0,Tai-an Huang,Tai-an Huang,Acting
 1016271,2,Kenji Kasai,河西健司,Acting
-96960,2,King Chin,King Chin,Acting
 1079533,1,Maisa Abd Elhadi,Maisa Abd Elhadi,Acting
 762,2,Ali Suliman,Ali Suliman,Acting
 1105143,1,Manal Awad,Manal Awad,Acting
@@ -2518,7 +2547,7 @@
 1907472,1,Ning Chang,Ning Chang,Acting
 69827,2,Duan Chun-hao,段鈞豪,Acting
 1247111,1,Cheryl Yang,楊謹華,Acting
-3402181,1,Agnes Mai,Agnes Mai,Acting
+3402181,1,Agnes Mai,麥語彤,Acting
 127691,1,Pei Hsiao-lan,Pei Hsiao-lan,Acting
 1300132,2,Joseph Hsia,夏靖庭,Acting
 2417487,2,Wilson Liu,Wilson Liu,Acting
@@ -2528,15 +2557,10 @@
 3081029,2,Vent Teng,Vent Teng,Acting
 93990,1,Michelle Ye Xuan,葉璇,Acting
 118745,2,Fung Hak-On,馮克安,Acting
-72732,2,Eddie Cheung Siu-Fai,張兆輝,Acting
-1356718,1,Ko Chia-yen,柯佳嬿,Acting
-1868413,2,Greg Hsu,許光漢,Acting
-1990192,2,Patrick Shih,施柏宇,Acting
-1480174,2,Jin Shijia,金世佳,Acting
-2238406,1,Berry Wen-i Kuo,Berry Wen-i Kuo,Acting
+72732,2,Eddie Cheung,張兆輝,Acting
 2779025,2,Vincent Huang,黃文擇,Creator
 3282533,1,Caitlin Fang,Caitlin Fang,Acting
-126345,1,Karena Lam Kar-Yan,Karena Lam Kar-Yan,Acting
+126345,1,Karena Lam Kar-Yan,林嘉欣,Acting
 1179172,2,Kaiser Chuang,莊凱勛,Acting
 3299524,1,Audrey Lin,Audrey Lin,Acting
 1429696,1,Bowie Tsang,Bowie Tsang,Acting
@@ -2552,7 +2576,7 @@
 1587299,2,Zhang Ting Hu,張庭瑚,Acting
 2547327,1,Sonia Yuan,袁子芸,Acting
 131290,2,Tsai Chen-Nan,蔡振南,Acting
-2397971,2,Li Kuan-yi,李冠毅,Acting
+2397971,2,Li Kuan-Yi,李冠毅,Acting
 2874730,1,Regina Lei,雷嘉汭,Acting
 3549561,2,Wilang Noming,Wilang Noming,Acting
 3549562,1,Kagaw Piling,Kagaw Piling,Acting
@@ -2583,7 +2607,7 @@
 1715264,1,Fang Wen-Lin,方文琳,Acting
 2860036,0,Ray Chin,Ray Chin,Crew
 2860039,0,Hung-Chi Liao,Hung-Chi Liao,Acting
-1624469,1,Sheu Fang-Yi,Sheu Fang-Yi,Acting
+1624469,1,Sheu Fang-Yi,許芳宜,Acting
 1746243,1,Hsieh Ying-shiuan,謝盈萱,Acting
 1743150,2,Bamboo Chen,陳竹昇,Acting
 3339137,1,Sun Tsui Feng,Sun Tsui Feng,Acting
@@ -2606,18 +2630,19 @@
 548053,1,Helena Law Lan,羅蘭,Acting
 1447086,2,Michael Huang,Michael Huang,Acting
 1255141,2,Lo Pei-An,羅北安,Acting
-2033784,2,Fu Meng-po,傅孟柏,Acting
+2033784,2,Fu Meng-Po,傅孟柏,Acting
 1256560,1,Joanne Tseng,曾之喬,Acting
 932692,1,Janel Tsai,蔡淑臻,Acting
 1514559,2,Ming-shiou Tsai,Ming-shiou Tsai,Acting
 2769638,2,Frederick Lee,Frederick Ming Zhong Lee,Acting
 2197808,2,Johnny Kou Hsi-Shun,Johnny Kou Hsi-Shun,Acting
+1356718,1,Ko Chia-yen,柯佳嬿,Acting
 103648,1,Lu Yi-ching,陸弈靜,Acting
 1531489,1,Helena Hsu,許乃涵,Acting
 2836728,2,Ye Ting Qi,Ye Ting Qi,Acting
 2064375,2,Wasir Chou,Wasir Chou,Acting
 581897,2,Roy Chang,Roy Chang,Acting
-65261,1,Angelica Lee Sin-Jie,李心潔,Acting
+65261,1,Lee Sin-Jie,李心潔,Acting
 1200923,1,Hsia Yu-chiao,夏于喬,Acting
 1260978,2,Emerson Tsai,蔡昌憲,Acting
 1966252,2,Chieh-Te Liang,Chieh-Te Liang,Directing
@@ -2636,7 +2661,7 @@
 3430335,1,Aileen Huang,黃琳媛,Acting
 1580562,2,River Huang,黃河,Acting
 85962,1,Gwei Lun-Mei,桂綸鎂,Acting
-1186305,1,Lee Lieh,Lee Lieh,Acting
+1186305,1,Lee Lieh,李烈,Acting
 2463037,2,Dean Tong,Dean Tong,Acting
 3505739,2,Alex Chiu,Alex Chiu,Acting
 3505738,2,Eddie Chen,陳楚扉,Acting
@@ -2654,7 +2679,7 @@
 2859560,1,Annie Nguyen,Nguyễn Ngọc Anh,Acting
 3129624,1,Nguyen Thu Hang,Nguyen Thu Hang,Acting
 1982329,2,Chiang Chang-Hui,Chiang Chang-Hui,Acting
-4513323,1,Kristen Chau,Kristen Chau,Acting
+4513323,1,Kristen Chau,周芷瑩,Acting
 3229052,1,Lucia,陸夏,Acting
 1190970,2,Jieh-Wen King,金介文,Acting
 2058777,1,Winnie Chang,張詩盈,Acting
@@ -2692,8 +2717,8 @@
 1240438,2,Mario Pu,馬力歐,Acting
 555384,2,Tang Tsung Sheng,Tang Tsung Sheng,Acting
 4356449,0,萧菊贞,萧菊贞,Acting
-96958,2,Tony Yang,楊祐寧,Acting
 96959,2,Duncan Chow,周群達,Acting
+96960,2,King Chin,King Chin,Acting
 96961,0,Dada Ji,Dada Ji,Acting
 96962,0,Jimmy Yang,Jimmy Yang,Acting
 126735,1,René Liu,劉若英,Acting
@@ -2747,7 +2772,7 @@
 126716,1,Amber Kuo,郭采潔,Acting
 1233857,2,George Hu,胡宇威,Acting
 3325085,0,Shut Tiu,Shut Tiu,Acting
-1172051,2,Shih Chun,Shih Chun,Acting
+1172051,2,Shih Chun,石雋,Acting
 1613912,2,Lu Shih,Lu Shih,Acting
 1476994,1,Ma Sichun,马思纯,Acting
 39831,1,Yu Feihong,俞飞鸿,Acting
@@ -2761,7 +2786,7 @@
 1362654,1,Shaohua Zhang,张少华,Acting
 1627287,1,Jia Ling,贾玲,Acting
 1993057,1,Zhang Xiaofei,张小斐,Acting
-1519026,2,Shen Teng,沈腾,Acting
+1519026,2,Teng Shen,沈腾,Acting
 1397016,2,Chen He,Chen He,Acting
 3043697,2,He Huan,He Huan,Acting
 993943,2,Mark Chao,趙又廷,Acting
@@ -2786,7 +2811,7 @@
 1519027,1,Ma Li,Ma Li,Acting
 2093326,2,Wei Xiang,魏翔,Acting
 1519031,2,Allen Ai Lun,艾伦,Acting
-124993,2,Chen Minghao,Chen Minghao,Acting
+124993,2,Chen Minghao,陈明昊,Acting
 2140106,2,Cailun Huang,黄才伦,Acting
 1985025,2,Chang Yuan,常远,Acting
 2029011,2,Wang Chengsi,Wang Chengsi,Acting
@@ -2810,7 +2835,7 @@
 1347525,2,Park Seo-jun,박서준,Acting
 83036,1,Park Bo-young,박보영,Acting
 1352930,1,Kim Sun-young,김선영,Acting
-2125084,1,Park Ji-hu,박지후,Acting
+1793046,2,Kim Do-yoon,김도윤,Acting
 1544084,2,RM,RM,Acting
 1544088,2,Jin,진,Acting
 1544086,2,Suga,슈가,Acting
@@ -2820,7 +2845,7 @@
 2144177,2,Kim Jae-hyun,Kim Jae-hyun,Acting
 1029157,1,Shin So-yul,신소율,Acting
 3979702,2,Oh Jin-seok,오진석,Acting
-1674539,2,Kim Kang-il,Kim Kang-il,Acting
+1674539,2,Kim Kang-il,김강일,Acting
 1863349,2,Kim Seon-ho,김선호,Acting
 3053741,2,Kang Tae-ju,강태주,Acting
 84751,2,Kim Kang-woo,김강우,Acting
@@ -2850,7 +2875,7 @@
 2332076,1,Hwasa,화사,Acting
 1523579,1,Shin Hye-sun,신혜선,Acting
 1565392,2,Kang Tae-oh,강태오,Acting
-2240033,2,Im Sung-jae,임성재,Acting
+2992836,2,Lim Cheol-soo,임철수,Acting
 2053219,1,Kim Da-mi,김다미,Acting
 2104287,1,Jeon So-nee,전소니,Acting
 2117890,2,Byeon Woo-seok,변우석,Acting
@@ -2890,14 +2915,14 @@
 2956895,1,BIBI,비비,Acting
 2298157,2,Jeong Jae-kwang,정재광,Acting
 2221392,2,You Seong-joo,유성주,Acting
-83637,2,Huh Joon-ho,허준호,Acting
-929122,1,Esom,이솜,Acting
-1418580,2,Lee Dong-hwi,이동휘,Acting
 17140,1,Abigail Breslin,Abigail Breslin,Acting
 230,2,Stephen McHattie,Stephen McHattie,Acting
 5892,2,David Hewlett,David Hewlett,Acting
 1043834,2,David Knoll,David Knoll,Acting
 12978,2,Peter Outerbridge,Peter Outerbridge,Acting
+83637,2,Huh Joon-ho,허준호,Acting
+929122,1,Esom,이솜,Acting
+1418580,2,Lee Dong-hwi,이동휘,Acting
 146245,1,Kim Hye-soo,김혜수,Acting
 127564,2,Zo In-sung,조인성,Acting
 571172,2,Park Jeong-min,박정민,Acting
@@ -2918,7 +2943,6 @@
 130109,2,Arya,Arya,Acting
 1544306,1,Sayesha Saigal,Sayesha Saigal,Acting
 585397,2,Samuthirakani,Samuthirakani,Acting
-1793046,2,Kim Do-yoon,김도윤,Acting
 1467384,1,Lee Yul-eum,이열음,Acting
 1348586,2,Lee Ho-won,이호원,Acting
 1966747,1,Choi Ye-won,아린,Acting
@@ -2929,18 +2953,21 @@
 2791229,1,Park Hae-eun,박혜은,Acting
 1863422,2,Kang Hong-suk,강홍석,Acting
 127720,1,Jung Yu-mi,정유미,Acting
-2003804,1,Kim Kuk-hee,김국희,Acting
+2003804,1,Kim Guk-hee,김국희,Acting
 1876417,1,Lee Kyung-jin,이경진,Acting
 4344113,1,Park Sun-hye,Park Sun-hye,Acting
 3643868,0,Park Ran,Park Ran,Acting
 3728650,1,Yoon Yi-reh,Yoon Yi-reh,Acting
 1364528,1,Lee Ha-nee,이하늬,Acting
 1593672,2,Park Hae-soo,박해수,Acting
+37982,1,Agata Buzek,Agata Buzek,Acting
+592913,1,Małgorzata Hajewska-Krzysztofik,Małgorzata Hajewska-Krzysztofik,Acting
+3120382,1,Anna Paliga,Anna Paliga,Acting
 1164507,2,Ahn Jae-hong,안재홍,Acting
 2526745,2,Lee Sin-young,이신영,Acting
 1347519,2,Jeong Jin-woon,정진운,Acting
 3643833,2,Kim Taek,김택,Acting
-2333292,0,Jung Gun-joo,정건주,Acting
+2333292,2,Jung Gun-joo,정건주,Acting
 223323,2,Jang Jae-ho,장재호,Acting
 1333030,2,Son Jong-hak,손종학,Acting
 77188,2,Oh Dal-su,오달수,Acting
@@ -2975,7 +3002,7 @@
 2453132,2,Kwon Hyuk,권혁,Acting
 3610503,2,Moon Ji-yong,Moon Ji-yong,Acting
 3289678,1,Baek Ji-hye,백지혜,Acting
-3155113,1,Nam Kyu-hee,Nam Kyu-hee,Acting
+3155113,1,Nam Kyu-hee,남규희,Acting
 135374,1,Nene Otsuka,大塚寧々,Acting
 52710,2,Masanobu Katsumura,勝村政信,Acting
 1533117,2,Sooraj Pancholi,Sooraj Pancholi,Acting
@@ -3105,14 +3132,14 @@
 2156750,2,Yang Hyun-min,양현민,Acting
 2239782,2,Ryu Kyung-soo,류경수,Acting
 3723672,1,Seo Ji-yu,Seo Ji-yu,Acting
+1156197,1,Park Shin-hye,박신혜,Acting
+1293642,1,Kal So-won,갈소원,Acting
+96484,2,Jung Jin-young,정진영,Acting
 1163030,2,Aras Bulut İynemli,Aras Bulut İynemli,Acting
 1985311,1,Nisa Sofiya Aksongur,Nisa Sofiya Aksongur,Acting
 556113,2,İlker Aksum,İlker Aksum,Acting
 935344,2,Mesut Akusta,Mesut Akusta,Acting
 1948853,2,Yıldıray Şahinler,Yıldıray Şahinler,Acting
-1156197,1,Park Shin-hye,박신혜,Acting
-1293642,1,Kal So-won,갈소원,Acting
-96484,2,Jung Jin-young,정진영,Acting
 1432841,1,Lee Young-lan,이영란,Acting
 77795,1,Katherine Waterston,Katherine Waterston,Acting
 54811,2,Joel Fry,Joel Fry,Acting
@@ -3207,7 +3234,7 @@
 3527075,2,Cristiano Sassella,Cristiano Sassella,Acting
 3527073,1,Elisabetta Mazzullo,Elisabetta Mazzullo,Acting
 56242,1,Lolita Chammah,Lolita Chammah,Acting
-1523704,2,Francis,Francis,Acting
+1523704,2,Pope Francis,Pope Francis,Acting
 105871,1,Michela Cescon,Michela Cescon,Acting
 2197426,2,Gabriel Montesi,Gabriel Montesi,Acting
 2328786,1,Sara Ciocca,Sara Ciocca,Acting
@@ -3216,7 +3243,6 @@
 88710,1,Ambra Angiolini,Ambra Angiolini,Acting
 47827,2,Luca Bizzarri,Luca Bizzarri,Acting
 124623,1,Carolina Crescentini,Carolina Crescentini,Acting
-8776,1,Claudia Gerini,Claudia Gerini,Acting
 47828,2,Paolo Kessisoglu,Paolo Kessisoglu,Acting
 116488,2,Noam Chomsky,Noam Chomsky,Acting
 1804873,2,Yánis Varoufákis,Yánis Varoufákis,Acting
@@ -3283,8 +3309,9 @@
 1156221,1,Alma Hasun,Alma Hasun,Acting
 144344,1,Emily Cox,Emily Cox,Acting
 1818017,2,Valentin Postlmayr,Valentin Postlmayr,Acting
-136800,1,Tatiana Pauhofová,Tatiana Pauhofová,Acting
-20021,2,Wilfried Hochholdinger,Wilfried Hochholdinger,Acting
+2577591,0,Gerhard Kasal,Gerhard Kasal,Acting
+1455423,2,Mehmet Ateşçi,Mehmet Ateşçi,Acting
+1670540,0,Marcello De Nardo,Marcello De Nardo,Acting
 3081582,1,Lê Phương,Lê Phương,Acting
 1260215,0,Quốc Huy,Quốc Huy,Acting
 1259603,0,Nhật Kim Anh,Nhật Kim Anh,Acting
@@ -3334,7 +3361,7 @@
 1284772,1,Nadiya Nisaa,Nadiya Nisaa,Acting
 1179474,1,Nabila Huda,Nabila Huda,Acting
 3887377,0,Zafreen Zairizal,Zafreen Zairizal,Acting
-3887380,0,Deena Ezral,Deena Ezral,Acting
+3887380,1,Deena Ezral,Deena Ezral,Acting
 3887379,0,Piqa,Piqa,Acting
 544531,2,Shaheizy Sam,Shaheizy Sam,Acting
 1605823,0,June Lojong,June Lojong,Acting
@@ -3363,7 +3390,7 @@
 78434,1,America Olivo,America Olivo,Acting
 132554,2,Jason Thompson,Jason Thompson,Acting
 121822,1,Erin Reese,Erin Reese,Acting
-1839889,0,Chatchai Chinsi,Chatchai Chinsi,Acting
+1839889,2,Chatchai Chinnasri,ชาติชาย ชินศรี,Acting
 3685470,2,Naruepol Yaiim,Naruepol Yaiim,Acting
 4309726,0,Archariya Sritha,Archariya Sritha,Acting
 4166261,0,Sutida Buatig,Sutida Buatig,Acting
@@ -3374,7 +3401,7 @@
 2668721,2,Trai Nimtawat,ตรัย นิ่มทวัฒน์,Acting
 2417467,2,Pruk Panich,พฤกษ์ พานิช,Acting
 3321239,2,Chawarin Perdpiriyawong,ชวรินทร์ เพริศพิริยะวงศ์,Acting
-1991010,2,Krittanai Arsalprakit,Krittanai Arsalprakit,Acting
+1991010,2,Krittanai Arsalprakit,กฤตนัย อาสาฬห์ประกิต,Acting
 4194613,2,Napatsakorn Pingmuang,นภัสกร ปิงเมือง,Acting
 1340824,1,Anyarin Terathananpat,อัญรินทร์ ธีราธนันพัฒน์,Acting
 2108778,2,Phuwin Tangsakyuen,ภูวินทร์ ตั้งศักดิ์ยืน,Acting
@@ -3389,7 +3416,7 @@
 1342161,2,Thanawat Wattanaputi,Thanawat Wattanaputi,Acting
 1070805,1,Ranee Campen,Ranee Campen,Acting
 2247745,2,Paris Intarakomalyasut,พาริส อินทรโกมาลย์สุต,Acting
-1353678,2,Nonkul Chanon Santinatornkul,ชานน สันตินธรกุล,Acting
+1353678,2,Chanon Santinatornkul,ชานน สันตินธรกุล,Acting
 3168351,1,Paweenut Pangnakorn,ปวีณ์นุช แพ่งนคร,Acting
 3030320,2,Nattawin Wattanagitiphat,ณัฐวิญญ์ วัฒนกิติพัฒน์,Acting
 3030319,2,Phakphum Romsaithong,ภาคภูมิ ร่มไทรทอง,Acting
@@ -3436,9 +3463,9 @@
 1529401,1,Cecilia Choi,Cecilia Choi,Acting
 3074807,2,Henick Chou,Henick Chou,Acting
 4289877,0,Maverick Chau Shing Mak,Maverick Chau Shing Mak,Acting
-556829,1,Chrissie Chau Sau-Na,周秀娜,Acting
+556829,1,Chrissie Chau,周秀娜,Acting
 3717584,2,Sahal Zaman,Sahal Zaman,Acting
-232770,2,Endy Chow Kwok-Yin,Endy Chow,Acting
+232770,2,Endy Chow,Endy Chow,Acting
 3885183,0,Inderjeet Singh,Inderjeet Singh,Acting
 4461013,0,Kiranjeet Gill,Kiranjeet Gill,Acting
 65986,2,David Chiang Da-Wei,姜大衛,Acting
@@ -3466,11 +3493,11 @@
 1586516,2,Adonis He,Adonis He,Acting
 26744,2,George Lam Tsz-Cheung,林子祥,Acting
 566033,1,Season Ma,Season Ma,Acting
-262128,1,Cora Miao,Cora Miao,Acting
+262128,1,Cora Miao,繆騫人,Acting
 1922168,0,Tung-Sheng Chang,Tung-Sheng Chang,Acting
 3140190,2,Anson Lo,Anson Lo,Acting
 937493,2,Lam Yiu-Sing,林耀聲,Acting
-3562054,1,Summer Chan,Summer Chan,Acting
+3562054,1,Summer Chan,陳紫萱,Acting
 231723,1,Kay Tse,謝安琪,Acting
 26729,2,Teddy Robin,泰迪羅賓,Acting
 3439869,2,Manson Cheung,Manson Cheung,Acting
@@ -3501,10 +3528,10 @@
 11382,2,Ryuichi Sakamoto,坂本龍一,Sound
 12536,2,Jack Thompson,Jack Thompson,Acting
 3564234,2,Craig David Dowsett,Craig David Dowsett,Acting
-3254445,2,Chris Cordell,Chris Cordell,Acting
 3629486,2,Nikolai Leon,Nikolai Leon,Acting
-2449994,1,Amber Doig-Thorne,Amber Doig-Thorne,Acting
+3254445,2,Chris Cordell,Chris Cordell,Acting
 3105028,1,Maria Taylor,Maria Taylor,Acting
+1956506,0,Natasha Rose Mills,Natasha Rose Mills,Acting
 41419,2,Hugh Laurie,Hugh Laurie,Acting
 1223786,1,Emilia Clarke,Emilia Clarke,Acting
 11207,2,David Thewlis,David Thewlis,Acting
@@ -3530,7 +3557,7 @@
 5805,2,André Previn,André Previn,Sound
 40633,2,Jamie Parker,Jamie Parker,Acting
 42601,1,Brid Brennan,Brid Brennan,Acting
-1657669,0,Graham Butler,Graham Butler,Acting
+1657669,2,Graham Butler,Graham Butler,Acting
 82183,1,Olivia Ross,Olivia Ross,Acting
 937120,2,Nigel Cooke,Nigel Cooke,Acting
 1637039,1,Magdalena Lamparska,Magdalena Lamparska,Acting
@@ -3543,6 +3570,9 @@
 105494,1,Sophie Stanton,Sophie Stanton,Acting
 2176674,1,Amy Trigg,Amy Trigg,Acting
 1503073,1,Laura Elsworthy,Laura Elsworthy,Acting
+23378,1,Barbara Sukowa,Barbara Sukowa,Acting
+3031442,2,Christopher Briney,Christopher Briney,Acting
+2167333,1,Andreja Pejić,Andreja Pejić,Acting
 116,1,Keira Knightley,Keira Knightley,Acting
 4154,1,Brenda Blethyn,Brenda Blethyn,Acting
 55636,2,Donald Sutherland,Donald Sutherland,Acting
@@ -3568,6 +3598,9 @@
 137924,2,John Thaw,John Thaw,Acting
 20005,1,Moira Kelly,Moira Kelly,Acting
 19923,2,Hugh Bonneville,Hugh Bonneville,Acting
+3061,2,Ewan McGregor,Ewan McGregor,Acting
+3064,2,Peter Mullan,Peter Mullan,Acting
+3065,2,Jack McElhone,Jack McElhone,Acting
 1639,1,Emily Watson,Emily Watson,Acting
 3052,1,Rachel Griffiths,Rachel Griffiths,Acting
 22063,2,James Frain,James Frain,Acting
@@ -3666,15 +3699,15 @@
 1344344,1,Storm Reid,Storm Reid,Acting
 5529,1,Anna Popplewell,Anna Popplewell,Acting
 87287,1,Bonnie Aarons,Bonnie Aarons,Acting
-1735828,1,Halle Bailey,Halle Bailey,Acting
-1599391,2,Jonah Hauer-King,Jonah Hauer-King,Acting
-55536,1,Melissa McCarthy,Melissa McCarthy,Acting
-517103,1,Noma Dumezweni,Noma Dumezweni,Acting
 63978,1,Jodi Benson,Jodi Benson,Acting
 67392,2,Samuel E. Wright,Samuel E. Wright,Acting
 35232,1,Pat Carroll,Pat Carroll,Acting
 31468,2,Christopher Daniel Barnes,Christopher Daniel Barnes,Acting
 9601,2,Kenneth Mars,Kenneth Mars,Acting
+1735828,1,Halle Bailey,Halle Bailey,Acting
+1599391,2,Jonah Hauer-King,Jonah Hauer-King,Acting
+55536,1,Melissa McCarthy,Melissa McCarthy,Acting
+517103,1,Noma Dumezweni,Noma Dumezweni,Acting
 3,2,Harrison Ford,Harrison Ford,Acting
 1023483,1,Phoebe Waller-Bridge,Phoebe Waller-Bridge,Acting
 467645,2,Boyd Holbrook,Boyd Holbrook,Acting
@@ -3863,7 +3896,6 @@
 52848,1,Isla Fisher,Isla Fisher,Acting
 62831,2,Will Forte,Will Forte,Acting
 969316,2,Ben Aldridge,Ben Aldridge,Acting
-3645646,1,Kristen Cui,Kristen Cui,Acting
 109319,1,Nikki Amuka-Bird,Nikki Amuka-Bird,Acting
 681,1,Nina Hoss,Nina Hoss,Acting
 3322369,1,Sophie Kauer,Sophie Kauer,Acting
@@ -3922,6 +3954,8 @@
 1590230,1,Edie Inksetter,Edie Inksetter,Acting
 1975740,2,Sebastian Billingsley-Rodriguez,Sebastian Billingsley-Rodriguez,Acting
 1303813,2,Erik Athavale,Erik Athavale,Acting
+126698,2,Kenji Nojima,野島健児,Acting
+571993,1,Shizuka Itoh,伊藤静,Acting
 1231,1,Julianne Moore,Julianne Moore,Acting
 1907002,2,Charles Melton,Charles Melton,Acting
 1367617,2,Cory Michael Smith,Cory Michael Smith,Acting
@@ -4017,13 +4051,6 @@
 13563,2,Norman Jewison,Norman Jewison,Directing
 10501,2,Topol,Topol,Acting
 975522,1,Rosalind Harris,Rosalind Harris,Acting
-2413513,1,Billie Eilish,Billie Eilish,Sound
-1396403,2,FINNEAS,FINNEAS,Sound
-4588079,0,Andrew Marshall,Andrew Marshall,Acting
-85977,2,Clive Standen,Clive Standen,Acting
-51995,2,Theo Rossi,Theo Rossi,Acting
-11155,2,Thomas Jane,Thomas Jane,Acting
-2068598,2,Kurt Yue,Kurt Yue,Acting
 89822,1,Tuppence Middleton,Tuppence Middleton,Acting
 1085178,2,Matt Stokoe,Matt Stokoe,Acting
 3131371,1,Evie Templeton,Evie Templeton,Acting
@@ -4071,7 +4098,7 @@
 3565283,0,Khaled Brahem,Khaled Brahem,Acting
 4719207,0,Polina Voytenko,Polina Voytenko,Acting
 3849698,0,Mariia Shustrova,Mariia Shustrova,Acting
-3849699,0,Irina Chumanteva,Irina Chumanteva,Acting
+3849699,1,Irina Chumanteva,Irina Chumanteva,Acting
 3913341,0,Yuriy Romanov,Yuriy Romanov,Acting
 3849701,0,Konstantin Panchenko,Konstantin Panchenko,Acting
 3767302,2,Jordan Worsley,Jordan Worsley,Acting
@@ -4092,7 +4119,7 @@
 1287199,2,Aleksey Chumakov,Алексей Чумаков,Acting
 3033477,1,Alyona Doletskaya,Алёна Долецкая,Acting
 2365556,2,Timur Kerimov,Тимур Керимов,Acting
-1947592,2,Prokhor Chekhovskoy,Prokhor Chekhovskoy,Acting
+1947592,2,Prokhor Chekhovskoy,Прохор Чеховской,Acting
 2223774,1,Alyona Mikhaylova,Алёна Михайлова,Acting
 1251928,2,Odin Lund Biron,Один Ланд Байрон,Acting
 1850402,2,Nikita Elenev,Никита Еленев,Acting
@@ -4178,7 +4205,6 @@
 1150410,1,Pauline Serieys,Pauline Serieys,Acting
 587142,2,Karim Leklou,Karim Leklou,Acting
 1880940,2,Shaïn Boumedine,Shaïn Boumedine,Acting
-93532,2,Laurent Lafitte,Laurent Lafitte,Acting
 62447,2,Samir Guesmi,Samir Guesmi,Acting
 2876,2,Matt Dillon,Matt Dillon,Acting
 2393014,1,Zélie Boulant-Lemesle,Zélie Boulant-Lemesle,Acting
@@ -4211,6 +4237,7 @@
 584544,1,Valérie Dréville,Valérie Dréville,Acting
 96416,2,Xavier Maly,Xavier Maly,Acting
 4275,2,Alain Chabat,Alain Chabat,Acting
+93532,2,Laurent Lafitte,Laurent Lafitte,Acting
 1088197,2,Alban Aumard,Alban Aumard,Acting
 2447100,1,Alicia Hava,Alicia Hava,Acting
 1349366,2,Kim Jeong-hyeon,김정현,Acting
@@ -4304,6 +4331,11 @@
 3553996,0,Sidy Fofana,Sidy Fofana,Acting
 59807,1,Élodie Bouchez,Élodie Bouchez,Acting
 72946,1,Judith Chemla,Judith Chemla,Acting
+62531,1,Valérie Lemercier,Valérie Lemercier,Acting
+22306,2,Kad Merad,Kad Merad,Acting
+1331579,0,Mathéo Boisselier,Mathéo Boisselier,Acting
+1404517,1,Erja Malatier,Erja Malatier,Acting
+24832,2,Daniel Prévost,Daniel Prévost,Acting
 2857603,1,Aissatou Diallo Sagna,Aissatou Diallo Sagna,Acting
 2251849,0,Esther Gohourou,Esther Gohourou,Acting
 2331794,1,Suzy Bemba,Suzy Bemba,Acting
@@ -4498,9 +4530,6 @@
 1565630,2,Shotaro Mamiya,間宮祥太朗,Acting
 2463693,2,Yusuke Kondoh,近藤雄介,Acting
 3039708,1,Mirei Suda,Mirei Suda,Acting
-1201637,1,Yuko Sanpei,三瓶由布子,Acting
-210350,1,Mie Sonozaki,園崎未恵,Acting
-1221875,1,Ayaka Saito,齋藤彩夏,Acting
 1678,2,Mitsuo Iwata,岩田光央,Acting
 1679,2,Nozomu Sasaki,佐々木望,Acting
 1680,1,Mami Koyama,小山茉美,Acting
@@ -4591,7 +4620,6 @@
 1960989,1,Matsumoto Kiyo,松本妃代,Acting
 1062343,1,Kanna Hashimoto,橋本環奈,Acting
 4990,2,Susumu Terajima,寺島進,Acting
-72607,1,Mieko Harada,原田美枝子,Acting
 552563,2,Yukiya Kitamura,北村有起哉,Acting
 1149341,2,Ryo Yoshizawa,吉沢亮,Acting
 1907750,2,Yosuke Sugino,杉野遥亮,Acting
@@ -4607,13 +4635,13 @@
 51533,2,Fran Kranz,Fran Kranz,Acting
 210695,2,Jesse Williams,Jesse Williams,Acting
 486603,1,Anna Hutchison,Anna Hutchison,Acting
-150952,1,Misako Renbutsu,蓮佛美沙子,Acting
-3721771,1,Ririka,Ririka,Acting
 3458174,1,Margo Parker,Margo Parker,Acting
 3018235,1,Nicole Danielle Watts,Nicole Danielle Watts,Acting
 1085087,1,Meredith Thomas,Meredith Thomas,Acting
 2407116,2,Conner Floyd,Conner Floyd,Acting
 1047654,2,Britt George,Britt George,Acting
+150952,1,Misako Renbutsu,蓮佛美沙子,Acting
+3721771,1,Ririka,Ririka,Acting
 555255,2,Takashi Tachibana,立花隆,Acting
 135025,1,Shigeru Muroi,室井滋,Acting
 932012,1,Yōko Moriguchi,森口瑤子,Acting
@@ -4695,7 +4723,6 @@
 1084911,2,Go Ayano,綾野剛,Acting
 2023708,1,Honami Sato,ほな・いこか,Acting
 842578,2,Mutsuo Yoshioka,吉岡睦雄,Acting
-1078683,2,Yohta Kawase,川瀬陽太,Acting
 1255318,2,Taishi Nakagawa,中川大志,Acting
 43663,1,Kirin Kiki,樹木希林,Acting
 81108,2,Yoshio Harada,原田芳雄,Acting
@@ -4799,7 +4826,11 @@
 308445,2,Mansaku Fuwa,不破万作,Acting
 76975,2,Rentaro Mikuni,三国連太郎,Acting
 10071,2,Tetsuro Tamba,丹波哲郎,Acting
-622,2,Youji Matsuda,松田洋治,Acting
+1061233,1,Nami Tsukamoto,柄本奈美,Acting
+1061234,1,Kiki,Kiki,Acting
+1061235,2,Kazuyoshi Kushida,串田和美,Acting
+63701,1,Lily,りりィ,Acting
+622,2,Yoji Matsuda,松田洋治,Acting
 78346,1,Yuria Kozuki,神月柚莉愛,Acting
 78347,2,Hiroki Doi,土井洋輝,Acting
 78348,2,George Tokoro,所ジョージ,Acting
@@ -4817,6 +4848,10 @@
 78354,1,Tokie Hidari,左時枝,Acting
 2633262,1,Moe Kamikokuryo,上國料萌衣,Acting
 1251764,2,Shintaro Morimoto,森本慎太郎,Acting
+67091,2,Tomorowo Taguchi,田口トモロヲ,Acting
+126453,1,Nobu Kanaoka,Nobu Kanaoka,Acting
+543812,2,Kim Soo-jin,Kim Soo-jin,Acting
+224454,2,Hideaki Tezuka,手塚秀彰,Acting
 132942,1,Cocco,Cocco,Sound
 2532755,0,Eiichi Takahashi,Eiichi Takahashi,Production
 1429912,2,Ryugo Nakamura,仲村颯悟,Directing
@@ -4839,26 +4874,28 @@
 1078979,1,Danica Ćurčić,Danica Ćurčić,Acting
 82352,1,Lene Maria Christensen,Lene Maria Christensen,Acting
 1430283,2,Anders Heinrichsen,Anders Heinrichsen,Acting
+1868413,2,Greg Hsu,許光漢,Acting
 127685,2,Ma Nien-Hsien,馬念先,Acting
 1261061,2,Hsing-Wen Lee,Hsing-Wen Lee,Acting
 2836867,1,Yi-Jung Wu,Yi-Jung Wu,Acting
 2681904,1,Hsu An-Chih,Hsu An-Chih,Acting
-3675217,2,Hong Yu Hong,Hong Yu Hong,Acting
+3675217,2,Hong Yu-hong,Hong Yu Hong,Acting
 127684,2,Wei-min Ying,Wei-min Ying,Acting
 1063128,2,Ethan Juan,阮經天,Acting
 2372082,1,Cherry Hsieh,謝瓊煖,Acting
 551605,2,Ben Yuen Foo-Wah,袁富華,Acting
+1990192,2,Patrick Shih,施柏宇,Acting
 3075925,2,Shawn Hu,Shawn Hu,Acting
 3682439,1,Chan Tzu-hsuan,詹子萱,Acting
 1347978,2,Simon Hsueh,薛仕凌,Acting
 1630063,1,Ke-Li Miao,苗可麗,Acting
-2412089,2,Tseng Jing-hua,曾敬驊,Acting
+2412089,2,Tseng Jing-Hua,曾敬驊,Acting
 1641182,1,Ivy Shao,邵雨薇,Acting
 2478083,2,Chang Tsai-hsing,Tsai-Hsing Chang,Acting
-2409321,1,Jia-Yin Tsai,Jia-Yin Tsai,Acting
+2409321,1,Jia-Yin Tsai,蔡嘉茵,Acting
 2624789,2,Joe Chang,Joe Chang,Acting
 1813999,2,Kai-wei Chiu,Kai-wei Chiu,Acting
-2836737,2,Huang Guan Zhi,黃冠智,Acting
+2836737,2,Huang Guan-Zhi,黃冠智,Acting
 2685340,2,Troy Liu,Troy Liu,Acting
 2908299,1,Vicky Tseng,曾莞婷,Acting
 231749,2,Tender Huang,Tender Huang,Acting
@@ -4882,7 +4919,7 @@
 1254579,2,Sung Joon,성준,Acting
 127706,1,Kim Seo-hyung,김서형,Acting
 1080933,1,Cho Eun-ji,조은지,Acting
-966327,2,Wang Bo-chieh,王柏傑,Acting
+966327,2,Edison Wang,王柏傑,Acting
 2680261,1,Chloe Xiang,項婕如,Acting
 1563786,1,Sajee Apiwong,Sajee Apiwong,Acting
 1719810,1,Hsin Shu-Fen,Hsin Shu-Fen,Acting
@@ -4915,7 +4952,7 @@
 3761376,1,Victoria Chiang,Victoria Chiang,Acting
 2865949,2,Sam Tseng,曾國城,Acting
 1341458,2,Zhan Huai-yun,詹懷雲,Acting
-3731453,2,Yi-tai Chiu,邱以太,Acting
+3731453,2,Bruce Chiu,邱以太,Acting
 1877470,2,Wu Chien-Ho,巫建和,Acting
 3768566,1,Charlize Lamb,Charlize Lamb,Acting
 1247109,2,James Wen,温昇豪,Acting
@@ -5004,6 +5041,11 @@
 560275,1,María Adánez,María Adánez,Acting
 1170019,2,Manuel Galiana,Manuel Galiana,Acting
 115051,1,Marta Belaustegui,Marta Belaustegui,Acting
+4534133,1,Korina Kontaxaki,Κορίνα Κονταξάκη,Acting
+2121525,2,Marios Mettis,Μάριος Μεττής,Acting
+4534134,1,Sophia Kalli,Σοφία Καλλή,Acting
+4534135,2,Stelios Kallistratis,Στέλιος Καλλιστράτης,Acting
+4534136,1,Ariadne Pavlika,Αριάδνη Παυλικά,Acting
 3420904,1,Yun-Chih Wang,Yun-Chih Wang,Acting
 1418977,1,Ivy Yin,尹馨,Acting
 3761493,0,Huei-ling Jan,Huei-ling Jan,Acting
@@ -5014,17 +5056,22 @@
 2359929,1,Vera Chen,Vera Chen,Acting
 1426906,2,Hsu Hao-hsiang,Hao-Hsiang Hsu,Acting
 3131511,1,Sharon Huang,Sharon Huang,Acting
-2831852,2,Chin-Yu Pan,潘親御,Acting
+2831852,2,Pan Chin-Yu,潘親御,Acting
 2068230,2,Si Pangoyod,Si Pangoyod,Acting
 2743704,1,Patty Lee,李霈瑜,Acting
 4406357,2,Alex Wu,吳宗修,Acting
 4772975,2,Xiao-Yuan Wang,釋小願,Acting
-558823,2,Alan Tang Kwong-wing,鄧光榮,Acting
+558823,2,Alan Tang,鄧光榮,Acting
 1562219,1,Fong Fei-fei,鳳飛飛,Acting
 213438,2,Kenny Bee,鍾鎮濤,Acting
 83560,2,Anthony Chan Yau,陳友,Acting
 1614691,2,Shih Ying,石英,Acting
 1779682,0,Chou Wan-Sheng,周萬生 (三叔公),Acting
+71057,1,Zhou Xun,周迅,Acting
+944143,2,Jia Hongsheng,Jia Hongsheng,Acting
+71060,1,Nai An,Nai An,Production
+1029288,2,Yao Anlian,Yao Anlian,Acting
+71059,2,Zhongkai Hua,Zhongkai Hua,Acting
 18897,2,Jackie Chan,成龍,Acting
 2007861,2,Guo Qilin,郭麒麟,Acting
 134991,1,Joey Yung Jo-Yee,容祖兒,Acting
@@ -5043,6 +5090,11 @@
 1076049,1,Chen Shu,陳數,Acting
 1353694,1,Jiao Junyan,Jiao Junyan,Acting
 2576415,1,Zhang Shangmingzhu,Zhang Shangmingzhu,Acting
+1355667,2,Ou Hao,歐豪,Acting
+2049991,2,Jason Koo,Jason Koo,Acting
+1539663,2,Yu Haoming,Yu Haoming,Acting
+2534411,2,Alan Aruna,阿如那,Acting
+2149028,1,Huang Yao,Huang Yao,Acting
 575866,2,Wang Yanhui,王砚辉,Acting
 1897341,1,Jiang Peiyao,姜珮瑶,Acting
 1724403,2,Lei Jiayin,雷佳音,Acting
@@ -5050,11 +5102,6 @@
 76913,2,Ge You,葛优,Acting
 1569934,1,Xin Zhilei,辛芷蕾,Acting
 1297520,2,Wang Qingxiang,王庆祥,Acting
-71057,1,Zhou Xun,周迅,Acting
-944143,2,Jia Hongsheng,Jia Hongsheng,Acting
-71060,1,Nai An,Nai An,Production
-1029288,2,Yao Anlian,Yao Anlian,Acting
-71059,2,Zhongkai Hua,Zhongkai Hua,Acting
 2290167,2,Selahattin Paşalı,Selahattin Paşalı,Acting
 1463931,2,Ekin Koç,Ekin Koç,Acting
 1390968,1,Selin Yeninci,Selin Yeninci,Acting
@@ -5064,7 +5111,7 @@
 4004860,1,Siran Riak,Siran Riak,Acting
 4004861,2,Nazar Gomaa,Nazar Gomaa,Acting
 981717,2,Ger Duany,Ger Duany,Acting
-4104108,2,Stephanos James Peter,Stephanos James Peter,Acting
+5340876,0,Mustafa Alkhalifa,Mustafa Alkhalifa,Acting
 1067849,1,Kim Go-eun,김고은,Acting
 2341408,2,Lee Do-hyun,이도현,Acting
 2307963,2,Kim Jae-chul,김재철,Acting
@@ -5181,6 +5228,7 @@
 3577758,1,Hong Ye-ji,Hong Ye-ji,Acting
 2159393,2,Ju Seok-tae,주석태,Acting
 2679649,1,Seo Ji-hye,서지혜,Acting
+1333417,2,Kim Jun-su,김준수,Acting
 2959215,2,Won Tae-min,Won Tae-min,Acting
 3933497,2,Han Do-woo,한도우,Acting
 1890307,2,Gongchan,Gongchan,Acting
@@ -5217,7 +5265,7 @@
 1256488,1,Kwon Yu-ri,권유리,Acting
 1191711,1,Kil Hae-yeon,길해연,Acting
 2791224,2,Hyun Woo-seok,현우석,Acting
-564846,1,Park Mi-hyun,박미현,Acting
+564846,1,Park Mi-hyeon,박미현,Acting
 1164503,2,Sim Hee-seop,심희섭,Acting
 1623685,2,Tablo,타블로,Acting
 1628228,2,Mithra Jin,미쓰라,Acting
@@ -5242,6 +5290,10 @@
 3281373,0,Cecilio Andresen,Cecilio Andresen,Acting
 1084,2,Joachim Król,Joachim Król,Acting
 1885548,1,Petra-Maria Cammin,Petra-Maria Cammin,Acting
+140367,1,Evanna Lynch,Evanna Lynch,Acting
+188402,2,Ardal O'Hanlon,Ardal O'Hanlon,Acting
+12206,2,Richard Roxburgh,Richard Roxburgh,Acting
+3328531,0,Charlotte Friels,Charlotte Friels,Acting
 907352,2,Thomas Schubert,Thomas Schubert,Acting
 894116,1,Paula Beer,Paula Beer,Acting
 1452018,2,Langston Uibel,Langston Uibel,Acting
@@ -5388,11 +5440,16 @@
 2389302,2,Võ Điền Gia Huy,Võ Điền Gia Huy,Acting
 2300044,1,Lan Phương,Lan Phương,Acting
 1330250,1,Chiều Xuân,Chiều Xuân,Acting
+4590226,0,Thanh Hiền,Thanh Hiền,Acting
+1861442,1,Oanh Kiều,Oanh Kiều,Acting
+4590229,0,Trương Minh Cường,Trương Minh Cường,Acting
+2335254,2,Quách Ngọc Tuyên,Quách Ngọc Tuyên,Acting
+1595075,1,Đinh Y Nhung,Đinh Y Nhung,Acting
 2040628,1,Phương Anh Đào,Phương Anh Đào,Acting
 2012866,0,Tuấn Trần,Tuấn Trần,Acting
 1594385,2,Trấn Thành,Trấn Thành,Acting
 2181417,1,Hồng Đào,Hồng Đào,Acting
-4509805,0,Uyển Ân,Uyển Ân,Acting
+4509805,0,Uyen An,Uyển Ân,Acting
 3992344,1,Vân Dung,Vân Dung,Acting
 1878200,0,Nam Thư,Nam Thư,Acting
 4782390,0,Mie,Mie,Acting
@@ -5452,9 +5509,9 @@
 4063764,0,Anirut Kayensee,Anirut Kayensee,Acting
 4801811,0,Apirak Saennam,Jet Apirak Saennam,Crew
 226564,2,Mario Maurer,มาริโอ้ เมาเร่อ,Acting
+3591947,2,Marut Chuenchomboon,มารุต ชื่นชมบูรณ์,Acting
 2326899,2,Phuwanet Seechomphu,Phuwanet Seechomphu,Acting
-3591947,0,Marut Chuenchomboon,Marut Chuenchomboon,Acting
-3278336,1,Duangjai Hiransri,ดวงใจ หิรัญศรี,Acting
+3129314,2,Krit Jeerapattananuwong,กฤตย์ จีรพัฒนานุวงศ์,Acting
 3467565,2,Atiwat Saengtien,Atiwat Saengtien,Acting
 3671162,2,Krittanun Aunchananun,กฤตนัน อัญชนานันท์,Acting
 3949610,1,Pantipha Arunwattanachai,Pantipha Arunwattanachai,Acting
@@ -5467,7 +5524,7 @@
 2263768,1,Maylada Susri,เมลดา สุศรี,Acting
 2517750,2,Sutthirak Subvijitra,สุทธิรักษ์ ทรัพย์วิจิตร,Acting
 83165,2,Chaleumpol Tikumpornteerawong,เฉลิมพล ทิฆัมพรธีรวงศ์,Acting
-4670939,1,Thatchaya Supathanyasatit,Thatchaya Supathanyasatit,Acting
+4670939,1,Tatchaya Supatanyasatit,ทัตชญา ศุภธัญสถิต,Acting
 1580996,2,Timethai,ธามไท,Acting
 81253,2,Ananda Everingham,อนันดา เอเวอริ่งแฮม,Acting
 3314760,0,Firdaus Karim,Firdaus Karim,Acting
@@ -5478,13 +5535,13 @@
 111482,2,Chantavit Dhanasevi,ฉันทวิชช์ ธนะเสวี,Acting
 1550737,1,Kanyawee Songmuang,Kanyawee Songmuang,Acting
 4179328,2,Pittaya Saechua,พิทยา แซ่ฉั่ว,Acting
-1272465,2,Chookiat Iamsook,ชูเกียรติ เอี่ยมสุข,Acting
 1261449,2,Supathat Opas,สุภทัต โอภาส,Acting
+1272465,2,Chookiat Iamsook,ชูเกียรติ เอี่ยมสุข,Acting
 3860801,2,Nattapon Raiyawong,Nattapon Raiyawong,Acting
 4042892,0,Chutiya Jiarakul,Chutiya Jiarakul,Acting
 3116307,0,Nantapak Kraiha,Nantapak Kraiha,Acting
 4042893,0,Ariya Buakong,Ariya Buakong,Acting
-4042895,0,Phornloet Phiphatrungrueang,Phornloet Phiphatrungrueang,Acting
+4042895,2,Phornloet Phiphatrungrueang,เอ็กซ์ พรเลิศ พิพัฒน์รุ่งเรือง,Acting
 1259367,1,Urassaya Sperbund,อุรัสยา เสปอร์บันด์,Acting
 1135332,1,Pornchita Na Songkhla,พรชิตา ณ สงขลา,Acting
 1651449,2,Niti Chaichitathorn,นิติ ชัยชิตาทร,Acting
@@ -5538,17 +5595,18 @@
 2271711,1,Andrea Edwards,Andrea Edwards,Acting
 1167014,2,David Fukamachi Regnfors,David Fukamachi Regnfors,Acting
 4150951,0,Moa Nilsson,Moa Nilsson,Acting
-105940,2,Michael Hui Koon-Man,許冠文,Acting
-1561555,1,Catherine Chau,周家怡,Acting
+1698814,2,Bai Yu,白宇,Acting
 125882,1,Maggie Cheung Ho-Yee,張可頤,Acting
 1234856,1,Nancy Wu Ting-Yan,胡定欣,Acting
 65966,2,Kent Cheng Jak-Si,鄭則仕,Acting
+105940,2,Michael Hui Koon-Man,許冠文,Acting
 3438314,1,Sasha Chuk Tsz-yin,祝紫嫣,Directing
 3438358,1,Yoyo Tse Wing-yan,謝咏欣,Acting
 3839622,1,Natalie Hsu,Natalie Hsu,Acting
 2959425,2,Anson Kong,Anson Kong,Acting
 39126,1,Bai Ling,Bai Ling,Acting
-1964896,1,Helen Tam Yuk-Ying,Helen Tam Yuk-Ying,Acting
+1964896,1,Helen Tam Yuk-Ying,譚玉瑛,Acting
+4693280,2,Wesley Wong,Wesley Wong,Acting
 1339,1,Zhang Ziyi,章子怡,Acting
 999460,2,Chan Fai-Hung,陳輝虹,Acting
 92824,2,Emotion Cheung Kam-Ching,張錦程,Acting
@@ -5556,14 +5614,15 @@
 65262,2,Lawrence Chou Chun-Wai,周俊偉,Acting
 138574,1,Tomoka Kurokawa,黒川智花,Acting
 1087690,1,Kazuko Shirakawa,白川和子,Acting
+12453,2,Wong Kar-wai,王家衛,Directing
 1541932,2,Jasper Liu,劉以豪,Acting
 2224740,1,Gladys Li,Gladys Li,Acting
-65931,2,Stephen Tung Wai,董瑋,Acting
+65931,2,Stephen Tung,董瑋,Acting
 1616010,2,Poon Chan-Leung,潘燦良,Acting
 223914,2,Kenneth Cheung Moon-Yuen,Kenneth Cheung Moon-Yuen,Acting
 1135177,1,Loletta Lee Lai-Chun,李麗珍,Acting
 72731,2,Nick Cheung Ka-Fai,張家輝,Acting
-127268,2,William Chan Wai-Ting,陳偉霆,Acting
+127268,2,William Chan,陳偉霆,Acting
 72040,1,Isabella Leong Lok-Sze,梁洛施,Acting
 1173383,2,Shaun Tam Chun-Yin,Shaun Tam Chun-Yin,Acting
 1776093,1,Lin Min-Chen,林明禎,Acting
@@ -5588,11 +5647,11 @@
 4997000,1,Lainey Hung,熊諾頤,Acting
 2824501,0,Hin Yan Wong,Hin Yan Wong,Sound
 3906144,0,Anna Ieong,Anna Ieong,Acting
-34546,2,Mark Gatiss,Mark Gatiss,Acting
-17606,1,Imogen Poots,Imogen Poots,Acting
 543877,2,Xiao Yang,肖央,Acting
 543880,2,Wang Taili,Wang Taili,Acting
 147705,1,Huo Siyan,霍思燕,Acting
+34546,2,Mark Gatiss,Mark Gatiss,Acting
+17606,1,Imogen Poots,Imogen Poots,Acting
 71374,2,Christian Friedel,Christian Friedel,Acting
 4072267,2,Johann Karthaus,Johann Karthaus,Acting
 4452138,0,Luis Noah Witte,Luis Noah Witte,Acting
@@ -5623,16 +5682,11 @@
 222122,2,Gabriel Basso,Gabriel Basso,Acting
 1921268,1,Ema Horvath,Ema Horvath,Acting
 3901,2,Richard Brake,Richard Brake,Acting
-1482026,2,Scott Chambers,Scott Chambers,Acting
 1325532,2,Ryan Oliva,Ryan Oliva,Acting
-1508760,2,Marcus Massey,Marcus Massey,Acting
+1482026,2,Scott Chambers,Scott Chambers,Acting
 93492,1,Tallulah Evans,Tallulah Evans,Acting
 4429409,2,Lewis Santer,Lewis Santer,Acting
-6929,1,Tippi Hedren,Tippi Hedren,Acting
-8229,2,Rod Taylor,Rod Taylor,Acting
-5698,1,Jessica Tandy,Jessica Tandy,Acting
-8231,1,Suzanne Pleshette,Suzanne Pleshette,Acting
-5047,1,Veronica Cartwright,Veronica Cartwright,Acting
+1508760,2,Marcus Massey,Marcus Massey,Acting
 96625,1,Minka Kelly,Minka Kelly,Acting
 20212,2,Dermot Mulroney,Dermot Mulroney,Acting
 11825,1,Maggie Grace,Maggie Grace,Acting
@@ -5693,6 +5747,7 @@
 4432,1,Frances Conroy,Frances Conroy,Acting
 16841,2,Brett Cullen,Brett Cullen,Acting
 1043242,2,Hsu Pu-Liao,許不了,Acting
+1134902,2,Hsiao-fei Li,Hsiao-fei Li,Acting
 2324569,3,Emma Corrin,Emma Corrin,Acting
 1464650,1,Dafne Keen,Dafne Keen,Acting
 15556,1,Rebecca Hall,Rebecca Hall,Acting
@@ -5720,13 +5775,12 @@
 23498,2,Alexander Ludwig,Alexander Ludwig,Acting
 544442,1,Paola Nuñez,Paola Nuñez,Acting
 2229,1,Catherine Keener,Catherine Keener,Acting
-935,1,Connie Nielsen,Connie Nielsen,Acting
-1597365,2,Joseph Quinn,Joseph Quinn,Acting
 1375501,2,Bobby Naderi,Bobby Naderi,Acting
 6613,1,Minnie Driver,Minnie Driver,Acting
 52891,2,Tom Burke,Tom Burke,Acting
 2431565,1,Alyla Browne,Alyla Browne,Acting
 148899,2,George Shevtsov,George Shevtsov,Acting
+1597365,2,Joseph Quinn,Joseph Quinn,Acting
 934281,2,Alex Wolff,Alex Wolff,Acting
 1847948,1,Eliane Umuhire,Eliane Umuhire,Acting
 1538851,2,Kit Connor,Kit Connor,Acting
@@ -5869,15 +5923,15 @@
 3401898,2,Anthony B. Jenkins,Anthony B. Jenkins,Acting
 2215763,0,Percy Daggs IV,Percy Daggs IV,Acting
 565222,2,Matthew Kevin Anderson,Matthew Kevin Anderson,Acting
-2228,2,Sean Penn,Sean Penn,Acting
-81683,2,Gbenga Akinnagbe,Gbenga Akinnagbe,Acting
-1555914,1,Raquel Nave,Raquel Nave,Acting
-3119545,1,Kali Reis,Kali Reis,Acting
 93191,2,Vikram,Vikram,Acting
 1340560,2,Abi Hassan,Abi Hassan,Acting
 1435459,1,Akshara Haasan,Akshara Haasan,Acting
 1061909,1,Lenaa,Lenaa,Acting
 1372696,1,Cherry Mardia,Cherry Mardia,Acting
+2228,2,Sean Penn,Sean Penn,Acting
+81683,2,Gbenga Akinnagbe,Gbenga Akinnagbe,Acting
+1555914,1,Raquel Nave,Raquel Nave,Acting
+3119545,1,Kali Reis,Kali Reis,Acting
 1640439,1,Mikey Madison,Mikey Madison,Acting
 3051936,2,Mark Eydelshteyn,Марк Эйдельштейн,Acting
 966306,2,Karren Karagulian,Karren Karagulian,Acting
@@ -5904,6 +5958,10 @@
 3325593,2,Joseph Baena,Joseph Baena,Acting
 2219683,2,Maurice P. Kerry,Maurice P. Kerry,Acting
 61856,2,Mykel Shannon Jenkins,Mykel Shannon Jenkins,Acting
+4174235,2,Lim Yun-chan,임윤찬,Acting
+4174236,2,Sunwoo Ye-kwon,선우예권,Acting
+1777946,1,Marin Alsop,Marin Alsop,Acting
+3836202,2,Stephen Hough,Stephen Hough,Acting
 115573,1,Glenda Jackson,Glenda Jackson,Acting
 11282,2,John Standing,John Standing,Acting
 3142835,2,Will Fletcher,Will Fletcher,Acting
@@ -5978,9 +6036,9 @@
 3574121,2,David Harris,David Harris,Acting
 1474032,2,Turlough Convery,Turlough Convery,Acting
 2219112,2,Benny O. Arthur,Benny O. Arthur,Acting
-4312759,0,Alessia Yoko Fontana,Alessia Yoko Fontana,Acting
 4259994,0,Jacqueline Moré,Jacqueline Moré,Acting
-3921565,0,Kyle Scudder,Kyle Scudder,Acting
+4219819,0,Thomas Gould,Thomas Gould,Acting
+4312759,0,Alessia Yoko Fontana,Alessia Yoko Fontana,Acting
 54789,2,Sean Patrick Flanery,Sean Patrick Flanery,Acting
 144675,2,Jordan Belfi,Jordan Belfi,Acting
 158097,2,Tom Ohmer,Tom Ohmer,Acting
@@ -5990,7 +6048,6 @@
 1190554,1,Catherine Corcoran,Catherine Corcoran,Acting
 1526694,1,Pooya Mohseni,Pooya Mohseni,Acting
 2089967,1,Clara McGregor,Clara McGregor,Acting
-3061,2,Ewan McGregor,Ewan McGregor,Acting
 156237,1,Kim Zimmer,Kim Zimmer,Acting
 2551620,1,Devyn McDowell,Devyn McDowell,Acting
 64154,1,Sasha Alexander,Sasha Alexander,Acting
@@ -6031,7 +6088,7 @@
 2217915,2,Evgeny Egorov,Евгений Егоров,Acting
 143741,1,Anna Starshenbaum,Анна Старшенбаум,Acting
 1754218,2,Diomid Vinogradov,Диомид Виноградов,Acting
-227084,2,Garik Kharlamov,Гарик Харламов,Acting
+227084,2,Garik Kharlamov,Игорь Харламов,Acting
 118331,2,Pavel Priluchnyy,Павел Прилучный,Acting
 3497513,2,Aleksandr Gavrilin,Александр Гаврилин,Acting
 1410261,0,Adila Bendimerad,Adila Bendimerad,Acting
@@ -6055,7 +6112,6 @@
 1113205,1,Joanna Liszowska,Joanna Liszowska,Acting
 133953,1,Magdalena Boczarska,Magdalena Boczarska,Acting
 3090060,2,Simone Susinna,Simone Susinna,Acting
-1564284,1,Katarzyna Sawczuk,Katarzyna Sawczuk,Acting
 549372,2,Janusz Chabior,Janusz Chabior,Acting
 1545616,2,Sebastian Fabijański,Sebastian Fabijański,Acting
 4885,1,Emmanuelle Béart,Emmanuelle Béart,Acting
@@ -6132,6 +6188,10 @@
 544655,2,Fabrice Eboué,Fabrice Eboué,Acting
 2112198,1,Pauline Clément,Pauline Clément,Acting
 1448396,1,Louise Coldefy,Louise Coldefy,Acting
+544685,2,Pierre Lottin,Pierre Lottin,Acting
+1402424,1,Sarah Suco,Sarah Suco,Acting
+1332797,1,Clémence Massart-Weit,Clémence Massart-Weit,Acting
+117884,1,Ludmila Mikaël,Ludmila Mikaël,Acting
 3638178,0,Gérome Barry,Gérome Barry,Acting
 3638179,0,Tatiana Eva-Marie,Tatiana Eva-Marie,Acting
 3489170,1,Noémie Zeitoun,Noémie Zeitoun,Acting
@@ -6190,12 +6250,11 @@
 24976,1,Ana Torrent,Ana Torrent,Acting
 132999,1,Petra Martínez,Petra Martínez,Acting
 587931,1,María León,María León,Acting
-3753718,2,Bladde,Bladde,Acting
 3247405,1,Natalia Azahara,Natalia Azahara,Acting
 3240522,1,Valèria Sorolla,Valèria Sorolla,Acting
-1048495,2,Albert Baró,Albert Baró,Acting
-2561607,2,David M. Santana,David M. Santana,Acting
-3925017,0,Sofía Otero,Sofía Otero,Acting
+2270206,2,Xavi Sáez,Xavi Sáez,Acting
+568274,2,Francesc Albiol,Francesc Albiol,Acting
+3925017,1,Sofía Otero,Sofía Otero,Acting
 1603600,1,Patricia López Arnaiz,Patricia López Arnaiz,Acting
 1120111,1,Ane Gabarain,Ane Gabarain,Acting
 970990,1,Itziar Lazkano,Itziar Lazkano,Acting
@@ -6226,11 +6285,6 @@
 16980,1,Elena Irureta,Elena Irureta,Acting
 3006821,0,María Ramos Mouhoub,María Ramos Mouhoub,Acting
 2564672,2,Hamza Zaidi,Hamza Zaidi,Acting
-2011444,2,Lakshya Lalwani,Lakshya Lalwani,Acting
-1374676,2,Raghav Juyal,Raghav Juyal,Acting
-2368989,1,Tanya Maniktala,Tanya Maniktala,Acting
-85684,2,Ashish Vidhyarthi,Ashish Vidhyarthi,Acting
-2489738,2,Abhishek Chauhan,Abhishek Chauhan,Acting
 1399177,1,Kani Kusruti,Kani Kusruti,Acting
 1413835,1,Divya Prabha,Divya Prabha,Acting
 1550351,1,Chhaya Kadam,छाया कदम,Acting
@@ -6358,6 +6412,8 @@
 2956795,1,Hina Youmiya,羊宮妃那,Acting
 3514295,1,Haruka Aikawa,相川遥花,Acting
 3143960,2,Syoya Kimata,Syoya Kimata,Acting
+1806838,2,Shouta Aoi,蒼井翔太,Acting
+90134,2,Tetsuya Kakihara,柿原徹也,Acting
 1177942,2,Kento Yamazaki,山﨑賢人,Acting
 1310719,2,Nijiro Murakami,村上虹郎,Acting
 3304217,2,DJ Matsunaga,DJ松永,Sound
@@ -6389,7 +6445,6 @@
 114307,2,Ryuya Wakaba,若葉竜也,Acting
 1063266,1,Maho Yamada,山田真歩,Acting
 1779027,1,Kaede Hondo,本渡楓,Acting
-89878,2,Ryotaro Okiayu,置鮎龍太郎,Acting
 115301,2,Jun Fukushima,福島潤,Acting
 1429141,2,Shoya Chiba,千葉翔也,Acting
 1587124,1,Hibiku Yamamura,山村響,Acting
@@ -6457,6 +6512,8 @@
 70132,2,Akira Terao,寺尾聰,Acting
 235717,2,Toshio Shiba,柴俊夫,Acting
 553082,1,Tomoko Hoshino,星野知子,Acting
+3935880,2,Chun-Hao Hung,Chun-Hao Hung,Acting
+4021872,2,Yu-Yan Chen,陳俞諺,Acting
 108538,2,Yang Ik-june,양익준,Acting
 1709947,2,Kentaro Ito,伊藤健太郎,Acting
 2010199,2,Shusaku Kamikawa,上川周作,Acting
@@ -6505,6 +6562,10 @@
 3868919,2,Kazuma Ishibashi,Kazuma Ishibashi,Acting
 2787956,1,Oto Abe,安倍乙,Acting
 4689041,2,Yuto Nakayama,中山雄斗,Acting
+2398106,2,Shintaro Sakamoto,Shintaro Sakamoto,Acting
+2018780,1,Ren Komai,駒井蓮,Acting
+509439,2,Tomoya Maeno,前野朋哉,Acting
+1736365,2,Tateto Serizawa,芹澤興人,Acting
 3086952,1,Ai Mikami,見上愛,Acting
 1576052,1,Reika Oozeki,Reika Oozeki,Acting
 3363274,1,Tamao Hirai,Tamao Hirai,Acting
@@ -6601,6 +6662,7 @@
 1204053,2,David Ito,デビット伊東,Acting
 1762898,0,Motoya Izumi,Motoya Izumi,Acting
 81350,2,Toshiaki Karasawa,唐沢寿明,Acting
+1084110,2,Haruomi Hosono,細野晴臣,Sound
 4669868,0,Chiu Tzu-Ya,Chiu Tzu-Ya,Acting
 3926440,2,Fivewood,Fivewood,Acting
 3744036,1,Liang-Chu Chi,紀亮竹,Acting
@@ -6656,10 +6718,11 @@
 2698694,1,Chu-Ping Liu,劉主平,Acting
 4038375,1,Alisia Liang,梁湘華,Acting
 2514716,2,Will Or,Will Or,Acting
-4638294,1,Mavis,Mavis,Acting
+4638294,1,Mavis,瑪菲司,Acting
 4638307,2,Lee En-yo,李恩佑,Acting
 2985261,2,Jack Chu,儲榢逸,Costume & Make-Up
 4262579,2,Yi-Mo Yu,余奕墨,Acting
+932690,2,Harlem Yu,Harlem Yu,Acting
 3566776,1,Lin Ying-Tung,林映彤,Acting
 4342791,2,Kurt Huang,黃宏軒,Acting
 2058564,2,Charles Tu,涂善存,Acting
@@ -6674,9 +6737,9 @@
 4379557,2,Ki-pin Ng,黃奇斌,Acting
 4287770,2,I-Le Hsieh,謝以樂,Acting
 2143631,1,Allison Lin,林予晞,Acting
-2062684,1,Rachel Kan,Rachel Kan,Acting
-3353529,1,Jean Kao,Jean Kao,Acting
-581857,2,Yao-Ren Kuo,Yao-Ren Kuo,Acting
+2062684,1,Rachel Kan,簡慕華,Acting
+3353529,1,Jean Kao,高宇蓁,Acting
+581857,2,Yao-Ren Kuo,郭耀仁,Acting
 4828015,0,Mama Yang,Mama Yang,Acting
 57054,2,Winston Chao,Winston Chao,Acting
 158522,1,Alannah Ong,林小湛,Acting
@@ -6725,7 +6788,7 @@
 1746244,1,Ricie Fun,Ricie Fun,Acting
 2692024,2,Xavier Lin,林志謙,Acting
 1366486,1,Nina Mélo,Nina Mélo,Acting
-1089570,2,Chang Han,Chang Han,Acting
+1089570,2,Chang Han,張翰,Acting
 1294367,1,Wu Ke-Xi,吳可熙,Acting
 1962612,2,Michael Chang,張豐豪,Acting
 143037,2,Issey Ogata,イッセー尾形,Acting
@@ -6778,9 +6841,8 @@
 1161018,1,Qi Xi,齐溪,Acting
 1371289,2,Liang Ming,Liang Ming,Directing
 1376106,2,Huang Xuan,黄轩,Acting
-99687,2,Zhang Hanyu,Zhang Hanyu,Acting
+99687,2,Zhang Hanyu,張涵予,Acting
 78253,1,Janice Man,Janice Man,Acting
-2049991,2,Jason Koo,Jason Koo,Acting
 2608181,1,Yao Honggui,姚紅貴,Acting
 3984263,0,Liu Long,Liu Long,Acting
 3984266,0,Huang Xiaoxiong,Huang Xiaoxiong,Acting
@@ -6795,6 +6857,11 @@
 2275811,2,Vincent Matile,Vincent Matile,Acting
 3421646,2,Boogie Wang,Boogie Wang,Acting
 2749667,2,Eason Hung,洪浚嘉,Acting
+2129165,2,Kai Wang,王凱,Acting
+1674211,1,Ji Guanlin,Ji Guanlin,Acting
+1323174,2,Lihong Li,Lihong Li,Acting
+1870042,2,Lanling Li,李蘭陵,Acting
+2199291,2,Zhao Yi,趙毅,Acting
 1396636,1,Ma Yinyin,Ma Yinyin,Acting
 2682419,2,Chubu Huajie,楚布花羯,Acting
 1299592,2,Sun Min,Sun Min,Acting
@@ -6824,18 +6891,40 @@
 74421,1,Song Hye-kyo,송혜교,Acting
 1299479,2,Lee Jin-uk,이진욱,Acting
 2704194,2,Moon Woo-jin,문우진,Acting
+1897259,2,Wonwoo,원우,Acting
+1897261,2,Woozi,우지,Acting
 929574,2,Joo Won,주원,Acting
 1246517,1,Lee You-young,이유영,Acting
+1646206,2,Jung Jin-young,정진영,Acting
+1875655,1,Kim Da-hyun,김다현,Acting
+4286222,2,Demian,손정혁,Acting
+2758995,2,Lee Min-goo,이민구,Acting
+4475212,2,Kim Yo-han,김요한,Acting
 587674,1,Yoo Da-in,유다인,Acting
+2240033,2,Im Sung-jae,임성재,Acting
+4378410,2,Sung Hanbin,성한빈,Acting
+3022309,2,Kim Jiwoong,김지웅,Acting
+4378436,2,Zhang Hao,장하오,Acting
+4378457,2,Seok Matthew,석매튜,Acting
+4381842,2,Kim Taerae,김태래,Acting
 1875669,1,Yoo Ji-ae,유지애,Acting
 2110161,2,Ham Yon-ji,Ham Yon-ji,Acting
 1402693,2,Lee Sung-yeol,이성열,Acting
 1662810,1,Sowon,김소원,Acting
-1724575,1,Irene,아이린,Acting
-1825947,1,Seulgi,슬기,Acting
-1875634,1,Wendy,웬디,Acting
-1547207,1,Joy,조이,Acting
-1875636,1,Yeri,예리,Acting
+1724575,1,IRENE,아이린,Acting
+1825947,1,SEULGI,슬기,Acting
+1875634,1,WENDY,웬디,Acting
+1547207,1,JOY,조이,Acting
+1875636,1,YERI,예리,Acting
+1916226,1,Won Jin-ah,원진아,Acting
+2256407,1,Shin Ye-eun,신예은,Acting
+2139736,2,Ahn Seung-gyun,안승균,Acting
+84854,2,Jung Jun-ho,정준호,Acting
+462583,1,Hwang Woo-seul-hye,황우슬혜,Acting
+2214891,1,Lee Ji-won,이지원,Acting
+2078000,1,Lee Jae-in,이재인,Acting
+1253391,2,Ji Chang-wook,지창욱,Acting
+1249253,1,Kim Ji-ho,김지호,Acting
 1482875,1,Lee Soo-kyung,이수경,Acting
 1326874,1,Choi Soo-young,최수영,Acting
 1551424,1,Lee Min-ji,이민지,Acting
@@ -6855,10 +6944,6 @@
 913196,1,Kim Hyun-soo,김현수,Acting
 1583038,1,Choi Ri,Choi Ri,Acting
 2285866,1,Seo Hye-won,서혜원,Acting
-145624,0,Sang Hyun Lee,Sang Hyun Lee,Acting
-145625,1,Kim Tae-yeon,Kim Tae-yeon,Acting
-145626,0,Hyun Joo Choi,Hyun Joo Choi,Acting
-1426807,0,Kwon Taek Han,Kwon Taek Han,Acting
 133,2,Peter Sarsgaard,Peter Sarsgaard,Acting
 175826,1,Mireille Enos,Mireille Enos,Acting
 59214,2,Cas Anvar,Cas Anvar,Acting
@@ -6905,18 +6990,53 @@
 111786,2,Bengt C.W. Carlsson,Bengt C.W. Carlsson,Acting
 111787,2,Torbjörn Fahlström,Torbjörn Fahlström,Acting
 111788,0,Sten Andersson,Sten Andersson,Acting
+1841824,2,Thanh Nam,Thanh Nam,Acting
+5247122,0,Tân Chề,Tân Chề,Acting
 2937045,2,Samuel An,Samuel An,Acting
 4549152,1,Nguyễn Thúc Thùy Tiên,Nguyễn Thúc Thùy Tiên,Acting
 5069418,0,Thiên An,Thiên An,Acting
 5069422,0,Văn Anh,Văn Anh,Acting
+1677810,2,Huỳnh Lập,Huỳnh Lập,Acting
+5093305,0,Phương Mỹ Chi,Phương Mỹ Chi,Acting
+1878201,1,Puka,Puka,Acting
+1121175,2,Huỳnh Đông,Huỳnh Đông,Acting
+3865728,0,Diệp Bảo Ngọc,Diệp Bảo Ngọc,Acting
+1260871,2,Hoài Linh,Hoài Linh,Acting
+2945523,1,Lê Giang,Lê Giang,Acting
+2321037,2,La Thành,La Thành,Acting
+1535973,1,Cindy Miranda,Cindy Miranda,Acting
+1756113,2,Nattapol Diloknawarit,Nattapol Diloknawarit,Acting
+3617702,0,Althea Ruedas,Althea Ruedas,Acting
+4772618,0,Jariya Therakaosal,Jariya Therakaosal,Acting
+4772619,0,Emman Esquivel,Emman Esquivel,Acting
+2247749,2,Jackrin Kungwankiatichai,จักริน กังวานเกียรติชัย,Acting
+3882876,1,Chalita Suansane,ชลิตา ส่วนเสน่ห์,Acting
+3529019,1,Pijika Jittaputta,พิจิกา จิตตะปุตตะ,Acting
+1564775,2,Alexander,Alexander,Acting
+3172263,1,Ting Sue,Ting Sue,Acting
+3724880,1,Fatima Dechawaleekul,ฟาติมา เดชะวลีกุล,Acting
+1339266,2,Pakorn Chatborirak,ปกรณ์ ฉัตรบริรักษ์,Acting
+4153440,2,Wachirakon Raksasuwan,Wachirakon Raksasuwan,Acting
+2344971,1,Kornpassorn Ratanameathanont,กรภัสสรณ์ รัตนเมธานนท์,Acting
+4487237,2,Basel Adra,Basel Adra,Directing
+4487239,2,Yuval Abraham,Yuval Abraham,Directing
+5069814,1,Farisa Abu Aram,Farisa Abu Aram,Acting
+5069819,0,Nasser Adra,Nasser Adra,Acting
+5069771,2,Harun Abu Aram,Harun Abu Aram,Acting
+937492,1,Venus Wong Man-Yik,王敏奕,Acting
+130645,1,Stephanie Che Yuen-Yuen,車婉婉,Acting
 17817,2,Merab Ninidze,Merab Ninidze,Acting
 993774,1,Rachel Brosnahan,Rachel Brosnahan,Acting
-1498158,1,Jessie Buckley,Jessie Buckley,Acting
 80535,2,Robbie Williams,Robbie Williams,Acting
 1499833,2,Jonno Davies,Jonno Davies,Acting
 28485,2,Steve Pemberton,Steve Pemberton,Acting
 47699,1,Alison Steadman,Alison Steadman,Acting
 123884,1,Kate Mulvany,Kate Mulvany,Acting
+1015616,1,Vanessa Johansson,Vanessa Johansson,Acting
+1299951,1,Erica D. Schroeder,Erica D. Schroeder,Acting
+96119,2,Marc Thompson,Marc Thompson,Acting
+4323189,1,Sara Secora,Sara Secora,Acting
+1383575,0,Jennifer Sun Bell,Jennifer Sun Bell,Acting
 1637129,2,Charlie Shotwell,Charlie Shotwell,Acting
 2326723,1,Oona Roche,Oona Roche,Acting
 81840,2,Adeel Akhtar,Adeel Akhtar,Acting
@@ -6928,24 +7048,44 @@
 1394332,1,Shira Haas,שירה האס,Acting
 928572,2,Scott Eastwood,Scott Eastwood,Acting
 186396,2,Darrell D'Silva,Darrell D'Silva,Acting
+2680307,2,Sebastian Eugene Hansen,Sebastian Eugene Hansen,Acting
+2604515,1,Emma Myers,Emma Myers,Acting
+1075037,1,Danielle Brooks,Danielle Brooks,Acting
+454,2,Michael Peña,Michael Peña,Acting
+3953574,1,Arianna Rivas,Arianna Rivas,Acting
+90633,1,Gal Gadot,גל גדות,Acting
+1869968,2,Andrew Burnap,Andrew Burnap,Acting
+3555,2,Jeremy Swift,Jeremy Swift,Acting
+19978,2,Jason Kravits,Jason Kravits,Acting
+5460,1,Adriana Caselotti,Adriana Caselotti,Acting
+288940,1,Lucille La Verne,Lucille La Verne,Acting
+540747,2,Harry Stockwell,Harry Stockwell,Acting
+5457,2,Roy Atwell,Roy Atwell,Acting
+5462,2,Pinto Colvig,Pinto Colvig,Acting
 93336,1,Evin Ahmad,Evin Ahmad,Acting
 956385,1,Meadow Williams,Meadow Williams,Acting
-1246,1,Emily Mortimer,Emily Mortimer,Acting
+1726151,2,Koyu Rankin,Koyu Rankin,Acting
+12438,2,Bob Balaban,Bob Balaban,Acting
+819,2,Edward Norton,Edward Norton,Acting
+1532,2,Bill Murray,Bill Murray,Acting
 1304662,2,Samuel Joslin,Samuel Joslin,Acting
 1304661,1,Madeleine Harris,Madeleine Harris,Acting
+60960,2,Ray Nicholson,Ray Nicholson,Acting
 587020,2,Theo James,Theo James,Acting
 61134,1,Tatiana Maslany,Tatiana Maslany,Acting
 3257962,2,Colin O'Brien,Colin O'Brien,Acting
 36801,2,Adam Scott,Adam Scott,Acting
-936970,1,Julia Garner,Julia Garner,Acting
-1275904,2,Benedict Hardie,Benedict Hardie,Acting
-65727,2,Sam Jaeger,Sam Jaeger,Acting
-819,2,Edward Norton,Edward Norton,Acting
-18050,1,Elle Fanning,Elle Fanning,Acting
-3435887,1,Esther-Rose McGregor,Esther-Rose McGregor,Acting
 72855,1,Felicity Jones,Felicity Jones,Acting
 1496392,2,Joe Alwyn,Joe Alwyn,Acting
 1055230,1,Raffey Cassidy,Raffey Cassidy,Acting
+936970,1,Julia Garner,Julia Garner,Acting
+65727,2,Sam Jaeger,Sam Jaeger,Acting
+1416517,2,Ben Prendergast,Ben Prendergast,Acting
+18050,1,Elle Fanning,Elle Fanning,Acting
+3435887,1,Esther-Rose McGregor,Esther-Rose McGregor,Acting
+8891,2,John Travolta,John Travolta,Acting
+526,2,Lukas Haas,Lukas Haas,Acting
+2138143,2,Quavo,Quavo,Acting
 1148626,1,Lindsey Morgan,Lindsey Morgan,Acting
 2957,2,Alexander Siddig,Alexander Siddig,Acting
 25702,1,Rhona Mitra,Rhona Mitra,Acting
@@ -6961,14 +7101,37 @@
 185185,1,Catherine McNally,Catherine McNally,Acting
 1246972,1,Ruby Rose,Ruby Rose,Acting
 1552773,2,Reza Brojerdi,Reza Brojerdi,Acting
-1923,2,Robbie Coltrane,Robbie Coltrane,Acting
-4566,2,Alan Rickman,Alan Rickman,Acting
 1508313,2,Finn Cole,Finn Cole,Acting
 7248,2,Cliff Curtis,Cliff Curtis,Acting
+1923,2,Robbie Coltrane,Robbie Coltrane,Acting
+4566,2,Alan Rickman,Alan Rickman,Acting
 3477880,2,Leo Woodall,Leo Woodall,Acting
+8784,2,Daniel Craig,Daniel Craig,Acting
+1939676,2,Drew Starkey,Drew Starkey,Acting
+72305,1,Lesley Manville,Lesley Manville,Acting
+1563169,2,Henry Zaga,Henry Zaga,Acting
+3012219,0,Taylor Hallman,Taylor Hallman,Acting
+3012220,0,Keigan Buffett,Keigan Buffett,Acting
+3012221,0,Ember Vail,Ember Vail,Acting
+3012222,0,Taylor-Jessica Kelly,Taylor-Jessica Kelly,Acting
+3012223,0,Scott Norris,Scott Norris,Acting
+2859615,1,Beatriz Forjaz,Beatriz Forjaz,Acting
+3583513,0,André Lopes,André Lopes,Acting
+3871247,0,Lalla Rami,Lalla Rami,Acting
+3871249,0,Turtle White,Turtle White,Acting
+3871250,0,Shani Da Flava,Shani Da Flava,Acting
+2050163,0,Lester Greene,Lester Greene,Acting
 23902,1,Julie Lott,Julie Lott,Acting
 2860533,1,Ekaterina Baker,Ekaterina Baker,Acting
 124644,3,Lio Tipton,Lio Tipton,Acting
+98421,1,Sarah Nicklin,Sarah Nicklin,Acting
+2680806,2,Scott Swope,Scott Swope,Acting
+972445,1,Angela Relucio,Angela Relucio,Acting
+4910699,2,Steven McCormack,Steven McCormack,Acting
+3805862,1,Mabel Thomas,Mabel Thomas,Acting
+1505938,1,Karla Sofía Gascón,Karla Sofía Gascón,Acting
+77948,1,Selena Gomez,Selena Gomez,Acting
+983710,1,Adriana Paz,Adriana Paz,Acting
 1010189,2,Adan Canto,Adan Canto,Acting
 1412094,2,Zach Avery,Zach Avery,Acting
 1717255,2,Chinaza Uche,Chinaza Uche,Acting
@@ -6980,9 +7143,6 @@
 1720041,1,Isabella Gómez,Isabella Gómez,Acting
 117885,2,Gattlin Griffith,Gattlin Griffith,Acting
 3343796,1,Shireen Lai,Shireen Lai,Acting
-1505938,1,Karla Sofía Gascón,Karla Sofía Gascón,Acting
-77948,1,Selena Gomez,Selena Gomez,Acting
-983710,1,Adriana Paz,Adriana Paz,Acting
 43903,1,Carly Pope,Carly Pope,Acting
 97599,1,Nathalie Boltt,Nathalie Boltt,Acting
 152820,2,Chris William Martin,Chris William Martin,Acting
@@ -6993,10 +7153,23 @@
 4178064,0,Sean San Jose,Sean San Jose,Acting
 1216195,2,Paul Raci,Paul Raci,Acting
 4583265,0,"David ""Dap"" Giraudy","David ""Dap"" Giraudy",Acting
+1325946,2,Goya Robles,Goya Robles,Acting
+84029,1,Ayako Fujitani,藤谷文子,Acting
+2444662,2,Luke David Blumm,Luke David Blumm,Acting
+167564,2,Paul Sparks,Paul Sparks,Acting
+211993,1,Caitlin FitzGerald,Caitlin FitzGerald,Acting
+2271410,2,Ethan Slater,Ethan Slater,Acting
+3376119,2,Griffin Wallace Henkel,Griffin Wallace Henkel,Acting
 2478464,2,Martin Portlock,Martin Portlock,Acting
 3965802,1,Megan Placito,Megan Placito,Acting
+4040585,3,Kit Green,Kit Green,Acting
 3205360,2,Charity Kase,Charity Kase,Acting
-1466858,1,Teresa Banham,Teresa Banham,Acting
+568657,1,Sofia Boutella,Sofia Boutella,Acting
+11151,2,Nick Cassavetes,Nick Cassavetes,Directing
+27737,2,Bill Moseley,Bill Moseley,Acting
+45992,2,Tak Sakaguchi,坂口拓,Acting
+10431,1,Jennifer Jason Leigh,Jennifer Jason Leigh,Acting
+119232,2,Tom Noonan,Tom Noonan,Acting
 235128,1,Agustina Gonzalez Cirulnik,Agustina Gonzalez Cirulnik,Acting
 4891315,0,Gustavo Barrientos,Gustavo Barrientos,Acting
 4891316,0,Mariana Correa,Mariana Correa,Acting
@@ -7006,8 +7179,22 @@
 107516,1,Małgorzata Kożuchowska,Małgorzata Kożuchowska,Acting
 127852,2,Arkadiusz Jakubik,Arkadiusz Jakubik,Acting
 1916725,2,Piotr Polak,Piotr Polak,Acting
+6817,1,Agnès Varda,Agnès Varda,Directing
+226050,2,JR,JR,Directing
+3513770,0,Patricia Mercier,Patricia Mercier,Acting
+4610609,0,Amaury Bossy,Amaury Bossy,Acting
+4610613,0,Claude Flaert,Claude Flaert,Acting
+24041,2,François Damiens,François Damiens,Acting
+1496508,2,Jean-Pascal Zadi,Jean-Pascal Zadi,Acting
+86612,1,Anne Dorval,Anne Dorval,Acting
+1018913,1,Anabela Moreira,Anabela Moreira,Acting
 3841400,2,Samuel Kircher,Samuel Kircher,Acting
 4012753,1,Serena Hu,Serena Hu,Acting
+35878,1,Suzy Falk,Suzy Falk,Acting
+58417,0,Lina Boudreau,Lina Boudreau,Acting
+58416,1,Betty Bonifassi,Betty Bonifassi,Acting
+58418,1,Michèle Caucheteux,Michèle Caucheteux,Acting
+58419,2,Jean-Claude Donda,Jean-Claude Donda,Acting
 71507,2,Marc-André Grondin,Marc-André Grondin,Acting
 38529,2,Yves Jacques,Yves Jacques,Acting
 1905279,1,Laetitia Isambert,Laetitia Isambert,Acting
@@ -7031,6 +7218,10 @@
 3368972,0,Mohammad Hosseini,Mohammad Hosseini,Acting
 4425118,0,Marjan Khaleghi,Marjan Khaleghi,Acting
 2898271,0,Hajeer Moradi,Hajeer Moradi,Directing
+2345947,2,Sayyid El Alami,Sayyid El Alami,Acting
+4095085,0,Amaury Foucher,Amaury Foucher,Acting
+579211,2,Damien Bonnard,Damien Bonnard,Acting
+1562548,2,Artus,Artus,Acting
 1263974,2,Tovino Thomas,Tovino Thomas,Acting
 997494,2,Kunchacko Boban,Kunchacko Boban,Acting
 587752,2,Narain,Narain,Acting
@@ -7047,6 +7238,10 @@
 4609472,0,Agus Firmansyah,Agus Firmansyah,Acting
 52913,2,Hilmir Snær Guðnason,Hilmir Snær Guðnason,Acting
 3154166,1,Ester Bibi,Ester Bibi,Acting
+240240,1,Leila Hatami,لیلا حاتمی,Acting
+559567,1,Sareh Bayat,ساره بیات,Acting
+1589296,1,Sarina Farhadi,Sarina Farhadi,Acting
+229933,2,Shahab Hosseini,شهاب حسینی,Acting
 585492,2,Jonas Nay,Jonas Nay,Acting
 4796,2,Alexander Beyer,Alexander Beyer,Acting
 1945900,0,Thinley Lhamo,Thinley Lhamo,Acting
@@ -7054,41 +7249,81 @@
 2116932,2,Tenzing Dalha,Tenzing Dalha,Acting
 4551370,0,Karma Wangyal Gurung,Karma Wangyal Gurung,Acting
 1921704,2,Karma Shakya,Karma Shakya,Acting
-1253783,1,Ryoko Yonekura,米倉涼子,Acting
+48,2,Sean Bean,Sean Bean,Acting
+1255487,1,Tsubasa Honda,本田翼,Acting
+85939,2,Sei Hiraizumi,平泉成,Acting
+1252995,1,Saki Fujita,藤田咲,Acting
+1253023,1,Asami Shimoda,下田麻美,Acting
+148449,1,Yuu Asakawa,浅川悠,Acting
+2405530,1,Meiko Haigou,拝郷メイコ,Acting
+4856392,2,Naoto Fuga,風雅なおと,Acting
 101367,1,Yuki Uchida,内田有紀,Acting
+1253783,1,Ryoko Yonekura,米倉涼子,Acting
 1513944,2,Toshimitsu Oda,小田敏充,Acting
+82898,1,Kyoka Suzuki,Kyoka Suzuki,Acting
+1251647,2,Ok Taec-yeon,옥택연,Acting
+2636414,0,Masakado Yoshinori,正門良規,Acting
 2164392,1,Nagisa Saito,齊藤なぎさ,Acting
 3132499,2,Kaito Sakurai,櫻井海音,Acting
 40451,2,Akio Otsuka,大塚明夫,Acting
 203268,1,Yukari Tamura,田村ゆかり,Acting
+4847755,2,Hayato Kurihara,Hayato Kurihara,Acting
+4847757,2,Yukito Hidaka,Yukito Hidaka,Acting
+3834195,2,Yuta Hayashi,林裕太,Acting
+4924687,0,Shina Peng,Shina Peng,Acting
+4884067,0,Arazi,Arazi,Acting
 1812766,1,Mayu Yamaguchi,山口まゆ,Acting
 1471864,1,Haruka Kudo,工藤遥,Acting
+585209,2,Junpei Mizobata,溝端淳平,Acting
 2848176,1,Yuzumi Shintani,新谷ゆづみ,Acting
 233523,2,Keisuke Horibe,堀部圭亮,Acting
-2373654,2,Koya Matsudai,Koya Matsudai,Acting
+2373654,2,Koya Matsudai,松大航也,Acting
 1599701,2,Masashi Arifuku,有福正志,Acting
 4904763,0,Yoshiko Inuyama,Yoshiko Inuyama,Acting
 1697250,0,Kazuo Hashimoto,Kazuo Hashimoto,Acting
 1241568,2,Tsuyoshi Domoto,堂本剛,Acting
 1561997,2,Win Morisaki,森崎ウィン,Acting
-17380,2,Jay Chou,周杰倫,Acting
-85963,1,Alice Tzeng,Alice Tzeng,Acting
-1173379,0,So Ming-Ming,So Ming-Ming,Acting
 1256887,2,Taiga Kyomoto,京本大我,Acting
 2209661,1,Mayuu Yokota,横田真悠,Acting
 1500712,2,Ryotaro Sakaguchi,坂口涼太郎,Acting
+17380,2,Jay Chou,周杰倫,Acting
+85963,1,Alice Tzeng,Alice Tzeng,Acting
+1173379,0,So Ming-Ming,So Ming-Ming,Acting
+2392464,2,Airu Kubozuka,窪塚愛流,Acting
+551590,1,Yuriko Hirooka,広岡由里子,Acting
+2913858,2,Yuki Inoue,井上祐貴,Acting
+2120625,2,Taiga Tsubaki,椿泰我,Acting
+58675,2,Seiichi Tanabe,田辺誠一,Acting
+1098601,2,Gen Hoshino,星野源,Acting
+25461,1,Meiko Kaji,梶芽衣子,Acting
+3144131,1,Saori Izawa,伊澤彩織,Acting
+4573690,2,Mondo Otani,Mondo Otani,Acting
 1564000,0,Akiko Oshidari,Akiko Oshidari,Acting
 3154911,0,Akito Imai,Akito Imai,Directing
 120435,2,Yusuke Santamaria,中山裕介,Acting
 553328,1,Setsuko Karasuma,烏丸せつこ,Acting
-585209,2,Junpei Mizobata,溝端淳平,Acting
+124401,1,Mao Inoue,井上真央,Acting
+567065,2,Masatoshi Nakamura,中村雅俊,Acting
+145916,2,Ken Miyake,三宅健,Acting
 123862,1,Hairi Katagiri,片桐はいり,Acting
 545488,1,Masako Motai,もたいまさこ,Acting
 1384989,1,Tarja Markus,Tarja Markus,Acting
 88853,2,Jarkko Niemi,Jarkko Niemi,Acting
 33517,2,Ryo Kase,加瀬亮,Acting
+87335,1,Fernanda Torres,Fernanda Torres,Acting
+87341,2,Selton Mello,Selton Mello,Acting
+1508719,1,Valentina Herszage,Valentina Herszage,Acting
+1901533,1,Bárbara Luz,Bárbara Luz,Acting
+4505876,0,Guilherme Silveira,Guilherme Silveira,Acting
+85337,2,Wei Te-sheng,Wei Te-sheng,Writing
+1697974,1,Liao Hui-jen,廖慧珍,Acting
 9721,2,Junichi Suwabe,諏訪部順一,Acting
 24647,2,Katsuyuki Konishi,小西克幸,Acting
+1981492,1,Peace Yang,Peace Yang,Acting
+3185102,1,Tammy Lin,Tammy Lin,Acting
+1017335,2,Nolay Piho,Nolay Piho,Acting
+3776476,1,Amy Hsu,Amy Hsu,Acting
+5244638,1,Libix buying Wu hailing,巫惠玲,Acting
 239999,2,Ray Chang,Ray Chang,Acting
 115495,1,Kate Yeung,Kate Yeung,Acting
 4421334,2,Shih Sheng-lung,SHIH Sheng-lung,Acting
@@ -7096,9 +7331,10 @@
 1175328,0,Chin Fei,Chin Fei,Acting
 137913,2,Pai Ying,白鹰,Acting
 4266238,0,Ying Bai,Ying Bai,Acting
-1108172,2,Wanlop Rungkamjad,Wanlop Rungkamjad,Acting
+1108172,2,Wanlop Rungkumjad,Wanlop Rungkamjad,Acting
+4487531,0,Kuo Shu-wei,Guo Shu-wei,Acting
 1678798,0,Atchara Suwan,Atchara Suwan,Acting
-4487531,0,Guo Shu-wei,Guo Shu-wei,Acting
+555380,1,Tang Ru-Yun,Ru-Yun Tang,Acting
 1666764,0,Hsu Chi-wen,Hsu Chi-wen,Acting
 1910646,2,Zhang Zhiyong,Zhang Zhiyong,Acting
 1910645,2,Xu Gang,徐刚,Acting
@@ -7109,6 +7345,10 @@
 938326,1,Tan Zhuo,Tan Zhuo,Acting
 1065763,2,Wu Wei,Wei Wu,Acting
 1065764,0,Jiaqi Jiang,Jiaqi Jiang,Acting
+3193743,2,Yu Shi,于适,Acting
+4176055,1,Nashi,那尔那茜,Acting
+1612192,2,Chen Muchi,陈牧驰,Acting
+1133067,2,Kris Phillips,Kris Phillips,Acting
 26728,2,Sam Hui,許冠傑,Acting
 83696,1,Cecilia Yip Tung,葉童,Acting
 67221,1,Sharla Cheung Man,張敏,Acting
@@ -7143,6 +7383,8 @@
 131343,1,Mei Ting,梅婷,Acting
 1376105,2,Zhu Yawen,朱亚文,Acting
 1161019,2,Zu Feng,祖峰,Acting
+4501067,0,Amber Kumar Gurung,Amber Kumar Gurung,Acting
+4501068,0,Guna Raj Kuikel,Guna Raj Kuikel,Acting
 1059129,2,Han Jae-rim,한재림,Directing
 980218,2,Lee Suk-hoon,이석훈,Directing
 548068,2,Hwang In-ho,황인호,Writing
@@ -7225,11 +7467,12 @@
 1091974,2,Sebastian Meise,Sebastian Meise,Directing
 2535263,0,Hang Trinh,Hang Trinh,Production
 3126678,0,Peter Mourougaya,Peter Mourougaya,Directing
-2428652,0,Trần Hữu Tấn,Trần Hữu Tấn,Directing
+2428652,2,Trần Hữu Tấn,Trần Hữu Tấn,Directing
 1264876,2,Le Van Kiet,Le Van Kiet,Directing
 3293749,1,Hà Lệ Diễm,Hà Lệ Diễm,Directing
 1180660,2,Peter Bebjak,Peter Bebjak,Directing
 1427205,2,Alexandre Koberidze,Alexandre Koberidze,Directing
+585177,2,Roman Vávra,Roman Vávra,Directing
 1664690,2,Jan Bubeníček,Jan Bubeníček,Writing
 223657,1,Denisa Grimmová Abrhámová,Denisa Grimmová Abrhámová,Art
 138797,2,F. A. Brabec,F. A. Brabec,Directing
@@ -7239,9 +7482,9 @@
 1040793,1,Maryna Er Gorbach,Maryna Er Gorbach,Directing
 2451192,2,Noppharnach Chaiyahwimhon,Noppharnach Chaiwimol,Directing
 2770699,2,Weerachit Thongjila,Weerachit Thongjila,Directing
-3028833,1,Kanittha Kwanyu,Kanittha Kwanyu,Directing
-2415585,0,Pattaraporn Werasakwong,Pattaraporn Werasakwong,Production
+3028833,1,Kanittha Kwunyoo,ขนิษฐา ขวัญอยู่,Directing
 3452577,0,Eakarpon Settasuk,Eakarpon Settasuk,Directing
+2415585,0,Pattaraporn Werasakwong,Pattaraporn Werasakwong,Production
 3452586,0,Jatuphong Rungrueangdechaphat,Jatuphong Rungrueangdechaphat,Directing
 3467504,0,Lertsiri Boonmee,Lertsiri Boonmee,Directing
 3467507,0,Wuttichai Wongnoppadon,Wuttichai Wongnoppadon,Directing
@@ -7261,14 +7504,13 @@
 1905895,0,Victoria Wharfe McIntyre,Victoria Wharfe McIntyre,Writing
 58052,2,Wai Ka-Fai,韋家輝,Writing
 2434741,0,Hing Fan Wong,Hing Fan Wong,Directing
-12453,2,Wong Kar-wai,王家衛,Directing
 33433,2,Scott Hicks,Scott Hicks,Directing
 96861,2,Stanley Kwan Kam-Pang,關錦鵬,Directing
 2067023,2,Sunny Chan Wing-Sun,Sunny Chan Wing-Sun,Writing
 93991,2,Soi Cheang,鄭保瑞,Directing
 118734,2,Yang Shupeng,Yang Shupeng,Directing
-1553944,2,Lam Sum,Lam Sum,Directing
 1840242,0,Ren Xia,Ren Xia,Directing
+1553944,2,Lam Sum,Lam Sum,Directing
 141503,2,David Lam Tak-Luk,林德禄,Directing
 11401,2,John Woo,吴宇森,Directing
 899534,2,Ting Shan-Hsi,Ting Shan-Hsi,Directing
@@ -7278,17 +7520,17 @@
 999463,1,Kearen Pang,Kearen Pang,Writing
 123199,1,Ann Hui,Ann Hui,Directing
 26767,2,Ringo Lam Ling-Tung,林嶺東,Directing
-71063,2,Patrick Tam Kar-ming,Patrick Tam Kar-Ming,Directing
 25236,2,Johnnie To,杜琪峯,Directing
 26760,2,Tsui Hark,徐克,Directing
 18899,2,Yuen Woo-Ping,袁和平,Directing
+71063,2,Patrick Tam,Patrick Tam Kar-Ming,Directing
 1730474,2,Chan Tze-Woon,Chan Tze-Woon,Directing
 1135709,2,Sam Wong Ming-Sing,黃明昇,Acting
 103602,1,Mabel Cheung Yuen-Ting,張婉婷,Directing
 96856,2,Yonfan,Yonfan,Directing
 3639307,2,Ho Cheuk-Tin,何爵天,Directing
 3246960,0,Candy Ng Wing-Shan,Candy Ng Wing-Shan,Directing
-2566143,2,Chiu Hoi Yeung,Chiu Hoi Yeung,Acting
+2566143,2,Yeung Chiu-Hoi,Chiu Hoi Yeung,Acting
 1393213,1,Judy Chu,Judy Chu,Writing
 66718,2,Alan Mak Siu-Fai,麥兆輝,Directing
 65994,2,Andrew Lau Wai-Keung,劉偉強,Directing
@@ -7298,10 +7540,11 @@
 15488,2,Ken Loach,Ken Loach,Directing
 1277754,2,Kiwi Chow,Kiwi Chow,Directing
 4956,2,Bernardo Bertolucci,Bernardo Bertolucci,Directing
+2036,2,Alex Garland,Alex Garland,Writing
 240,2,Stanley Kubrick,Stanley Kubrick,Directing
 56370,2,Ruben Östlund,Ruben Östlund,Directing
 1088096,2,James Nunn,James Nunn,Directing
-191750,2,Philip Barantini,Philip Barantini,Acting
+191750,2,Philip Barantini,Philip Barantini,Directing
 1943403,2,Peeter Rebane,Peeter Rebane,Directing
 589740,2,Kim Sang-woo,Kim Sang-woo,Directing
 572295,2,Howard J. Ford,Howard J. Ford,Directing
@@ -7410,9 +7653,9 @@
 52934,2,Nicholas Stoller,Nicholas Stoller,Writing
 65167,2,Scott Cooper,Scott Cooper,Directing
 1814510,2,Tom George,Tom George,Directing
+488,2,Steven Spielberg,Steven Spielberg,Directing
 1744,2,Robert Wise,Robert Wise,Directing
 18868,2,Jerome Robbins,Jerome Robbins,Acting
-488,2,Steven Spielberg,Steven Spielberg,Directing
 893,2,Tony Scott,Tony Scott,Directing
 94815,2,Louie Psihoyos,Louie Psihoyos,Acting
 59218,1,Kat Coiro,Kat Coiro,Directing
@@ -7460,8 +7703,8 @@
 83858,2,Simon Barrett,Simon Barrett,Writing
 1437193,1,Lauren Hadaway,Lauren Hadaway,Sound
 1480711,2,Drew Mylrea,Drew Mylrea,Directing
-60922,2,Josh Gordon,Josh Gordon,Directing
 60923,2,Will Speck,Will Speck,Directing
+60922,2,Josh Gordon,Josh Gordon,Directing
 139558,0,Josh Sternfeld,Josh Sternfeld,Writing
 9158,1,Sharon Maguire,Sharon Maguire,Directing
 10491,2,Paul Verhoeven,Paul Verhoeven,Directing
@@ -7471,13 +7714,13 @@
 4782087,0,Qiu Yu,Qiu Yu,Directing
 3342366,2,Alejandro Loayza Grisi,Alejandro Loayza Grisi,Directing
 15254,2,Emir Kusturica,Emir Kusturica,Directing
-1311031,2,Svyatoslav Podgaevsky,Svyatoslav Podgaevsky,Writing
+1311031,2,Svyatoslav Podgaevsky,Святослав Подгаевский,Writing
 1695602,2,Alexander Babaev,Alexander Babaev,Directing
 230445,2,Vadim Shmelyov,Vadim Shmelyov,Writing
 230715,2,Renat Davletyarov,Renat Davletyarov,Directing
 1992194,2,Andrey Zagidullin,Andrey Zagidullin,Directing
-1204065,2,Alexey Chupov,Alexey Chupov,Directing
 1204066,1,Natalya Merkulova,Natalya Merkulova,Directing
+1204065,2,Alexey Chupov,Alexey Chupov,Directing
 1491551,2,Igor Kopylov,Игорь Копылов,Directing
 8452,2,Andrei Tarkovsky,Андрей Тарковский,Directing
 2041603,2,Huang Ting-fu,Huang Ting-fu,Directing
@@ -7575,9 +7818,9 @@
 2264366,2,Sunghoo Park,박성후,Directing
 125385,2,Masakazu Hashimoto,橋本昌和,Directing
 109191,2,Hiroyuki Imaishi,今石洋之,Directing
-1845070,1,Yō Miura,三浦陽,Directing
 1456779,2,Michio Mihara,三原三千夫,Visual Effects
 1175046,2,Daiji Suzuki,鈴木大司,Visual Effects
+1845070,1,Yō Miura,三浦陽,Directing
 1937966,2,Wataru Takahashi,Wataru Takahashi,Directing
 1654352,2,Yasuhito Kikuchi,菊地康仁,Directing
 1360022,2,Michihito Fujii,藤井道人,Directing
@@ -7606,6 +7849,7 @@
 20310,2,Takashi Shimizu,清水崇,Directing
 1034272,2,Hajime Hashimoto,橋本一,Directing
 1695439,2,Takashi Naoya,直谷たかし,Directing
+2937358,2,Baku Kinoshita,木下麦,Directing
 130646,2,Nobuhiro Doi,土井裕泰,Directing
 934830,2,Daisuke Hiramaki,平牧大輔,Directing
 2936479,1,Sumie Noro,野呂純恵,Directing
@@ -7626,6 +7870,7 @@
 1187141,2,Masayuki Miyaji,宮地昌幸,Directing
 40336,2,Masashi Ando,安藤雅司,Visual Effects
 2430932,0,Yasuhiko Shimizu,清水康彦,Directing
+2162451,2,Toichiro Ruto,瑠東東一郎,Directing
 1117479,2,Ayumu Watanabe,渡辺歩,Directing
 77679,2,Renpei Tsukamoto,塚本連平,Directing
 1324582,1,Atsuko Ishizuka,いしづかあつこ,Directing
@@ -7673,8 +7918,8 @@
 1115707,2,Daihachi Yoshida,吉田大八,Directing
 1321076,2,Naoyuki Ito,伊藤尚往,Directing
 131186,2,Tetsuya Nakashima,中島哲也,Directing
-2461290,0,Man Luo,Man Luo,Directing
 2856892,0,Xi Shiwei,Xi Shiwei,Directing
+2461290,0,Man Luo,Man Luo,Directing
 1160535,2,Yu Irie,入江悠,Directing
 1195583,2,Keiichi Kobayashi,小林啓一,Directing
 1422573,2,Atsushi Ueda,ウエダアツシ,Directing
@@ -7682,8 +7927,10 @@
 1134988,2,Toshio Lee,李闘士男,Directing
 996639,2,Jun Shishido,宍戸淳,Directing
 17282,2,Takashi Miike,三池崇史,Directing
+1161749,1,Hisako Matsui,松井久子,Directing
 3661196,0,Takayuki Okutsu,Takayuki Okutsu,Directing
 95501,2,Yasujirō Ozu,小津安二郎,Directing
+3071204,0,Sato Amane,Sato Amane,Directing
 895706,2,Shinji Imaoka,今岡信治,Directing
 96956,1,Yin-jung Chen,Yin-jung Chen,Directing
 357,2,Hany Abu-Assad,Hany Abu-Assad,Directing
@@ -7699,7 +7946,6 @@
 2404505,0,Bang-Yao Liu,Bang-Yao Liu,Directing
 3353532,2,Shen Danguei,Shen Danguei,Directing
 92831,2,Herman Yau,邱禮濤,Directing
-2373899,2,Huang Tien-jen,黄天仁,Directing
 92071,2,Chris Huang,黃強華,Directing
 2053569,1,Fiona Roan,阮鳳儀,Directing
 2684402,2,If Chen,陳奕甫,Creator
@@ -7789,21 +8035,21 @@
 587672,2,Min Yong-keun,Min Yong-keun,Directing
 2097690,2,Nam Dae-joong,Nam Dae-joong,Directing
 1632457,2,Yun Jun-hyung,Yun Jun-hyung,Directing
-111411,2,Ahn Sang-hoon,Ahn Sang-hoon,Directing
 580244,2,Lim Dae-wung,Lim Dae-wung,Directing
 112752,2,Kim Yong-gyun,김용균,Directing
-2545616,1,Yoon Eun-kyoung,윤은경,Directing
 2312405,2,Johnny Chae,채여준,Directing
+2545616,1,Yoon Eun-kyoung,윤은경,Directing
+111411,2,Ahn Sang-hoon,Ahn Sang-hoon,Directing
 64883,2,Kang Je-kyu,강제규,Directing
 3811675,0,Tim Ewalts,Tim Ewalts,Directing
 3738964,0,Nicky Lisa Lapierre,Nicky Lisa Lapierre,Directing
 3145874,0,Flora Serra,Flora Serra,Art
 2377535,0,Sébastien Corriveau,Sébastien Corriveau,Directing
 3715927,2,Kim Chang-hoon,Kim Chang-hoon,Directing
-2392774,2,Kim Seong-sik,Kim Seong-sik,Directing
 5877,2,Vincenzo Natali,Vincenzo Natali,Directing
+2392774,2,Kim Seong-sik,Kim Seong-sik,Directing
 86325,2,Ryoo Seung-wan,류승완,Directing
-3081451,2,Kim Sun-ung,Kim Sun-ung,Directing
+3081451,2,Kim Sun-ung,김선웅,Directing
 110701,2,K. V. Anand,K. V. Anand,Writing
 2774483,2,Hong Won-ki,홍원기,Directing
 1294643,2,Chung Ji-young,정지영,Directing
@@ -7812,6 +8058,7 @@
 1717032,2,Jiuliang Wang,Jiuliang Wang,Directing
 4344086,0,Lim Ji-hoon,Lim Ji-hoon,Directing
 1293710,2,Lee Hae-young,이해영,Directing
+1636814,1,Marta Minorowicz,Marta Minorowicz,Directing
 1771406,2,Jang Hang-jun,장항준,Directing
 3137399,0,Kim Jae-hoon,Kim Jae-hoon,Directing
 1883920,2,Park Sung-kwang,박성광,Acting
@@ -7821,7 +8068,7 @@
 1764940,2,Ma Dae-yun,Ma Dae-yun,Writing
 3593576,0,Yun Jae-wan,윤제완,Directing
 3593579,0,Kang Seung-hun,Kang Seung-hun,Visual Effects
-1057492,2,KimJho Gwang-soo,김조광수,Directing
+1057492,2,Kim Jho Gwang-soo,김조광수,Directing
 35735,2,Nikkhil Advani,Nikkhil Advani,Directing
 1715496,0,G. V. Sudhakar Naidu,G. V. Sudhakar Naidu,Acting
 3859746,0,Christina Elvstrøm Marström,Christina Elvstrøm Marström,Directing
@@ -7851,13 +8098,13 @@
 2836746,2,Chen-Hao Yin,Chen-Hao Yin,Directing
 1296107,2,Kim Yeong-tak,Kim Yeong-tak,Writing
 2687337,2,Lee Han-jong,Lee Han-jong,Directing
-230767,2,Mehmet Ada Öztekin,Mehmet Ada Öztekin,Directing
 1149649,2,Lee Hwan-kyung,이환경,Directing
+230767,2,Mehmet Ada Öztekin,Mehmet Ada Öztekin,Directing
 1086497,2,Jo Sung-hee,조성희,Directing
 1210155,1,Mahalia Belo,Mahalia Belo,Directing
 19896,1,Jessica Hausner,Jessica Hausner,Directing
-2030740,0,Jesse Ahern,Jesse Ahern,Production
 58401,1,Joanne Samuel,Joanne Samuel,Acting
+2030740,0,Jesse Ahern,Jesse Ahern,Production
 1680263,1,Maryam Touzani,Maryam Touzani,Directing
 8193,2,Florian Henckel von Donnersmarck,Florian Henckel von Donnersmarck,Directing
 37538,2,Matti Geschonneck,Matti Geschonneck,Directing
@@ -7868,13 +8115,13 @@
 5125,2,Fatih Akin,Fatih Akin,Directing
 74008,2,Hans Steinbichler,Hans Steinbichler,Directing
 2146603,0,Amr Gamal,Amr Gamal,Directing
-2850054,0,Daniel Lascar,Daniel Lascar,Acting
 2466702,0,Alessandro Antonaci,Alessandro Antonaci,Directing
 2852400,0,Stefano Mandalà,Stefano Mandalà,Directing
+2850054,0,Daniel Lascar,Daniel Lascar,Acting
 65314,2,Giuseppe Tornatore,Giuseppe Tornatore,Directing
 28898,2,Michael Radford,Michael Radford,Directing
-239672,2,Felix van Groeningen,Felix van Groeningen,Directing
 939150,1,Charlotte Vandermeersch,Charlotte Vandermeersch,Acting
+239672,2,Felix van Groeningen,Felix van Groeningen,Directing
 25819,2,Michele Placido,Michele Placido,Acting
 224452,2,Gianfranco Rosi,Gianfranco Rosi,Directing
 1563462,2,Donato Carrisi,Donato Carrisi,Writing
@@ -7909,7 +8156,7 @@
 111481,2,Sophon Sakdaphisit,โสภณ ศักดาพิศิษฏ์,Directing
 1364891,0,Samuel Bodin,Samuel Bodin,Writing
 40575,2,Michael W. Watkins,Michael W. Watkins,Directing
-2326894,2,Thiti Srinuan,Thiti Srinuan,Acting
+2326894,2,Thiti Srinuan,ธิติ ศรีนวล,Acting
 1862367,2,Naphat Chitveerapat,Naphat Chitveerapat,Writing
 565827,2,Bhandit Thongdee,Bhandit Thongdee,Directing
 1572524,2,Lee Thongkham,Lee Thongkham,Directing
@@ -7925,7 +8172,7 @@
 1280021,2,Kristoffer Borgli,Kristoffer Borgli,Directing
 66719,2,Felix Chong Man-Keung,莊文強,Writing
 1415282,2,Kam Ka-Wai,闞家偉,Directing
-1194706,2,Philip Yung Chi-kwong,翁子光,Directing
+1194706,2,Philip Yung,翁子光,Directing
 1879401,2,Nick Cheuk,Nick Cheuk,Writing
 81224,2,Jack Ng Wai-Lun,吳煒倫,Writing
 21905,2,Danny Pang Fat,彭發,Directing
@@ -7935,7 +8182,7 @@
 134851,2,Scud,云翔,Directing
 3713690,0,Ka Sing-Fung,賈勝楓,Directing
 1376363,2,Amos Why,Amos Why,Directing
-1002598,2,Jason Kwan,Jason Kwan,Camera
+1002598,2,Jason Kwan,關智耀,Camera
 2972234,2,Kelvin Shum,Kelvin Shum,Production
 2054461,0,Mo Lai Yan Chi,Mo Lai Yan Chi,Directing
 2221769,2,Sunny Lau,Sunny Lau,Acting
@@ -7959,11 +8206,13 @@
 28489,2,Ross MacGibbon,Ross MacGibbon,Directing
 1276911,1,Anna Wieczur,Anna Wieczur,Directing
 2339214,0,Justin Audibert,Justin Audibert,Directing
+16378,1,Mary Harron,Mary Harron,Directing
 4724398,0,Robert Kelley,Robert Kelley,Directing
 1614,2,Ang Lee,李安,Directing
 460,2,Tom Stern,Tom Stern,Camera
 4786,2,Richard Attenborough,Richard Attenborough,Acting
 36693,2,Richard Eyre,Richard Eyre,Directing
+3055,2,David Mackenzie,David Mackenzie,Directing
 26481,2,Anand Tucker,Anand Tucker,Directing
 16785,2,Peter Webber,Peter Webber,Directing
 468,2,Stephen Daldry,Stephen Daldry,Directing
@@ -7971,9 +8220,9 @@
 58021,2,Tinto Brass,Tinto Brass,Directing
 9033,2,Christopher McQuarrie,Christopher McQuarrie,Writing
 18865,2,Louis Leterrier,Louis Leterrier,Directing
-113901,2,Michael Jelenic,Michael Jelenic,Writing
 1719706,2,Aaron Horvath,Aaron Horvath,Writing
-40644,2,Chad Stahelski,Chad Stahelski,Directing
+113901,2,Michael Jelenic,Michael Jelenic,Writing
+40644,2,Chad Stahelski,Chad Stahelski,Crew
 525,2,Christopher Nolan,Christopher Nolan,Directing
 45400,1,Greta Gerwig,Greta Gerwig,Acting
 1551545,2,Steven Caple Jr.,Steven Caple Jr.,Directing
@@ -7981,19 +8230,19 @@
 1113116,2,Andy Muschietti,Andy Muschietti,Directing
 59026,2,Peyton Reed,Peyton Reed,Directing
 137467,2,Ben Wheatley,Ben Wheatley,Directing
-2451598,2,Kemp Powers,Kemp Powers,Directing
 1046497,2,Justin K. Thompson,Justin K. Thompson,Directing
+2451598,2,Kemp Powers,Kemp Powers,Directing
 89596,2,Joaquim Dos Santos,Joaquim Dos Santos,Directing
-1236679,2,Jonathan Goldstein,Jonathan Goldstein,Directing
 52935,2,John Francis Daley,John Francis Daley,Writing
+1236679,2,Jonathan Goldstein,Jonathan Goldstein,Directing
 1795072,1,Nia DaCosta,Nia DaCosta,Directing
 101666,2,Paul King,Paul King,Directing
 10943,2,Francis Lawrence,Francis Lawrence,Directing
 20907,2,Antoine Fuqua,Antoine Fuqua,Directing
 82194,2,Neill Blomkamp,Neill Blomkamp,Directing
-17633,2,Rob Marshall,Rob Marshall,Directing
-15810,2,Ron Clements,Ron Clements,Writing
 15811,2,John Musker,John Musker,Writing
+15810,2,Ron Clements,Ron Clements,Writing
+17633,2,Rob Marshall,Rob Marshall,Directing
 366,2,James Mangold,James Mangold,Directing
 1288796,2,Gerard Johnstone,Gerard Johnstone,Directing
 129894,2,Gareth Edwards,Gareth Edwards,Directing
@@ -8003,8 +8252,8 @@
 293911,2,Scott Waugh,Scott Waugh,Directing
 2150,2,Kevin Greutert,Kevin Greutert,Editing
 46325,2,Jingle Ma Choh-Sing,Jingle Ma Choh-Sing,Directing
-2375591,1,Fawn Veerasunthorn,Fawn Veerasunthorn,Directing
 15774,2,Chris Buck,Chris Buck,Directing
+2375591,1,Fawn Veerasunthorn,Fawn Veerasunthorn,Directing
 2291,2,Paul McGuigan,Paul McGuigan,Directing
 1398631,2,Lee Cronin,Lee Cronin,Directing
 2103746,1,Emma Tammi,Emma Tammi,Directing
@@ -8025,8 +8274,8 @@
 84416,2,Gene Stupnitsky,Gene Stupnitsky,Writing
 136495,2,Damien Chazelle,Damien Chazelle,Directing
 76422,2,Ric Roman Waugh,Ric Roman Waugh,Directing
-1317686,2,Bryan Woods,Bryan Woods,Writing
 1317685,2,Scott Beck,Scott Beck,Writing
+1317686,2,Bryan Woods,Bryan Woods,Writing
 1129908,2,Rob Savage,Rob Savage,Directing
 1578590,2,Jeff Rowe,Jeff Rowe,Writing
 2518227,1,Celine Song,Celine Song,Directing
@@ -8053,6 +8302,7 @@
 1145520,2,Ari Aster,Ari Aster,Directing
 1215038,1,Adele Lim,Adele Lim,Writing
 2198345,0,Lori Evans Taylor,Lori Evans Taylor,Writing
+230642,2,Naoyoshi Shiotani,塩谷直義,Directing
 16863,2,Todd Haynes,Todd Haynes,Directing
 1150548,2,Florian Zeller,Florian Zeller,Writing
 1405645,1,Laura Terruso,Laura Terruso,Directing
@@ -8073,7 +8323,6 @@
 2874455,0,Jonathan O'Boyle,Jonathan O'Boyle,Directing
 2840507,0,Matthew Goodhue,Matthew Goodhue,Directing
 1046739,2,Daniel Raim,Daniel Raim,Directing
-1556959,2,Sam Wrench,Sam Wrench,Directing
 71950,2,Diarmuid Lawrence,Diarmuid Lawrence,Directing
 2628974,0,Tim Kashani,Tim Kashani,Directing
 2628975,0,Kent Nicholson,Kent Nicholson,Directing
@@ -8086,11 +8335,11 @@
 3288,2,Chris Weitz,Chris Weitz,Production
 1034086,1,Phyllis Nagy,Phyllis Nagy,Writing
 1152047,2,Lotfy Nathan,Lotfy Nathan,Directing
-1404563,2,Aleksey Tsitsilin,Aleksey Tsitsilin,Directing
 2182238,2,Andrey Korn,Andrey Korenkov,Writing
+1404563,2,Alexey Tsitsilin,Алексей Цицилин,Directing
 1265147,2,Vasily Rovensky,Василий Ровенский,Writing
 2669990,2,Viktor Glukhushin,Виктор Глухушин,Directing
-582504,2,Georgy Gitis,Georgy Gitis,Directing
+582504,2,Georgy Gitis,Георгий Гитис,Directing
 1628967,2,Maksim Volkov,Maksim Volkov,Directing
 557984,2,Kirill Serebrennikov,Kirill Serebrennikov,Directing
 8574,2,Walter Salles,Walter Salles,Directing
@@ -8107,7 +8356,7 @@
 1320870,2,Thomas Cailley,Thomas Cailley,Directing
 1142171,2,Sebastián Lelio,Sebastián Lelio,Directing
 1100038,2,Sébastien Marnier,Sébastien Marnier,Directing
-18175,2,Dominik Moll,Dominik Moll,Writing
+18175,2,Dominik Moll,Dominik Moll,Directing
 17460,2,Rachid Hami,Rachid Hami,Writing
 1051327,1,Alice Winocour,Alice Winocour,Writing
 1558103,2,Quentin Reynaud,Quentin Reynaud,Writing
@@ -8143,6 +8392,7 @@
 1702466,1,Léa Mysius,Léa Mysius,Writing
 1806870,1,Léonor Serraille,Léonor Serraille,Directing
 16919,2,Olivier Dahan,Olivier Dahan,Directing
+64575,2,Laurent Tirard,Laurent Tirard,Writing
 73654,1,Catherine Corsini,Catherine Corsini,Directing
 3831,2,Jean-Pierre Melville,Jean-Pierre Melville,Directing
 1184727,0,Vahid Mousaian,Vahid Mousaian,Directing
@@ -8179,11 +8429,10 @@
 1754133,2,Takumi Doyama,堂山卓見,Directing
 81495,2,Keiichi Hara,原恵一,Directing
 1144885,2,Yuzuru Tachikawa,立川譲,Directing
-2843338,1,Yuriko Kado,Yuriko Kado,Directing
 185,2,Katsuhiro Otomo,大友克洋,Writing
 1145368,2,Soichi Masui,増井壮一,Directing
-77923,2,Kazuya Tsurumaki,鶴巻和哉,Directing
 1999367,2,Katsuichi Nakayama,中山勝一,Directing
+77923,2,Kazuya Tsurumaki,鶴巻和哉,Directing
 77921,2,Hideaki Anno,庵野秀明,Directing
 1362698,2,Tomohiko Ito,伊藤智彦,Directing
 2141186,0,Alexander Isaenko,Alexander Isaenko,Directing
@@ -8208,7 +8457,7 @@
 1462262,2,Daishi Matsunaga,松永大司,Directing
 1107015,2,Takayuki Shibasaki,柴崎貴行,Directing
 583881,2,Nobuhiro Yamashita,山下敦弘,Directing
-237364,2,Genki Kawamura,川村元気,Production
+237364,2,Genki Kawamura,川村元気,Directing
 43652,2,Takashi Yamazaki,山崎貴,Directing
 1670127,2,Kei Ishikawa,石川慶,Directing
 47506,2,Drew Goddard,Drew Goddard,Writing
@@ -8237,7 +8486,8 @@
 133704,2,Yuichi Fukuda,福田雄一,Writing
 73121,2,Gisaburō Sugii,杉井ギサブロー,Directing
 2010321,2,Neo Sora,空音央,Directing
-3736997,2,Yusuke Morii,Yusuke Morii,Directing
+1255987,2,Naomi Iwata,イワタナオミ,Creator
+3736997,2,Yusuke Morii,森井勇佑,Directing
 932980,2,Kōzō Kusuba,楠葉宏三,Directing
 1498600,0,Kento Yamaguchi,山口健人,Directing
 78905,1,Chihiro Ito,伊藤ちひろ,Writing
@@ -8270,7 +8520,6 @@
 150166,2,Danny Deng,Danny Deng,Acting
 1375107,2,Wen-Han Shih,Wen-Han Shih,Directing
 3724575,0,Jacky Ko,Jacky Ko,Directing
-85337,2,Wei Te-sheng,Wei Te-sheng,Writing
 1534148,2,Daniele Pini,Daniele Pini,Directing
 565893,2,Tien-Lun Yeh,Tien-Lun Yeh,Directing
 1934679,1,Sung Hsin-Yin,Sung Hsin-Yin,Directing
@@ -8319,6 +8568,9 @@
 236691,2,Luis Marías,Luis Marías,Writing
 1897028,0,Anna Maria Maiolino,Anna Maria Maiolino,Directing
 1080533,0,Lim Chang-jae,Lim Chang-jae,Directing
+1643182,0,Christina Georgiou,Christina Georgiou,Sound
+2899627,0,David Hands,David Hands,Editing
+3945583,2,Louis Crétat,Louis Crétat,Sound
 4040818,0,Lee Kang-ling,Lee Kang-ling,Directing
 1912833,2,Yu-Lin Wang,Yu-Lin Wang,Directing
 2522142,2,Tian Yu,田宇,Directing
@@ -8341,7 +8593,7 @@
 81251,2,Banjong Pisanthanakun,บรรจง ปิสัญธนะกูล,Directing
 2879867,2,Heo Myeong-haeng,허명행,Crew
 4818837,0,Thomas Ko,Thomas Ko,Directing
-4818835,2,Shim Hyung-jun,심형준,Directing
+4818835,2,Shim Hyeong-jun,심형준,Directing
 3084810,2,Kim Sung-han,Kim Sung-han,Directing
 4804724,0,Min Geun,민근,Directing
 1135344,2,Kim Tae-gon,Kim Tae-gon,Directing
@@ -8393,11 +8645,12 @@
 59265,2,Adam Cooper,Adam Cooper,Writing
 1584382,2,İlker Çatak,İlker Çatak,Directing
 21737,2,Marc Rothemund,Marc Rothemund,Directing
+1228713,0,Mark Gravas,Mark Gravas,Directing
 2332,2,Christian Petzold,Christian Petzold,Directing
 1628010,2,Adrian Goiginger,Adrian Goiginger,Directing
 210550,2,Kilian Riedhof,Kilian Riedhof,Directing
-1488942,1,Mette Tange,Mette Tange,Visual Effects
 22496,2,Benjamin Quabeck,Benjamin Quabeck,Directing
+1488942,1,Mette Tange,Mette Tange,Visual Effects
 1775995,1,Zhang Jialing,Zhang Jialing,Directing
 1303917,2,Faraz Shariat,Faraz Shariat,Directing
 39298,1,Margarethe von Trotta,Margarethe von Trotta,Directing
@@ -8420,6 +8673,7 @@
 1822767,0,Julia Niemann,Juliane Niemann,Directing
 1134670,0,Daniel Hoesl,Daniel Hoesl,Directing
 2053029,0,Nguyễn Hữu Hoàng,Nguyễn Hữu Hoàng,Directing
+1675405,2,Lý Hải,Lý Hải,Directing
 4447177,0,Lưu Thành Luân,Lưu Thành Luân,Directing
 1038736,0,Alvin B. Yapan,Alvin B. Yapan,Writing
 1481876,2,Felipe Gálvez,Felipe Gálvez,Directing
@@ -8431,12 +8685,12 @@
 226514,2,Thanadol Nuansut,Thanadol Nuansut,Directing
 2178483,0,Mate Yimsomboon,Mate Yimsomboon,Directing
 4280975,2,Walongkorn Jadjai,Walongkorn Jubjai,Directing
-3970671,0,Artistaya Arriyawongsa,Artistaya Arriyawongsa,Directing
 3970672,0,Theerakhaha Arriyawongsa,Theerakhaha Arriyawongsa,Directing
+3970671,0,Artistaya Arriyawongsa,Artistaya Arriyawongsa,Directing
 2721534,0,Sorawit Meungkeaw,Sorawit Meungkeaw,Writing
 3644234,0,Aussada Likitboonma,Aussada Likitboonma,Directing
-3298119,0,Aroonakorn Pick,Aroonakorn Pick,Directing
 1188818,2,Nontawat Numbenchapol,Nontawat Numbenchapol,Directing
+3298119,0,Aroonakorn Pick,Aroonakorn Pick,Directing
 1267628,2,Nitivat Cholvanichsiri,Nitivat Cholvanichsiri,Directing
 4639382,0,Krittanut Watcharanuntagul,Krittanut Watcharanuntagul,Directing
 3473917,2,Sathanapong Limwongthong,Nob Sathanapong Limwongthong,Directing
@@ -8445,7 +8699,7 @@
 3943045,2,Atta Hemwadee,Atta Hemwadee,Directing
 3317265,2,Pichaya Jarusboonpracha,พิชย จรัสบุญประชา,Directing
 990964,0,Jetniphat Sasing,Jetniphat Sasing,Directing
-2214726,2,Waasuthep Ketpetch,Waasuthep Ketpetch,Directing
+2214726,2,Waasuthep Ketpetch,วาสุเทพ เกตุเพ็ชร์,Directing
 2856873,2,Naruebet Kuno,นฤเบศ กูโน,Directing
 81252,2,Parkpoom Wongpoom,ภาคภูมิ วงศ์ภูมิ,Directing
 2388399,0,Tanawat Aiemjinda,Tanawat Aiemjinda,Directing
@@ -8456,14 +8710,14 @@
 5306,2,Lasse Hallström,Lasse Hallström,Directing
 1939900,0,Wang Feng-Lin,Wang Feng-Lin,Directing
 2190477,0,Ernst De Geer,Ernst De Geer,Directing
-1356771,2,Anselm Chan,Anselm Chan,Writing
-138500,2,Albert Mak Kai-Kwong,Albert Mak Kai-Kwong,Directing
-3839629,0,Nate Tse Ka-ki,Nate Tse Ka-ki,Directing
+70111,2,Anthony Pun Yiu-Ming,Anthony Pun Yiu-Ming,Camera
+138500,2,Albert Mak Kai-Kwong,麥啟光,Directing
+3839629,2,Nate Ki,謝家祺,Directing
 1174080,1,Ho Miu-Kei,Ho Miu-Kei,Writing
 1400678,2,Shugo Fujii,藤井秀剛,Directing
 1417213,2,Lee Po-Cheung,Lee Po-Cheung,Writing
-2774516,2,Herbert Leung,Herbert Leung,Acting
 2774515,2,Albert Leung,Albert Leung,Acting
+2774516,2,Herbert Leung,Herbert Leung,Acting
 2081251,2,Jun Li,Jun Li,Directing
 3689144,2,Tong Wai-Hon,唐唯瀚,Directing
 81220,2,Dante Lam Chiu-Yin,林超賢,Directing
@@ -8477,7 +8731,6 @@
 2933907,0,Tim Harper,Tim Harper,Directing
 1226684,2,James Napier Robertson,James Napier Robertson,Acting
 16938,2,Renny Harlin,Renny Harlin,Directing
-2636,2,Alfred Hitchcock,Alfred Hitchcock,Directing
 93922,2,Jeff Celentano,Jeff Celentano,Directing
 2026329,2,Toby L,Toby L,Directing
 2392557,0,Paris Zarcilla,Paris Zarcilla,Directing
@@ -8485,12 +8738,14 @@
 55476,2,Nicholas Hytner,Nicholas Hytner,Directing
 1736559,1,Charlotte Regan,Charlotte Regan,Directing
 1673449,1,Louisa Warren,Louisa Warren,Production
+1556959,2,Sam Wrench,Sam Wrench,Directing
 1504740,1,Molly Manning Walker,Molly Manning Walker,Camera
 37630,2,Shekhar Kapur,Shekhar Kapur,Directing
 83281,2,Lenny Abrahamson,Lenny Abrahamson,Directing
 182001,2,Kelsey Mann,Kelsey Mann,Directing
 57130,2,Todd Phillips,Todd Phillips,Directing
-1152306,2,Tsai Yang-Ming,Tsai Yang-Ming,Directing
+1152306,2,Ulysses Tsai Yang-Ming,Tsai Yang-Ming,Directing
+939330,2,Kevin Chu,朱延平,Directing
 98631,2,Adam Wingard,Adam Wingard,Directing
 124748,2,Chris Renaud,Chris Renaud,Acting
 940376,1,Kelly Marcel,Kelly Marcel,Writing
@@ -8505,14 +8760,13 @@
 2580328,2,Michael Sarnoski,Michael Sarnoski,Directing
 66193,2,Chris Sanders,Chris Sanders,Directing
 54507,2,Jon M. Chu,Jon M. Chu,Directing
-122423,2,Yorgos Lanthimos,Yorgos Lanthimos,Directing
+122423,2,Yorgos Lanthimos,Γιώργος Λάνθιμος,Directing
 51851,2,Jake Kasdan,Jake Kasdan,Directing
 92784,2,Barry Jenkins,Barry Jenkins,Directing
 64151,2,Mike Mitchell,Mike Mitchell,Directing
 57028,2,George Huang,George Huang,Writing
 84496,2,Josh Cooley,Josh Cooley,Directing
 1607016,1,Coralie Fargeat,Coralie Fargeat,Directing
-2036,2,Alex Garland,Alex Garland,Writing
 223551,1,S.J. Clarkson,S.J. Clarkson,Directing
 1092607,2,Benjamin Renner,Benjamin Renner,Directing
 61411,2,Mark Dindal,Mark Dindal,Writing
@@ -8537,13 +8791,14 @@
 20192,2,Brian Taylor,Brian Taylor,Directing
 2009739,1,Domee Shi,Domee Shi,Directing
 59291,2,Alexandre Aja,Alexandre Aja,Directing
-56373,2,Jean-Stéphane Sauvaire,Jean-Stéphane Sauvaire,Directing
 1528815,0,Rajesh M. Selva,Rajesh M. Selva,Directing
+56373,2,Jean-Stéphane Sauvaire,Jean-Stéphane Sauvaire,Directing
 118415,2,Sean Baker,Sean Baker,Directing
 13235,2,Alexander Payne,Alexander Payne,Directing
 1275319,2,Moritz Mohr,Moritz Mohr,Directing
 2263272,2,SK Dale,SK Dale,Directing
 41355,2,Dimitri Logothetis,Dimitri Logothetis,Directing
+4174232,0,Heather Wilk,Heather Wilk,Directing
 56710,2,Oliver Parker,Oliver Parker,Directing
 1361546,2,Kiah Roache-Turner,Kiah Roache-Turner,Directing
 93151,2,Joshua John Miller,Joshua John Miller,Acting
@@ -8562,8 +8817,8 @@
 1751861,0,Maeve O'Boyle,Maeve O'Boyle,Editing
 1248157,0,Karen O'Connor,Karen O'Connor,Production
 1751860,0,Miri Navasky,Miri Navasky,Directing
-1397786,2,Yoann-Karl Whissell,Yoann-Karl Whissell,Directing
 585933,2,François Simard,François Simard,Directing
+1397786,2,Yoann-Karl Whissell,Yoann-Karl Whissell,Directing
 585934,1,Anouk Whissell,Anouk Whissell,Directing
 109016,2,Cary Solomon,Cary Solomon,Writing
 109017,0,Chuck Konzelman,Chuck Konzelman,Writing
@@ -8573,8 +8828,8 @@
 223,2,Alejandro González Iñárritu,Alejandro González Iñárritu,Directing
 3879718,2,Benjamin Brewer,Benjamin Brewer,Directing
 1636905,2,Julio Quintana,Julio Quintana,Writing
-4683398,0,Diep Sela,Diep Sela,Directing
 2664359,0,Leak Lyda,Leak Lyda,Directing
+4683398,0,Diep Sela,Diep Sela,Directing
 3199051,0,Sokyou Chea,Sokyou Chea,Directing
 4436675,2,Inrasothythep Neth,Inrasothythep Neth,Directing
 46199,2,Stephan Komandarev,Stephan Komandarev,Directing
@@ -8606,11 +8861,12 @@
 84426,2,Olivier Nakache,Olivier Nakache,Writing
 1364491,2,Maxime Govare,Maxime Govare,Directing
 4424686,0,Romain Choay,Romain Choay,Directing
+109889,2,Emmanuel Courcol,Emmanuel Courcol,Directing
 231431,2,Thomas Lilti,Thomas Lilti,Directing
 96627,2,André Téchiné,André Téchiné,Directing
 1622992,2,Erwan Le Duc,Erwan Le Duc,Directing
 133398,2,Quentin Dupieux,Quentin Dupieux,Directing
-2894609,0,André Kadi,André Kadi,Directing
+2894609,2,André Kadi,André Kadi,Directing
 1044850,0,Pierre-Luc Granjon,Pierre-Luc Granjon,Directing
 32535,2,Jim Capobianco,Jim Capobianco,Writing
 16862,2,Claude Lelouch,Claude Lelouch,Directing
@@ -8621,7 +8877,6 @@
 2437680,1,Pin-Ru Chen,Pin-Ru Chen,Directing
 1384823,1,Celia Rico Clavellino,Celia Rico Clavellino,Writing
 563824,0,Álvaro Fernández Armero,Álvaro Fernández Armero,Directing
-2119237,2,Nikhil Nagesh Bhat,Nikhil Nagesh Bhat,Directing
 1467320,1,Payal Kapadia,Payal Kapadia,Directing
 146014,2,Rizal Mantovani,Rizal Mantovani,Directing
 1322339,2,Anggy Umbara,Anggy Umbara,Directing
@@ -8648,12 +8903,13 @@
 2574299,2,Keiichiro Saito,斎藤圭一郎,Visual Effects
 78173,2,Hiroyuki Morita,森田宏幸,Art
 2564771,1,Hikaru Yamaguchi,Hikaru Yamaguchi,Directing
-55785,2,Shunji Iwai,岩井俊二,Directing
 3748826,2,Darren Lin,Darren Lin,Directing
+55785,2,Shunji Iwai,岩井俊二,Directing
 237306,2,Yōichi Higashi,東陽一,Directing
 1498599,0,Tomokazu Yamada,山田智和,Directing
 571991,2,Tsutomu Mizushima,水島努,Directing
 1627346,0,Masahiro Shinohara,篠原正寛,Directing
+2211367,2,Keisuke Inoue,井上圭介,Directing
 234646,1,Shimako Sato,佐藤嗣麻子,Directing
 1406559,2,Junichi Ishikawa,石川淳一,Directing
 582611,2,Yoshimi Itazu,板津匡覧,Directing
@@ -8676,9 +8932,10 @@
 1406394,2,Ryutaro Nakagawa,中川龍太郎,Directing
 509442,2,Yuya Ishii,石井裕也,Directing
 225738,2,Yoshimitsu Morita,Yoshimitsu Morita,Directing
+581836,1,Yin-chuan Tsai,Yin-chuan Tsai,Production
 2608194,2,Youichi Narita,Youichi Narita,Directing
 26882,2,Kiyoshi Kurosawa,黒沢清,Directing
-1644823,1,Naho Kamimura,上村奈帆,Production
+1644823,1,Naho Kamimura,上村奈帆,Writing
 90502,2,Goro Taniguchi,谷口悟朗,Directing
 3097336,2,Naoya Fujita,藤田直哉,Directing
 1573201,1,Ema Ryan Yamazaki,Ema Ryan Yamazaki,Directing
@@ -8693,8 +8950,8 @@
 1421871,2,Kosai Sekine,関根光才,Directing
 70103,2,Fumihiko Sori,曽利文彦,Directing
 2441846,1,Yuho Ishibashi,Yuho Ishibashi,Directing
+2413688,2,Kenji Iwaisawa,岩井澤健治,Directing
 1080183,2,Daigo Matsui,松居大悟,Directing
-4924871,0,Zoë Morgan Chiswick,Zoë Morgan Chiswick,Directing
 1795337,2,György Kristóf,György Kristóf,Directing
 127896,2,Hiroshi Shinagawa,品川祐,Directing
 224766,0,Eli Hollander,Eli Hollander,Directing
@@ -8709,6 +8966,7 @@
 2857276,0,Mary Claire Amora,Mary Claire Amora,Directing
 2216495,0,Amanda Alvich,Amanda Alvich,Directing
 3811887,0,Roscoe Rappaport,Roscoe Rappaport,Directing
+2426102,0,Gsus Lopez,Gsus Lopez,Directing
 1553591,2,Yuichiro Hayashi,林祐一郎,Directing
 2290150,1,Naoko Nobutomo,Naoko Nobutomo,Directing
 83642,2,Yasuo Furuhata,降旗康男,Directing
@@ -8718,6 +8976,7 @@
 150122,1,Hong Ji-young,홍지영,Directing
 1305360,2,Alonso Ruizpalacios,Alonso Ruizpalacios,Directing
 3026,2,Rob Reiner,Rob Reiner,Acting
+1747221,0,Taketoshi Sado,Taketoshi Sado,Directing
 2868035,2,Leo Liu,Leo Liu,Directing
 1130942,2,Michio Koshikawa,越川道夫,Production
 2422854,2,Hiroki Inoue,Hiroki Inoue,Directing
@@ -8734,6 +8993,7 @@
 2411583,2,Po-Hao Hung,Po-Hao Hung,Directing
 581943,2,Yang Ya-che,楊雅喆,Directing
 4240243,2,DH Tseng,DH Tseng,Directing
+1953583,2,Chiu Li Wei,Chiu Li Wei,Directing
 2542760,2,Sean Hao-Hsiang Hu,Sean Hao-Hsiang Hu,Directing
 4700752,0,Tsai Min-Hua,Tsai Min-Hua,Directing
 1954075,0,Chu Chuan-Li,曲全立,Directing
@@ -8776,7 +9036,7 @@
 5116573,2,Ping-Hai Wu,吳平海,Directing
 1544817,2,Jow Zhi Wei,姚志衞,Directing
 4889323,2,I-Fang Chang,張逸方,Directing
-1576754,0,Kek-huat Lau,Kek-huat Lau,Directing
+1576754,2,Kek-huat Lau,Kek-huat Lau,Directing
 2148238,0,Fan WU,Fan WU,Directing
 3431876,1,Nelicia Low,Nelicia Low,Directing
 1624654,2,S. Leo Chiang,S. Leo Chiang,Directing
@@ -8787,6 +9047,7 @@
 3070248,2,Xiang Liu,Xiang Liu,Directing
 3992160,2,Rui Cui,Rui Cui,Directing
 1698170,1,Mo Zhang,Mo Zhang,Editing
+1665497,2,Zhao Ji,Zhao Ji,Directing
 3964369,0,Feihuan Hao,Feihuan Hao,Directing
 115309,2,Khyentse Norbu,Khyentse Norbu,Directing
 56214,2,Nuri Bilge Ceylan,Nuri Bilge Ceylan,Directing
@@ -8795,9 +9056,13 @@
 146865,2,Kwon Hyeok-jae,권혁재,Directing
 1292897,2,Woo Min-ho,우민호,Directing
 84998,2,Kwak Kyung-taek,곽경택,Directing
+3161070,1,Cho Young-myoung,Cho Young-myoung,Directing
 1661909,2,Kim Jin-hwang,Kim Jin-hwang,Directing
 4993347,0,Park Jong-kyun,Park Jong-kyun,Directing
 3142271,1,Kim Sun-hyung,김선형,Directing
+1979003,1,Seo You-min,서유민,Writing
+2320163,2,Choi Won-sub,Choi Won-sub,Directing
+1295402,2,Kim Chang-ju,김창주,Editing
 2546561,2,Hah Jun-won,Hah Jun-won,Writing
 125074,2,Shin Yeon-shick,신연식,Directing
 3211980,0,Song Woon,Song Woon,Directing
@@ -8805,7 +9070,6 @@
 2423925,2,Jo Ba-reun,Jo Ba-reun,Directing
 2654953,0,Kim Hyun-tak,Kim Hyun-tak,Directing
 2365282,1,Lee Mi-young,Lee Mi-young,Production
-145623,2,Jang Sun-woo,장선우,Directing
 1252869,1,Veena Sud,Veena Sud,Writing
 61750,2,Matthias Glasner,Matthias Glasner,Directing
 1291492,2,Tim Trachte,Tim Trachte,Directing
@@ -8814,28 +9078,65 @@
 1047497,2,Christian Bisceglia,Christian Bisceglia,Directing
 1336006,2,Alessio Liguori,Alessio Liguori,Directing
 45791,2,Roy Andersson,Roy Andersson,Directing
+5247123,0,Pom Nguyễn,Pom Nguyễn,Directing
+4798391,0,Nhật Trung,Nhật Trung,Acting
+1004776,2,Xian Lim,Xian Lim,Acting
+1252766,2,Puttipong Saisrikaew,Putipong Saisikaew,Directing
+1179127,0,Alexander Kiesl,Alexander Kiesl,Directing
+1407005,0,Steffen Hacker,Steffen Hacker,Visual Effects
+1758583,1,Jirassaya Wongsutin,จิรัศยา วงษ์สุทิน,Writing
+4487238,2,Hamdan Ballal,Hamdan Ballal,Directing
+4487240,1,Rachel Szor,Rachel Szor,Directing
+2836026,0,Kwok Man-Ki,Kwok Man-Ki,Directing
 1539858,2,Dominic Cooke,Dominic Cooke,Directing
+221522,2,Edward Berger,Edward Berger,Directing
 1276373,2,Michael Gracey,Michael Gracey,Directing
+4656245,0,Alex Tcitsil'in,Alex Tcitsil'in,Directing
 527607,2,Sean Durkin,Sean Durkin,Directing
 115677,1,Coky Giedroyc,Coky Giedroyc,Directing
 1301933,2,Julius Onah,Julius Onah,Directing
+53925,2,Jared Hess,Jared Hess,Directing
 1087245,2,Drew Hancock,Drew Hancock,Directing
+87742,2,Marc Webb,Marc Webb,Directing
+5446,2,David Hand,David Hand,Directing
+11426,2,Ben Sharpsteen,Ben Sharpsteen,Visual Effects
+67373,2,William Cottrell,William Cottrell,Writing
+564042,2,Larry Morey,Larry Morey,Writing
+52218,2,Perce Pearce,Perce Pearce,Production
+11434,2,Wilfred Jackson,Wilfred Jackson,Directing
 54868,2,Christian Gudegast,Christian Gudegast,Writing
 1717526,2,Dougal Wilson,Dougal Wilson,Directing
-10723,2,Mike Newell,Mike Newell,Directing
+1361389,2,Dan Berk,Dan Berk,Writing
+1283526,2,Robert Olsen,Robert Olsen,Writing
 55493,2,Brady Corbet,Brady Corbet,Acting
+10723,2,Mike Newell,Mike Newell,Directing
+17211,2,Randall Emmett,Randall Emmett,Production
 128636,2,Liam O'Donnell,Liam O'Donnell,Writing
 138781,2,Robert Eggers,Robert Eggers,Directing
 7467,2,David Fincher,David Fincher,Directing
-11218,2,Alfonso Cuarón,Alfonso Cuarón,Directing
 2202407,2,Alex Parkinson,Alex Parkinson,Directing
+11218,2,Alfonso Cuarón,Alfonso Cuarón,Directing
+1993815,0,Kerry Chalmers,Kerry Chalmers,Directing
+3638595,0,Teresa Benevides,Teresa Benevides,Costume & Make-Up
+3890617,0,Carlota Morato,Carlota Morato,Directing
+4940967,0,Michael LaRocco,Michael LaRocco,Directing
+3871245,0,Sara Kheladi,Sara Kheladi,Directing
+2445838,0,Priya Jeram-Patel,Priya Jeram-Patel,Directing
+1670816,0,Ryan Burton,Ryan Burton,Writing
+2468769,0,Pierre Caudevelle,Pierre Caudevelle,Directing
 21792,2,George Gallo,George Gallo,Writing
 55081,2,Jonathan Eusebio,Jonathan Eusebio,Crew
+191028,2,Robert Michael Ryan,Robert Michael Ryan,Acting
+17496,2,Jacques Audiard,Jacques Audiard,Directing
 999812,2,Bradley Parker,Bradley Parker,Directing
 1884,2,Steven Soderbergh,Steven Soderbergh,Directing
 1679765,0,John Berardo,John Berardo,Directing
-17496,2,Jacques Audiard,Jacques Audiard,Directing
 1572120,2,Greg Kwedar,Greg Kwedar,Directing
+2971786,0,Marc Marriott,Marc Marriott,Directing
+1168133,2,Andrew Kightlinger,Andrew Kightlinger,Writing
+67075,2,Sion Sono,園子温,Directing
+202,2,Charlie Kaufman,Charlie Kaufman,Writing
+1019303,2,Duke Johnson,Duke Johnson,Directing
 1063331,0,David Bisbano,David Bisbano,Directing
 1489768,0,Wojtek Wawszczyk,Wojtek Wawszczyk,Directing
 1328012,2,Gints Zilbalodis,Gints Zilbalodis,Directing
@@ -8843,6 +9144,7 @@
 3992665,0,Guilhem Causse,Guilhem Causse,Directing
 3992668,0,Quentin L'helgoualc'h,Quentin L'helgoualc'h,Directing
 6295,1,Catherine Breillat,Catherine Breillat,Directing
+21768,2,Sylvain Chomet,Sylvain Chomet,Directing
 19077,2,Xavier Legrand,Xavier Legrand,Directing
 228186,2,Teddy Lussi-Modeste,Teddy Lussi-Modeste,Writing
 136168,1,Mati Diop,Mati Diop,Directing
@@ -8850,6 +9152,7 @@
 3248875,0,Lezhao Kong,Lezhao Kong,Directing
 1814824,2,Alireza Ghasemi,Alireza Ghasemi,Directing
 3186341,0,Raha Amirfazli,Raha Amirfazli,Directing
+2982366,0,Antoine Chevrollier,Antoine Chevrollier,Crew
 1170459,1,Jessica Palud,Jessica Palud,Directing
 1296662,2,Jude Anthany Joseph,Jude Anthany Joseph,Directing
 1260451,2,Baim Wong,Baim Wong,Acting
@@ -8857,6 +9160,8 @@
 2683196,2,Valdimar Jóhannsson,Valdimar Jóhannsson,Directing
 78118,2,Vadim Perelman,Вадим Перельман,Directing
 1548330,0,Min Bahadur Bham,Min Bahadur Bham,Directing
+1081445,2,Brandon Cronenberg,Brandon Cronenberg,Directing
+1705292,2,Hiroyuki Hata,畑博之,Directing
 127440,2,Hideki Takeuchi,武内英樹,Directing
 1809892,2,Naoki Tamura,田村直己,Directing
 937799,2,Masaya Fujimori,藤森雅也,Directing
@@ -8866,15 +9171,23 @@
 2132649,2,Mankyu,まんきゅう,Directing
 1927823,1,Yoko Yamanaka,山中瑶子,Directing
 3152597,0,Yuta Shimotsu,Yuta Shimotsu,Directing
+3463072,0,Mahito Kimura,Mahito Kimura,Directing
+2134932,2,Yugo Sakamoto,阪元裕吾,Directing
 587651,1,Mipo O,呉美保,Directing
+1450928,2,Yoshiyuki Kishi,岸善幸,Directing
+3126581,2,Fu-Hsiang Hsu,Fu-Hsiang Hsu,Directing
+1801028,1,Yuyu Yang,Yuyu Yang,Production
+1711366,0,Hung-en Su,Hung-en Su,Directing
 240283,2,Leste Chen,Leste Chen,Directing
-1158868,0,Zhuang Xiang Zeng,Zhuang Xiang Zeng,Directing
-2439596,2,Chiang Wei-Liang,Chiang Wei-Liang,Directing
-4664712,1,​You Qiao Yin,​You Qiao Yin,Directing
+1158868,2,Tseng Chuang-Hsiang,曾壯祥,Directing
+2439596,2,Chiang Wei-liang,Chiang Wei-Liang,Directing
 4299859,0,Frankie Sin,洗澔楊,Directing
+2436930,2,Fish Wang,王登鈺,Directing
+1901968,0,Hu Xueyang,Hu Xueyang,Directing
 1716600,2,Jun Geng,耿軍,Directing
-83698,2,King Hu,胡金銓,Directing
+232685,2,Wuershan,乌尔善,Directing
 67259,2,Tony Ching Siu-Tung,程小東,Directing
+83698,2,King Hu,胡金銓,Directing
 130367,2,Raymond Lee Wai-Man,李惠民,Directing
 1045535,2,Andrew Kam,Andrew Kam,Directing
 240167,2,Sun Chung,Sun Chung,Directing
@@ -8884,3 +9197,5 @@
 131291,2,Wen-Tang Cheng,Wen-Tang Cheng,Directing
 3672068,0,Kao To,Kao To,Directing
 3743322,2,Jian Chen,Jian Chen,Directing
+1988263,0,Dorottya Zurbo,Dorottya Zurbo,Directing
+1988262,0,Arun Bhattarai,Arun Bhattarai,Directing
